@@ -1,0 +1,350 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://www.diamond.ac.uk/"
+     xml:base="https://www.diamond.ac.uk/"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="https://www.diamond.ac.uk/"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000115 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000119 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000119"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_1 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_1">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">input source</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_10 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_10">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_9"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">thermal</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_11 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_11">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_10"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hot</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_12 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_12">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_10"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cold</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_13 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_13">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_9"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">non-thermal</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_14 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_14">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_1"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">muon</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_15 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_15">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">phenomenon</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_16 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_16">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_15"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">scattering</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_17 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_17">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_16"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">elastic</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_18 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_18">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_17"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">coherent</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_19 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_19">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_18"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">reference wave</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_2 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_2">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_1"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">electromagnetic radiation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_20 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_20">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_18"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">atomic</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_21 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_21">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_18"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">microscale</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_22 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_22">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_20"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2 dimensional</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_23 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_23">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_20"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3 dimensional</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_24 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_24">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_23"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">period3</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_25 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_25">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_24"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">powder crystal</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_26 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_26">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_24"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">single crystal</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_27 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_27">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_17"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">incoherent</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_28 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_28">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_16"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">inelastic</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_29 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_29">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_28"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">quasielastic</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_3 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_3">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_2"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">photon</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_30 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_30">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_15"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">absorbtion</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_31 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_31">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">technique</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_32 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_32">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_25"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_31"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_9"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A neutron powder diffraction technique</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">neutronPowderDiffraction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_33 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_33">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_26"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_31"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_6"/>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Powder_diffraction#:~:text=Powder%20diffraction%20is%20a%20scientific,for%20structural%20characterization%20of%20materials.&amp;text=Powder%20diffraction%20stands%20in%20contrast,single%2C%20well%2Dordered%20crystal.</obo:IAO_0000119>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">xraySingleCrystalDiffraction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_4 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_4">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_3"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">infra red</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_5 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_5">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_3"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UV visible</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_6 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_6">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_3"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">x-ray</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_7 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_7">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_6"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hard x-ray</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_8 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_8">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_6"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">soft x-ray</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_9 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_9">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_1"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">neutron</rdfs:label>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.6) https://github.com/owlcs/owlapi -->
+
