@@ -128,5 +128,3 @@ ExPaNDS:my_neutron_powder_diffraction_diffraction_data_56,my_neutron_powder_diff
 ExPaNDS:my_ARPES_data,my_ARPES_data,,,,,owl:NamedIndividual,individual,angle resolved photoemission spectroscopy,,,angle resolved photoemission spectroscopy,
 ,,,,,,,,,,,,
 ExPaNDS:diffraction,diffraction,,https://en.wikipedia.org/wiki/Diffraction,,,class,equivalent,,,,,CHMO:0000182
-=======
-probe
