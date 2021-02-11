@@ -1,0 +1,1075 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://www.diamond.ac.uk/"
+     xml:base="https://www.diamond.ac.uk/"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="https://www.diamond.ac.uk/"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000115 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000119 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000119"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- ExPaNDS:IR_photon_probe -->
+
+    <owl:Class rdf:about="ExPaNDS:IR_photon_probe">
+        <rdfs:subClassOf rdf:resource="ExPaNDS:photon_probe"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IR photon probe</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- ExPaNDS:UV_photon_probe -->
+
+    <owl:Class rdf:about="ExPaNDS:UV_photon_probe">
+        <rdfs:subClassOf rdf:resource="ExPaNDS:UV_visible_photon_probe"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UV photon probe</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- ExPaNDS:UV_visible_photon_probe -->
+
+    <owl:Class rdf:about="ExPaNDS:UV_visible_photon_probe">
+        <rdfs:subClassOf rdf:resource="ExPaNDS:photon_probe"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UV visible photon probe</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- ExPaNDS:VUV_photon_probe -->
+
+    <owl:Class rdf:about="ExPaNDS:VUV_photon_probe">
+        <rdfs:subClassOf rdf:resource="ExPaNDS:UV_photon_probe"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">VUV photon probe</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- ExPaNDS:absorption_contrast_imaging -->
+
+    <owl:Class rdf:about="ExPaNDS:absorption_contrast_imaging">
+        <rdfs:subClassOf rdf:resource="ExPaNDS:absorption_technique"/>
+        <rdfs:subClassOf rdf:resource="ExPaNDS:verus_position"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Absorption Contrast Imaging</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">absorption contrast imaging</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- ExPaNDS:absorption_technique -->
+
+    <owl:Class rdf:about="ExPaNDS:absorption_technique">
+        <rdfs:subClassOf rdf:resource="ExPaNDS:experimental_physical_process"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">absorption technique</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- ExPaNDS:angle_resolved_photoemission_spectroscopy -->
+
+    <owl:Class rdf:about="ExPaNDS:angle_resolved_photoemission_spectroscopy">
+        <rdfs:subClassOf rdf:resource="ExPaNDS:electron_emission_technique"/>
+        <rdfs:subClassOf rdf:resource="ExPaNDS:obtain_electronic_band_structure"/>
+        <rdfs:subClassOf rdf:resource="ExPaNDS:photon_probe"/>
+        <rdfs:subClassOf rdf:resource="ExPaNDS:versus_emission_momentum"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Angle resolved photoemission spectroscopy</obo:IAO_0000115>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Angle-resolved_photoemission_spectroscopy</obo:IAO_0000119>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">angle resolved photoemission spectroscopy</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- ExPaNDS:atomic_core_excitation -->
+
+    <owl:Class rdf:about="ExPaNDS:atomic_core_excitation">
+        <rdfs:subClassOf rdf:resource="ExPaNDS:electronic_excitation"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">atomic core excitation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- ExPaNDS:atomic_scale_diffraction -->
+
+    <owl:Class rdf:about="ExPaNDS:atomic_scale_diffraction">
+        <rdfs:subClassOf rdf:resource="ExPaNDS:diffraction"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">essential diffracting structure(s)</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">atomic scale diffraction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- ExPaNDS:atomic_scale_diffraction_2D_surface_or_film -->
+
+    <owl:Class rdf:about="ExPaNDS:atomic_scale_diffraction_2D_surface_or_film">
+        <rdfs:subClassOf rdf:resource="ExPaNDS:atomic_scale_diffraction"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">atomic scale diffraction 2D surface or film</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- ExPaNDS:atomic_scale_diffraction_3D_volume -->
+
+    <owl:Class rdf:about="ExPaNDS:atomic_scale_diffraction_3D_volume">
+        <rdfs:subClassOf rdf:resource="ExPaNDS:atomic_scale_diffraction"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">atomic scale diffraction 3D volume</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- ExPaNDS:atomic_scale_diffraction_3D_volume_3D_periodic -->
+
+    <owl:Class rdf:about="ExPaNDS:atomic_scale_diffraction_3D_volume_3D_periodic">
+        <rdfs:subClassOf rdf:resource="ExPaNDS:atomic_scale_diffraction_3D_volume"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">atomic scale diffraction 3D volume 3D periodic</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- ExPaNDS:characterize_electronic_excitations -->
+
+    <owl:Class rdf:about="ExPaNDS:characterize_electronic_excitations">
+        <rdfs:subClassOf rdf:resource="ExPaNDS:characterize_excitations"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">characterize electronic excitations</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- ExPaNDS:characterize_excitations -->
+
+    <owl:Class rdf:about="ExPaNDS:characterize_excitations">
+        <rdfs:subClassOf rdf:resource="ExPaNDS:obtain_dynamics"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">characterize excitations</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- ExPaNDS:characterize_lattice_excitations -->
+
+    <owl:Class rdf:about="ExPaNDS:characterize_lattice_excitations">
+        <rdfs:subClassOf rdf:resource="ExPaNDS:characterize_excitations"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">characterize lattice excitations</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- ExPaNDS:characterize_magnetic_excitations -->
+
+    <owl:Class rdf:about="ExPaNDS:characterize_magnetic_excitations">
+        <rdfs:subClassOf rdf:resource="ExPaNDS:characterize_electronic_excitations"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">characterize magnetic excitations</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- ExPaNDS:cold_neutron_probe -->
+
+    <owl:Class rdf:about="ExPaNDS:cold_neutron_probe">
+        <rdfs:subClassOf rdf:resource="ExPaNDS:thermal_neutron_probe"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cold neutron probe</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- ExPaNDS:dichroism -->
+
+    <owl:Class rdf:about="ExPaNDS:dichroism">
+        <rdfs:subClassOf rdf:resource="ExPaNDS:versus_polarization"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Any technique that depends essentially on probe polarization</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dichroism</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- ExPaNDS:diffraction -->
+
+    <owl:Class rdf:about="ExPaNDS:diffraction">
+        <owl:equivalentClass rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000182"/>
+        <rdfs:subClassOf rdf:resource="ExPaNDS:elastic_scattering"/>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Diffraction</obo:IAO_0000119>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">diffraction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- ExPaNDS:elastic_scattering -->
+
+    <owl:Class rdf:about="ExPaNDS:elastic_scattering">
+        <rdfs:subClassOf rdf:resource="ExPaNDS:scattering_technique"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">elastic scattering</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- ExPaNDS:electron_emission_technique -->
+
+    <owl:Class rdf:about="ExPaNDS:electron_emission_technique">
+        <rdfs:subClassOf rdf:resource="ExPaNDS:emission_technique"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">electron emission technique</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- ExPaNDS:electronic_excitation -->
+
+    <owl:Class rdf:about="ExPaNDS:electronic_excitation">
+        <rdfs:subClassOf rdf:resource="ExPaNDS:resonance_phenomenon"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">electronic excitation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- ExPaNDS:emission_spectroscopy -->
+
+    <owl:Class rdf:about="ExPaNDS:emission_spectroscopy">
+        <rdfs:subClassOf rdf:resource="ExPaNDS:emission_technique"/>
+        <rdfs:subClassOf rdf:resource="ExPaNDS:versus_emitted_energy"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">emission spectroscopy</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- ExPaNDS:emission_technique -->
+
+    <owl:Class rdf:about="ExPaNDS:emission_technique">
+        <rdfs:subClassOf rdf:resource="ExPaNDS:experimental_physical_process"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Independent of probe; Classed also as scattering if the probe and emitted particles are of the same type; disjoint with eleastic scattering</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">emission technique</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- ExPaNDS:experimental_physical_process -->
+
+    <owl:Class rdf:about="ExPaNDS:experimental_physical_process">
+        <rdfs:subClassOf rdf:resource="ExPaNDS:photon_and_neutron_technique"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">experimental physical process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- ExPaNDS:experimental_probe -->
+
+    <owl:Class rdf:about="ExPaNDS:experimental_probe">
+        <rdfs:subClassOf rdf:resource="ExPaNDS:photon_and_neutron_technique"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">experimental probe</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- ExPaNDS:fluorescence_luminescence -->
+
+    <owl:Class rdf:about="ExPaNDS:fluorescence_luminescence">
+        <rdfs:subClassOf rdf:resource="ExPaNDS:visible_photon_emission_technique"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fluorescence luminescence</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- ExPaNDS:fluorescence_tomography -->
+
+    <owl:Class rdf:about="ExPaNDS:fluorescence_tomography">
+        <rdfs:subClassOf rdf:resource="ExPaNDS:obtain_3D_spatial_map"/>
+        <rdfs:subClassOf rdf:resource="ExPaNDS:photon_emission_technique"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fluorescence tomography</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- ExPaNDS:functional_dependence -->
+
+    <owl:Class rdf:about="ExPaNDS:functional_dependence">
+        <rdfs:subClassOf rdf:resource="ExPaNDS:photon_and_neutron_technique"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Functional dependence (measure vs ...) of the measurement (not the result/purpose, which might be different). Includes restrictions on the independent variable (is this the best place?). </obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">functional dependence</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- ExPaNDS:gamma-ray_emission_techique -->
+
+    <owl:Class rdf:about="ExPaNDS:gamma-ray_emission_techique">
+        <rdfs:subClassOf rdf:resource="ExPaNDS:photon_emission_technique"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gamma-ray emission techique</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- ExPaNDS:gamma_spectroscopy -->
+
+    <owl:Class rdf:about="ExPaNDS:gamma_spectroscopy">
+        <rdfs:subClassOf rdf:resource="ExPaNDS:gamma-ray_emission_techique"/>
+        <rdfs:subClassOf rdf:resource="ExPaNDS:versus_emitted_energy"/>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Gamma_spectroscopy</obo:IAO_0000119>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gamma spectroscopy</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- ExPaNDS:grazing_incidence_SAS -->
+
+    <owl:Class rdf:about="ExPaNDS:grazing_incidence_SAS">
+        <rdfs:subClassOf rdf:resource="ExPaNDS:grazing_incidence_diffraction"/>
+        <rdfs:subClassOf rdf:resource="ExPaNDS:low_momentum_transfer_scattering"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">grazing incidence SAS</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- ExPaNDS:grazing_incidence_diffraction -->
+
+    <owl:Class rdf:about="ExPaNDS:grazing_incidence_diffraction">
+        <rdfs:subClassOf rdf:resource="ExPaNDS:low_surface_momentum_transfer_scattering"/>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Grazing_incidence_diffraction</obo:IAO_0000119>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">grazing incidence diffraction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- ExPaNDS:hard_x-ray_probe -->
+
+    <owl:Class rdf:about="ExPaNDS:hard_x-ray_probe">
+        <rdfs:subClassOf rdf:resource="ExPaNDS:x-ray_probe"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hard x-ray probe</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- ExPaNDS:high_momentum_transfer_resolution_scattering -->
+
+    <owl:Class rdf:about="ExPaNDS:high_momentum_transfer_resolution_scattering">
+        <rdfs:subClassOf rdf:resource="ExPaNDS:scattering_technique"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">high momentum transfer resolution scattering</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- ExPaNDS:high_momentum_transfer_scattering -->
+
+    <owl:Class rdf:about="ExPaNDS:high_momentum_transfer_scattering">
+        <rdfs:subClassOf rdf:resource="ExPaNDS:scattering_technique"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">high momentum transfer scattering</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- ExPaNDS:hot_neutron_probe -->
+
+    <owl:Class rdf:about="ExPaNDS:hot_neutron_probe">
+        <rdfs:subClassOf rdf:resource="ExPaNDS:thermal_neutron_probe"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hot neutron probe</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- ExPaNDS:incoherent_scattering -->
+
+    <owl:Class rdf:about="ExPaNDS:incoherent_scattering">
+        <rdfs:subClassOf rdf:resource="ExPaNDS:scattering_technique"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">incoherent scattering</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- ExPaNDS:inelastic_scattering -->
+
+    <owl:Class rdf:about="ExPaNDS:inelastic_scattering">
+        <rdfs:subClassOf rdf:resource="ExPaNDS:incoherent_scattering"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">inelastic scattering</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- ExPaNDS:low_momentum_transfer_scattering -->
+
+    <owl:Class rdf:about="ExPaNDS:low_momentum_transfer_scattering">
+        <rdfs:subClassOf rdf:resource="ExPaNDS:scattering_technique"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">low momentum transfer scattering</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- ExPaNDS:low_surface_momentum_transfer_scattering -->
+
+    <owl:Class rdf:about="ExPaNDS:low_surface_momentum_transfer_scattering">
+        <rdfs:subClassOf rdf:resource="ExPaNDS:scattering_technique"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">low surface momentum transfer scattering</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- ExPaNDS:magnetism_technique -->
+
+    <owl:Class rdf:about="ExPaNDS:magnetism_technique">
+        <rdfs:subClassOf rdf:resource="ExPaNDS:experimental_physical_process"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">magnetism technique</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- ExPaNDS:micro_scale_diffraction -->
+
+    <owl:Class rdf:about="ExPaNDS:micro_scale_diffraction">
+        <rdfs:subClassOf rdf:resource="ExPaNDS:diffraction"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">micro scale diffraction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- ExPaNDS:monochromatic_neutron_probe -->
+
+    <owl:Class rdf:about="ExPaNDS:monochromatic_neutron_probe">
+        <rdfs:subClassOf rdf:resource="ExPaNDS:neutron_probe"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">monochromatic neutron probe</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- ExPaNDS:muon_probe -->
+
+    <owl:Class rdf:about="ExPaNDS:muon_probe">
+        <rdfs:subClassOf rdf:resource="ExPaNDS:experimental_probe"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">muon probe</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- ExPaNDS:muon_spin_resonance -->
+
+    <owl:Class rdf:about="ExPaNDS:muon_spin_resonance">
+        <rdfs:subClassOf rdf:resource="ExPaNDS:resonance_phenomenon"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">muon spin resonance</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- ExPaNDS:neutron_powder_diffraction -->
+
+    <owl:Class rdf:about="ExPaNDS:neutron_powder_diffraction">
+        <rdfs:subClassOf rdf:resource="ExPaNDS:neutron_probe"/>
+        <rdfs:subClassOf rdf:resource="ExPaNDS:powder_diffraction"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A neutron powder diffraction technique</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">neutron powder diffraction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- ExPaNDS:neutron_probe -->
+
+    <owl:Class rdf:about="ExPaNDS:neutron_probe">
+        <rdfs:subClassOf rdf:resource="ExPaNDS:experimental_probe"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">neutron probe</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- ExPaNDS:obtain_3D_spatial_map -->
+
+    <owl:Class rdf:about="ExPaNDS:obtain_3D_spatial_map">
+        <rdfs:subClassOf rdf:resource="ExPaNDS:obtain_spatial_map"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">obtain 3D spatial map</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- ExPaNDS:obtain_atomic_magnetic_structure -->
+
+    <owl:Class rdf:about="ExPaNDS:obtain_atomic_magnetic_structure">
+        <rdfs:subClassOf rdf:resource="ExPaNDS:obtain_electronic_ground_state_properties"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">obtain atomic magnetic structure</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- ExPaNDS:obtain_atomic_structure -->
+
+    <owl:Class rdf:about="ExPaNDS:obtain_atomic_structure">
+        <rdfs:subClassOf rdf:resource="ExPaNDS:technique_purpose"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">obtain atomic structure</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- ExPaNDS:obtain_atomic_tensor_properties -->
+
+    <owl:Class rdf:about="ExPaNDS:obtain_atomic_tensor_properties">
+        <rdfs:subClassOf rdf:resource="ExPaNDS:obtain_electronic_ground_state_properties"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">obtain atomic tensor properties</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- ExPaNDS:obtain_charge_density -->
+
+    <owl:Class rdf:about="ExPaNDS:obtain_charge_density">
+        <rdfs:subClassOf rdf:resource="ExPaNDS:obtain_electronic_ground_state_properties"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">obtain charge density</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- ExPaNDS:obtain_charge_quadrupole -->
+
+    <owl:Class rdf:about="ExPaNDS:obtain_charge_quadrupole">
+        <rdfs:subClassOf rdf:resource="ExPaNDS:obtain_atomic_tensor_properties"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">obtain charge quadrupole</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- ExPaNDS:obtain_crystal_structure -->
+
+    <owl:Class rdf:about="ExPaNDS:obtain_crystal_structure">
+        <rdfs:subClassOf rdf:resource="ExPaNDS:obtain_atomic_structure"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">obtain crystal structure</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- ExPaNDS:obtain_dynamics -->
+
+    <owl:Class rdf:about="ExPaNDS:obtain_dynamics">
+        <rdfs:subClassOf rdf:resource="ExPaNDS:technique_purpose"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">obtain dynamics</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- ExPaNDS:obtain_electronic_band_structure -->
+
+    <owl:Class rdf:about="ExPaNDS:obtain_electronic_band_structure">
+        <rdfs:subClassOf rdf:resource="ExPaNDS:obtain_electronic_ground_state_properties"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">obtain electronic band structure</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- ExPaNDS:obtain_electronic_density_of_occupied_states -->
+
+    <owl:Class rdf:about="ExPaNDS:obtain_electronic_density_of_occupied_states">
+        <rdfs:subClassOf rdf:resource="ExPaNDS:obtain_electronic_density_of_states"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">obtain electronic density of occupied states</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- ExPaNDS:obtain_electronic_density_of_states -->
+
+    <owl:Class rdf:about="ExPaNDS:obtain_electronic_density_of_states">
+        <rdfs:subClassOf rdf:resource="ExPaNDS:obtain_electronic_ground_state_properties"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">obtain electronic density of states</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- ExPaNDS:obtain_electronic_density_of_unoccupied_states -->
+
+    <owl:Class rdf:about="ExPaNDS:obtain_electronic_density_of_unoccupied_states">
+        <rdfs:subClassOf rdf:resource="ExPaNDS:obtain_electronic_density_of_states"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">obtain electronic density of unoccupied states</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- ExPaNDS:obtain_electronic_ground_state_properties -->
+
+    <owl:Class rdf:about="ExPaNDS:obtain_electronic_ground_state_properties">
+        <rdfs:subClassOf rdf:resource="ExPaNDS:technique_purpose"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">obtain electronic ground state properties</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- ExPaNDS:obtain_high_resolution_spatial_map -->
+
+    <owl:Class rdf:about="ExPaNDS:obtain_high_resolution_spatial_map">
+        <rdfs:subClassOf rdf:resource="ExPaNDS:obtain_spatial_map"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">obtain high resolution spatial map</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- ExPaNDS:obtain_local_coordination -->
+
+    <owl:Class rdf:about="ExPaNDS:obtain_local_coordination">
+        <rdfs:subClassOf rdf:resource="ExPaNDS:obtain_atomic_structure"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">obtain local coordination</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- ExPaNDS:obtain_magnetic_density -->
+
+    <owl:Class rdf:about="ExPaNDS:obtain_magnetic_density">
+        <rdfs:subClassOf rdf:resource="ExPaNDS:obtain_electronic_ground_state_properties"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">obtain magnetic density</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- ExPaNDS:obtain_magnetic_vector -->
+
+    <owl:Class rdf:about="ExPaNDS:obtain_magnetic_vector">
+        <rdfs:subClassOf rdf:resource="ExPaNDS:obtain_atomic_tensor_properties"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">obtain magnetic vector</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- ExPaNDS:obtain_spatial_map -->
+
+    <owl:Class rdf:about="ExPaNDS:obtain_spatial_map">
+        <rdfs:subClassOf rdf:resource="ExPaNDS:technique_purpose"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">obtain spatial map</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- ExPaNDS:photoemission_spectroscopy -->
+
+    <owl:Class rdf:about="ExPaNDS:photoemission_spectroscopy">
+        <rdfs:subClassOf rdf:resource="ExPaNDS:emission_spectroscopy"/>
+        <rdfs:subClassOf rdf:resource="ExPaNDS:photon_emission_technique"/>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Photoemission_spectroscopy</obo:IAO_0000119>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">photoemission spectroscopy</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- ExPaNDS:photon_and_neutron_technique -->
+
+    <owl:Class rdf:about="ExPaNDS:photon_and_neutron_technique">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">photon and neutron technique</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- ExPaNDS:photon_emission_technique -->
+
+    <owl:Class rdf:about="ExPaNDS:photon_emission_technique">
+        <rdfs:subClassOf rdf:resource="ExPaNDS:emission_technique"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">photon emission technique</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- ExPaNDS:photon_probe -->
+
+    <owl:Class rdf:about="ExPaNDS:photon_probe">
+        <rdfs:subClassOf rdf:resource="ExPaNDS:experimental_probe"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">photon probe</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- ExPaNDS:powder_diffraction -->
+
+    <owl:Class rdf:about="ExPaNDS:powder_diffraction">
+        <rdfs:subClassOf rdf:resource="ExPaNDS:atomic_scale_diffraction_3D_volume_3D_periodic"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">powder diffraction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- ExPaNDS:pulsed_neutron_TOF_probe -->
+
+    <owl:Class rdf:about="ExPaNDS:pulsed_neutron_TOF_probe">
+        <rdfs:subClassOf rdf:resource="ExPaNDS:neutron_probe"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pulsed neutron TOF probe</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- ExPaNDS:reference_beam -->
+
+    <owl:Class rdf:about="ExPaNDS:reference_beam">
+        <rdfs:subClassOf rdf:resource="ExPaNDS:diffraction"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">e.g. holography</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">reference beam</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- ExPaNDS:reflection_technique -->
+
+    <owl:Class rdf:about="ExPaNDS:reflection_technique">
+        <rdfs:subClassOf rdf:resource="ExPaNDS:experimental_physical_process"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">reflection technique</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- ExPaNDS:refraction_technique -->
+
+    <owl:Class rdf:about="ExPaNDS:refraction_technique">
+        <rdfs:subClassOf rdf:resource="ExPaNDS:experimental_physical_process"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">refraction technique</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- ExPaNDS:resonance_phenomenon -->
+
+    <owl:Class rdf:about="ExPaNDS:resonance_phenomenon">
+        <rdfs:subClassOf rdf:resource="ExPaNDS:experimental_physical_process"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">resonance phenomenon</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- ExPaNDS:scanning_probe -->
+
+    <owl:Class rdf:about="ExPaNDS:scanning_probe">
+        <rdfs:subClassOf rdf:resource="ExPaNDS:functional_dependence"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">scanning probe</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- ExPaNDS:scattering_technique -->
+
+    <owl:Class rdf:about="ExPaNDS:scattering_technique">
+        <rdfs:subClassOf rdf:resource="ExPaNDS:experimental_physical_process"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Scattering is any phenomenon where a particle of the same type as the probe is emitted. </obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">scattering technique</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- ExPaNDS:single_crystal_diffraction -->
+
+    <owl:Class rdf:about="ExPaNDS:single_crystal_diffraction">
+        <rdfs:subClassOf rdf:resource="ExPaNDS:atomic_scale_diffraction_3D_volume_3D_periodic"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">single crystal diffraction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- ExPaNDS:soft_x-ray_probe -->
+
+    <owl:Class rdf:about="ExPaNDS:soft_x-ray_probe">
+        <rdfs:subClassOf rdf:resource="ExPaNDS:x-ray_probe"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">soft x-ray probe</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- ExPaNDS:spin_echo_technique -->
+
+    <owl:Class rdf:about="ExPaNDS:spin_echo_technique">
+        <rdfs:subClassOf rdf:resource="ExPaNDS:resonance_phenomenon"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">spin echo technique</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- ExPaNDS:technique_purpose -->
+
+    <owl:Class rdf:about="ExPaNDS:technique_purpose">
+        <rdfs:subClassOf rdf:resource="ExPaNDS:photon_and_neutron_technique"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">technique purpose</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- ExPaNDS:thermal_neutron_probe -->
+
+    <owl:Class rdf:about="ExPaNDS:thermal_neutron_probe">
+        <rdfs:subClassOf rdf:resource="ExPaNDS:neutron_probe"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">thermal neutron probe</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- ExPaNDS:time_dependent_study -->
+
+    <owl:Class rdf:about="ExPaNDS:time_dependent_study">
+        <rdfs:subClassOf rdf:resource="ExPaNDS:obtain_dynamics"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">time dependent study</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- ExPaNDS:versus_emission_momentum -->
+
+    <owl:Class rdf:about="ExPaNDS:versus_emission_momentum">
+        <rdfs:subClassOf rdf:resource="ExPaNDS:versus_emitted_energy"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">versus emission momentum</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- ExPaNDS:versus_emitted_energy -->
+
+    <owl:Class rdf:about="ExPaNDS:versus_emitted_energy">
+        <rdfs:subClassOf rdf:resource="ExPaNDS:versus_energy"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">versus emitted energy</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- ExPaNDS:versus_energy -->
+
+    <owl:Class rdf:about="ExPaNDS:versus_energy">
+        <rdfs:subClassOf rdf:resource="ExPaNDS:functional_dependence"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">versus energy</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- ExPaNDS:versus_energy_loss -->
+
+    <owl:Class rdf:about="ExPaNDS:versus_energy_loss">
+        <rdfs:subClassOf rdf:resource="ExPaNDS:versus_energy"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">versus energy loss</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- ExPaNDS:versus_incident_energy -->
+
+    <owl:Class rdf:about="ExPaNDS:versus_incident_energy">
+        <rdfs:subClassOf rdf:resource="ExPaNDS:versus_energy"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">versus incident energy</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- ExPaNDS:versus_photon_circlar_polarization -->
+
+    <owl:Class rdf:about="ExPaNDS:versus_photon_circlar_polarization">
+        <rdfs:subClassOf rdf:resource="ExPaNDS:versus_polarization"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">versus photon circlar polarization</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- ExPaNDS:versus_photon_linear_polarization -->
+
+    <owl:Class rdf:about="ExPaNDS:versus_photon_linear_polarization">
+        <rdfs:subClassOf rdf:resource="ExPaNDS:versus_polarization"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">versus photon linear polarization</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- ExPaNDS:versus_polarization -->
+
+    <owl:Class rdf:about="ExPaNDS:versus_polarization">
+        <rdfs:subClassOf rdf:resource="ExPaNDS:functional_dependence"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">versus polarization</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- ExPaNDS:versus_sample_electric_field -->
+
+    <owl:Class rdf:about="ExPaNDS:versus_sample_electric_field">
+        <rdfs:subClassOf rdf:resource="ExPaNDS:versus_sample_state"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">versus sample electric field</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- ExPaNDS:versus_sample_magnetic_field -->
+
+    <owl:Class rdf:about="ExPaNDS:versus_sample_magnetic_field">
+        <rdfs:subClassOf rdf:resource="ExPaNDS:versus_sample_state"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">versus sample magnetic field</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- ExPaNDS:versus_sample_pressure -->
+
+    <owl:Class rdf:about="ExPaNDS:versus_sample_pressure">
+        <rdfs:subClassOf rdf:resource="ExPaNDS:versus_sample_state"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">versus sample pressure</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- ExPaNDS:versus_sample_state -->
+
+    <owl:Class rdf:about="ExPaNDS:versus_sample_state">
+        <rdfs:subClassOf rdf:resource="ExPaNDS:functional_dependence"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">versus sample state</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- ExPaNDS:versus_sample_temperature -->
+
+    <owl:Class rdf:about="ExPaNDS:versus_sample_temperature">
+        <rdfs:subClassOf rdf:resource="ExPaNDS:versus_sample_state"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">versus sample temperature</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- ExPaNDS:versus_time -->
+
+    <owl:Class rdf:about="ExPaNDS:versus_time">
+        <rdfs:subClassOf rdf:resource="ExPaNDS:functional_dependence"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">versus time</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- ExPaNDS:verus_position -->
+
+    <owl:Class rdf:about="ExPaNDS:verus_position">
+        <rdfs:subClassOf rdf:resource="ExPaNDS:functional_dependence"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">verus position</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- ExPaNDS:visible_photon_emission_technique -->
+
+    <owl:Class rdf:about="ExPaNDS:visible_photon_emission_technique">
+        <rdfs:subClassOf rdf:resource="ExPaNDS:photon_emission_technique"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">visible photon emission technique</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- ExPaNDS:visible_photon_probe -->
+
+    <owl:Class rdf:about="ExPaNDS:visible_photon_probe">
+        <rdfs:subClassOf rdf:resource="ExPaNDS:UV_visible_photon_probe"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">visible photon probe</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- ExPaNDS:x-ray_emission_technique -->
+
+    <owl:Class rdf:about="ExPaNDS:x-ray_emission_technique">
+        <rdfs:subClassOf rdf:resource="ExPaNDS:photon_emission_technique"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">x-ray emission technique</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- ExPaNDS:x-ray_fluorescence_spectroscopy -->
+
+    <owl:Class rdf:about="ExPaNDS:x-ray_fluorescence_spectroscopy">
+        <rdfs:subClassOf rdf:resource="ExPaNDS:versus_incident_energy"/>
+        <rdfs:subClassOf rdf:resource="ExPaNDS:x-ray_emission_technique"/>
+        <rdfs:subClassOf rdf:resource="ExPaNDS:x-ray_probe"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">x-ray fluorescence spectroscopy</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- ExPaNDS:x-ray_probe -->
+
+    <owl:Class rdf:about="ExPaNDS:x-ray_probe">
+        <rdfs:subClassOf rdf:resource="ExPaNDS:photon_probe"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">x-ray probe</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- ExPaNDS:x-ray_single_crystal_diffraction -->
+
+    <owl:Class rdf:about="ExPaNDS:x-ray_single_crystal_diffraction">
+        <rdfs:subClassOf rdf:resource="ExPaNDS:single_crystal_diffraction"/>
+        <rdfs:subClassOf rdf:resource="ExPaNDS:x-ray_probe"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">x-ray single crystal diffraction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHMO_0000182 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0000182"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- ExPaNDS:my_ARPES_data -->
+
+    <owl:NamedIndividual rdf:about="ExPaNDS:my_ARPES_data">
+        <rdf:type rdf:resource="ExPaNDS:angle_resolved_photoemission_spectroscopy"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">my_ARPES_data</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- ExPaNDS:my_neutron_powder_diffraction_diffraction_data_55 -->
+
+    <owl:NamedIndividual rdf:about="ExPaNDS:my_neutron_powder_diffraction_diffraction_data_55">
+        <rdf:type rdf:resource="ExPaNDS:neutron_powder_diffraction"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">my_neutron_powder_diffraction_diffraction_data_55</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- ExPaNDS:my_neutron_powder_diffraction_diffraction_data_56 -->
+
+    <owl:NamedIndividual rdf:about="ExPaNDS:my_neutron_powder_diffraction_diffraction_data_56">
+        <rdf:type rdf:resource="ExPaNDS:neutron_powder_diffraction"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">my_neutron_powder_diffraction_diffraction_data_56</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- ExPaNDS:my_single_crystal_x-ray_diffraction_data_123 -->
+
+    <owl:NamedIndividual rdf:about="ExPaNDS:my_single_crystal_x-ray_diffraction_data_123">
+        <rdf:type rdf:resource="ExPaNDS:x-ray_single_crystal_diffraction"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">my_single_crystal_x-ray_diffraction_data_123</rdfs:label>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.6) https://github.com/owlcs/owlapi -->
+
