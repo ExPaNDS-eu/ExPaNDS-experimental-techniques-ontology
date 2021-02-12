@@ -1,6 +1,6 @@
 ID,Label,Definition,Definition Source,See Also,Editor,RDF Type,Class Type,Parent IRI,Domain,Range,Individual,Equivalent 
 ID,A rdfs:label,A IAO:0000115,A IAO:0000119,A rdfs:seeAlso,A IAO:0000117,TYPE,CLASS_TYPE,CI,DOMAIN,RANGE,TI %,EC %
-ExPaNDS:photon_and_neutron_technique,photon and neutron technique,,,,,owl:Class,subclass,,,,,
+ExPaNDS:photon_and_neutron_technique,photon and neutron technique,,,,,owl:Class,subclass,OBI:0000070,,,,
 ExPaNDS:experimental_probe,experimental probe,,,,,owl:Class,subclass,photon and neutron technique,,,,
 ExPaNDS:photon_probe,photon probe,,,,,owl:Class,subclass,experimental probe,,,,
 ExPaNDS:IR_photon_probe,IR photon probe,,,,,owl:Class,subclass,photon probe,,,,
