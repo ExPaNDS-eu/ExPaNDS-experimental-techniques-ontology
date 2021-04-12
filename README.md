@@ -2,7 +2,7 @@
 EU Photon and Neutron Experimental technique Ontology.
 This ontology is part of WP3 (Data Catalogue) ExPaNDS project.
 
-## Notes:
+### Notes
 
 Robot software available at https://search.maven.org/artifact/org.obolibrary.robot/robot (currently using v1.8.1)
 
