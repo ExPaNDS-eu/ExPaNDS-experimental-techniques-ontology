@@ -1,12 +1,39 @@
-@prefix : <https://www.diamond.ac.uk/> .
+@prefix : <http://purl.org/PaNscience/PaNET/PaNET.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@base <https://www.diamond.ac.uk/> .
+@base <http://purl.org/PaNscience/PaNET/PaNET.owl> .
 
-<https://www.diamond.ac.uk/> rdf:type owl:Ontology .
+<http://purl.org/PaNscience/PaNET/PaNET.owl> rdf:type owl:Ontology ;
+                                              <http://purl.org/dc/terms/creator> "A. Gonzalez Beltran" ,
+                                                                                 "D Iyayi" ,
+                                                                                 "H Gorzig" ,
+                                                                                 """S P Collins
+orcid.org/0000-0001-5120-0764""" ,
+                                                                                 "S. Da Graca Ramos" ;
+                                              <http://purl.org/dc/terms/license> "https://creativecommons.org/licenses/by/4.0/" ;
+                                              rdfs:comment """An ontology of experimental techniques within the photon and neutron (PaN) domain.
+
+Purpose
+
+The main purpose of this ontology is to provide a controlled vocabulary, global PIDs and annotations 
+for photon and neutron techniques, to support PaN FAIR data catalogue functionality.
+
+Design philosophy
+
+In this simple ontology everything is a class and all classes are techniques. Object property relations
+are implied but not formalized in this version. Subclass/superclass relationships and intersections are 
+used to define specific technique classes in terms of broader superclasses. This is seen as a key
+requirement in order to carry out catalogue searcher for broader concepts, for example.
+
+This project was undertaken under ExPaNDS WP3.2 (https://expands.eu/)
+
+The ontology is can be found here: https://github.com/ExPaNDS-eu/ExPaNDS-experimental-techniques-ontology
+
+Photon and neutron PaN ontologies developed under ExPaNDS are documented here: xxxxxxx""" ;
+                                              owl:versionInfo "Version 0.50 30/4/2021" .
 
 #################################################################
 #    Annotation properties
@@ -18,6 +45,14 @@
 
 ###  http://purl.obolibrary.org/obo/IAO_0000119
 <http://purl.obolibrary.org/obo/IAO_0000119> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> rdf:type owl:AnnotationProperty .
 
 
 ###  http://www.w3.org/2004/02/skos/core#altLabel
@@ -46,7 +81,8 @@
 
 ###  http://purl.obolibrary.org/obo/CHMO_0000182
 <http://purl.obolibrary.org/obo/CHMO_0000182> rdf:type owl:Class ;
-                                              owl:equivalentClass <http://purl.org/PaNscience/PaNET/PaNET01022> .
+                                              owl:equivalentClass <http://purl.org/PaNscience/PaNET/PaNET01022> ;
+                                              rdfs:subClassOf <http://purl.org/PaNscience/PaNET/PaNET01020> .
 
 
 ###  http://purl.org/PaNscience/PaNET/PaNET00001
@@ -256,7 +292,8 @@
 ###  http://purl.org/PaNscience/PaNET/PaNET00401
 <http://purl.org/PaNscience/PaNET/PaNET00401> rdf:type owl:Class ;
                                               owl:equivalentClass <http://purl.org/PaNscience/PaNET/PaNET01106> ;
-                                              rdfs:subClassOf <http://purl.org/PaNscience/PaNET/PaNET00005> ;
+                                              rdfs:subClassOf <http://purl.org/PaNscience/PaNET/PaNET00004> ,
+                                                              <http://purl.org/PaNscience/PaNET/PaNET00005> ;
                                               rdfs:label "obtain spatial map" .
 
 
@@ -468,21 +505,27 @@
 
 ###  http://purl.org/PaNscience/PaNET/PaNET01023
 <http://purl.org/PaNscience/PaNET/PaNET01023> rdf:type owl:Class ;
-                                              rdfs:subClassOf <http://purl.org/PaNscience/PaNET/PaNET01022> ;
+                                              rdfs:subClassOf <http://purl.obolibrary.org/obo/CHMO_0000182> ,
+                                                              <http://purl.org/PaNscience/PaNET/PaNET01022> ,
+                                                              <https://www.wikidata.org/wiki/Q133900> ;
                                               <http://purl.obolibrary.org/obo/IAO_0000119> "https://en.wikipedia.org/wiki/Dynamical_theory_of_diffraction" ;
                                               rdfs:label "dynamical diffraction" .
 
 
 ###  http://purl.org/PaNscience/PaNET/PaNET01024
 <http://purl.org/PaNscience/PaNET/PaNET01024> rdf:type owl:Class ;
-                                              rdfs:subClassOf <http://purl.org/PaNscience/PaNET/PaNET01022> ;
+                                              rdfs:subClassOf <http://purl.obolibrary.org/obo/CHMO_0000182> ,
+                                                              <http://purl.org/PaNscience/PaNET/PaNET01022> ,
+                                                              <https://www.wikidata.org/wiki/Q133900> ;
                                               <http://purl.obolibrary.org/obo/IAO_0000115> "Probe is highly coherent over illuminated sample" ;
                                               rdfs:label "coherent diffraction" .
 
 
 ###  http://purl.org/PaNscience/PaNET/PaNET01025
 <http://purl.org/PaNscience/PaNET/PaNET01025> rdf:type owl:Class ;
-                                              rdfs:subClassOf <http://purl.org/PaNscience/PaNET/PaNET01022> ;
+                                              rdfs:subClassOf <http://purl.obolibrary.org/obo/CHMO_0000182> ,
+                                                              <http://purl.org/PaNscience/PaNET/PaNET01022> ,
+                                                              <https://www.wikidata.org/wiki/Q133900> ;
                                               <http://purl.obolibrary.org/obo/IAO_0000115> "e.g. holography" ;
                                               <http://purl.obolibrary.org/obo/IAO_0000119> "https://en.wikipedia.org/wiki/Reference_beam" ;
                                               rdfs:label "reference beam" .
@@ -490,7 +533,9 @@
 
 ###  http://purl.org/PaNscience/PaNET/PaNET01026
 <http://purl.org/PaNscience/PaNET/PaNET01026> rdf:type owl:Class ;
-                                              rdfs:subClassOf <http://purl.org/PaNscience/PaNET/PaNET01022> ;
+                                              rdfs:subClassOf <http://purl.obolibrary.org/obo/CHMO_0000182> ,
+                                                              <http://purl.org/PaNscience/PaNET/PaNET01022> ,
+                                                              <https://www.wikidata.org/wiki/Q133900> ;
                                               <http://purl.obolibrary.org/obo/IAO_0000115> "essential diffracting structure(s)" ;
                                               rdfs:label "atomic scale diffraction" .
 
@@ -528,7 +573,9 @@
 
 ###  http://purl.org/PaNscience/PaNET/PaNET01032
 <http://purl.org/PaNscience/PaNET/PaNET01032> rdf:type owl:Class ;
-                                              rdfs:subClassOf <http://purl.org/PaNscience/PaNET/PaNET01022> ;
+                                              rdfs:subClassOf <http://purl.obolibrary.org/obo/CHMO_0000182> ,
+                                                              <http://purl.org/PaNscience/PaNET/PaNET01022> ,
+                                                              <https://www.wikidata.org/wiki/Q133900> ;
                                               rdfs:label "micro scale diffraction" .
 
 
@@ -680,13 +727,15 @@
 
 ###  http://purl.org/PaNscience/PaNET/PaNET01056
 <http://purl.org/PaNscience/PaNET/PaNET01056> rdf:type owl:Class ;
-                                              rdfs:subClassOf <http://purl.org/PaNscience/PaNET/PaNET00300> ;
+                                              rdfs:subClassOf <http://purl.org/PaNscience/PaNET/PaNET00300> ,
+                                                              <http://purl.org/PaNscience/PaNET/PaNET01125> ;
                                               rdfs:label "versus incident energy" .
 
 
 ###  http://purl.org/PaNscience/PaNET/PaNET01057
 <http://purl.org/PaNscience/PaNET/PaNET01057> rdf:type owl:Class ;
-                                              rdfs:subClassOf <http://purl.org/PaNscience/PaNET/PaNET00300> ;
+                                              rdfs:subClassOf <http://purl.org/PaNscience/PaNET/PaNET00300> ,
+                                                              <http://purl.org/PaNscience/PaNET/PaNET01125> ;
                                               rdfs:label "versus emitted energy" .
 
 
@@ -698,7 +747,8 @@
 
 ###  http://purl.org/PaNscience/PaNET/PaNET01059
 <http://purl.org/PaNscience/PaNET/PaNET01059> rdf:type owl:Class ;
-                                              rdfs:subClassOf <http://purl.org/PaNscience/PaNET/PaNET00300> ;
+                                              rdfs:subClassOf <http://purl.org/PaNscience/PaNET/PaNET00300> ,
+                                                              <http://purl.org/PaNscience/PaNET/PaNET01125> ;
                                               rdfs:label "versus energy loss" .
 
 
@@ -754,7 +804,8 @@
 
 ###  http://purl.org/PaNscience/PaNET/PaNET01068
 <http://purl.org/PaNscience/PaNET/PaNET01068> rdf:type owl:Class ;
-                                              rdfs:subClassOf <http://purl.org/PaNscience/PaNET/PaNET00401> ;
+                                              rdfs:subClassOf <http://purl.org/PaNscience/PaNET/PaNET00401> ,
+                                                              <http://purl.org/PaNscience/PaNET/PaNET01106> ;
                                               rdfs:label "obtain high resolution spatial map" .
 
 
@@ -775,7 +826,8 @@
 
 ###  http://purl.org/PaNscience/PaNET/PaNET01071
 <http://purl.org/PaNscience/PaNET/PaNET01071> rdf:type owl:Class ;
-                                              rdfs:subClassOf <http://purl.org/PaNscience/PaNET/PaNET00401> ;
+                                              rdfs:subClassOf <http://purl.org/PaNscience/PaNET/PaNET00401> ,
+                                                              <http://purl.org/PaNscience/PaNET/PaNET01106> ;
                                               rdfs:label "obtain 3D spatial map" .
 
 
@@ -885,6 +937,7 @@
 ###  http://purl.org/PaNscience/PaNET/PaNET01088
 <http://purl.org/PaNscience/PaNET/PaNET01088> rdf:type owl:Class ;
                                               rdfs:subClassOf <http://purl.org/PaNscience/PaNET/PaNET00202> ,
+                                                              <http://purl.org/PaNscience/PaNET/PaNET00401> ,
                                                               <http://purl.org/PaNscience/PaNET/PaNET01106> ;
                                               <http://purl.obolibrary.org/obo/IAO_0000115> "Absorption Contrast Imaging" ;
                                               rdfs:label "absorption contrast imaging" .
@@ -911,7 +964,8 @@
 
 ###  http://purl.org/PaNscience/PaNET/PaNET01091
 <http://purl.org/PaNscience/PaNET/PaNET01091> rdf:type owl:Class ;
-                                              rdfs:subClassOf <http://purl.org/PaNscience/PaNET/PaNET01090> ,
+                                              rdfs:subClassOf <http://purl.org/PaNscience/PaNET/PaNET00300> ,
+                                                              <http://purl.org/PaNscience/PaNET/PaNET01090> ,
                                                               <http://purl.org/PaNscience/PaNET/PaNET01125> ;
                                               rdfs:label "dichroism spectroscopy" .
 
@@ -941,7 +995,8 @@
 <http://purl.org/PaNscience/PaNET/PaNET01095> rdf:type owl:Class ;
                                               rdfs:subClassOf <http://purl.org/PaNscience/PaNET/PaNET01012> ,
                                                               <http://purl.org/PaNscience/PaNET/PaNET01045> ,
-                                                              <http://purl.org/PaNscience/PaNET/PaNET01056> ;
+                                                              <http://purl.org/PaNscience/PaNET/PaNET01056> ,
+                                                              <http://purl.org/PaNscience/PaNET/PaNET01156> ;
                                               rdfs:label "x-ray fluorescence spectroscopy" .
 
 
@@ -954,7 +1009,8 @@
 
 ###  http://purl.org/PaNscience/PaNET/PaNET01097
 <http://purl.org/PaNscience/PaNET/PaNET01097> rdf:type owl:Class ;
-                                              rdfs:subClassOf <http://purl.org/PaNscience/PaNET/PaNET01046> ,
+                                              rdfs:subClassOf <http://purl.org/PaNscience/PaNET/PaNET00300> ,
+                                                              <http://purl.org/PaNscience/PaNET/PaNET01046> ,
                                                               <http://purl.org/PaNscience/PaNET/PaNET01125> ;
                                               <http://purl.obolibrary.org/obo/IAO_0000119> "https://en.wikipedia.org/wiki/Gamma_spectroscopy" ;
                                               rdfs:label "gamma spectroscopy" .
@@ -1006,6 +1062,7 @@
 ###  http://purl.org/PaNscience/PaNET/PaNET01103
 <http://purl.org/PaNscience/PaNET/PaNET01103> rdf:type owl:Class ;
                                               rdfs:subClassOf <http://purl.org/PaNscience/PaNET/PaNET01013> ,
+                                                              <http://purl.org/PaNscience/PaNET/PaNET01156> ,
                                                               <http://purl.org/PaNscience/PaNET/PaNET01202> ;
                                               rdfs:label "hard x-ray photoelectron spectroscopy" ;
                                               <http://www.w3.org/2004/02/skos/core#altLabel> "HAXPES" ,
@@ -1023,7 +1080,8 @@
 
 ###  http://purl.org/PaNscience/PaNET/PaNET01105
 <http://purl.org/PaNscience/PaNET/PaNET01105> rdf:type owl:Class ;
-                                              rdfs:subClassOf <http://purl.org/PaNscience/PaNET/PaNET01025> ,
+                                              rdfs:subClassOf <http://purl.org/PaNscience/PaNET/PaNET00401> ,
+                                                              <http://purl.org/PaNscience/PaNET/PaNET01025> ,
                                                               <http://purl.org/PaNscience/PaNET/PaNET01106> ;
                                               <http://purl.obolibrary.org/obo/IAO_0000119> "https://en.wikipedia.org/wiki/Holography" ;
                                               rdfs:label "holography" .
@@ -1031,7 +1089,8 @@
 
 ###  http://purl.org/PaNscience/PaNET/PaNET01106
 <http://purl.org/PaNscience/PaNET/PaNET01106> rdf:type owl:Class ;
-                                              rdfs:subClassOf <http://purl.org/PaNscience/PaNET/PaNET00004> ;
+                                              rdfs:subClassOf <http://purl.org/PaNscience/PaNET/PaNET00004> ,
+                                                              <http://purl.org/PaNscience/PaNET/PaNET00005> ;
                                               rdfs:label "imaging" .
 
 
@@ -1052,7 +1111,8 @@
 
 ###  http://purl.org/PaNscience/PaNET/PaNET01109
 <http://purl.org/PaNscience/PaNET/PaNET01109> rdf:type owl:Class ;
-                                              rdfs:subClassOf <http://purl.org/PaNscience/PaNET/PaNET01005> ,
+                                              rdfs:subClassOf <http://purl.org/PaNscience/PaNET/PaNET00300> ,
+                                                              <http://purl.org/PaNscience/PaNET/PaNET01005> ,
                                                               <http://purl.org/PaNscience/PaNET/PaNET01125> ;
                                               <http://purl.obolibrary.org/obo/IAO_0000119> "https://en.wikipedia.org/wiki/Infrared_spectroscopy" ;
                                               rdfs:label "infrared spectroscopy" ;
@@ -1075,7 +1135,8 @@
 
 ###  http://purl.org/PaNscience/PaNET/PaNET01112
 <http://purl.org/PaNscience/PaNET/PaNET01112> rdf:type owl:Class ;
-                                              rdfs:subClassOf <http://purl.org/PaNscience/PaNET/PaNET01043> ,
+                                              rdfs:subClassOf <http://purl.org/PaNscience/PaNET/PaNET00401> ,
+                                                              <http://purl.org/PaNscience/PaNET/PaNET01043> ,
                                                               <http://purl.org/PaNscience/PaNET/PaNET01106> ;
                                               rdfs:label "fluorescence imaging" .
 
@@ -1102,13 +1163,15 @@
 ###  http://purl.org/PaNscience/PaNET/PaNET01115
 <http://purl.org/PaNscience/PaNET/PaNET01115> rdf:type owl:Class ;
                                               rdfs:subClassOf <http://purl.org/PaNscience/PaNET/PaNET00300> ,
-                                                              <http://purl.org/PaNscience/PaNET/PaNET01008> ;
+                                                              <http://purl.org/PaNscience/PaNET/PaNET01008> ,
+                                                              <http://purl.org/PaNscience/PaNET/PaNET01125> ;
                                               rdfs:label "optical spectroscopy" .
 
 
 ###  http://purl.org/PaNscience/PaNET/PaNET01116
 <http://purl.org/PaNscience/PaNET/PaNET01116> rdf:type owl:Class ;
                                               rdfs:subClassOf <http://purl.org/PaNscience/PaNET/PaNET00204> ,
+                                                              <http://purl.org/PaNscience/PaNET/PaNET00401> ,
                                                               <http://purl.org/PaNscience/PaNET/PaNET01106> ;
                                               <http://purl.obolibrary.org/obo/IAO_0000119> "https://en.wikipedia.org/wiki/Phase-contrast_imaging" ;
                                               rdfs:label "phase contrast imaging" .
@@ -1159,9 +1222,11 @@
 
 ###  http://purl.org/PaNscience/PaNET/PaNET01122
 <http://purl.org/PaNscience/PaNET/PaNET01122> rdf:type owl:Class ;
-                                              rdfs:subClassOf <http://purl.org/PaNscience/PaNET/PaNET01022> ,
+                                              rdfs:subClassOf <http://purl.obolibrary.org/obo/CHMO_0000182> ,
+                                                              <http://purl.org/PaNscience/PaNET/PaNET01022> ,
                                                               <http://purl.org/PaNscience/PaNET/PaNET01049> ,
-                                                              <http://purl.org/PaNscience/PaNET/PaNET01054> ;
+                                                              <http://purl.org/PaNscience/PaNET/PaNET01054> ,
+                                                              <https://www.wikidata.org/wiki/Q133900> ;
                                               rdfs:label "resonant diffraction" ;
                                               <http://www.w3.org/2004/02/skos/core#altLabel> "anomalous diffraction" ,
                                                                                              "anomalous scattering" .
@@ -1179,8 +1244,10 @@
 
 ###  http://purl.org/PaNscience/PaNET/PaNET01124
 <http://purl.org/PaNscience/PaNET/PaNET01124> rdf:type owl:Class ;
-                                              rdfs:subClassOf <http://purl.org/PaNscience/PaNET/PaNET01022> ,
-                                                              <http://purl.org/PaNscience/PaNET/PaNET01037> ;
+                                              rdfs:subClassOf <http://purl.obolibrary.org/obo/CHMO_0000182> ,
+                                                              <http://purl.org/PaNscience/PaNET/PaNET01022> ,
+                                                              <http://purl.org/PaNscience/PaNET/PaNET01037> ,
+                                                              <https://www.wikidata.org/wiki/Q133900> ;
                                               <http://purl.obolibrary.org/obo/IAO_0000119> "https://en.wikipedia.org/wiki/Small-angle_scattering" ;
                                               rdfs:label "small angle scattering" ;
                                               <http://www.w3.org/2004/02/skos/core#altLabel> "SAS" ,
@@ -1224,7 +1291,8 @@
 
 ###  http://purl.org/PaNscience/PaNET/PaNET01130
 <http://purl.org/PaNscience/PaNET/PaNET01130> rdf:type owl:Class ;
-                                              rdfs:subClassOf <http://purl.org/PaNscience/PaNET/PaNET01009> ,
+                                              rdfs:subClassOf <http://purl.org/PaNscience/PaNET/PaNET00300> ,
+                                                              <http://purl.org/PaNscience/PaNET/PaNET01009> ,
                                                               <http://purl.org/PaNscience/PaNET/PaNET01125> ;
                                               rdfs:label "UV VUV spectroscopy" .
 
@@ -1261,14 +1329,18 @@
 ###  http://purl.org/PaNscience/PaNET/PaNET01135
 <http://purl.org/PaNscience/PaNET/PaNET01135> rdf:type owl:Class ;
                                               rdfs:subClassOf <http://purl.org/PaNscience/PaNET/PaNET00202> ,
+                                                              <http://purl.org/PaNscience/PaNET/PaNET00300> ,
                                                               <http://purl.org/PaNscience/PaNET/PaNET01125> ;
                                               rdfs:label "absorption spectroscopy" .
 
 
 ###  http://purl.org/PaNscience/PaNET/PaNET01136
 <http://purl.org/PaNscience/PaNET/PaNET01136> rdf:type owl:Class ;
-                                              rdfs:subClassOf <http://purl.org/PaNscience/PaNET/PaNET01022> ,
-                                                              <http://purl.org/PaNscience/PaNET/PaNET01106> ;
+                                              rdfs:subClassOf <http://purl.obolibrary.org/obo/CHMO_0000182> ,
+                                                              <http://purl.org/PaNscience/PaNET/PaNET00401> ,
+                                                              <http://purl.org/PaNscience/PaNET/PaNET01022> ,
+                                                              <http://purl.org/PaNscience/PaNET/PaNET01106> ,
+                                                              <https://www.wikidata.org/wiki/Q133900> ;
                                               rdfs:label "diffraction imaging" ;
                                               <http://www.w3.org/2004/02/skos/core#altLabel> "topography" .
 
@@ -1374,6 +1446,7 @@
 <http://purl.org/PaNscience/PaNET/PaNET01147> rdf:type owl:Class ;
                                               rdfs:subClassOf <http://purl.org/PaNscience/PaNET/PaNET00104> ,
                                                               <http://purl.org/PaNscience/PaNET/PaNET00303> ,
+                                                              <http://purl.org/PaNscience/PaNET/PaNET00401> ,
                                                               <http://purl.org/PaNscience/PaNET/PaNET01106> ;
                                               rdfs:label "scanning probe imaging" .
 
@@ -1450,13 +1523,18 @@
                                                                                        ) ;
                                                                     rdf:type owl:Class
                                                                   ] ;
+                                              rdfs:subClassOf <http://purl.org/PaNscience/PaNET/PaNET00300> ,
+                                                              <http://purl.org/PaNscience/PaNET/PaNET01012> ,
+                                                              <http://purl.org/PaNscience/PaNET/PaNET01125> ;
                                               <http://purl.obolibrary.org/obo/IAO_0000119> "https://en.wikipedia.org/wiki/X-ray_spectroscopy" ;
                                               rdfs:label "x-ray spectroscopy" .
 
 
 ###  http://purl.org/PaNscience/PaNET/PaNET01157
 <http://purl.org/PaNscience/PaNET/PaNET01157> rdf:type owl:Class ;
-                                              rdfs:subClassOf <http://purl.org/PaNscience/PaNET/PaNET01022> ;
+                                              rdfs:subClassOf <http://purl.obolibrary.org/obo/CHMO_0000182> ,
+                                                              <http://purl.org/PaNscience/PaNET/PaNET01022> ,
+                                                              <https://www.wikidata.org/wiki/Q133900> ;
                                               rdfs:label "in-situ diffraction" .
 
 
@@ -1523,6 +1601,7 @@
                                               rdfs:subClassOf <http://purl.org/PaNscience/PaNET/PaNET00300> ,
                                                               <http://purl.org/PaNscience/PaNET/PaNET01012> ,
                                                               <http://purl.org/PaNscience/PaNET/PaNET01054> ,
+                                                              <http://purl.org/PaNscience/PaNET/PaNET01156> ,
                                                               <http://purl.org/PaNscience/PaNET/PaNET01164> ;
                                               <http://purl.obolibrary.org/obo/IAO_0000119> "https://en.wikipedia.org/wiki/Multi-wavelength_anomalous_dispersion" ;
                                               rdfs:label "multi wavelength anomalous diffraction" ;
@@ -1595,10 +1674,12 @@
 
 ###  http://purl.org/PaNscience/PaNET/PaNET01173
 <http://purl.org/PaNscience/PaNET/PaNET01173> rdf:type owl:Class ;
-                                              rdfs:subClassOf <http://purl.org/PaNscience/PaNET/PaNET00202> ,
+                                              rdfs:subClassOf <http://purl.obolibrary.org/obo/CHMO_0000182> ,
+                                                              <http://purl.org/PaNscience/PaNET/PaNET00202> ,
                                                               <http://purl.org/PaNscience/PaNET/PaNET00400> ,
                                                               <http://purl.org/PaNscience/PaNET/PaNET01012> ,
-                                                              <http://purl.org/PaNscience/PaNET/PaNET01022> ;
+                                                              <http://purl.org/PaNscience/PaNET/PaNET01022> ,
+                                                              <https://www.wikidata.org/wiki/Q133900> ;
                                               <http://purl.obolibrary.org/obo/IAO_0000119> "https://en.wikipedia.org/wiki/X-ray_standing_waves" ;
                                               rdfs:label "x-ray standing wave" ;
                                               <http://www.w3.org/2004/02/skos/core#altLabel> "XSW" .
@@ -1606,7 +1687,8 @@
 
 ###  http://purl.org/PaNscience/PaNET/PaNET01174
 <http://purl.org/PaNscience/PaNET/PaNET01174> rdf:type owl:Class ;
-                                              rdfs:subClassOf <http://purl.org/PaNscience/PaNET/PaNET01024> ,
+                                              rdfs:subClassOf <http://purl.org/PaNscience/PaNET/PaNET00401> ,
+                                                              <http://purl.org/PaNscience/PaNET/PaNET01024> ,
                                                               <http://purl.org/PaNscience/PaNET/PaNET01106> ;
                                               <http://purl.obolibrary.org/obo/IAO_0000119> "https://en.wikipedia.org/wiki/Coherent_diffraction_imaging" ;
                                               rdfs:label "coherent diffraction imaging" ;
@@ -1616,7 +1698,8 @@
 
 ###  http://purl.org/PaNscience/PaNET/PaNET01175
 <http://purl.org/PaNscience/PaNET/PaNET01175> rdf:type owl:Class ;
-                                              rdfs:subClassOf <http://purl.org/PaNscience/PaNET/PaNET01005> ,
+                                              rdfs:subClassOf <http://purl.org/PaNscience/PaNET/PaNET00300> ,
+                                                              <http://purl.org/PaNscience/PaNET/PaNET01005> ,
                                                               <http://purl.org/PaNscience/PaNET/PaNET01070> ,
                                                               <http://purl.org/PaNscience/PaNET/PaNET01125> ;
                                               rdfs:label "infrared nanospectroscopy imaging" ;
@@ -1627,6 +1710,7 @@
 <http://purl.org/PaNscience/PaNET/PaNET01176> rdf:type owl:Class ;
                                               rdfs:subClassOf <http://purl.org/PaNscience/PaNET/PaNET00401> ,
                                                               <http://purl.org/PaNscience/PaNET/PaNET01009> ,
+                                                              <http://purl.org/PaNscience/PaNET/PaNET01106> ,
                                                               <http://purl.org/PaNscience/PaNET/PaNET01144> ;
                                               rdfs:label "UV circular dichroism imaging" .
 
@@ -1666,8 +1750,10 @@
 
 ###  http://purl.org/PaNscience/PaNET/PaNET01181
 <http://purl.org/PaNscience/PaNET/PaNET01181> rdf:type owl:Class ;
-                                              rdfs:subClassOf <http://purl.org/PaNscience/PaNET/PaNET01022> ,
-                                                              <http://purl.org/PaNscience/PaNET/PaNET01083> ;
+                                              rdfs:subClassOf <http://purl.obolibrary.org/obo/CHMO_0000182> ,
+                                                              <http://purl.org/PaNscience/PaNET/PaNET01022> ,
+                                                              <http://purl.org/PaNscience/PaNET/PaNET01083> ,
+                                                              <https://www.wikidata.org/wiki/Q133900> ;
                                               <http://purl.obolibrary.org/obo/IAO_0000119> "https://en.wikipedia.org/wiki/Pair_distribution_function" ;
                                               rdfs:label "pair distribution function" ;
                                               <http://www.w3.org/2004/02/skos/core#altLabel> "PDF" .
@@ -1772,7 +1858,8 @@
                                               rdfs:subClassOf <http://purl.org/PaNscience/PaNET/PaNET00208> ,
                                                               <http://purl.org/PaNscience/PaNET/PaNET01012> ,
                                                               <http://purl.org/PaNscience/PaNET/PaNET01054> ,
-                                                              <http://purl.org/PaNscience/PaNET/PaNET01125> ;
+                                                              <http://purl.org/PaNscience/PaNET/PaNET01125> ,
+                                                              <http://purl.org/PaNscience/PaNET/PaNET01156> ;
                                               <http://purl.obolibrary.org/obo/IAO_0000119> "https://en.wikipedia.org/wiki/Energy-dispersive_X-ray_spectroscopy" ;
                                               rdfs:label "energy dispersive x-ray spectroscopy" ;
                                               <http://www.w3.org/2004/02/skos/core#altLabel> "EDX" .
@@ -1781,6 +1868,7 @@
 ###  http://purl.org/PaNscience/PaNET/PaNET01194
 <http://purl.org/PaNscience/PaNET/PaNET01194> rdf:type owl:Class ;
                                               rdfs:subClassOf <http://purl.org/PaNscience/PaNET/PaNET00106> ,
+                                                              <http://purl.org/PaNscience/PaNET/PaNET00300> ,
                                                               <http://purl.org/PaNscience/PaNET/PaNET01125> ;
                                               rdfs:label "microfocus spectroscopy" .
 
@@ -1797,7 +1885,8 @@
 <http://purl.org/PaNscience/PaNET/PaNET01196> rdf:type owl:Class ;
                                               rdfs:subClassOf <http://purl.org/PaNscience/PaNET/PaNET01012> ,
                                                               <http://purl.org/PaNscience/PaNET/PaNET01054> ,
-                                                              <http://purl.org/PaNscience/PaNET/PaNET01135> ;
+                                                              <http://purl.org/PaNscience/PaNET/PaNET01135> ,
+                                                              <http://purl.org/PaNscience/PaNET/PaNET01156> ;
                                               <http://purl.obolibrary.org/obo/IAO_0000119> "https://en.wikipedia.org/wiki/X-ray_absorption_spectroscopy" ;
                                               rdfs:label "x-ray absorption spectroscopy" ;
                                               <http://www.w3.org/2004/02/skos/core#altLabel> "XAS" .
@@ -1836,7 +1925,8 @@
                                               rdfs:subClassOf <http://purl.org/PaNscience/PaNET/PaNET01012> ,
                                                               <http://purl.org/PaNscience/PaNET/PaNET01034> ,
                                                               <http://purl.org/PaNscience/PaNET/PaNET01043> ,
-                                                              <http://purl.org/PaNscience/PaNET/PaNET01125> ;
+                                                              <http://purl.org/PaNscience/PaNET/PaNET01125> ,
+                                                              <http://purl.org/PaNscience/PaNET/PaNET01156> ;
                                               <http://purl.obolibrary.org/obo/IAO_0000119> "https://en.wikipedia.org/wiki/X-ray_emission_spectroscopy" ;
                                               rdfs:label "x-ray emission spectroscopy" ;
                                               <http://www.w3.org/2004/02/skos/core#altLabel> "XES" .
@@ -1844,7 +1934,8 @@
 
 ###  http://purl.org/PaNscience/PaNET/PaNET01201
 <http://purl.org/PaNscience/PaNET/PaNET01201> rdf:type owl:Class ;
-                                              rdfs:subClassOf <http://purl.org/PaNscience/PaNET/PaNET01047> ,
+                                              rdfs:subClassOf <http://purl.org/PaNscience/PaNET/PaNET00300> ,
+                                                              <http://purl.org/PaNscience/PaNET/PaNET01047> ,
                                                               <http://purl.org/PaNscience/PaNET/PaNET01125> ;
                                               <http://purl.obolibrary.org/obo/IAO_0000119> "https://en.wikipedia.org/wiki/Electron_spectroscopy" ;
                                               rdfs:label "electron spectroscopy" .
@@ -1870,6 +1961,7 @@
 ###  http://purl.org/PaNscience/PaNET/PaNET01204
 <http://purl.org/PaNscience/PaNET/PaNET01204> rdf:type owl:Class ;
                                               rdfs:subClassOf <http://purl.org/PaNscience/PaNET/PaNET01012> ,
+                                                              <http://purl.org/PaNscience/PaNET/PaNET01156> ,
                                                               <http://purl.org/PaNscience/PaNET/PaNET01202> ;
                                               <http://purl.obolibrary.org/obo/IAO_0000119> "https://en.wikipedia.org/wiki/X-ray_photoelectron_spectroscopy" ;
                                               rdfs:label "x-ray photoelectron spectroscopy" ;
@@ -1961,16 +2053,20 @@
 
 ###  http://purl.org/PaNscience/PaNET/PaNET01216
 <http://purl.org/PaNscience/PaNET/PaNET01216> rdf:type owl:Class ;
-                                              rdfs:subClassOf <http://purl.org/PaNscience/PaNET/PaNET01012> ,
-                                                              <http://purl.org/PaNscience/PaNET/PaNET01022> ;
+                                              rdfs:subClassOf <http://purl.obolibrary.org/obo/CHMO_0000182> ,
+                                                              <http://purl.org/PaNscience/PaNET/PaNET01012> ,
+                                                              <http://purl.org/PaNscience/PaNET/PaNET01022> ,
+                                                              <https://www.wikidata.org/wiki/Q133900> ;
                                               rdfs:label "x-ray diffraction" ;
                                               <http://www.w3.org/2004/02/skos/core#altLabel> "XRD" .
 
 
 ###  http://purl.org/PaNscience/PaNET/PaNET01217
 <http://purl.org/PaNscience/PaNET/PaNET01217> rdf:type owl:Class ;
-                                              rdfs:subClassOf <http://purl.org/PaNscience/PaNET/PaNET00101> ,
-                                                              <http://purl.org/PaNscience/PaNET/PaNET01022> ;
+                                              rdfs:subClassOf <http://purl.obolibrary.org/obo/CHMO_0000182> ,
+                                                              <http://purl.org/PaNscience/PaNET/PaNET00101> ,
+                                                              <http://purl.org/PaNscience/PaNET/PaNET01022> ,
+                                                              <https://www.wikidata.org/wiki/Q133900> ;
                                               <http://purl.obolibrary.org/obo/IAO_0000119> "https://en.wikipedia.org/wiki/Neutron_diffraction" ;
                                               rdfs:label "neutron diffraction" .
 
@@ -2049,7 +2145,9 @@
 
 ###  http://purl.org/PaNscience/PaNET/PaNET01228
 <http://purl.org/PaNscience/PaNET/PaNET01228> rdf:type owl:Class ;
-                                              rdfs:subClassOf <http://purl.org/PaNscience/PaNET/PaNET01022> ;
+                                              rdfs:subClassOf <http://purl.obolibrary.org/obo/CHMO_0000182> ,
+                                                              <http://purl.org/PaNscience/PaNET/PaNET01022> ,
+                                                              <https://www.wikidata.org/wiki/Q133900> ;
                                               rdfs:label "nonresonant diffraction" .
 
 
@@ -2062,7 +2160,8 @@
 
 ###  http://purl.org/PaNscience/PaNET/PaNET01230
 <http://purl.org/PaNscience/PaNET/PaNET01230> rdf:type owl:Class ;
-                                              rdfs:subClassOf <http://purl.org/PaNscience/PaNET/PaNET01003> ,
+                                              rdfs:subClassOf <http://purl.org/PaNscience/PaNET/PaNET00401> ,
+                                                              <http://purl.org/PaNscience/PaNET/PaNET01003> ,
                                                               <http://purl.org/PaNscience/PaNET/PaNET01106> ;
                                               rdfs:label "single-shot imaging" .
 
@@ -2163,7 +2262,8 @@
 
 ###  http://purl.org/PaNscience/PaNET/PaNET01244
 <http://purl.org/PaNscience/PaNET/PaNET01244> rdf:type owl:Class ;
-                                              rdfs:subClassOf <http://purl.org/PaNscience/PaNET/PaNET01001> ,
+                                              rdfs:subClassOf <http://purl.org/PaNscience/PaNET/PaNET00300> ,
+                                                              <http://purl.org/PaNscience/PaNET/PaNET01001> ,
                                                               <http://purl.org/PaNscience/PaNET/PaNET01125> ;
                                               rdfs:label "time-of-flight spectrometry" ;
                                               <http://www.w3.org/2004/02/skos/core#altLabel> "TOF spectrometry" ,
@@ -2173,6 +2273,7 @@
 ###  http://purl.org/PaNscience/PaNET/PaNET01245
 <http://purl.org/PaNscience/PaNET/PaNET01245> rdf:type owl:Class ;
                                               rdfs:subClassOf <http://purl.org/PaNscience/PaNET/PaNET00101> ,
+                                                              <http://purl.org/PaNscience/PaNET/PaNET00300> ,
                                                               <http://purl.org/PaNscience/PaNET/PaNET01034> ,
                                                               <http://purl.org/PaNscience/PaNET/PaNET01125> ;
                                               <http://purl.obolibrary.org/obo/IAO_0000119> "Neutron spectroscopy - Wikipedia" ;
@@ -2199,13 +2300,15 @@
 <http://purl.org/PaNscience/PaNET/PaNET01248> rdf:type owl:Class ;
                                               rdfs:subClassOf <http://purl.org/PaNscience/PaNET/PaNET00101> ,
                                                               <http://purl.org/PaNscience/PaNET/PaNET00202> ,
+                                                              <http://purl.org/PaNscience/PaNET/PaNET00401> ,
                                                               <http://purl.org/PaNscience/PaNET/PaNET01106> ;
                                               rdfs:label "neutron transmission radiography" .
 
 
 ###  http://purl.org/PaNscience/PaNET/PaNET01249
 <http://purl.org/PaNscience/PaNET/PaNET01249> rdf:type owl:Class ;
-                                              rdfs:subClassOf <http://purl.org/PaNscience/PaNET/PaNET01017> ,
+                                              rdfs:subClassOf <http://purl.org/PaNscience/PaNET/PaNET00401> ,
+                                                              <http://purl.org/PaNscience/PaNET/PaNET01017> ,
                                                               <http://purl.org/PaNscience/PaNET/PaNET01106> ;
                                               rdfs:label "cold neutron imaging" .
 
@@ -2235,8 +2338,10 @@
 
 ###  http://purl.org/PaNscience/PaNET/PaNET01253
 <http://purl.org/PaNscience/PaNET/PaNET01253> rdf:type owl:Class ;
-                                              rdfs:subClassOf <http://purl.org/PaNscience/PaNET/PaNET00207> ,
-                                                              <http://purl.org/PaNscience/PaNET/PaNET01022> ;
+                                              rdfs:subClassOf <http://purl.obolibrary.org/obo/CHMO_0000182> ,
+                                                              <http://purl.org/PaNscience/PaNET/PaNET00207> ,
+                                                              <http://purl.org/PaNscience/PaNET/PaNET01022> ,
+                                                              <https://www.wikidata.org/wiki/Q133900> ;
                                               rdfs:label "magnetic diffraction" .
 
 
@@ -2296,6 +2401,7 @@
 ###  http://purl.org/PaNscience/PaNET/PaNET01261
 <http://purl.org/PaNscience/PaNET/PaNET01261> rdf:type owl:Class ;
                                               rdfs:subClassOf <http://purl.org/PaNscience/PaNET/PaNET00204> ,
+                                                              <http://purl.org/PaNscience/PaNET/PaNET00401> ,
                                                               <http://purl.org/PaNscience/PaNET/PaNET01012> ,
                                                               <http://purl.org/PaNscience/PaNET/PaNET01106> ;
                                               rdfs:label "x-ray refraction imaging" ;
@@ -2319,8 +2425,10 @@
 
 ###  http://purl.org/PaNscience/PaNET/PaNET01264
 <http://purl.org/PaNscience/PaNET/PaNET01264> rdf:type owl:Class ;
-                                              rdfs:subClassOf <http://purl.org/PaNscience/PaNET/PaNET01022> ,
-                                                              <http://purl.org/PaNscience/PaNET/PaNET01263> ;
+                                              rdfs:subClassOf <http://purl.obolibrary.org/obo/CHMO_0000182> ,
+                                                              <http://purl.org/PaNscience/PaNET/PaNET01022> ,
+                                                              <http://purl.org/PaNscience/PaNET/PaNET01263> ,
+                                                              <https://www.wikidata.org/wiki/Q133900> ;
                                               rdfs:label "time dependent diffraction" ;
                                               <http://www.w3.org/2004/02/skos/core#altLabel> "time resolved diffraction" .
 
@@ -2462,8 +2570,10 @@
 
 ###  http://purl.org/PaNscience/PaNET/PaNET01283
 <http://purl.org/PaNscience/PaNET/PaNET01283> rdf:type owl:Class ;
-                                              rdfs:subClassOf <http://purl.org/PaNscience/PaNET/PaNET01015> ,
-                                                              <http://purl.org/PaNscience/PaNET/PaNET01022> ;
+                                              rdfs:subClassOf <http://purl.obolibrary.org/obo/CHMO_0000182> ,
+                                                              <http://purl.org/PaNscience/PaNET/PaNET01015> ,
+                                                              <http://purl.org/PaNscience/PaNET/PaNET01022> ,
+                                                              <https://www.wikidata.org/wiki/Q133900> ;
                                               rdfs:label "soft x-ray diffraction" .
 
 
@@ -2476,7 +2586,8 @@
 
 ###  http://purl.org/PaNscience/PaNET/PaNET01285
 <http://purl.org/PaNscience/PaNET/PaNET01285> rdf:type owl:Class ;
-                                              rdfs:subClassOf <http://purl.org/PaNscience/PaNET/PaNET01012> ,
+                                              rdfs:subClassOf <http://purl.org/PaNscience/PaNET/PaNET00401> ,
+                                                              <http://purl.org/PaNscience/PaNET/PaNET01012> ,
                                                               <http://purl.org/PaNscience/PaNET/PaNET01106> ;
                                               <http://purl.obolibrary.org/obo/IAO_0000119> "https://en.wikipedia.org/wiki/Radiography" ;
                                               rdfs:label "x-ray imaging" .
@@ -2574,6 +2685,7 @@
 ###  http://purl.org/PaNscience/PaNET/PaNET01298
 <http://purl.org/PaNscience/PaNET/PaNET01298> rdf:type owl:Class ;
                                               rdfs:subClassOf <http://purl.org/PaNscience/PaNET/PaNET00101> ,
+                                                              <http://purl.org/PaNscience/PaNET/PaNET00300> ,
                                                               <http://purl.org/PaNscience/PaNET/PaNET00403> ,
                                                               <http://purl.org/PaNscience/PaNET/PaNET01020> ,
                                                               <http://purl.org/PaNscience/PaNET/PaNET01125> ;
@@ -2806,7 +2918,8 @@
 
 ###  http://purl.org/PaNscience/PaNET/PaNET01327
 <http://purl.org/PaNscience/PaNET/PaNET01327> rdf:type owl:Class ;
-                                              rdfs:subClassOf <http://purl.org/PaNscience/PaNET/PaNET01106> ,
+                                              rdfs:subClassOf <http://purl.org/PaNscience/PaNET/PaNET00401> ,
+                                                              <http://purl.org/PaNscience/PaNET/PaNET01106> ,
                                                               <http://purl.org/PaNscience/PaNET/PaNET01300> ,
                                                               <http://purl.org/PaNscience/PaNET/PaNET01326> ;
                                               <http://purl.obolibrary.org/obo/IAO_0000119> "https://en.wikipedia.org/wiki/X-ray_birefringence_imaging" ;
@@ -2816,7 +2929,9 @@
 
 ###  http://purl.org/PaNscience/PaNET/PaNET01328
 <http://purl.org/PaNscience/PaNET/PaNET01328> rdf:type owl:Class ;
-                                              rdfs:subClassOf <http://purl.org/PaNscience/PaNET/PaNET01022> ;
+                                              rdfs:subClassOf <http://purl.obolibrary.org/obo/CHMO_0000182> ,
+                                                              <http://purl.org/PaNscience/PaNET/PaNET01022> ,
+                                                              <https://www.wikidata.org/wiki/Q133900> ;
                                               rdfs:label "divergent beam diffraction" .
 
 
@@ -2835,7 +2950,8 @@
 
 
 ###  https://www.wikidata.org/wiki/Q133900
-<https://www.wikidata.org/wiki/Q133900> rdf:type owl:Class .
+<https://www.wikidata.org/wiki/Q133900> rdf:type owl:Class ;
+                                        rdfs:subClassOf <http://purl.org/PaNscience/PaNET/PaNET01020> .
 
 
 #################################################################
@@ -2844,25 +2960,82 @@
 
 ###  PaNET:myARPEStechnique
 <PaNET:myARPEStechnique> rdf:type owl:NamedIndividual ,
-                                  <http://purl.org/PaNscience/PaNET/PaNET01089> ;
+                                  <http://purl.org/PaNscience/PaNET/PaNET00001> ,
+                                  <http://purl.org/PaNscience/PaNET/PaNET00002> ,
+                                  <http://purl.org/PaNscience/PaNET/PaNET00003> ,
+                                  <http://purl.org/PaNscience/PaNET/PaNET00004> ,
+                                  <http://purl.org/PaNscience/PaNET/PaNET00005> ,
+                                  <http://purl.org/PaNscience/PaNET/PaNET00100> ,
+                                  <http://purl.org/PaNscience/PaNET/PaNET00201> ,
+                                  <http://purl.org/PaNscience/PaNET/PaNET00300> ,
+                                  <http://purl.org/PaNscience/PaNET/PaNET00402> ,
+                                  <http://purl.org/PaNscience/PaNET/PaNET01047> ,
+                                  <http://purl.org/PaNscience/PaNET/PaNET01057> ,
+                                  <http://purl.org/PaNscience/PaNET/PaNET01058> ,
+                                  <http://purl.org/PaNscience/PaNET/PaNET01075> ,
+                                  <http://purl.org/PaNscience/PaNET/PaNET01089> ,
+                                  <http://purl.org/PaNscience/PaNET/PaNET01125> ,
+                                  <http://purl.org/PaNscience/PaNET/PaNET01269> ;
                          rdfs:label "myARPEStechnique" .
 
 
 ###  PaNET:myHighResNeutronPowderDiffractionTechnique
 <PaNET:myHighResNeutronPowderDiffractionTechnique> rdf:type owl:NamedIndividual ,
-                                                            <http://purl.org/PaNscience/PaNET/PaNET01234> ;
+                                                            <http://purl.obolibrary.org/obo/CHMO_0000182> ,
+                                                            <http://purl.org/PaNscience/PaNET/PaNET00001> ,
+                                                            <http://purl.org/PaNscience/PaNET/PaNET00002> ,
+                                                            <http://purl.org/PaNscience/PaNET/PaNET00003> ,
+                                                            <http://purl.org/PaNscience/PaNET/PaNET00101> ,
+                                                            <http://purl.org/PaNscience/PaNET/PaNET00200> ,
+                                                            <http://purl.org/PaNscience/PaNET/PaNET01020> ,
+                                                            <http://purl.org/PaNscience/PaNET/PaNET01022> ,
+                                                            <http://purl.org/PaNscience/PaNET/PaNET01026> ,
+                                                            <http://purl.org/PaNscience/PaNET/PaNET01027> ,
+                                                            <http://purl.org/PaNscience/PaNET/PaNET01028> ,
+                                                            <http://purl.org/PaNscience/PaNET/PaNET01030> ,
+                                                            <http://purl.org/PaNscience/PaNET/PaNET01040> ,
+                                                            <http://purl.org/PaNscience/PaNET/PaNET01100> ,
+                                                            <http://purl.org/PaNscience/PaNET/PaNET01217> ,
+                                                            <http://purl.org/PaNscience/PaNET/PaNET01234> ,
+                                                            <https://www.wikidata.org/wiki/Q133900> ;
                                                    rdfs:label "myHighResNeutronPowderDiffractionTechnique" .
 
 
 ###  PaNET:myMicrofocusX-rayAbsorptionSpectroscopyTechnique
 <PaNET:myMicrofocusX-rayAbsorptionSpectroscopyTechnique> rdf:type owl:NamedIndividual ,
+                                                                  <http://purl.org/PaNscience/PaNET/PaNET00001> ,
+                                                                  <http://purl.org/PaNscience/PaNET/PaNET00002> ,
+                                                                  <http://purl.org/PaNscience/PaNET/PaNET00003> ,
+                                                                  <http://purl.org/PaNscience/PaNET/PaNET00004> ,
+                                                                  <http://purl.org/PaNscience/PaNET/PaNET00100> ,
+                                                                  <http://purl.org/PaNscience/PaNET/PaNET00106> ,
+                                                                  <http://purl.org/PaNscience/PaNET/PaNET00202> ,
+                                                                  <http://purl.org/PaNscience/PaNET/PaNET00206> ,
+                                                                  <http://purl.org/PaNscience/PaNET/PaNET00300> ,
+                                                                  <http://purl.org/PaNscience/PaNET/PaNET01012> ,
+                                                                  <http://purl.org/PaNscience/PaNET/PaNET01053> ,
+                                                                  <http://purl.org/PaNscience/PaNET/PaNET01054> ,
+                                                                  <http://purl.org/PaNscience/PaNET/PaNET01125> ,
+                                                                  <http://purl.org/PaNscience/PaNET/PaNET01135> ,
+                                                                  <http://purl.org/PaNscience/PaNET/PaNET01156> ,
+                                                                  <http://purl.org/PaNscience/PaNET/PaNET01196> ,
                                                                   <http://purl.org/PaNscience/PaNET/PaNET01322> ;
                                                          rdfs:label "myMicrofocusX-rayAbsorptionSpectroscopyTechnique" .
 
 
 ###  PaNET:mySingleCrystalDiffractionTechnique
 <PaNET:mySingleCrystalDiffractionTechnique> rdf:type owl:NamedIndividual ,
-                                                     <http://purl.org/PaNscience/PaNET/PaNET01029> ;
+                                                     <http://purl.obolibrary.org/obo/CHMO_0000182> ,
+                                                     <http://purl.org/PaNscience/PaNET/PaNET00001> ,
+                                                     <http://purl.org/PaNscience/PaNET/PaNET00003> ,
+                                                     <http://purl.org/PaNscience/PaNET/PaNET00200> ,
+                                                     <http://purl.org/PaNscience/PaNET/PaNET01020> ,
+                                                     <http://purl.org/PaNscience/PaNET/PaNET01022> ,
+                                                     <http://purl.org/PaNscience/PaNET/PaNET01026> ,
+                                                     <http://purl.org/PaNscience/PaNET/PaNET01027> ,
+                                                     <http://purl.org/PaNscience/PaNET/PaNET01028> ,
+                                                     <http://purl.org/PaNscience/PaNET/PaNET01029> ,
+                                                     <https://www.wikidata.org/wiki/Q133900> ;
                                             rdfs:label "mySingleCrystalDiffractionTechnique" .
 
 
