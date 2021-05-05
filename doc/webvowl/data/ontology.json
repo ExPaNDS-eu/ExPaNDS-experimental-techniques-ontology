@@ -1,0 +1,440 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "undefined" ],
+    "iri" : "http://purl.org/PaNscience/PaNET/PaNET.owl",
+    "version" : "Version 0.50 30/4/2021",
+    "author" : [ "H Gorzig", "D Iyayi", "A. Gonzalez Beltran", "S P Collins\norcid.org/0000-0001-5120-0764", "S. Da Graca Ramos" ],
+    "comments" : {
+      "undefined" : "An ontology of experimental techniques within the photon and neutron (PaN) domain.\n\nPurpose\n\nThe main purpose of this ontology is to provide a controlled vocabulary, global PIDs and annotations \nfor photon and neutron techniques, to support PaN FAIR data catalogue functionality.\n\nDesign philosophy\n\nIn this simple ontology everything is a class and all classes are techniques. Object property relations\nare implied but not formalized in this version. Subclass/superclass relationships and intersections are \nused to define specific technique classes in terms of broader superclasses. This is seen as a key\nrequirement in order to carry out catalogue searcher for broader concepts, for example.\n\nThis project was undertaken under ExPaNDS WP3.2 (https://expands.eu/)\n\nThe ontology is can be found here: https://github.com/ExPaNDS-eu/ExPaNDS-experimental-techniques-ontology\n\nPhoton and neutron PaN ontologies developed under ExPaNDS are documented here: xxxxxxx"
+    },
+    "other" : {
+      "license" : [ {
+        "identifier" : "license",
+        "language" : "undefined",
+        "value" : "https://creativecommons.org/licenses/by/4.0/",
+        "type" : "label"
+      } ],
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "D Iyayi",
+        "type" : "label"
+      }, {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "S. Da Graca Ramos",
+        "type" : "label"
+      }, {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "S P Collins\norcid.org/0000-0001-5120-0764",
+        "type" : "label"
+      }, {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "A. Gonzalez Beltran",
+        "type" : "label"
+      }, {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "H Gorzig",
+        "type" : "label"
+      } ],
+      "versionInfo" : [ {
+        "identifier" : "versionInfo",
+        "language" : "undefined",
+        "value" : "Version 0.50 30/4/2021",
+        "type" : "label"
+      } ]
+    }
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "0",
+    "type" : "owl:Class"
+  }, {
+    "id" : "7",
+    "type" : "owl:Class"
+  }, {
+    "id" : "8",
+    "type" : "owl:Class"
+  }, {
+    "id" : "13",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "12",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "11",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "3",
+    "type" : "owl:Class"
+  }, {
+    "id" : "19",
+    "type" : "owl:Class"
+  }, {
+    "id" : "24",
+    "type" : "owl:Class"
+  }, {
+    "id" : "6",
+    "type" : "owl:Class"
+  }, {
+    "id" : "5",
+    "type" : "owl:Class"
+  }, {
+    "id" : "21",
+    "type" : "owl:Class"
+  }, {
+    "id" : "14",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "10",
+    "type" : "owl:Class"
+  }, {
+    "id" : "2",
+    "type" : "owl:Class"
+  }, {
+    "id" : "25",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "http://purl.org/PaNscience/PaNET/PaNET01047",
+    "baseIri" : "http://purl.org/PaNscience/PaNET",
+    "instances" : 0,
+    "annotations" : {
+      "IAO_0000119" : [ {
+        "identifier" : "IAO_0000119",
+        "language" : "undefined",
+        "value" : "https://en.wikipedia.org/wiki/Electron_emission",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "PaNET01047",
+      "undefined" : "electron emission technique"
+    },
+    "attributes" : [ "external" ],
+    "id" : "0"
+  }, {
+    "iri" : "http://purl.org/PaNscience/PaNET/PaNET01027",
+    "baseIri" : "http://purl.org/PaNscience/PaNET",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "PaNET01027",
+      "undefined" : "atomic scale diffraction 3D volume"
+    },
+    "attributes" : [ "external" ],
+    "id" : "7",
+    "superClasses" : [ "8" ]
+  }, {
+    "iri" : "http://purl.org/PaNscience/PaNET/PaNET01026",
+    "baseIri" : "http://purl.org/PaNscience/PaNET",
+    "instances" : 0,
+    "annotations" : {
+      "IAO_0000115" : [ {
+        "identifier" : "IAO_0000115",
+        "language" : "undefined",
+        "value" : "essential diffracting structure(s)",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "PaNET01026",
+      "undefined" : "atomic scale diffraction"
+    },
+    "subClasses" : [ "7" ],
+    "attributes" : [ "external" ],
+    "id" : "8",
+    "superClasses" : [ "11", "12" ]
+  }, {
+    "iri" : "http://purl.org/PaNscience/PaNET/PaNET01125",
+    "equivalent" : [ "14" ],
+    "baseIri" : "http://purl.org/PaNscience/PaNET",
+    "instances" : 0,
+    "annotations" : {
+      "IAO_0000119" : [ {
+        "identifier" : "IAO_0000119",
+        "language" : "undefined",
+        "value" : "https://en.wikipedia.org/wiki/Spectroscopy",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "PaNET01125",
+      "undefined" : "spectroscopy"
+    },
+    "attributes" : [ "external", "equivalent" ],
+    "id" : "13",
+    "superClasses" : [ "5" ]
+  }, {
+    "iri" : "https://www.wikidata.org/wiki/Q133900",
+    "baseIri" : "https://www.wikidata.org/wiki",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Q133900"
+    },
+    "subClasses" : [ "8", "2" ],
+    "attributes" : [ "external", "equivalent" ],
+    "id" : "12"
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/CHMO_0000182",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "CHMO_0000182"
+    },
+    "subClasses" : [ "8", "2" ],
+    "attributes" : [ "external", "equivalent" ],
+    "id" : "11"
+  }, {
+    "iri" : "http://purl.org/PaNscience/PaNET/PaNET00101",
+    "baseIri" : "http://purl.org/PaNscience/PaNET",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "PaNET00101",
+      "undefined" : "neutron probe"
+    },
+    "subClasses" : [ "2" ],
+    "attributes" : [ "external" ],
+    "id" : "3"
+  }, {
+    "iri" : "http://purl.org/PaNscience/PaNET/PaNET00200",
+    "baseIri" : "http://purl.org/PaNscience/PaNET",
+    "instances" : 0,
+    "annotations" : {
+      "IAO_0000115" : [ {
+        "identifier" : "IAO_0000115",
+        "language" : "undefined",
+        "value" : "Any phenomenon where a particle of the same type as the probe is emitted",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "PaNET00200",
+      "undefined" : "scattering technique"
+    },
+    "attributes" : [ "external" ],
+    "id" : "19",
+    "superClasses" : [ "10" ]
+  }, {
+    "iri" : "http://purl.org/PaNscience/PaNET/PaNET01234",
+    "baseIri" : "http://purl.org/PaNscience/PaNET",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "PaNET01234",
+      "undefined" : "high resolution neutron powder diffraction"
+    },
+    "attributes" : [ "external" ],
+    "id" : "24"
+  }, {
+    "iri" : "http://purl.org/PaNscience/PaNET/PaNET00001",
+    "baseIri" : "http://purl.org/PaNscience/PaNET",
+    "instances" : 0,
+    "annotations" : {
+      "IAO_0000115" : [ {
+        "identifier" : "IAO_0000115",
+        "language" : "undefined",
+        "value" : "A technique in the domain of neutron, muon and accelerator-based light sources",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "PaNET00001",
+      "undefined" : "photon and neutron technique"
+    },
+    "subClasses" : [ "5", "10" ],
+    "attributes" : [ "external" ],
+    "id" : "6"
+  }, {
+    "iri" : "http://purl.org/PaNscience/PaNET/PaNET00004",
+    "baseIri" : "http://purl.org/PaNscience/PaNET",
+    "instances" : 0,
+    "annotations" : {
+      "IAO_0000115" : [ {
+        "identifier" : "IAO_0000115",
+        "language" : "undefined",
+        "value" : "A technique defined by its functional dependence",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "PaNET00004",
+      "undefined" : "defined by functional dependence"
+    },
+    "subClasses" : [ "14", "13" ],
+    "attributes" : [ "external" ],
+    "id" : "5",
+    "superClasses" : [ "6" ]
+  }, {
+    "iri" : "http://purl.org/PaNscience/PaNET/PaNET00202",
+    "baseIri" : "http://purl.org/PaNscience/PaNET",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "PaNET00202",
+      "undefined" : "absorption technique"
+    },
+    "attributes" : [ "external" ],
+    "id" : "21",
+    "superClasses" : [ "10" ]
+  }, {
+    "iri" : "http://purl.org/PaNscience/PaNET/PaNET00300",
+    "baseIri" : "http://purl.org/PaNscience/PaNET",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "PaNET00300",
+      "undefined" : "versus energy"
+    },
+    "attributes" : [ "external", "equivalent" ],
+    "id" : "14",
+    "superClasses" : [ "5" ]
+  }, {
+    "iri" : "http://purl.org/PaNscience/PaNET/PaNET00003",
+    "baseIri" : "http://purl.org/PaNscience/PaNET",
+    "instances" : 0,
+    "annotations" : {
+      "IAO_0000115" : [ {
+        "identifier" : "IAO_0000115",
+        "language" : "undefined",
+        "value" : "A technique defined by a physical process",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "PaNET00003",
+      "undefined" : "defined by experimental physical process"
+    },
+    "subClasses" : [ "19", "21" ],
+    "attributes" : [ "external" ],
+    "id" : "10",
+    "superClasses" : [ "6" ]
+  }, {
+    "iri" : "http://purl.org/PaNscience/PaNET/PaNET01217",
+    "baseIri" : "http://purl.org/PaNscience/PaNET",
+    "instances" : 0,
+    "annotations" : {
+      "IAO_0000119" : [ {
+        "identifier" : "IAO_0000119",
+        "language" : "undefined",
+        "value" : "https://en.wikipedia.org/wiki/Neutron_diffraction",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "PaNET01217",
+      "undefined" : "neutron diffraction"
+    },
+    "attributes" : [ "external" ],
+    "id" : "2",
+    "superClasses" : [ "11", "3", "12" ]
+  }, {
+    "iri" : "http://purl.org/PaNscience/PaNET/PaNET00106",
+    "baseIri" : "http://purl.org/PaNscience/PaNET",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "PaNET00106",
+      "undefined" : "microfocussed probe"
+    },
+    "attributes" : [ "external" ],
+    "id" : "25"
+  } ],
+  "property" : [ {
+    "id" : "1",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "4",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "9",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "15",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "16",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "17",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "18",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "20",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "22",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "23",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "26",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "27",
+    "type" : "rdfs:SubClassOf"
+  } ],
+  "propertyAttribute" : [ {
+    "range" : "3",
+    "domain" : "2",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "1"
+  }, {
+    "range" : "6",
+    "domain" : "5",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "4"
+  }, {
+    "range" : "6",
+    "domain" : "10",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "9"
+  }, {
+    "range" : "5",
+    "domain" : "14",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "15"
+  }, {
+    "range" : "5",
+    "domain" : "13",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "16"
+  }, {
+    "range" : "8",
+    "domain" : "7",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "17"
+  }, {
+    "range" : "10",
+    "domain" : "19",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "18"
+  }, {
+    "range" : "10",
+    "domain" : "21",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "20"
+  }, {
+    "range" : "11",
+    "domain" : "8",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "22"
+  }, {
+    "range" : "11",
+    "domain" : "2",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "23"
+  }, {
+    "range" : "12",
+    "domain" : "8",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "26"
+  }, {
+    "range" : "12",
+    "domain" : "2",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "27"
+  } ]
+}
