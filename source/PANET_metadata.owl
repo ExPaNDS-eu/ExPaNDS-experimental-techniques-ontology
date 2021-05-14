@@ -7,15 +7,16 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:terms="http://purl.org/dc/terms/">
-    <owl:Ontology rdf:about="http://purl.org/PaNScience/PaNET.owl">
+    <owl:Ontology rdf:about="http://purl.org/pan-science/PaNET/PaNET.owl">
         <terms:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A. Gonzalez Beltran</terms:creator>
         <terms:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D Iyayi</terms:creator>
-        <terms:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">H Gorzig</terms:creator>
+        <terms:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">H Gorzig
+orcid.org/0000-0001-9121-8643</terms:creator>
         <terms:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">S P Collins
 orcid.org/0000-0001-5120-0764</terms:creator>
         <terms:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">S. Da Graca Ramos</terms:creator>
         <terms:license rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://creativecommons.org/licenses/by/4.0/</terms:license>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An ontology of experimental techniques within the photon and neutron (PaN) domain.
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Photon and Neutron Experimental Techniqies: An ontology of  techniques within the photon and neutron (PaN) domain.
 
 Purpose
 
@@ -34,7 +35,7 @@ This project was undertaken under ExPaNDS WP3.2 (https://expands.eu/)
 The ontology is can be found here: https://github.com/ExPaNDS-eu/ExPaNDS-experimental-techniques-ontology
 
 Photon and neutron PaN ontologies developed under ExPaNDS are documented here: xxxxxxx</rdfs:comment>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Version 0.50 30/4/2021</owl:versionInfo>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Version 0.60 12/5/2021</owl:versionInfo>
     </owl:Ontology>
     
 
