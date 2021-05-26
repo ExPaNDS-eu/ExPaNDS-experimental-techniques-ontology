@@ -14,6 +14,8 @@ This repository is structured as follows:
 - the **source** folder contains a CSV file with the list of experimental techniques and its relationships, which is used to generate the associated ontology file using the Web Ontology Language (OWL).
 
 
+
+
 ### Notes on Worflow
 
 
@@ -35,6 +37,8 @@ After the PaNET.owl file has been generated, please follow the following steps:
 - Export inferred axioms as ontology; tick all boxes and save to the final owl file; Ontology IRI:http://www.purl.org/pan-science/PaNET/PaNET.owl 
 - Select file name; save as RDF/XML.
 - Update the Widoco documentation
+
+
 
 
 ### Review process and release
