@@ -1,12 +1,15 @@
 # ExPaNDS Photon and Neutron Experimental Techniques (PaNET) ontology
 
-
 The Photon and Neutron Experimental Technique (PaNET) ontology provides a taxonomy of experimental techniques relevant for the Photon and Neutron (PaN) community. This ontology is being developed as part of the [Work Package 3 on EOSC Data Catalogue Services for PaN national Research Infrastructures](https://expands-eu.github.io/WP1-reporting/reports-wp/reports-wp3.html) of the [ExPaNDS project](https://expands.eu/).
 
 
 The ontology allows to add semantic tags to datasets, and other related research objects, to indicate the experimental technique(s) that was (or were) used to create them.
 
-Citation: [10.5281/zenodo.4806026](https://doi.org/10.5281/zenodo.4806026)
+See the associated deliverable on the ExPaNDS ontologies at [10.5281/zenodo.4806026](https://doi.org/10.5281/zenodo.4806026).
+
+To cite the deliverable, please use:
+
+``Collins, Steve P., da Graça Ramos, Silvia, Iyayi, Daniel, Görzig, Heike, González Beltrán, Alejandra, Ashton, Alun, Egli, Stefan, and Minotti, Carlo. “Expands Ontologies V1.0”. Zenodo, June 4, 2021. doi:10.5281/zenodo.4806026.``
 
 This repository is structured as follows:
 - the **doc** folder contains the ontology documentation
@@ -14,8 +17,7 @@ This repository is structured as follows:
 - the **source** folder contains a CSV file with the list of experimental techniques and its relationships, which is used to generate the associated ontology file using the Web Ontology Language (OWL).
 
 
-### Notes on Worflow
-
+### Notes on Workflow
 
 This workflow will be automated using CI in a next release.
 
