@@ -36,7 +36,7 @@ After the PaNET.owl file has been generated, please follow the following steps:
 - Start reasoner (e.g. HermiT)
 - Export inferred axioms as ontology; tick all boxes and save to the final owl file; Ontology IRI:http://www.purl.org/pan-science/PaNET/PaNET.owl 
 - Select file name; save as RDF/XML.
-- Update the Widoco documentation
+- Update the Widoco documentation - this step is done automatically relying on a GitHub Action. 
 
 
 ### Review process and release
