@@ -1,1 +1,0 @@
-Folder for the ontology documentation generated automatically with the [WIDOCO tool](http://dgarijo.github.io/Widoco/). 
