@@ -44,7 +44,7 @@ jobs:
         -includeImportedOntologies \
         -uniteSections \
         -excludeIntroduction
-        cp -r ./doc/* ../doc
+        #cp -r ./doc/* ../doc
         cd ..
 
     - name: Commit files
@@ -52,7 +52,10 @@ jobs:
         git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
         git config --local user.name "github-actions[bot]"
         git pull
+        # Delete previous documentation to avoid conflict before merging to the remote branch
         git rm -r --ignore-unmatch ./doc/.
+        git commit -m "Removing previous documenation"
+        cp -r widoco/doc/* ./doc
         git add ./doc/.
         git commit -m "Add changes to the ontology documentation" -a
         git push
