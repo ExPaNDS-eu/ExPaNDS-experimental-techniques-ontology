@@ -53,9 +53,10 @@ jobs:
         git config --local user.name "github-actions[bot]"
         git add ./doc/.
         git commit -m "Add changes to the ontology documentation" -a
-    - name: Push changes
-      uses: ad-m/github-push-action@master
-      with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        #branch: ${{ github.ref }}
-        branch: master        
+        git push
+    #- name: Push changes
+    #  uses: ad-m/github-push-action@master
+    #  with:
+    #    github_token: ${{ secrets.GITHUB_TOKEN }}
+    #    #branch: ${{ github.ref }}
+    #    branch: master        
