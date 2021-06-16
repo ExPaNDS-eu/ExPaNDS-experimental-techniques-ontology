@@ -11,11 +11,16 @@ To cite the deliverable, please use:
 
 ``Collins, Steve P., da Graça Ramos, Silvia, Iyayi, Daniel, Görzig, Heike, González Beltrán, Alejandra, Ashton, Alun, Egli, Stefan, and Minotti, Carlo. “Expands Ontologies V1.0”. Zenodo, June 4, 2021. doi:10.5281/zenodo.4806026.``
 
+You can see the PaNET ontology documentation at: https://expands-eu.github.io/ExPaNDS-experimental-techniques-ontology/index-en.html
+
+You can also browse the PaNET ontology in BioPortal: https://bioportal.bioontology.org/ontologies/PANET
+
+The ontology is provided using the [CC-BY 4.0license](https://creativecommons.org/licenses/by/4.0/).
+
 This repository is structured as follows:
-- the **doc** folder contains the ontology documentation (produced automatically by a GitHub action)
 - the **meetings** folder contains documents related to the WP3 discussions on the ontology
 - the **source** folder contains a CSV file with the list of experimental techniques and its relationships, which is used to generate the associated ontology file using the Web Ontology Language (OWL).
-
+- - the **gh-pages** branch contains the ontology documentation (produced automatically by a GitHub action)
 
 ### Notes on Workflow
 
