@@ -25,7 +25,7 @@ jobs:
     - name: Checkout repo
       uses: actions/checkout@v2
       with:
-      ref: refs/heads/${{ github.head_ref }}
+        ref: refs/heads/${{ github.head_ref }}
       
     - name: Download widoco
       run: mkdir widoco && wget -O widoco/widoco.jar https://github.com/dgarijo/Widoco/releases/download/v1.4.14/widoco-1.4.14-jar-with-dependencies.jar
