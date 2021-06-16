@@ -12,7 +12,7 @@ To cite the deliverable, please use:
 ``Collins, Steve P., da Graça Ramos, Silvia, Iyayi, Daniel, Görzig, Heike, González Beltrán, Alejandra, Ashton, Alun, Egli, Stefan, and Minotti, Carlo. “Expands Ontologies V1.0”. Zenodo, June 4, 2021. doi:10.5281/zenodo.4806026.``
 
 This repository is structured as follows:
-- the **doc** folder contains the ontology documentation
+- the **doc** folder contains the ontology documentation (produced automatically by a GitHub action)
 - the **meetings** folder contains documents related to the WP3 discussions on the ontology
 - the **source** folder contains a CSV file with the list of experimental techniques and its relationships, which is used to generate the associated ontology file using the Web Ontology Language (OWL).
 
