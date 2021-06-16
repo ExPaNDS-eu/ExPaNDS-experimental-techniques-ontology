@@ -47,14 +47,10 @@ jobs:
         cp -r ./doc/* ../doc
         cd ..
 
-    - name: Commit files
-      run: |
-        git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
-        git config --local user.name "github-actions[bot]"
-        git add ./doc/.
-        git commit -m "Add changes to the ontology documentation" -a
-    - name: Push changes 
-      uses: ad-m/github-push-action@master
+    - name: Publish on Github Pages
+      uses: crazy-max/ghaction-github-pages@v2.3.0
       with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        branch: ${{ github.ref }}        
+        build_dir: doc 
+        publish_dir: target/site
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}   
