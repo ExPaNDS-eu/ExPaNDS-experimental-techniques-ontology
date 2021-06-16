@@ -1,0 +1,64 @@
+@prefix : <http://www.semanticweb.org/spc93/ontologies/2021/2/untitled-ontology-155#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix sdo: <http://schema.org/> .
+@base <http://purl.org/pan-science/PaNET/PaNET.owl> .
+
+<http://purl.org/pan-science/PaNET/PaNET.owl>
+  a owl:Ontology ;
+  dcterms:created "May-19-2021"^^xsd:string ;   
+  dcterms:creator [
+      a foaf:Person ;
+      sdo:affiliation [
+          foaf:homepage <https://stfc.ukri.org/> ;
+          foaf:name "Science and Technology Facilities Council" ;
+        ] ;
+      rdfs:seeAlso <https://orcid.org/0000-0003-3499-8262> ;
+      foaf:name "Alejandra Gonzalez-Beltran" ;
+      foaf:workInfoHomepage <https://agbeltran.github.io/> ;
+    ] ;
+   dcterms:creator [
+      a foaf:Person ;
+      foaf:name "D. Iyayi" ;      
+    ] ;
+   dcterms:creator [
+      a foaf:Person ;     
+      rdfs:seeAlso <https://orcid.org/0000-0001-9121-8643> ;
+      foaf:name "H. Gorzig" ;      
+    ] ; 
+   dcterms:creator [
+      a foaf:Person ;           
+      foaf:name "S. Da Graca Ramos" ;      
+    ] ; 
+    dcterms:creator [
+      a foaf:Person ;           
+      foaf:name "S. P. Collins" ;
+      rdfs:seeAlso <https://orcid.org/0000-0001-5120-0764> ;     
+    ] ; 
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+
+    rdfs:comment "Photon and Neutron Experimental Techniqies: An ontology of  techniques within the photon and neutron (PaN) domain.
+
+Purpose
+
+The main purpose of this ontology is to provide a controlled vocabulary, global PIDs and annotations 
+for photon and neutron techniques, to support PaN FAIR data catalogue functionality.
+
+Design philosophy
+
+In this simple ontology everything is a class and all classes are techniques. Object property relations
+are implied but not formalized in this version. Subclass/superclass relationships and intersections are 
+used to define specific technique classes in terms of broader superclasses. This is seen as a key
+requirement in order to carry out catalogue searcher for broader concepts, for example.
+
+This project was undertaken under ExPaNDS WP3.2 (https://expands.eu/)
+
+The ontology is can be found here: https://github.com/ExPaNDS-eu/ExPaNDS-experimental-techniques-ontology
+
+Photon and neutron PaN ontologies developed under ExPaNDS are documented here: xxxxxxx"^^xsd:string ;
+owl:versionInfo "1.0"^^xsd:string .
