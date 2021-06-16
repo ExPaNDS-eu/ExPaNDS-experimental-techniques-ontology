@@ -55,7 +55,6 @@ jobs:
         rm -rf ./doc/*
         cp -r widoco/doc/* ./doc
         rm -rf ./widoco
-        git rm -r --ignore-unmatch doc 
         git add ./doc/.
         git commit -m "Add changes to the ontology documentation" -a
      
