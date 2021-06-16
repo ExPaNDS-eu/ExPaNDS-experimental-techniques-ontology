@@ -2,7 +2,7 @@
   "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
   "header" : {
     "languages" : [ "undefined" ],
-    "baseIris" : [ "http://www.w3.org/2000/01/rdf-schema", "http://www.w3.org/2001/XMLSchema" ],
+    "baseIris" : [ "http://purl.obolibrary.org/obo", "http://www.w3.org/2000/01/rdf-schema", "http://www.w3.org/2001/XMLSchema", "https://www.wikidata.org/wiki", "http://purl.org/pan-science/PaNET" ],
     "iri" : "http://www.purl.org/pan-science/PaNET/PaNET.owl",
     "version" : "1.0",
     "author" : [ "H. Gorzig\norcid.org/0000-0001-9121-8643", "S. P. Collins\norcid.org/0000-0001-5120-0764", "A. Gonzalez Beltran", "D. Iyayi", "S. Da Graca Ramos" ],
@@ -24,7 +24,7 @@
       }, {
         "identifier" : "creator",
         "language" : "undefined",
-        "value" : "A. Gonzalez Beltran",
+        "value" : "S. P. Collins\norcid.org/0000-0001-5120-0764",
         "type" : "label"
       }, {
         "identifier" : "creator",
@@ -34,7 +34,7 @@
       }, {
         "identifier" : "creator",
         "language" : "undefined",
-        "value" : "S. P. Collins\norcid.org/0000-0001-5120-0764",
+        "value" : "A. Gonzalez Beltran",
         "type" : "label"
       }, {
         "identifier" : "creator",
@@ -56,5 +56,182 @@
       } ]
     }
   },
-  "namespace" : [ ]
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "0",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "1",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "6",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "8",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "10",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "2",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "11",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "4",
+    "type" : "owl:intersectionOf"
+  }, {
+    "id" : "5",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "http://purl.obolibrary.org/obo/CHMO_0000182",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "CHMO_0000182"
+    },
+    "attributes" : [ "equivalent", "external" ],
+    "id" : "0"
+  }, {
+    "iri" : "http://purl.org/pan-science/PaNET/PaNET01106",
+    "equivalent" : [ "2" ],
+    "baseIri" : "http://purl.org/pan-science/PaNET",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "PaNET01106",
+      "undefined" : "imaging"
+    },
+    "attributes" : [ "equivalent", "external" ],
+    "id" : "1"
+  }, {
+    "iri" : "https://www.wikidata.org/wiki/Q133900",
+    "baseIri" : "https://www.wikidata.org/wiki",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Q133900"
+    },
+    "attributes" : [ "equivalent", "external" ],
+    "id" : "6"
+  }, {
+    "iri" : "http://purl.org/pan-science/PaNET/PaNET00300",
+    "equivalent" : [ "10" ],
+    "baseIri" : "http://purl.org/pan-science/PaNET",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "PaNET00300",
+      "undefined" : "versus energy"
+    },
+    "subClasses" : [ "4" ],
+    "attributes" : [ "equivalent", "external" ],
+    "id" : "8"
+  }, {
+    "iri" : "http://purl.org/pan-science/PaNET/PaNET01125",
+    "equivalent" : [ "8" ],
+    "baseIri" : "http://purl.org/pan-science/PaNET",
+    "instances" : 0,
+    "annotations" : {
+      "IAO_0000119" : [ {
+        "identifier" : "IAO_0000119",
+        "language" : "undefined",
+        "value" : "https://en.wikipedia.org/wiki/Spectroscopy",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "PaNET01125",
+      "undefined" : "spectroscopy"
+    },
+    "subClasses" : [ "4" ],
+    "attributes" : [ "equivalent", "external" ],
+    "id" : "10"
+  }, {
+    "iri" : "http://purl.org/pan-science/PaNET/PaNET00401",
+    "equivalent" : [ "1" ],
+    "baseIri" : "http://purl.org/pan-science/PaNET",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "PaNET00401",
+      "undefined" : "obtain spatial map"
+    },
+    "attributes" : [ "equivalent", "external" ],
+    "id" : "2"
+  }, {
+    "iri" : "http://purl.org/pan-science/PaNET/PaNET01022",
+    "equivalent" : [ "0", "6" ],
+    "baseIri" : "http://purl.org/pan-science/PaNET",
+    "instances" : 0,
+    "annotations" : {
+      "IAO_0000119" : [ {
+        "identifier" : "IAO_0000119",
+        "language" : "undefined",
+        "value" : "https://en.wikipedia.org/wiki/Diffraction",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "PaNET01022",
+      "undefined" : "diffraction"
+    },
+    "attributes" : [ "equivalent", "external" ],
+    "id" : "11"
+  }, {
+    "iri" : "http://purl.org/pan-science/PaNET/PaNET01156",
+    "baseIri" : "http://purl.org/pan-science/PaNET",
+    "instances" : 0,
+    "annotations" : {
+      "IAO_0000119" : [ {
+        "identifier" : "IAO_0000119",
+        "language" : "undefined",
+        "value" : "https://en.wikipedia.org/wiki/X-ray_spectroscopy",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "PaNET01156",
+      "undefined" : "x-ray spectroscopy"
+    },
+    "intersection" : [ "10", "5" ],
+    "attributes" : [ "external", "intersection" ],
+    "id" : "4",
+    "superClasses" : [ "8", "10", "5" ]
+  }, {
+    "iri" : "http://purl.org/pan-science/PaNET/PaNET01012",
+    "baseIri" : "http://purl.org/pan-science/PaNET",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "PaNET01012",
+      "undefined" : "x-ray probe"
+    },
+    "subClasses" : [ "4" ],
+    "attributes" : [ "external" ],
+    "id" : "5"
+  } ],
+  "property" : [ {
+    "id" : "3",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "7",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "9",
+    "type" : "rdfs:SubClassOf"
+  } ],
+  "propertyAttribute" : [ {
+    "range" : "5",
+    "domain" : "4",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "3"
+  }, {
+    "range" : "8",
+    "domain" : "4",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "7"
+  }, {
+    "range" : "10",
+    "domain" : "4",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "9"
+  } ]
 }
