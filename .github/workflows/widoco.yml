@@ -5,8 +5,6 @@ name: widoco
 on: 
   push:
     branches: [ '*' ]
-  pull_request:
-    branches: [ '*' ]
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
@@ -41,13 +39,12 @@ jobs:
         -includeImportedOntologies \
         -uniteSections \
         -excludeIntroduction
-        cp -r ./doc/* ../doc
         cd ..
 
     - name: Publish on Github Pages
       uses: crazy-max/ghaction-github-pages@v2.3.0
       with:
-        build_dir: doc 
+        build_dir: widoco/doc 
         publish_dir: target/site
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}   
