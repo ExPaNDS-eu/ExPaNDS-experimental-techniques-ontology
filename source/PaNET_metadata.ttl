@@ -10,11 +10,12 @@
 @prefix vann: <http://purl.org/vocab/vann/>.
 @base <http://purl.org/pan-science/PaNET/PaNET.owl> .
 
-<http://purl.org/pan-science/PaNET/PaNET.owl>
+<http://purl.org/pan-science/PaNET/PaNET-metadata.owl>
   a owl:Ontology ;
   dcterms:created "2021-05-19"^^xsd:string ; 
   vann:preferredNamespaceUri <http://purl.org/pan-science/PaNET/> ; 
   dcterms:title "The Photon and Neutron Experimental Techniques Ontology";
+  sdo:name "The Photon and Neutron Experimental Techniques Ontology";
   vann:preferredNamespacePrefix "panet";   
   dcterms:creator [
       a foaf:Person ;

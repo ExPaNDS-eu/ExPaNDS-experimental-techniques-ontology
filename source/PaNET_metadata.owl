@@ -1,11 +1,11 @@
 <?xml version="1.0"?>
 <Ontology xmlns="http://www.w3.org/2002/07/owl#"
-     xml:base="http://purl.org/pan-science/PaNET/PaNET.owl"
+     xml:base="http://purl.org/pan-science/PaNET/PaNET-metadata.owl"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     ontologyIRI="http://purl.org/pan-science/PaNET/PaNET.owl">
+     ontologyIRI="http://purl.org/pan-science/PaNET/PaNET-metadata.owl">
     <Prefix name="" IRI="http://www.semanticweb.org/spc93/ontologies/2021/2/untitled-ontology-155#"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
@@ -55,6 +55,10 @@
     <Annotation>
         <AnnotationProperty abbreviatedIRI="vann:preferredNamespaceUri"/>
         <IRI>http://purl.org/pan-science/PaNET/</IRI>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="sdo:name"/>
+        <Literal>The Photon and Neutron Experimental Techniques Ontology</Literal>
     </Annotation>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -115,6 +119,9 @@ Photon and neutron PaN ontologies developed under ExPaNDS are documented here: h
     </Declaration>
     <Declaration>
         <AnnotationProperty abbreviatedIRI="dcterms:creator"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="sdo:name"/>
     </Declaration>
     <Declaration>
         <AnnotationProperty abbreviatedIRI="foaf:workInfoHomepage"/>
