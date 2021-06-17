@@ -37,8 +37,7 @@ jobs:
         -webVowl \
         -includeAnnotationProperties \
         -outFolder doc/ \
-        -rewriteAll \
-        -confFile ../source/widoco.config \
+        -rewriteAll \      
         -includeImportedOntologies \
         -uniteSections \
         -excludeIntroduction

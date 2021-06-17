@@ -14,38 +14,51 @@
     <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
     <Prefix name="foaf" IRI="http://xmlns.com/foaf/0.1/"/>
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="vann" IRI="http://purl.org/vocab/vann/"/>
     <Prefix name="dcterms" IRI="http://purl.org/dc/terms/"/>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="dcterms:created"/>
-        <Literal>May-19-2021</Literal>
+        <Literal>2021-05-19</Literal>
     </Annotation>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="dcterms:creator"/>
-        <AnonymousIndividual nodeID="_:genid2147483659"/>
+        <AnonymousIndividual nodeID="_:genid2147483648"/>
     </Annotation>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="dcterms:creator"/>
-        <AnonymousIndividual nodeID="_:genid2147483660"/>
+        <AnonymousIndividual nodeID="_:genid2147483649"/>
     </Annotation>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="dcterms:creator"/>
-        <AnonymousIndividual nodeID="_:genid2147483661"/>
+        <AnonymousIndividual nodeID="_:genid2147483650"/>
     </Annotation>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="dcterms:creator"/>
-        <AnonymousIndividual nodeID="_:genid2147483662"/>
+        <AnonymousIndividual nodeID="_:genid2147483651"/>
     </Annotation>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="dcterms:creator"/>
-        <AnonymousIndividual nodeID="_:genid2147483663"/>
+        <AnonymousIndividual nodeID="_:genid2147483652"/>
     </Annotation>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="dcterms:license"/>
         <IRI>https://creativecommons.org/licenses/by/4.0/</IRI>
     </Annotation>
     <Annotation>
+        <AnnotationProperty abbreviatedIRI="dcterms:title"/>
+        <Literal>The Photon and Neutron Experimental Techniques Ontology</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="vann:preferredNamespacePrefix"/>
+        <Literal>panet</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="vann:preferredNamespaceUri"/>
+        <IRI>http://purl.org/pan-science/PaNET/</IRI>
+    </Annotation>
+    <Annotation>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <Literal>Photon and Neutron Experimental Techniqies: An ontology of  techniques within the photon and neutron (PaN) domain.
+        <Literal>Photon and Neutron Experimental Techniques: An ontology of  techniques within the photon and neutron (PaN) domain.
 
 Purpose
 
@@ -63,12 +76,22 @@ This project was undertaken under ExPaNDS WP3.2 (https://expands.eu/)
 
 The ontology is can be found here: https://github.com/ExPaNDS-eu/ExPaNDS-experimental-techniques-ontology
 
-Photon and neutron PaN ontologies developed under ExPaNDS are documented here: xxxxxxx</Literal>
+Photon and neutron PaN ontologies developed under ExPaNDS are documented here: https://doi.org/10.5281/zenodo.4806026</Literal>
     </Annotation>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="owl:versionInfo"/>
         <Literal>1.0</Literal>
     </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="owl:versionInfo"/>
+        <Literal>First version of the Photon and Neutron Experimental Techniques (PaNET) ontology</Literal>
+    </Annotation>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="dcterms:title"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="vann:preferredNamespaceUri"/>
+    </Declaration>
     <Declaration>
         <AnnotationProperty abbreviatedIRI="foaf:name"/>
     </Declaration>
@@ -77,6 +100,9 @@ Photon and neutron PaN ontologies developed under ExPaNDS are documented here: x
     </Declaration>
     <Declaration>
         <AnnotationProperty abbreviatedIRI="foaf:homepage"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="vann:preferredNamespacePrefix"/>
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="foaf:Person"/>
@@ -95,82 +121,82 @@ Photon and neutron PaN ontologies developed under ExPaNDS are documented here: x
     </Declaration>
     <ClassAssertion>
         <Class abbreviatedIRI="foaf:Person"/>
-        <AnonymousIndividual nodeID="_:genid2147483659"/>
+        <AnonymousIndividual nodeID="_:genid2147483648"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class abbreviatedIRI="foaf:Person"/>
-        <AnonymousIndividual nodeID="_:genid2147483660"/>
+        <AnonymousIndividual nodeID="_:genid2147483649"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class abbreviatedIRI="foaf:Person"/>
-        <AnonymousIndividual nodeID="_:genid2147483661"/>
+        <AnonymousIndividual nodeID="_:genid2147483650"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class abbreviatedIRI="foaf:Person"/>
-        <AnonymousIndividual nodeID="_:genid2147483662"/>
+        <AnonymousIndividual nodeID="_:genid2147483651"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class abbreviatedIRI="foaf:Person"/>
-        <AnonymousIndividual nodeID="_:genid2147483663"/>
+        <AnonymousIndividual nodeID="_:genid2147483652"/>
     </ClassAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="sdo:affiliation"/>
-        <AnonymousIndividual nodeID="_:genid2147483659"/>
-        <AnonymousIndividual nodeID="_:genid2147483664"/>
+        <AnonymousIndividual nodeID="_:genid2147483648"/>
+        <AnonymousIndividual nodeID="_:genid2147483653"/>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
-        <AnonymousIndividual nodeID="_:genid2147483659"/>
+        <AnonymousIndividual nodeID="_:genid2147483648"/>
         <IRI>https://orcid.org/0000-0003-3499-8262</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="foaf:name"/>
-        <AnonymousIndividual nodeID="_:genid2147483659"/>
+        <AnonymousIndividual nodeID="_:genid2147483648"/>
         <Literal>Alejandra Gonzalez-Beltran</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="foaf:workInfoHomepage"/>
-        <AnonymousIndividual nodeID="_:genid2147483659"/>
+        <AnonymousIndividual nodeID="_:genid2147483648"/>
         <IRI>https://agbeltran.github.io/</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="foaf:name"/>
-        <AnonymousIndividual nodeID="_:genid2147483660"/>
+        <AnonymousIndividual nodeID="_:genid2147483649"/>
         <Literal>D. Iyayi</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
-        <AnonymousIndividual nodeID="_:genid2147483661"/>
+        <AnonymousIndividual nodeID="_:genid2147483650"/>
         <IRI>https://orcid.org/0000-0001-9121-8643</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="foaf:name"/>
-        <AnonymousIndividual nodeID="_:genid2147483661"/>
+        <AnonymousIndividual nodeID="_:genid2147483650"/>
         <Literal>H. Gorzig</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="foaf:name"/>
-        <AnonymousIndividual nodeID="_:genid2147483662"/>
+        <AnonymousIndividual nodeID="_:genid2147483651"/>
         <Literal>S. Da Graca Ramos</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
-        <AnonymousIndividual nodeID="_:genid2147483663"/>
+        <AnonymousIndividual nodeID="_:genid2147483652"/>
         <IRI>https://orcid.org/0000-0001-5120-0764</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="foaf:name"/>
-        <AnonymousIndividual nodeID="_:genid2147483663"/>
+        <AnonymousIndividual nodeID="_:genid2147483652"/>
         <Literal>S. P. Collins</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="foaf:homepage"/>
-        <AnonymousIndividual nodeID="_:genid2147483664"/>
+        <AnonymousIndividual nodeID="_:genid2147483653"/>
         <IRI>https://stfc.ukri.org/</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="foaf:name"/>
-        <AnonymousIndividual nodeID="_:genid2147483664"/>
+        <AnonymousIndividual nodeID="_:genid2147483653"/>
         <Literal>Science and Technology Facilities Council</Literal>
     </AnnotationAssertion>
 </Ontology>

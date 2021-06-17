@@ -7,11 +7,15 @@
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix sdo: <http://schema.org/> .
+@prefix vann: <http://purl.org/vocab/vann/>.
 @base <http://purl.org/pan-science/PaNET/PaNET.owl> .
 
 <http://purl.org/pan-science/PaNET/PaNET.owl>
   a owl:Ontology ;
-  dcterms:created "May-19-2021"^^xsd:string ;   
+  dcterms:created "2021-05-19"^^xsd:string ; 
+  vann:preferredNamespaceUri <http://purl.org/pan-science/PaNET/> ; 
+  dcterms:title "The Photon and Neutron Experimental Techniques Ontology";
+  vann:preferredNamespacePrefix "panet";   
   dcterms:creator [
       a foaf:Person ;
       sdo:affiliation [
@@ -42,7 +46,7 @@
     ] ; 
     dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
 
-    rdfs:comment "Photon and Neutron Experimental Techniqies: An ontology of  techniques within the photon and neutron (PaN) domain.
+    rdfs:comment "Photon and Neutron Experimental Techniques: An ontology of  techniques within the photon and neutron (PaN) domain.
 
 Purpose
 
@@ -60,5 +64,6 @@ This project was undertaken under ExPaNDS WP3.2 (https://expands.eu/)
 
 The ontology is can be found here: https://github.com/ExPaNDS-eu/ExPaNDS-experimental-techniques-ontology
 
-Photon and neutron PaN ontologies developed under ExPaNDS are documented here: xxxxxxx"^^xsd:string ;
-owl:versionInfo "1.0"^^xsd:string .
+Photon and neutron PaN ontologies developed under ExPaNDS are documented here: https://doi.org/10.5281/zenodo.4806026"^^xsd:string ;
+owl:versionInfo "1.0"^^xsd:string ;
+owl:versionInfo "First version of the Photon and Neutron Experimental Techniques (PaNET) ontology".
