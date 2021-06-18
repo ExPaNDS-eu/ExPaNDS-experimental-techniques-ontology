@@ -1,21 +1,28 @@
 # ExPaNDS Photon and Neutron Experimental Techniques (PaNET) ontology
 
-
 The Photon and Neutron Experimental Technique (PaNET) ontology provides a taxonomy of experimental techniques relevant for the Photon and Neutron (PaN) community. This ontology is being developed as part of the [Work Package 3 on EOSC Data Catalogue Services for PaN national Research Infrastructures](https://expands-eu.github.io/WP1-reporting/reports-wp/reports-wp3.html) of the [ExPaNDS project](https://expands.eu/).
 
 
 The ontology allows to add semantic tags to datasets, and other related research objects, to indicate the experimental technique(s) that was (or were) used to create them.
 
-Citation: [10.5281/zenodo.4806026](https://doi.org/10.5281/zenodo.4806026)
+See the associated deliverable on the ExPaNDS ontologies at [10.5281/zenodo.4806026](https://doi.org/10.5281/zenodo.4806026).
+
+To cite the deliverable, please use:
+
+``Collins, Steve P., da Graça Ramos, Silvia, Iyayi, Daniel, Görzig, Heike, González Beltrán, Alejandra, Ashton, Alun, Egli, Stefan, and Minotti, Carlo. “Expands Ontologies V1.0”. Zenodo, June 4, 2021. doi:10.5281/zenodo.4806026.``
+
+You can see the PaNET ontology documentation at: https://expands-eu.github.io/ExPaNDS-experimental-techniques-ontology/index-en.html
+
+You can also browse the PaNET ontology in BioPortal: https://bioportal.bioontology.org/ontologies/PANET
+
+The ontology is provided using the [CC-BY 4.0license](https://creativecommons.org/licenses/by/4.0/).
 
 This repository is structured as follows:
-- the **doc** folder contains the ontology documentation
 - the **meetings** folder contains documents related to the WP3 discussions on the ontology
 - the **source** folder contains a CSV file with the list of experimental techniques and its relationships, which is used to generate the associated ontology file using the Web Ontology Language (OWL).
+- - the **gh-pages** branch contains the ontology documentation (produced automatically by a GitHub action)
 
-
-### Notes on Worflow
-
+### Notes on Workflow
 
 This workflow will be automated using CI in a next release.
 
@@ -34,7 +41,7 @@ After the PaNET.owl file has been generated, please follow the following steps:
 - Start reasoner (e.g. HermiT)
 - Export inferred axioms as ontology; tick all boxes and save to the final owl file; Ontology IRI:http://www.purl.org/pan-science/PaNET/PaNET.owl 
 - Select file name; save as RDF/XML.
-- Update the Widoco documentation
+- Update the Widoco documentation - this step is done automatically relying on a GitHub Action. 
 
 
 ### Review process and release
