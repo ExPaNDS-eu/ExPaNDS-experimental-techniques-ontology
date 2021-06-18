@@ -17,8 +17,6 @@
         <owl:imports rdf:resource="http://purl.org/pan-science/PaNET/PaNET-metadata.owl"/>
     </owl:Ontology>
     
-
-
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //

@@ -1,68 +1,63 @@
 <?xml version="1.0"?>
-<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+<rdf:RDF xmlns="http://purl.org/pan-science/PaNET/PaNET-metadata.owl#"
      xml:base="http://purl.org/pan-science/PaNET/PaNET-metadata.owl"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:sdo="http://schema.org/"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     ontologyIRI="http://purl.org/pan-science/PaNET/PaNET-metadata.owl">
-    <Prefix name="" IRI="http://www.semanticweb.org/spc93/ontologies/2021/2/untitled-ontology-155#"/>
-    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
-    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
-    <Prefix name="sdo" IRI="http://schema.org/"/>
-    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
-    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
-    <Prefix name="foaf" IRI="http://xmlns.com/foaf/0.1/"/>
-    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
-    <Prefix name="vann" IRI="http://purl.org/vocab/vann/"/>
-    <Prefix name="dcterms" IRI="http://purl.org/dc/terms/"/>
-    <Annotation>
-        <AnnotationProperty abbreviatedIRI="dcterms:created"/>
-        <Literal>2021-05-19</Literal>
-    </Annotation>
-    <Annotation>
-        <AnnotationProperty abbreviatedIRI="dcterms:creator"/>
-        <AnonymousIndividual nodeID="_:genid2147483648"/>
-    </Annotation>
-    <Annotation>
-        <AnnotationProperty abbreviatedIRI="dcterms:creator"/>
-        <AnonymousIndividual nodeID="_:genid2147483649"/>
-    </Annotation>
-    <Annotation>
-        <AnnotationProperty abbreviatedIRI="dcterms:creator"/>
-        <AnonymousIndividual nodeID="_:genid2147483650"/>
-    </Annotation>
-    <Annotation>
-        <AnnotationProperty abbreviatedIRI="dcterms:creator"/>
-        <AnonymousIndividual nodeID="_:genid2147483651"/>
-    </Annotation>
-    <Annotation>
-        <AnnotationProperty abbreviatedIRI="dcterms:creator"/>
-        <AnonymousIndividual nodeID="_:genid2147483652"/>
-    </Annotation>
-    <Annotation>
-        <AnnotationProperty abbreviatedIRI="dcterms:license"/>
-        <IRI>https://creativecommons.org/licenses/by/4.0/</IRI>
-    </Annotation>
-    <Annotation>
-        <AnnotationProperty abbreviatedIRI="dcterms:title"/>
-        <Literal>The Photon and Neutron Experimental Techniques Ontology</Literal>
-    </Annotation>
-    <Annotation>
-        <AnnotationProperty abbreviatedIRI="vann:preferredNamespacePrefix"/>
-        <Literal>panet</Literal>
-    </Annotation>
-    <Annotation>
-        <AnnotationProperty abbreviatedIRI="vann:preferredNamespaceUri"/>
-        <IRI>http://purl.org/pan-science/PaNET/</IRI>
-    </Annotation>
-    <Annotation>
-        <AnnotationProperty abbreviatedIRI="sdo:name"/>
-        <Literal>The Photon and Neutron Experimental Techniques Ontology</Literal>
-    </Annotation>
-    <Annotation>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <Literal>Photon and Neutron Experimental Techniques: An ontology of  techniques within the photon and neutron (PaN) domain.
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:dcterms="http://purl.org/dc/terms/">
+    <owl:Ontology rdf:about="http://purl.org/pan-science/PaNET/PaNET-metadata.owl">
+        <dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-05-19</dcterms:created>
+        <dcterms:creator>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+                <sdo:affiliation>
+                    <rdf:Description>
+                        <foaf:homepage rdf:resource="https://stfc.ukri.org/"/>
+                        <foaf:name>Science and Technology Facilities Council</foaf:name>
+                    </rdf:Description>
+                </sdo:affiliation>
+                <rdfs:seeAlso rdf:resource="https://orcid.org/0000-0003-3499-8262"/>
+                <foaf:name>Alejandra Gonzalez-Beltran</foaf:name>
+                <foaf:workInfoHomepage rdf:resource="https://agbeltran.github.io/"/>
+            </rdf:Description>
+        </dcterms:creator>
+        <dcterms:creator>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+                <foaf:name>D. Iyayi</foaf:name>
+            </rdf:Description>
+        </dcterms:creator>
+        <dcterms:creator>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+                <rdfs:seeAlso rdf:resource="https://orcid.org/0000-0001-9121-8643"/>
+                <foaf:name>H. Gorzig</foaf:name>
+            </rdf:Description>
+        </dcterms:creator>
+        <dcterms:creator>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+                <foaf:name>S. Da Graca Ramos</foaf:name>
+            </rdf:Description>
+        </dcterms:creator>
+        <dcterms:creator>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+                <rdfs:seeAlso rdf:resource="https://orcid.org/0000-0001-5120-0764"/>
+                <foaf:name>S. P. Collins</foaf:name>
+            </rdf:Description>
+        </dcterms:creator>
+        <dcterms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
+        <dcterms:title>The Photon and Neutron Experimental Techniques Ontology</dcterms:title>
+        <vann:preferredNamespacePrefix>panet</vann:preferredNamespacePrefix>
+        <vann:preferredNamespaceUri rdf:resource="http://purl.org/pan-science/PaNET/"/>
+        <sdo:name>The Photon and Neutron Experimental Techniques Ontology</sdo:name>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Photon and Neutron Experimental Techniques: An ontology of  techniques within the photon and neutron (PaN) domain.
 
 Purpose
 
@@ -80,133 +75,136 @@ This project was undertaken under ExPaNDS WP3.2 (https://expands.eu/)
 
 The ontology is can be found here: https://github.com/ExPaNDS-eu/ExPaNDS-experimental-techniques-ontology
 
-Photon and neutron PaN ontologies developed under ExPaNDS are documented here: https://doi.org/10.5281/zenodo.4806026</Literal>
-    </Annotation>
-    <Annotation>
-        <AnnotationProperty abbreviatedIRI="owl:versionInfo"/>
-        <Literal>1.0</Literal>
-    </Annotation>
-    <Annotation>
-        <AnnotationProperty abbreviatedIRI="owl:versionInfo"/>
-        <Literal>First version of the Photon and Neutron Experimental Techniques (PaNET) ontology</Literal>
-    </Annotation>
-    <Declaration>
-        <AnnotationProperty abbreviatedIRI="dcterms:title"/>
-    </Declaration>
-    <Declaration>
-        <AnnotationProperty abbreviatedIRI="vann:preferredNamespaceUri"/>
-    </Declaration>
-    <Declaration>
-        <AnnotationProperty abbreviatedIRI="foaf:name"/>
-    </Declaration>
-    <Declaration>
-        <AnnotationProperty abbreviatedIRI="dcterms:license"/>
-    </Declaration>
-    <Declaration>
-        <AnnotationProperty abbreviatedIRI="foaf:homepage"/>
-    </Declaration>
-    <Declaration>
-        <AnnotationProperty abbreviatedIRI="vann:preferredNamespacePrefix"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="foaf:Person"/>
-    </Declaration>
-    <Declaration>
-        <AnnotationProperty abbreviatedIRI="sdo:affiliation"/>
-    </Declaration>
-    <Declaration>
-        <AnnotationProperty abbreviatedIRI="dcterms:created"/>
-    </Declaration>
-    <Declaration>
-        <AnnotationProperty abbreviatedIRI="dcterms:creator"/>
-    </Declaration>
-    <Declaration>
-        <AnnotationProperty abbreviatedIRI="sdo:name"/>
-    </Declaration>
-    <Declaration>
-        <AnnotationProperty abbreviatedIRI="foaf:workInfoHomepage"/>
-    </Declaration>
-    <ClassAssertion>
-        <Class abbreviatedIRI="foaf:Person"/>
-        <AnonymousIndividual nodeID="_:genid2147483648"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class abbreviatedIRI="foaf:Person"/>
-        <AnonymousIndividual nodeID="_:genid2147483649"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class abbreviatedIRI="foaf:Person"/>
-        <AnonymousIndividual nodeID="_:genid2147483650"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class abbreviatedIRI="foaf:Person"/>
-        <AnonymousIndividual nodeID="_:genid2147483651"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class abbreviatedIRI="foaf:Person"/>
-        <AnonymousIndividual nodeID="_:genid2147483652"/>
-    </ClassAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="sdo:affiliation"/>
-        <AnonymousIndividual nodeID="_:genid2147483648"/>
-        <AnonymousIndividual nodeID="_:genid2147483653"/>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
-        <AnonymousIndividual nodeID="_:genid2147483648"/>
-        <IRI>https://orcid.org/0000-0003-3499-8262</IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="foaf:name"/>
-        <AnonymousIndividual nodeID="_:genid2147483648"/>
-        <Literal>Alejandra Gonzalez-Beltran</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="foaf:workInfoHomepage"/>
-        <AnonymousIndividual nodeID="_:genid2147483648"/>
-        <IRI>https://agbeltran.github.io/</IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="foaf:name"/>
-        <AnonymousIndividual nodeID="_:genid2147483649"/>
-        <Literal>D. Iyayi</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
-        <AnonymousIndividual nodeID="_:genid2147483650"/>
-        <IRI>https://orcid.org/0000-0001-9121-8643</IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="foaf:name"/>
-        <AnonymousIndividual nodeID="_:genid2147483650"/>
-        <Literal>H. Gorzig</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="foaf:name"/>
-        <AnonymousIndividual nodeID="_:genid2147483651"/>
-        <Literal>S. Da Graca Ramos</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
-        <AnonymousIndividual nodeID="_:genid2147483652"/>
-        <IRI>https://orcid.org/0000-0001-5120-0764</IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="foaf:name"/>
-        <AnonymousIndividual nodeID="_:genid2147483652"/>
-        <Literal>S. P. Collins</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="foaf:homepage"/>
-        <AnonymousIndividual nodeID="_:genid2147483653"/>
-        <IRI>https://stfc.ukri.org/</IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="foaf:name"/>
-        <AnonymousIndividual nodeID="_:genid2147483653"/>
-        <Literal>Science and Technology Facilities Council</Literal>
-    </AnnotationAssertion>
-</Ontology>
+
+Photon and neutron PaN ontologies developed under ExPaNDS are documented here: https://doi.org/10.5281/zenodo.4806026</rdfs:comment>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1.0</owl:versionInfo>
+        <owl:versionInfo>First version of the Photon and Neutron Experimental Techniques (PaNET) ontology</owl:versionInfo>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/terms/created -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/created"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/creator -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/license -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/title -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespacePrefix -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespacePrefix"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespaceUri -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespaceUri"/>
+    
+
+
+    <!-- http://schema.org/affiliation -->
+
+    <owl:AnnotationProperty rdf:about="http://schema.org/affiliation"/>
+    
+
+
+    <!-- http://schema.org/name -->
+
+    <owl:AnnotationProperty rdf:about="http://schema.org/name"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/homepage -->
+
+    <owl:AnnotationProperty rdf:about="http://xmlns.com/foaf/0.1/homepage"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/name -->
+
+    <owl:AnnotationProperty rdf:about="http://xmlns.com/foaf/0.1/name"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/workInfoHomepage -->
+
+    <owl:AnnotationProperty rdf:about="http://xmlns.com/foaf/0.1/workInfoHomepage"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/Person -->
+
+    <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Person"/>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <sdo:affiliation>
+            <rdf:Description>
+                <foaf:homepage rdf:resource="https://stfc.ukri.org/"/>
+                <foaf:name>Science and Technology Facilities Council</foaf:name>
+            </rdf:Description>
+        </sdo:affiliation>
+        <rdfs:seeAlso rdf:resource="https://orcid.org/0000-0003-3499-8262"/>
+        <foaf:name>Alejandra Gonzalez-Beltran</foaf:name>
+        <foaf:workInfoHomepage rdf:resource="https://agbeltran.github.io/"/>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <foaf:name>D. Iyayi</foaf:name>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <rdfs:seeAlso rdf:resource="https://orcid.org/0000-0001-9121-8643"/>
+        <foaf:name>H. Gorzig</foaf:name>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <foaf:name>S. Da Graca Ramos</foaf:name>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <rdfs:seeAlso rdf:resource="https://orcid.org/0000-0001-5120-0764"/>
+        <foaf:name>S. P. Collins</foaf:name>
+    </rdf:Description>
+</rdf:RDF>
 
 
 
