@@ -18,9 +18,10 @@ You can also browse the PaNET ontology in BioPortal: https://bioportal.bioontolo
 The ontology is provided using the [CC-BY 4.0license](https://creativecommons.org/licenses/by/4.0/).
 
 This repository is structured as follows:
-- the **meetings** folder contains documents related to the WP3 discussions on the ontology
-- the **source** folder contains a CSV file with the list of experimental techniques and its relationships, which is used to generate the associated ontology file using the Web Ontology Language (OWL).
-- - the **gh-pages** branch contains the ontology documentation (produced automatically by a GitHub action)
+- the **meetings** folder contains documents related to the WP3 discussions on the ontology,
+- the **source** folder contains a CSV file with the list of experimental techniques and its relationships, which is used to generate the associated ontology file using the Web Ontology Language (OWL),
+- the **releases** folder contains the different releases of the PaNET ontology,
+- the **gh-pages** branch contains the ontology documentation (produced automatically by a GitHub action).
 
 ### Notes on Workflow
 
