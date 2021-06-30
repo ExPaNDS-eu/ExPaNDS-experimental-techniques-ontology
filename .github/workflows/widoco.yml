@@ -30,7 +30,7 @@ jobs:
       run: |
         cd widoco        
         java -jar ./widoco.jar \
-        -ontFile ../source/PaNET.owl \
+        -ontFile ../releases/latest-release/PaNET.owl \
         -oops \
         -webVowl \
         -includeAnnotationProperties \
