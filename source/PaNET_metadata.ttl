@@ -44,6 +44,10 @@
       foaf:name "S. P. Collins" ;
       rdfs:seeAlso <https://orcid.org/0000-0001-5120-0764> ;     
     ] ; 
+    dcterms:creator [
+      a foaf:Person ;
+      foaf:name "G.Koumoutsos" ;
+    ] ;
     dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
 
     rdfs:comment "Photon and Neutron Experimental Techniques: An ontology of  techniques within the photon and neutron (PaN) domain.
