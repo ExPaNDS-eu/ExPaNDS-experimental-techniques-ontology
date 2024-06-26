@@ -48,6 +48,16 @@
       a foaf:Person ;
       foaf:name "G.Koumoutsos" ;
     ] ;
+    dcterms:creator [
+      a foaf:Person ;
+      sdo:affiliation [
+           foaf:homepage <https://desy.de/> ;
+           foaf:name "Deutsches Elektronen-Synchrotron DESY" ;
+           rdfs:seeAlso <https://ror.org/01js2sh04> ;
+      ] ;
+      foaf:name "Paul Millar" ;
+      rdfs:seeAlso <https://orcid.org/0000-0002-3957-1279> ;
+    ] ;
     dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
 
     rdfs:comment "Photon and Neutron Experimental Techniques: An ontology of  techniques within the photon and neutron (PaN) domain.
