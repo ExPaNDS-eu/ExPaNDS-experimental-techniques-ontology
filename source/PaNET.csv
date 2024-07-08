@@ -1,4 +1,4 @@
-﻿,ID,Label,Alt Label 1,Alt Label 2,Definition,Definition Source,RDF Type,Class Type,Parent IRI,Parent IRI,Parent IRI,Parent IRI,Parent IRI,Equivalent ,Equivalent ,Disjoint Classes,Individual,Property Assertions
+,ID,Label,Alt Label 1,Alt Label 2,Definition,Definition Source,RDF Type,Class Type,Parent IRI,Parent IRI,Parent IRI,Parent IRI,Parent IRI,Equivalent ,Equivalent ,Disjoint Classes,Individual,Property Assertions
 ,ID,A rdfs:label,A http://www.w3.org/2004/02/skos/core#altLabel,A http://www.w3.org/2004/02/skos/core#altLabel,A IAO:0000115,A IAO:0000119,TYPE,CLASS_TYPE,CI,CI,CI,CI,CI,EC %,EC %,DC %,TI %,I 'hasTechnique'
 ,,,,,,,,,,,,,,,,,,
 Base IRI,,http://purl.org/pan-science/PaNET/,,,,,,,,,,,,,,,,
