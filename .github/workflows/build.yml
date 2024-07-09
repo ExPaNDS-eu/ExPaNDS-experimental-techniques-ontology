@@ -9,7 +9,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     container:
-      image: gitlab.desy.de:5555/paul.millar/panet-build:v0.4
+      image: gitlab.desy.de:5555/paul.millar/panet-build:v0.5
 
     steps:
       - name: Checkout repo
@@ -27,7 +27,9 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: PaNET
-          path: source/PaNET.owl
+          path: |
+            source/PaNET.owl
+            source/PaNET_reasoned.owl
           retention-days: 7
 
       - name: Upload documentation as artifact
