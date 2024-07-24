@@ -1,0 +1,75 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix PaNET: <http://purl.org/pan-science/PaNET/> .
+@prefix eg: <http://purl.org/pan-science/PaNET/example-1#> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+
+#
+#  Items to be identified
+#
+
+eg:dataset a owl:Class;
+    rdfs:label "dataset";
+    obo:IAO_0000115 "A dataset in the domain of neutron, muon and accelerator-based light sources";
+    .
+
+#
+#  Object properties
+#
+
+eg:hasTechnique a owl:ObjectProperty;
+    rdfs:label "hasTechnique";
+    .
+
+#
+#  Specific techniques
+#
+
+eg:myARPEStechnique a owl:NamedIndividual,
+        PaNET:PaNET01089;
+    rdfs:label "myARPEStechnique";
+    .
+
+eg:myHighResNeutronPowderDiffractionTechnique a owl:NamedIndividual,
+        PaNET:PaNET01234;
+    rdfs:label "myHighResNeutronPowderDiffractionTechnique";
+    .
+
+eg:myMicrofocusX-rayAbsorptionSpectroscopyTechnique a owl:NamedIndividual,
+        PaNET:PaNET01322;
+    rdfs:label "myMicrofocusX-rayAbsorptionSpectroscopyTechnique";
+    .
+
+eg:mySingleCrystalDiffractionTechnique a owl:NamedIndividual,
+        PaNET:PaNET01029;
+    rdfs:label "mySingleCrystalDiffractionTechnique";
+    .
+
+#
+#  Specific datasets
+#
+
+eg:my_ARPES_data a owl:NamedIndividual,
+        eg:dataset;
+    eg:hasTechnique eg:myARPEStechnique;
+    rdfs:label "my_ARPES_data";
+    .
+
+eg:my_microfocus_spectrosopy_data a owl:NamedIndividual,
+        eg:dataset;
+    eg:hasTechnique eg:myMicrofocusX-rayAbsorptionSpectroscopyTechnique;
+    rdfs:label "my_microfocus_spectrosopy_data";
+    .
+
+eg:my_neutron_powder_diffraction_diffraction_data_55 a owl:NamedIndividual,
+        eg:dataset;
+    eg:hasTechnique eg:myHighResNeutronPowderDiffractionTechnique;
+    rdfs:label "my_neutron_powder_diffraction_diffraction_data_55";
+    .
+
+eg:my_single_crystal_x-ray_diffraction_data_123 a owl:NamedIndividual,
+        eg:dataset;
+    eg:hasTechnique eg:mySingleCrystalDiffractionTechnique;
+    rdfs:label "my_single_crystal_x-ray_diffraction_data_123";
+    .
