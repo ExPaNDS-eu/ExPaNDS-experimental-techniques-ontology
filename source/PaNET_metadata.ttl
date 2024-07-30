@@ -60,7 +60,7 @@
     ] ;
     dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
 
-    rdfs:comment "Photon and Neutron Experimental Techniques: An ontology of  techniques within the photon and neutron (PaN) domain.
+    rdfs:comment """Photon and Neutron Experimental Techniques: An ontology of  techniques within the photon and neutron (PaN) domain.
 
 Purpose
 
@@ -78,4 +78,5 @@ This project was undertaken under ExPaNDS WP3.2 (https://expands.eu/)
 
 The ontology is can be found here: https://github.com/ExPaNDS-eu/ExPaNDS-experimental-techniques-ontology
 
-Photon and neutron PaN ontologies developed under ExPaNDS are documented here: https://doi.org/10.5281/zenodo.4806026"^^xsd:string ;
+Photon and neutron PaN ontologies developed under ExPaNDS are documented here: https://doi.org/10.5281/zenodo.4806026"""^^xsd:string ;
+.
