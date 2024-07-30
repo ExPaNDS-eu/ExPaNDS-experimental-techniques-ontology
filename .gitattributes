@@ -1,0 +1,17 @@
+
+## Identify certain files as containing text.
+##
+## A text file is handled specially on OSes that have different
+## line-ending convention from Unix.  On such OSes, the checked-out file
+## is updated to follow the local line-ending convention, while the
+## reverse conversion is applied when updating the repository.  The
+## result is that text files may be edited using OS-native tools, with
+## git taking care of any discrepancy.
+
+# By default, use git's ability to guess whether a file contains text.
+* text=auto
+
+# Identify certain files as text, based on their file extension.
+*.ttl text
+*.csv text
+*.md text
