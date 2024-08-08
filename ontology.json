@@ -1,0 +1,5074 @@
+[ {
+  "@id" : "PaNET:dataset",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.obolibrary.org/obo/IAO_0000115" : [ {
+    "@value" : "A dataset in the domain of neutron, muon and accelerator-based light sources"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "dataset"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Thing"
+  } ]
+}, {
+  "@id" : "PaNET:hasTechnique",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "hasTechnique"
+  } ]
+}, {
+  "@id" : "PaNET:myARPEStechnique",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://purl.org/pan-science/PaNET/PaNET00001", "http://purl.org/pan-science/PaNET/PaNET00002", "http://purl.org/pan-science/PaNET/PaNET00003", "http://purl.org/pan-science/PaNET/PaNET00004", "http://purl.org/pan-science/PaNET/PaNET00005", "http://purl.org/pan-science/PaNET/PaNET00100", "http://purl.org/pan-science/PaNET/PaNET00201", "http://purl.org/pan-science/PaNET/PaNET00300", "http://purl.org/pan-science/PaNET/PaNET00402", "http://purl.org/pan-science/PaNET/PaNET01047", "http://purl.org/pan-science/PaNET/PaNET01057", "http://purl.org/pan-science/PaNET/PaNET01058", "http://purl.org/pan-science/PaNET/PaNET01075", "http://purl.org/pan-science/PaNET/PaNET01089", "http://purl.org/pan-science/PaNET/PaNET01125", "http://purl.org/pan-science/PaNET/PaNET01269" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "myARPEStechnique"
+  } ]
+}, {
+  "@id" : "PaNET:myHighResNeutronPowderDiffractionTechnique",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://purl.obolibrary.org/obo/CHMO_0000182", "http://purl.org/pan-science/PaNET/PaNET00001", "http://purl.org/pan-science/PaNET/PaNET00002", "http://purl.org/pan-science/PaNET/PaNET00003", "http://purl.org/pan-science/PaNET/PaNET00101", "http://purl.org/pan-science/PaNET/PaNET00200", "http://purl.org/pan-science/PaNET/PaNET01020", "http://purl.org/pan-science/PaNET/PaNET01022", "http://purl.org/pan-science/PaNET/PaNET01026", "http://purl.org/pan-science/PaNET/PaNET01027", "http://purl.org/pan-science/PaNET/PaNET01028", "http://purl.org/pan-science/PaNET/PaNET01030", "http://purl.org/pan-science/PaNET/PaNET01040", "http://purl.org/pan-science/PaNET/PaNET01100", "http://purl.org/pan-science/PaNET/PaNET01217", "http://purl.org/pan-science/PaNET/PaNET01234", "https://www.wikidata.org/wiki/Q133900" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "myHighResNeutronPowderDiffractionTechnique"
+  } ]
+}, {
+  "@id" : "PaNET:myMicrofocusX-rayAbsorptionSpectroscopyTechnique",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://purl.org/pan-science/PaNET/PaNET00001", "http://purl.org/pan-science/PaNET/PaNET00002", "http://purl.org/pan-science/PaNET/PaNET00003", "http://purl.org/pan-science/PaNET/PaNET00004", "http://purl.org/pan-science/PaNET/PaNET00100", "http://purl.org/pan-science/PaNET/PaNET00106", "http://purl.org/pan-science/PaNET/PaNET00202", "http://purl.org/pan-science/PaNET/PaNET00206", "http://purl.org/pan-science/PaNET/PaNET00300", "http://purl.org/pan-science/PaNET/PaNET01012", "http://purl.org/pan-science/PaNET/PaNET01053", "http://purl.org/pan-science/PaNET/PaNET01054", "http://purl.org/pan-science/PaNET/PaNET01125", "http://purl.org/pan-science/PaNET/PaNET01135", "http://purl.org/pan-science/PaNET/PaNET01156", "http://purl.org/pan-science/PaNET/PaNET01196", "http://purl.org/pan-science/PaNET/PaNET01322" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "myMicrofocusX-rayAbsorptionSpectroscopyTechnique"
+  } ]
+}, {
+  "@id" : "PaNET:mySingleCrystalDiffractionTechnique",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://purl.obolibrary.org/obo/CHMO_0000182", "http://purl.org/pan-science/PaNET/PaNET00001", "http://purl.org/pan-science/PaNET/PaNET00003", "http://purl.org/pan-science/PaNET/PaNET00200", "http://purl.org/pan-science/PaNET/PaNET01020", "http://purl.org/pan-science/PaNET/PaNET01022", "http://purl.org/pan-science/PaNET/PaNET01026", "http://purl.org/pan-science/PaNET/PaNET01027", "http://purl.org/pan-science/PaNET/PaNET01028", "http://purl.org/pan-science/PaNET/PaNET01029", "https://www.wikidata.org/wiki/Q133900" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "mySingleCrystalDiffractionTechnique"
+  } ]
+}, {
+  "@id" : "PaNET:my_ARPES_data",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "PaNET:dataset" ],
+  "PaNET:hasTechnique" : [ {
+    "@id" : "PaNET:myARPEStechnique"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "my_ARPES_data"
+  } ]
+}, {
+  "@id" : "PaNET:my_microfocus_spectrosopy_data",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "PaNET:dataset" ],
+  "PaNET:hasTechnique" : [ {
+    "@id" : "PaNET:myMicrofocusX-rayAbsorptionSpectroscopyTechnique"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "my_microfocus_spectrosopy_data"
+  } ]
+}, {
+  "@id" : "PaNET:my_neutron_powder_diffraction_diffraction_data_55",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "PaNET:dataset" ],
+  "PaNET:hasTechnique" : [ {
+    "@id" : "PaNET:myHighResNeutronPowderDiffractionTechnique"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "my_neutron_powder_diffraction_diffraction_data_55"
+  } ]
+}, {
+  "@id" : "PaNET:my_single_crystal_x-ray_diffraction_data_123",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "PaNET:dataset" ],
+  "PaNET:hasTechnique" : [ {
+    "@id" : "PaNET:mySingleCrystalDiffractionTechnique"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "my_single_crystal_x-ray_diffraction_data_123"
+  } ]
+}, {
+  "@id" : "_:genid1",
+  "@type" : [ "http://xmlns.com/foaf/0.1/Person" ],
+  "http://schema.org/affiliation" : [ {
+    "@id" : "_:genid2"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@id" : "https://orcid.org/0000-0003-3499-8262"
+  } ],
+  "http://xmlns.com/foaf/0.1/name" : [ {
+    "@value" : "Alejandra Gonzalez-Beltran"
+  } ],
+  "http://xmlns.com/foaf/0.1/workInfoHomepage" : [ {
+    "@id" : "https://agbeltran.github.io/"
+  } ]
+}, {
+  "@id" : "_:genid2",
+  "http://xmlns.com/foaf/0.1/homepage" : [ {
+    "@id" : "https://stfc.ukri.org/"
+  } ],
+  "http://xmlns.com/foaf/0.1/name" : [ {
+    "@value" : "Science and Technology Facilities Council"
+  } ]
+}, {
+  "@id" : "_:genid3",
+  "@type" : [ "http://xmlns.com/foaf/0.1/Person" ],
+  "http://xmlns.com/foaf/0.1/name" : [ {
+    "@value" : "D. Iyayi"
+  } ]
+}, {
+  "@id" : "_:genid4",
+  "@type" : [ "http://xmlns.com/foaf/0.1/Person" ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@id" : "https://orcid.org/0000-0001-9121-8643"
+  } ],
+  "http://xmlns.com/foaf/0.1/name" : [ {
+    "@value" : "H. Gorzig"
+  } ]
+}, {
+  "@id" : "_:genid5",
+  "@type" : [ "http://xmlns.com/foaf/0.1/Person" ],
+  "http://xmlns.com/foaf/0.1/name" : [ {
+    "@value" : "S. Da Graca Ramos"
+  } ]
+}, {
+  "@id" : "_:genid6",
+  "@type" : [ "http://xmlns.com/foaf/0.1/Person" ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@id" : "https://orcid.org/0000-0001-5120-0764"
+  } ],
+  "http://xmlns.com/foaf/0.1/name" : [ {
+    "@value" : "S. P. Collins"
+  } ]
+}, {
+  "@id" : "_:genid7",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://purl.org/pan-science/PaNET/PaNET01012"
+    }, {
+      "@id" : "http://purl.org/pan-science/PaNET/PaNET01125"
+    } ]
+  } ]
+}, {
+  "@id" : "http://purl.obolibrary.org/obo/CHMO_0000182",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01020"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01022"
+  } ]
+}, {
+  "@id" : "http://purl.obolibrary.org/obo/IAO_0000115",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.obolibrary.org/obo/IAO_0000119",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/created",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/creator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/license",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/title",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET.owl",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://purl.org/dc/terms/created" : [ {
+    "@value" : "2021-05-19"
+  } ],
+  "http://purl.org/dc/terms/creator" : [ {
+    "@id" : "_:genid1"
+  }, {
+    "@id" : "_:genid3"
+  }, {
+    "@id" : "_:genid4"
+  }, {
+    "@id" : "_:genid5"
+  }, {
+    "@id" : "_:genid6"
+  } ],
+  "http://purl.org/dc/terms/license" : [ {
+    "@id" : "https://creativecommons.org/licenses/by/4.0/"
+  } ],
+  "http://purl.org/dc/terms/title" : [ {
+    "@value" : "The Photon and Neutron Experimental Techniques Ontology"
+  } ],
+  "http://purl.org/vocab/vann/preferredNamespacePrefix" : [ {
+    "@value" : "panet"
+  } ],
+  "http://purl.org/vocab/vann/preferredNamespaceUri" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/"
+  } ],
+  "http://schema.org/name" : [ {
+    "@value" : "The Photon and Neutron Experimental Techniques Ontology"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Photon and Neutron Experimental Techniques: An ontology of  techniques within the photon and neutron (PaN) domain.\n\nPurpose\n\nThe main purpose of this ontology is to provide a controlled vocabulary, global PIDs and annotations \nfor photon and neutron techniques, to support PaN FAIR data catalogue functionality.\n\nDesign philosophy\n\nIn this simple ontology everything is a class and all classes are techniques. Object property relations\nare implied but not formalized in this version. Subclass/superclass relationships and intersections are \nused to define specific technique classes in terms of broader superclasses. This is seen as a key\nrequirement in order to carry out catalogue searcher for broader concepts, for example.\n\nThis project was undertaken under ExPaNDS WP3.2 (https://expands.eu/)\n\nThe ontology is can be found here: https://github.com/ExPaNDS-eu/ExPaNDS-experimental-techniques-ontology\n\n\nPhoton and neutron PaN ontologies developed under ExPaNDS are documented here: https://doi.org/10.5281/zenodo.4806026"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
+    "@value" : "1.0"
+  }, {
+    "@value" : "First version of the Photon and Neutron Experimental Techniques (PaNET) ontology"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET00001",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.obolibrary.org/obo/IAO_0000115" : [ {
+    "@value" : "A technique in the domain of neutron, muon and accelerator-based light sources"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "photon and neutron technique"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Thing"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET00002",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.obolibrary.org/obo/IAO_0000115" : [ {
+    "@value" : "A technique defined by its experimental probe type"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "defined by experimental probe"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET00001"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET00003",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.obolibrary.org/obo/IAO_0000115" : [ {
+    "@value" : "A technique defined by a physical process"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "defined by experimental physical process"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET00001"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET00004",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.obolibrary.org/obo/IAO_0000115" : [ {
+    "@value" : "A technique defined by its functional dependence"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "defined by functional dependence"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET00001"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET00005",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.obolibrary.org/obo/IAO_0000115" : [ {
+    "@value" : "A technique defined by its goal or purpose"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "defined by purpose"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET00001"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET00100",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "photon probe"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET00002"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET00101",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "neutron probe"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET00002"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET00102",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "muon probe"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET00002"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET00103",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "solid probe"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET00002"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET00104",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "scanning probe"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET00002"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET00105",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.obolibrary.org/obo/IAO_0000115" : [ {
+    "@value" : "A technique for which a pulsed probe is essential"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "pulsed probe"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET00002"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET00106",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "microfocussed probe"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET00002"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET00200",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.obolibrary.org/obo/IAO_0000115" : [ {
+    "@value" : "Any phenomenon where a particle of the same type as the probe is emitted"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "scattering technique"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET00003"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET00201",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.obolibrary.org/obo/IAO_0000115" : [ {
+    "@value" : "Independent of probe; classed also as scattering if the probe and emitted particles are of the same type; disjoint with elastic scattering"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "emission technique"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET00003"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET00202",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "absorption technique"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET00003"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET00203",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "propagation technique"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET00003"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
+    "@value" : "forward scattering technique"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET00204",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.obolibrary.org/obo/IAO_0000119" : [ {
+    "@value" : "https://en.wikipedia.org/wiki/Refraction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "refraction technique"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET00003"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET00205",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.obolibrary.org/obo/IAO_0000119" : [ {
+    "@value" : "https://en.wikipedia.org/wiki/Reflection_(physics)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "reflection technique"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET00003"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET00206",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "resonance phenomenon"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET00003"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET00207",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "magnetism technique"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET00003"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET00208",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "dispersive technique"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET00003"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET00209",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "interferometry technique"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET00003"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET00210",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "force measurement"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET00003"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET00211",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "nonlinear interaction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET00003"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET00300",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "versus energy"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET00004"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01125"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET00301",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "versus momentum transfer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET00004"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET00302",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "versus polarization"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET00004"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET00303",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "versus position"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET00004"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET00304",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "versus time"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET00004"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET00305",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "versus emission mass"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET00004"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET00306",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "versus sample state"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET00004"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET00400",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "obtain atomic structure"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET00005"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET00401",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "obtain spatial map"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET00004"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET00005"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01106"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET00402",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "obtain electronic ground state properties"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET00005"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET00403",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "obtain dynamics"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET00005"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET00404",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "therapy"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET00005"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET00405",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "drug fragment binding"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET00005"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET00406",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "obtain internal field"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET00005"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET00407",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "characterize excitations"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET00005"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET00408",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "manufacturing technique"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET00005"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET00409",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "testing"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET00005"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET00410",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "medical application"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET00005"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET00411",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "chiral determination"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET00005"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01000",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "time of flight technique"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET00105"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
+    "@value" : "TOF"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01001",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "neutron time of flight technique"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01000"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01002",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "ultrafast probe"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET00105"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
+    "@value" : "femtosecond probe"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01003",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "single shot technique"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET00105"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01004",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "nanofocussed probe"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET00106"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01005",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "IR photon probe"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET00100"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01006",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "THz photon probe"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET00100"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01007",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "UV visible photon probe"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET00100"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01008",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "visible photon probe"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01007"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01009",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "UV photon probe"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01007"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01010",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "VUV photon probe"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01009"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01011",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "EUV photon probe"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01010"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01012",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "x-ray probe"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET00100"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01013",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "hard x-ray probe"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01012"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01014",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.obolibrary.org/obo/IAO_0000115" : [ {
+    "@value" : "Energy is between hard and soft x-ray, e.g. sulphur K edge"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "tender x-ray probe"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01012"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01015",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "soft x-ray probe"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01012"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01016",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.obolibrary.org/obo/IAO_0000119" : [ {
+    "@value" : "https://en.wikipedia.org/wiki/Neutron_temperature#Thermal"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "thermal neutron probe"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET00101"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01017",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "cold neutron probe"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01016"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01018",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "monochromatic neutron probe"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET00101"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01019",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "pulsed neutron TOF probe"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET00101"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET00105"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01020",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.obolibrary.org/obo/IAO_0000119" : [ {
+    "@value" : "https://en.wikipedia.org/wiki/Elastic_scattering"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "elastic scattering"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET00200"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01021",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "diffuse scattering"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01020"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01022",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.obolibrary.org/obo/IAO_0000119" : [ {
+    "@value" : "https://en.wikipedia.org/wiki/Diffraction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "diffraction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01020"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "https://www.wikidata.org/wiki/Q133900"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01023",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.obolibrary.org/obo/IAO_0000119" : [ {
+    "@value" : "https://en.wikipedia.org/wiki/Dynamical_theory_of_diffraction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "dynamical diffraction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/CHMO_0000182"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01022"
+  }, {
+    "@id" : "https://www.wikidata.org/wiki/Q133900"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01024",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.obolibrary.org/obo/IAO_0000115" : [ {
+    "@value" : "Probe is highly coherent over illuminated sample"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "coherent diffraction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/CHMO_0000182"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01022"
+  }, {
+    "@id" : "https://www.wikidata.org/wiki/Q133900"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01025",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.obolibrary.org/obo/IAO_0000115" : [ {
+    "@value" : "e.g. holography"
+  } ],
+  "http://purl.obolibrary.org/obo/IAO_0000119" : [ {
+    "@value" : "https://en.wikipedia.org/wiki/Reference_beam"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "reference beam"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/CHMO_0000182"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01022"
+  }, {
+    "@id" : "https://www.wikidata.org/wiki/Q133900"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01026",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.obolibrary.org/obo/IAO_0000115" : [ {
+    "@value" : "essential diffracting structure(s)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "atomic scale diffraction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/CHMO_0000182"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01022"
+  }, {
+    "@id" : "https://www.wikidata.org/wiki/Q133900"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01027",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "atomic scale diffraction 3D volume"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01026"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01028",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "atomic scale diffraction 3D volume 3D periodic"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01027"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01029",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "single crystal diffraction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01028"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01030",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.obolibrary.org/obo/IAO_0000119" : [ {
+    "@value" : "https://en.wikipedia.org/wiki/Powder_diffraction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "powder diffraction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01028"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01031",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "atomic scale diffraction 2D surface or film"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01026"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01032",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "micro scale diffraction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/CHMO_0000182"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01022"
+  }, {
+    "@id" : "https://www.wikidata.org/wiki/Q133900"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01033",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.obolibrary.org/obo/IAO_0000119" : [ {
+    "@value" : "https://en.wikipedia.org/wiki/Incoherent_scatter"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "incoherent scattering"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET00200"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01034",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.obolibrary.org/obo/IAO_0000119" : [ {
+    "@value" : "https://en.wikipedia.org/wiki/Inelastic_scattering"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "inelastic scattering"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01033"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01035",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.obolibrary.org/obo/IAO_0000119" : [ {
+    "@value" : "https://en.wikipedia.org/wiki/Quasielastic_neutron_scattering"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "quasielastic scattering"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01034"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01036",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "high momentum transfer scattering"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET00200"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01037",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "low momentum transfer scattering"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET00200"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01038",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "ultra low momentum transfer scattering"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01037"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01039",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "low surface momentum transfer scattering"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET00200"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01040",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "high momentum transfer resolution scattering"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET00200"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01041",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "coherent emission technique"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET00201"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01042",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "high energy resolution emission technique"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET00201"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01043",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "photon emission technique"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET00201"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01044",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "visible photon emission technique"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01043"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01045",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "x-ray emission technique"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01043"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01046",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "gamma-ray emission technique"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01043"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01047",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.obolibrary.org/obo/IAO_0000119" : [ {
+    "@value" : "https://en.wikipedia.org/wiki/Electron_emission"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "electron emission technique"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET00201"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01048",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "ion emission technique"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET00201"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01049",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "resonant scattering"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET00200"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET00206"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01050",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "nuclear resonance"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET00206"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01051",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.obolibrary.org/obo/IAO_0000119" : [ {
+    "@value" : "https://en.wikipedia.org/wiki/Muon_spin_spectroscopy"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "muon spin resonance"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET00206"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
+    "@value" : "MuSR"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01052",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.obolibrary.org/obo/IAO_0000119" : [ {
+    "@value" : "https://en.wikipedia.org/wiki/Spin_echo"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "spin echo technique"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET00206"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01053",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "electronic excitation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET00206"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01054",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "atomic core excitation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01053"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01055",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "photo excitation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01053"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01056",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "versus incident energy"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET00300"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01125"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01057",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "versus emitted energy"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET00300"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01125"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01058",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "versus emission momentum"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01057"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01059",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "versus energy loss"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET00300"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01125"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01060",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "versus emitted polarization"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET00302"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01061",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "versus photon linear polarization"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET00100"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET00302"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01062",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "versus photon circular polarization"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET00100"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET00302"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01063",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "versus time ultrafast"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET00304"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01064",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "versus sample temperature"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET00306"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01065",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "versus sample pressure"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET00306"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01066",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "versus sample magnetic field"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET00306"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01067",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "versus sample electric field"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET00306"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01068",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "obtain high resolution spatial map"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET00401"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01106"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01069",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.obolibrary.org/obo/IAO_0000119" : [ {
+    "@value" : "https://en.wikipedia.org/wiki/Microscopy"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "microscopy"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01068"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01106"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01070",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "obtain ultrahigh resolution spatial map"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01068"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01069"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01071",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "obtain 3D spatial map"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET00401"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01106"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01072",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.obolibrary.org/obo/IAO_0000119" : [ {
+    "@value" : "https://en.wikipedia.org/wiki/Density_of_states"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "obtain electronic density of states"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET00402"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01073",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "obtain electronic density of occupied states"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01072"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01074",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "obtain electronic density of unoccupied states"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01072"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01075",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.obolibrary.org/obo/IAO_0000119" : [ {
+    "@value" : "https://en.wikipedia.org/wiki/Electronic_band_structure"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "obtain electronic band structure"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET00402"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01076",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "obtain atomic tensor properties"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET00402"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01077",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "obtain magnetic vector"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01076"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01078",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "obtain charge quadrupole"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01076"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01079",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.obolibrary.org/obo/IAO_0000119" : [ {
+    "@value" : "https://en.wikipedia.org/wiki/Magnetic_structure"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "obtain atomic magnetic structure"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET00402"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01080",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "obtain charge density"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET00402"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01081",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "obtain magnetic density"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET00402"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01082",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.obolibrary.org/obo/IAO_0000119" : [ {
+    "@value" : "https://en.wikipedia.org/wiki/Crystallography"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "crystallography"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET00400"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
+    "@value" : "obtain crystal structure"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01083",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.obolibrary.org/obo/IAO_0000119" : [ {
+    "@value" : "https://en.wikipedia.org/wiki/Crystal_structure#Atomic_coordination"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "obtain local coordination"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET00400"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01084",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "time dependent study"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET00304"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
+    "@value" : "time resolved study"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01085",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "characterize electronic excitations"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET00407"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01086",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "characterize magnetic excitations"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01085"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01087",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "characterize lattice excitations"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET00407"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01088",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.obolibrary.org/obo/IAO_0000115" : [ {
+    "@value" : "Absorption Contrast Imaging"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "absorption contrast imaging"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET00202"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET00401"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01106"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01089",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.obolibrary.org/obo/IAO_0000115" : [ {
+    "@value" : "Angle resolved photoemission spectroscopy"
+  } ],
+  "http://purl.obolibrary.org/obo/IAO_0000119" : [ {
+    "@value" : "https://en.wikipedia.org/wiki/Angle-resolved_photoemission_spectroscopy"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "angle resolved photoemission spectroscopy"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01058"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01075"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01269"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
+    "@value" : "ARPES"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01090",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.obolibrary.org/obo/IAO_0000115" : [ {
+    "@value" : "Any technique that depends essentially on probe polarization"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "dichroism"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET00100"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET00302"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01091",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "dichroism spectroscopy"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET00300"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01090"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01125"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01092",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "emission spectroscopy"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET00201"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01057"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01093",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.obolibrary.org/obo/IAO_0000119" : [ {
+    "@value" : "https://en.wikipedia.org/wiki/Photoemission_spectroscopy"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "photoemission spectroscopy"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01092"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01269"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01094",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "fluorescence luminescence"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01044"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01095",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "x-ray fluorescence spectroscopy"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01012"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01045"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01056"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01156"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01096",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "fluorescence tomography"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01043"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01129"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01097",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.obolibrary.org/obo/IAO_0000119" : [ {
+    "@value" : "https://en.wikipedia.org/wiki/Gamma_spectroscopy"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "gamma spectroscopy"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET00300"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01046"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01125"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01098",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.obolibrary.org/obo/IAO_0000119" : [ {
+    "@value" : "https://en.wikipedia.org/wiki/Grazing_incidence_diffraction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "grazing incidence diffraction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01039"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01099",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.obolibrary.org/obo/IAO_0000119" : [ {
+    "@value" : "https://en.wikipedia.org/wiki/Grazing-incidence_small-angle_scattering"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "grazing incidence small angle scattering"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01098"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01124"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
+    "@value" : "GISAS"
+  }, {
+    "@value" : "grazing incidence SAS"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01100",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.obolibrary.org/obo/IAO_0000115" : [ {
+    "@value" : "A neutron powder diffraction technique"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "neutron powder diffraction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01030"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01217"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
+    "@value" : "NPD"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01101",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "x-ray powder diffraction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01012"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01030"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
+    "@value" : "XPD"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01102",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "x-ray single crystal diffraction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01012"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01029"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
+    "@value" : "SXRD"
+  }, {
+    "@value" : "single crystal x-ray diffraction"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01103",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "hard x-ray photoelectron spectroscopy"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01013"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01156"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01202"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
+    "@value" : "HAXPES"
+  }, {
+    "@value" : "hard photoelectron spectroscopy"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01104",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "high resolution photoelectron spectroscopy"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01042"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01057"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01125"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01269"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01105",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.obolibrary.org/obo/IAO_0000119" : [ {
+    "@value" : "https://en.wikipedia.org/wiki/Holography"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "holography"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET00401"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01025"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01106"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01106",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "imaging"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET00004"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET00005"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01107",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "inelastic small angle scatteringng"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01034"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01124"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
+    "@value" : "inelastic SAS"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01108",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "inelastic scattering spectroscopy"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01034"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01059"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01109",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.obolibrary.org/obo/IAO_0000119" : [ {
+    "@value" : "https://en.wikipedia.org/wiki/Infrared_spectroscopy"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "infrared spectroscopy"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET00300"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01005"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01125"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
+    "@value" : "IR spectroscopy"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01110",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "infrared microspectroscopy"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01069"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01109"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01111",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.obolibrary.org/obo/IAO_0000119" : [ {
+    "@value" : "https://en.wikipedia.org/wiki/Luminescence"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "luminescence"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01044"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01112",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "fluorescence imaging"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET00401"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01043"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01106"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01113",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "fluorescence microscopy"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01069"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01112"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
+    "@value" : "Micro XRF"
+  }, {
+    "@value" : "microfluorescence"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01114",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.obolibrary.org/obo/IAO_0000119" : [ {
+    "@value" : "https://en.wikipedia.org/wiki/Muon_spin_spectroscopy"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "muon spectroscopy"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET00102"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET00304"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET00406"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01051"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01115",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "optical spectroscopy"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET00300"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01008"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01125"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01116",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.obolibrary.org/obo/IAO_0000119" : [ {
+    "@value" : "https://en.wikipedia.org/wiki/Phase-contrast_imaging"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "phase contrast imaging"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET00204"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET00401"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01106"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01117",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.obolibrary.org/obo/IAO_0000119" : [ {
+    "@value" : "https://en.wikipedia.org/wiki/Dynamic_light_scattering"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "photon correlation spectroscopy"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET00301"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET00304"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01024"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
+    "@value" : "PCS"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01118",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "polarised reflectivity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET00205"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET00301"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET00302"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01119",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "spin echo  scattering"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET00101"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01052"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01120",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "quasielastic neutron spin echo scattering"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01035"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01119"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
+    "@value" : "quasi elastic spin echo"
+  }, {
+    "@value" : "quasielastic spin echo"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01121",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.obolibrary.org/obo/IAO_0000119" : [ {
+    "@value" : "https://en.wikipedia.org/wiki/Reflectometry"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "reflectometry"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET00205"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET00301"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
+    "@value" : "reflectivity"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01122",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "resonant diffraction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/CHMO_0000182"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01022"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01049"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01054"
+  }, {
+    "@id" : "https://www.wikidata.org/wiki/Q133900"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
+    "@value" : "anomalous diffraction"
+  }, {
+    "@value" : "anomalous scattering"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01123",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "scanning transmission microscopy"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET00104"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET00202"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET00303"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01069"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
+    "@value" : "STM"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01124",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.obolibrary.org/obo/IAO_0000119" : [ {
+    "@value" : "https://en.wikipedia.org/wiki/Small-angle_scattering"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "small angle scattering"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/CHMO_0000182"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01022"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01037"
+  }, {
+    "@id" : "https://www.wikidata.org/wiki/Q133900"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
+    "@value" : "SAS"
+  }, {
+    "@value" : "small angle diffraction"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01125",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.obolibrary.org/obo/IAO_0000119" : [ {
+    "@value" : "https://en.wikipedia.org/wiki/Spectroscopy"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "spectroscopy"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET00004"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01126",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "spin echo resolved grazing incidence scattering"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01039"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01119"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01127",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "spin echo small angle scattering"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01119"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01124"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
+    "@value" : "spin echo SANS"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01128",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "surface diffraction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01031"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01129",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.obolibrary.org/obo/IAO_0000119" : [ {
+    "@value" : "https://en.wikipedia.org/wiki/Tomography"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "tomography"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01071"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01130",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "UV VUV spectroscopy"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET00300"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01009"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01125"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01131",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "UV and visible circular dichroism spectroscopy"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01007"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01091"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01132",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "UV circular dichroism"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01009"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01192"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
+    "@value" : "UVCD"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01133",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "ultra small angle scattering"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01038"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01124"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
+    "@value" : "USAS"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01134",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "wide angle scattering"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01036"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01135",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "absorption spectroscopy"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET00202"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET00300"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01125"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01136",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "diffraction imaging"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/CHMO_0000182"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET00401"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01022"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01106"
+  }, {
+    "@id" : "https://www.wikidata.org/wiki/Q133900"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
+    "@value" : "topography"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01137",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.obolibrary.org/obo/IAO_0000119" : [ {
+    "@value" : "https://en.wikipedia.org/wiki/X-ray_magnetic_circular_dichroism"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "x-ray magnetic circular dichroism"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET00202"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET00207"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01012"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01062"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01090"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
+    "@value" : "XMCD"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01138",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.obolibrary.org/obo/IAO_0000119" : [ {
+    "@value" : "https://en.wikipedia.org/wiki/Linear_dichroism"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "linear dichroism"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET00202"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01061"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01090"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
+    "@value" : "LD"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01139",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "natural linear dichroism"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01138"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01140",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "x-ray excited optical luminescence"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01012"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01044"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
+    "@value" : "XEOL"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01141",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.obolibrary.org/obo/IAO_0000119" : [ {
+    "@value" : "https://en.wikipedia.org/wiki/Magnetic_circular_dichroism"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "magnetic circular dichroism"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET00100"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET00202"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET00207"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01062"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01090"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
+    "@value" : "MCD"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01142",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "magnetic linear dichroism"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET00100"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET00202"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET00207"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01061"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01143",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "magnetochiral dichroism"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET00100"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET00207"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET00302"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET00411"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01090"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
+    "@value" : "MChD"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01144",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "natural circular dichroism"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET00100"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET00411"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01062"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01090"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
+    "@value" : "NCD"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01145",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.obolibrary.org/obo/IAO_0000119" : [ {
+    "@value" : "https://en.wikipedia.org/wiki/Electron_microscope"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "electron microscopy"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01047"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01069"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
+    "@value" : "EM"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01146",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.obolibrary.org/obo/IAO_0000119" : [ {
+    "@value" : "https://en.wikipedia.org/wiki/Photoemission_electron_microscopy"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "photoemission microscopy"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET00100"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01145"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
+    "@value" : "PEEM"
+  }, {
+    "@value" : "photoemission electron microscopy"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01147",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "scanning probe imaging"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET00104"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET00303"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET00401"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01106"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01148",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "scanning probe microscopy"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01069"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01147"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
+    "@value" : "scanning microscopy"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01149",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.obolibrary.org/obo/IAO_0000119" : [ {
+    "@value" : "https://en.wikipedia.org/wiki/X-ray_reflectivity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "x-ray reflectivity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET00205"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET00301"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01012"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
+    "@value" : "XRR"
+  }, {
+    "@value" : "x-ray reflectometry"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01150",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "grating interferometry"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET00203"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET00204"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET00209"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01151",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "absorption tomography"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET00202"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01129"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01152",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "propagation phase contrast tomography"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET00203"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET00204"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01129"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01153",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "ultrafast tomography"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01063"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01129"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01154",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.obolibrary.org/obo/IAO_0000119" : [ {
+    "@value" : "https://en.wikipedia.org/wiki/Nanotomography"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "nanotomography"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01070"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01129"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01155",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "absorption and phase contrast nanotomography"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET00202"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET00204"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01154"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01156",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.obolibrary.org/obo/IAO_0000119" : [ {
+    "@value" : "https://en.wikipedia.org/wiki/X-ray_spectroscopy"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "x-ray spectroscopy"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET00300"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01012"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01125"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid7"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01157",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "in-situ diffraction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/CHMO_0000182"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01022"
+  }, {
+    "@id" : "https://www.wikidata.org/wiki/Q133900"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01158",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "in-situ surface diffraction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01128"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01157"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01159",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "energy dispersive diffraction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET00208"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01030"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
+    "@value" : "EDD"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01160",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.obolibrary.org/obo/IAO_0000119" : [ {
+    "@value" : "https://en.wikipedia.org/wiki/Energy-dispersive_X-ray_diffraction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "energy dispersive x-ray diffraction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01012"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01159"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
+    "@value" : "EDXRD"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01161",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "grazing incidence x-ray diffraction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01012"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01098"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
+    "@value" : "GIXD"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01162",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.obolibrary.org/obo/IAO_0000119" : [ {
+    "@value" : "https://en.wikipedia.org/wiki/Grazing-incidence_small-angle_scattering"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "grazing incidence small angle x-ray scattering"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01099"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01188"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
+    "@value" : "GISAXS"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01163",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "high pressure single crystal diffraction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01029"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01065"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
+    "@value" : "Diffraction"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01164",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "macromolecular crystallography"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01029"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01082"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
+    "@value" : "MX"
+  }, {
+    "@value" : "protein crystallography"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01165",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.obolibrary.org/obo/IAO_0000119" : [ {
+    "@value" : "https://en.wikipedia.org/wiki/Multi-wavelength_anomalous_dispersion"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "multi wavelength anomalous diffraction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET00300"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01012"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01054"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01156"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01164"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
+    "@value" : "MAD"
+  }, {
+    "@value" : "multi wavelength anomalous dispersion"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01166",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "photo crystallography"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01029"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01055"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01082"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01167",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "photoelectron diffraction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01012"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01041"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01047"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
+    "@value" : "PhD"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01168",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.obolibrary.org/obo/IAO_0000119" : [ {
+    "@value" : "https://en.wikipedia.org/wiki/Serial_femtosecond_crystallography"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "serial femtosecond crystallography"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01002"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01003"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01082"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01102"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
+    "@value" : "SFX"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01169",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "serial synchrotron crystallography"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET00105"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01003"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01082"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01102"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
+    "@value" : "SSX"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01170",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.obolibrary.org/obo/IAO_0000119" : [ {
+    "@value" : "https://en.wikipedia.org/wiki/Single-wavelength_anomalous_dispersion"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "single wavelength anomalous diffraction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01054"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01164"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
+    "@value" : "SAD"
+  }, {
+    "@value" : "single wavelength anomalous dispersion"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01171",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "small molecule diffraction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01029"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
+    "@value" : "chemical crystallography"
+  }, {
+    "@value" : "small molecule crystallography"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01172",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "surface x-ray diffraction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01012"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01128"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01173",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.obolibrary.org/obo/IAO_0000119" : [ {
+    "@value" : "https://en.wikipedia.org/wiki/X-ray_standing_waves"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "x-ray standing wave"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/CHMO_0000182"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET00202"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET00400"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01012"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01022"
+  }, {
+    "@id" : "https://www.wikidata.org/wiki/Q133900"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
+    "@value" : "XSW"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01174",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.obolibrary.org/obo/IAO_0000119" : [ {
+    "@value" : "https://en.wikipedia.org/wiki/Coherent_diffraction_imaging"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "coherent diffraction imaging"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET00401"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01024"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01106"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
+    "@value" : "CDI"
+  }, {
+    "@value" : "coherent diffractive imaging"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01175",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "infrared nanospectroscopy imaging"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET00300"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01005"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01070"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01125"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
+    "@value" : "nano infrared spectroscopy"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01176",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "UV circular dichroism imaging"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET00401"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01009"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01106"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01144"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01177",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.obolibrary.org/obo/IAO_0000119" : [ {
+    "@value" : "https://en.wikipedia.org/wiki/X-ray_fluorescence"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "x-ray fluorescence"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01045"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
+    "@value" : "XRF"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01178",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.obolibrary.org/obo/IAO_0000119" : [ {
+    "@value" : "https://en.wikipedia.org/wiki/Microscopy#Infrared_microscopy"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "infrared microscopy"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01005"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01069"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
+    "@value" : "IR microscopy"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01179",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.obolibrary.org/obo/IAO_0000119" : [ {
+    "@value" : "https://en.wikipedia.org/wiki/Optical_microscope"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "optical microscopy"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01008"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01069"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01180",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.obolibrary.org/obo/IAO_0000119" : [ {
+    "@value" : "https://en.wikipedia.org/wiki/X-ray_microscope"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "x-ray microscopy"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01012"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01069"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01181",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.obolibrary.org/obo/IAO_0000119" : [ {
+    "@value" : "https://en.wikipedia.org/wiki/Pair_distribution_function"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "pair distribution function"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/CHMO_0000182"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01022"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01083"
+  }, {
+    "@id" : "https://www.wikidata.org/wiki/Q133900"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
+    "@value" : "PDF"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01182",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.obolibrary.org/obo/IAO_0000119" : [ {
+    "@value" : "https://en.wikipedia.org/wiki/X-ray_scattering_techniques#Inelastic_X-ray_scattering_(IXS)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "inelastic x-ray scattering"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01012"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01034"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
+    "@value" : "IXS"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01183",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.obolibrary.org/obo/IAO_0000119" : [ {
+    "@value" : "https://en.wikipedia.org/wiki/Resonant_inelastic_X-ray_scattering"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "resonant inelastic x-ray scattering"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01049"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01054"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01182"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
+    "@value" : "RIXS"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01184",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "x-ray scattering"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET00200"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01012"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01185",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "light scattering"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET00200"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01008"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01186",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "resonant x-ray scattering"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01049"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01054"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01184"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
+    "@value" : "RXS"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01187",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "resonant soft x-ray scattering"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01015"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01049"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01186"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
+    "@value" : "RSXS"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01188",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.obolibrary.org/obo/IAO_0000119" : [ {
+    "@value" : "https://en.wikipedia.org/wiki/Small-angle_X-ray_scattering"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "small angle x-ray scattering"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01012"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01124"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
+    "@value" : "SAXS"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01189",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.obolibrary.org/obo/IAO_0000119" : [ {
+    "@value" : "https://en.wikipedia.org/wiki/Small-angle_neutron_scattering"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "small angle neutron scattering"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01124"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01217"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
+    "@value" : "SANS"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01190",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "total scattering"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01026"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01181"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01191",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "wide angle x-ray scattering"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01012"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01026"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01036"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
+    "@value" : "WAXS"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01192",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.obolibrary.org/obo/IAO_0000119" : [ {
+    "@value" : "https://en.wikipedia.org/wiki/Circular_dichroism"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "circular dichroism"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01062"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01090"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
+    "@value" : "CD"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01193",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.obolibrary.org/obo/IAO_0000119" : [ {
+    "@value" : "https://en.wikipedia.org/wiki/Energy-dispersive_X-ray_spectroscopy"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "energy dispersive x-ray spectroscopy"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET00208"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01012"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01054"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01125"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01156"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
+    "@value" : "EDX"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01194",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "microfocus spectroscopy"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET00106"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET00300"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01125"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01195",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.obolibrary.org/obo/IAO_0000119" : [ {
+    "@value" : "https://en.wikipedia.org/wiki/Raman_spectroscopy"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "raman spectroscopy"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET00100"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01034"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01196",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.obolibrary.org/obo/IAO_0000119" : [ {
+    "@value" : "https://en.wikipedia.org/wiki/X-ray_absorption_spectroscopy"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "x-ray absorption spectroscopy"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01012"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01054"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01135"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01156"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
+    "@value" : "XAS"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01197",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.obolibrary.org/obo/IAO_0000119" : [ {
+    "@value" : "https://en.wikipedia.org/wiki/X-ray_absorption_fine_structure"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "x-ray absorption fine structure"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01054"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01196"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
+    "@value" : "XAFS"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01198",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.obolibrary.org/obo/IAO_0000119" : [ {
+    "@value" : "https://en.wikipedia.org/wiki/Extended_X-ray_absorption_fine_structure"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "extended x-ray absorption fine structure"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01083"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01197"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
+    "@value" : "EXAFS"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01199",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.obolibrary.org/obo/IAO_0000119" : [ {
+    "@value" : "https://en.wikipedia.org/wiki/X-ray_absorption_near_edge_structure"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "x-ray absorption near edge structure"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET00402"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01197"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
+    "@value" : "NEXAFS"
+  }, {
+    "@value" : "XANES"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01200",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.obolibrary.org/obo/IAO_0000119" : [ {
+    "@value" : "https://en.wikipedia.org/wiki/X-ray_emission_spectroscopy"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "x-ray emission spectroscopy"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01012"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01034"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01043"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01125"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01156"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
+    "@value" : "XES"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01201",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.obolibrary.org/obo/IAO_0000119" : [ {
+    "@value" : "https://en.wikipedia.org/wiki/Electron_spectroscopy"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "electron spectroscopy"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET00300"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01047"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01125"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01202",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.obolibrary.org/obo/IAO_0000119" : [ {
+    "@value" : "https://en.wikipedia.org/wiki/Photoemission_spectroscopy"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "photoelectron spectroscopy"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET00100"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01073"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01201"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
+    "@value" : "PES"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01203",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "spin resolved photoelectron spectroscopy"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01060"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01202"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01204",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.obolibrary.org/obo/IAO_0000119" : [ {
+    "@value" : "https://en.wikipedia.org/wiki/X-ray_photoelectron_spectroscopy"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "x-ray photoelectron spectroscopy"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01012"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01156"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01202"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
+    "@value" : "XPS"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01205",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.obolibrary.org/obo/IAO_0000119" : [ {
+    "@value" : "https://en.wikipedia.org/wiki/X-ray_Photon_Correlation_Spectroscopy"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "x-ray photon correlation spectroscopy"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01012"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01117"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
+    "@value" : "XPCS"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01206",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "microtomography"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01068"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01129"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01207",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.obolibrary.org/obo/IAO_0000119" : [ {
+    "@value" : "https://en.wikipedia.org/wiki/CT_scan"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "x-ray tomography"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01012"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01129"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
+    "@value" : "CT scan"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01208",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.obolibrary.org/obo/IAO_0000119" : [ {
+    "@value" : "https://en.wikipedia.org/wiki/Talk:X-ray_microtomography"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "x-ray microtomography"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01012"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01206"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01209",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "absorption microtomography"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET00202"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01206"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
+    "@value" : "Absorption-based tomographic microscopy"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01210",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "propagation phase contrast microtomography"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01069"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01152"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01211",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "ultrafast microtomography"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01068"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01153"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
+    "@value" : "Ultra-fast tomographic microscopy"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01212",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.obolibrary.org/obo/IAO_0000119" : [ {
+    "@value" : "https://en.wikipedia.org/wiki/Ptychography"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "ptychography"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET00104"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01174"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01213",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "ptychographic nanotomography"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01154"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01212"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01214",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "instrumentation testing"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET00409"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01215",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "optics characterization"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01214"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01216",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "x-ray diffraction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/CHMO_0000182"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01012"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01022"
+  }, {
+    "@id" : "https://www.wikidata.org/wiki/Q133900"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
+    "@value" : "XRD"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01217",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.obolibrary.org/obo/IAO_0000119" : [ {
+    "@value" : "https://en.wikipedia.org/wiki/Neutron_diffraction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "neutron diffraction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/CHMO_0000182"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET00101"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01022"
+  }, {
+    "@id" : "https://www.wikidata.org/wiki/Q133900"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01218",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "ambient pressure x-ray photoelectron spectroscopy"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01204"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01219",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.obolibrary.org/obo/IAO_0000119" : [ {
+    "@value" : "https://en.wikipedia.org/wiki/Scanning_transmission_X-ray_microscopy"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "scanning transmission x-ray microscopy"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01012"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01123"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
+    "@value" : "STXM"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01220",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "total electron yield"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01047"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
+    "@value" : "TEY"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01221",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "XMCD total electron yield"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01137"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01220"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
+    "@value" : "XMCD TEY"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01222",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "spin and angle resolved photoemission spectroscopy"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01060"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01089"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01223",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.obolibrary.org/obo/IAO_0000119" : [ {
+    "@value" : "https://en.wikipedia.org/wiki/Lithography"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "lithography"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET00408"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01224",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.obolibrary.org/obo/IAO_0000119" : [ {
+    "@value" : "https://en.wikipedia.org/wiki/X-ray_lithography"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "x-ray lithography"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01012"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01223"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01225",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "EUV lithography"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01011"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01223"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01226",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "x-ray interference lithography"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET00209"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01227",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "x-ray absorption"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET00202"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01012"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01228",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "nonresonant diffraction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/CHMO_0000182"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01022"
+  }, {
+    "@id" : "https://www.wikidata.org/wiki/Q133900"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01229",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "nonlinear x-ray spectroscopy"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET00211"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01156"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01230",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "single-shot imaging"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET00401"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01003"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01106"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01231",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.obolibrary.org/obo/IAO_0000119" : [ {
+    "@value" : "https://en.wikipedia.org/wiki/Nanoimprint_lithography"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "nanoimprint lithography"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01223"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01232",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "grayscale lithography"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01223"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01233",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "polymer micro and nanografting"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET00408"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01234",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "high resolution neutron powder diffraction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01040"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01100"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01235",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "high resolution thermal neutron powder diffraction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01016"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01234"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01236",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "neutron single crystal diffraction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET00101"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01029"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01237",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "thermal neutron single crystal diffraction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01016"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01236"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01238",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "pulse overlap diffraction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01002"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01205"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01239",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.obolibrary.org/obo/IAO_0000119" : [ {
+    "@value" : "https://en.wikipedia.org/wiki/Neutron_reflectometry"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "neutron reflectometry"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET00101"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01121"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
+    "@value" : "neutron reflectivity"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01240",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "ultra small angle neutron scattering"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET00101"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01133"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01241",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "ultra small angle x-ray scattering"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01012"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01133"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
+    "@value" : "USAXS"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01242",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.obolibrary.org/obo/IAO_0000119" : [ {
+    "@value" : "https://en.wikipedia.org/wiki/Neutron_scattering"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "neutron scattering"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET00101"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET00200"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01243",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "polarized neutron reflectometry"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET00302"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01239"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
+    "@value" : "polarized neutron reflectivity"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01244",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "time-of-flight spectrometry"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET00300"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01001"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01125"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
+    "@value" : "TOF spectrometry"
+  }, {
+    "@value" : "TOF spectroscopy"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01245",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.obolibrary.org/obo/IAO_0000119" : [ {
+    "@value" : "Neutron spectroscopy - Wikipedia"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "inelastic neutron spectroscopy"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET00101"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET00300"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01034"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01125"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
+    "@value" : "inelastic neutron scattering"
+  }, {
+    "@value" : "inelastic neutron scattering spectroscopy"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01246",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "cold neutron spectroscopy"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01017"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01245"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01247",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "thermal neutron spectroscopy"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01016"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01245"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01248",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "neutron transmission radiography"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET00101"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET00202"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET00401"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01106"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01249",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "cold neutron imaging"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET00401"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01017"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01106"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01250",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "high-resolution neutron imaging "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET00101"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01068"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01106"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01251",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "THz near field microscopy"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET00104"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01006"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01069"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01252",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "magnetic scattering"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET00200"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET00207"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01253",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "magnetic diffraction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/CHMO_0000182"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET00207"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01022"
+  }, {
+    "@id" : "https://www.wikidata.org/wiki/Q133900"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01254",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "microfocus x-ray fluorescence"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET00106"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01045"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01255",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.obolibrary.org/obo/IAO_0000119" : [ {
+    "@value" : "https://en.wikipedia.org/wiki/Ellipsometry"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "ellipsometry"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET00100"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET00205"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01060"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01256",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "polarimetry"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01060"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01257",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "UV photoelectron emission"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01009"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01269"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01258",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "x-ray photoelectron emission"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01012"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01269"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01259",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "x-ray magnetic linear dichroism"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01012"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01142"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
+    "@value" : "XMLD"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01260",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "resonant elastic x-ray scattering"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01020"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01049"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01186"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
+    "@value" : "REXS"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01261",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "x-ray refraction imaging"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET00204"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET00401"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01012"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01106"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
+    "@value" : "x-ray refraction radiography"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01262",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "x-ray refraction tomography"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01012"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01152"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01263",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "time dependent scattering"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET00200"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01084"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
+    "@value" : "time resolved scattering"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01264",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "time dependent diffraction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/CHMO_0000182"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01022"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01263"
+  }, {
+    "@id" : "https://www.wikidata.org/wiki/Q133900"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
+    "@value" : "time resolved diffraction"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01265",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "time dependent absorption"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET00202"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01084"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
+    "@value" : "time resolved absorption"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01266",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "x-ray holography"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01012"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01105"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01267",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "ion imaging"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET00100"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01048"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01058"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01268",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.obolibrary.org/obo/IAO_0000119" : [ {
+    "@value" : "https://en.wikipedia.org/wiki/Mass_spectrometry"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "mass spectrometry"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET00305"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01269",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.obolibrary.org/obo/IAO_0000119" : [ {
+    "@value" : "https://en.wikipedia.org/wiki/Photoelectric_effect"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "photoelectron emission"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET00100"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01047"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01270",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "nuclear resonant scattering"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01049"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01050"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01271",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "microfocus x-ray scattering"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET00106"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01184"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01272",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "nanofocus x-ray scattering"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01004"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01271"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01273",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "small angle inelastic scattering"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01034"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01124"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01274",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "anomalous small angle x-ray scattering"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01012"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01122"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01124"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
+    "@value" : "ASAXS"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01275",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "anomalous solution x-ray scattering"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01274"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
+    "@value" : "ASAX"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01276",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.obolibrary.org/obo/IAO_0000119" : [ {
+    "@value" : "https://en.wikipedia.org/wiki/Grazing-incidence_small-angle_scattering"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "grazing incidence small angle neutron scattering"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01099"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01189"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
+    "@value" : "GISANS"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01277",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "time of flight small angle neutron scattering"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01000"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01189"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01278",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "very small angle neutron scattering"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01133"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01189"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
+    "@value" : "VSANS"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01279",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "diffuse small angle scattering"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01021"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01124"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01280",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "diffuse small angle x-ray scattering"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01012"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01279"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01281",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "inelastic x-ray small angle scattering"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01182"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01188"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01273"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01282",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "soft x-ray small angle scattering"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01015"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01188"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01283",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "soft x-ray diffraction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/CHMO_0000182"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01015"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01022"
+  }, {
+    "@id" : "https://www.wikidata.org/wiki/Q133900"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01284",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "x-ray photoelectron diffraction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01012"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01167"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01285",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.obolibrary.org/obo/IAO_0000119" : [ {
+    "@value" : "https://en.wikipedia.org/wiki/Radiography"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "x-ray imaging"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET00401"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01012"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01106"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01286",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "micro small angle x-ray scattering tomography"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01162"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01206"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
+    "@value" : "micro SAXS tomography"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01287",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "micro grazing incidence small angle x-ray scattering tomography"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01162"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01286"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
+    "@value" : "micro GISAXS tomography"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01288",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "scanning x-ray fluorescence"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01147"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01177"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01289",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "soft x-ray imaging"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01012"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01285"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01290",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "x-ray diffraction imaging"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01012"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01136"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01291",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "scanning angle resolved photoemission spectromicroscopy"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01089"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01148"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01292",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "nano angle resolved photoemission spectroscopy"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01004"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01291"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
+    "@value" : "nano ARPES"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01293",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "scanning photoelectron microscopy"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET00104"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01146"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01294",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "x-ray photoemission microscopy"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01012"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01146"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01295",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "x-ray scanning microscopy"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET00104"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01180"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
+    "@value" : "scanning x-ray microscopy"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01296",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "high resolution core-level photoemission spectroscopy"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01054"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01104"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01297",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "high resolution x-ray photoelectron spectroscopy"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01104"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01204"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
+    "@value" : "HR-XPS"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01298",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "elastic neutron scattering spectroscopy"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET00101"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET00300"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET00403"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01020"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01125"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
+    "@value" : "RENS"
+  }, {
+    "@value" : "resolution elastic neutron scattering"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01299",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "high resolution inelastic neutron scattering"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01042"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01245"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01300",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "x-ray linear dichroism"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01012"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01138"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01301",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "x-ray magnetochiral dichroism"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01012"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01143"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
+    "@value" : "XMChiD"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01302",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "x-ray natural circular dichroism"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01012"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01144"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
+    "@value" : "XNCD"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01303",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "x-ray natural linear dichroism"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01012"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01139"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
+    "@value" : "XNLD"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01304",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.obolibrary.org/obo/IAO_0000119" : [ {
+    "@value" : "https://en.wikipedia.org/wiki/Fragment-based_lead_discovery"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "fragment screening"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET00405"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01164"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
+    "@value" : "crystallographic fragment screening"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01305",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "long wavelength crystallography"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01014"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01164"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01306",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "microfocus macromolecular crystallography"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01164"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01271"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
+    "@value" : "microfocus MX"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01307",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "nanofocus macromolecular crystallography"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01164"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01272"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
+    "@value" : "nanofocus MX"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01308",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.obolibrary.org/obo/IAO_0000119" : [ {
+    "@value" : "https://en.wikipedia.org/wiki/Molecular_replacement"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "molecular replacement"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01164"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
+    "@value" : "MR"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01309",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "time resolved serial femtosecond crystallography"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01168"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01264"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
+    "@value" : "TR-SFX"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01310",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "fixed target serial synchrotron crystallography"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01169"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
+    "@value" : "FT-SSX"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01311",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "lipidic cubic phase serial synchrotron crystallography"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01164"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01169"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
+    "@value" : "LCP-SSX"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01312",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "time resolved serial synchrotron crystallography"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01169"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01264"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
+    "@value" : "TR-SSX"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01313",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "magnetic x-ray tomography"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET00207"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01207"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01314",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "correlative light x-ray microscopy"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01179"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01180"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
+    "@value" : "CLXM"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01315",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "cryo x-ray microscopy"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01180"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01316",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "grazing incidence wide angle scattering"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01098"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01191"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
+    "@value" : "GIWAXS"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01317",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "high resolution angle resolved photoemission spectroscopy"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01089"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01104"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
+    "@value" : "HR-ARPES"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01318",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.obolibrary.org/obo/IAO_0000119" : [ {
+    "@value" : "https://en.wikipedia.org/wiki/Atomic_force_microscopy"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "atomic force microscopy"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET00103"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET00104"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET00210"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01069"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
+    "@value" : "AFM"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01319",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.obolibrary.org/obo/IAO_0000119" : [ {
+    "@value" : "https://en.wikipedia.org/wiki/AFM-IR"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "atomic force microscope infrared spectroscopy"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01109"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01318"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
+    "@value" : "AFM-IR"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01320",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.obolibrary.org/obo/IAO_0000119" : [ {
+    "@value" : "https://en.wikipedia.org/wiki/Fourier-transform_infrared_spectroscopy"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "fourier transform infrared spectroscopy"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET00209"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01109"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
+    "@value" : "FTIR"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01321",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "energy dispersive extended x-ray absorption fine structure"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01193"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01198"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
+    "@value" : "ED-EXAFS"
+  }, {
+    "@value" : "EDE"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01322",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "microfocus x-ray absorption spectroscopy"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET00106"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01196"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01323",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.obolibrary.org/obo/IAO_0000119" : [ {
+    "@value" : "https://en.wikipedia.org/wiki/Radiation_therapy"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "radiotherapy"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET00404"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
+    "@value" : "radiation therapy"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01324",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "surface crystallography"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET00400"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
+    "@value" : "obtain surface atomic structure"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01325",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.obolibrary.org/obo/IAO_0000119" : [ {
+    "@value" : "https://en.wikipedia.org/wiki/Borrmann_effect"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "borrmann effect"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01023"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01029"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01173"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01326",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "birefringence"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET00204"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01061"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01327",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.obolibrary.org/obo/IAO_0000119" : [ {
+    "@value" : "https://en.wikipedia.org/wiki/X-ray_birefringence_imaging"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "x-ray birefringence imaging "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET00401"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01106"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01300"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01326"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
+    "@value" : "XBI"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01328",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "divergent beam diffraction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/CHMO_0000182"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01022"
+  }, {
+    "@id" : "https://www.wikidata.org/wiki/Q133900"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01329",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "kossel lines"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01177"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01328"
+  } ]
+}, {
+  "@id" : "http://purl.org/pan-science/PaNET/PaNET01330",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "diffuse multiple scattering"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01021"
+  }, {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01328"
+  } ]
+}, {
+  "@id" : "http://purl.org/vocab/vann/preferredNamespacePrefix",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/vocab/vann/preferredNamespaceUri",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://schema.org/affiliation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://schema.org/name",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2004/02/skos/core#altLabel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://xmlns.com/foaf/0.1/Person",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://xmlns.com/foaf/0.1/homepage",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://xmlns.com/foaf/0.1/name",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://xmlns.com/foaf/0.1/workInfoHomepage",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://www.wikidata.org/wiki/Q133900",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/pan-science/PaNET/PaNET01020"
+  } ]
+} ]
