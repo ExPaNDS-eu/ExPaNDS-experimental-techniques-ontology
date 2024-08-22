@@ -6,6 +6,17 @@ on:
     tags: [ 'v[0-9]+.[0-9]+.[0-9]+' ]
 
 jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Validate PaNET_metadata.ttl
+        uses: vemonet/jena-riot-action@v3.14
+        with:
+          input: source/PaNET_metadata.ttl
+
   build:
     runs-on: ubuntu-latest
     container:
