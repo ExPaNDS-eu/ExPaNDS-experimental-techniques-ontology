@@ -20,7 +20,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     container:
-      image: gitlab.desy.de:5555/paul.millar/panet-build:v0.5
+      image: gitlab.desy.de:5555/paul.millar/panet-build:v0.6
 
     steps:
       - name: Checkout repo
@@ -32,7 +32,7 @@ jobs:
         run: /usr/bin/git config --global --add safe.directory `pwd`
 
       - name: Build PaNET and documentation
-        run: /bin/build-panet
+        run: /bin/build-panet -d
 
       - name: Archive generated PaNET
         uses: actions/upload-artifact@v4
