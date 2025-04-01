@@ -20,7 +20,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     container:
-      image: gitlab.desy.de:5555/paul.millar/panet-build:v0.6
+      image: gitlab.desy.de:5555/paul.millar/panet-build:v0.7
 
     steps:
       - name: Checkout repo
