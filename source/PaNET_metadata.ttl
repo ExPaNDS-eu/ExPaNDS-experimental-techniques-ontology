@@ -46,7 +46,7 @@
     ] ; 
     dcterms:creator [
       a foaf:Person ;
-      foaf:name "G.Koumoutsos" ;
+      foaf:name "G. Koumoutsos" ;
     ] ;
     dcterms:creator [
       a foaf:Person ;
