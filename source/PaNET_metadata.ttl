@@ -7,9 +7,9 @@
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix sdo: <http://schema.org/> .
 @prefix vann: <http://purl.org/vocab/vann/>.
-@base <http://purl.org/pan-science/PaNET/PaNET-metadata.owl> .
+@base <http://purl.org/pan-science/PaNET/PaNET.owl> .
 
-<http://purl.org/pan-science/PaNET/PaNET-metadata.owl>
+<http://purl.org/pan-science/PaNET/PaNET.owl>
   a owl:Ontology ;
   dcterms:created "2021-05-19"^^xsd:string ; 
   vann:preferredNamespaceUri <http://purl.org/pan-science/PaNET/> ; 
