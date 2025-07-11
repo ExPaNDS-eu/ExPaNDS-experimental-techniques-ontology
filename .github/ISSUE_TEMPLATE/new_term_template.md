@@ -12,3 +12,5 @@ labels: new_term_request
 # Synonyms
 
 # Cross-references
+
+# Motivation
