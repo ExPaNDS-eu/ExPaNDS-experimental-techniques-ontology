@@ -58,6 +58,16 @@
       foaf:name "Paul Millar" ;
       rdfs:seeAlso <https://orcid.org/0000-0002-3957-1279> ;
     ] ;
+    dcterms:creator [
+      a foaf:Person ;
+      sdo:affiliation [
+           foaf:homepage <https://www.helmholtz-berlin.de/> ;
+           foaf:name "Helmholtz-Zentrum Berlin für Materialien und Energie" ;
+           rdfs:seeAlso <https://ror.org/02aj13c28> ;
+      ] ;
+      foaf:name "Rolf Krahl" ;
+      rdfs:seeAlso <https://orcid.org/0000-0002-1266-3819> ;
+    ] ;
     dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
 
     rdfs:comment """Photon and Neutron Experimental Techniques: An ontology of  techniques within the photon and neutron (PaN) domain.
