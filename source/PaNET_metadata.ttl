@@ -78,6 +78,21 @@
       foaf:name "Melanie Nentwich" ;
       rdfs:seeAlso <https://orcid.org/0000-0002-5850-4469> ;
     ] ;
+    dcterms:creator [
+      a foaf:Person ;
+      sdo:affiliation [
+           foaf:homepage <https://www.ox.ac.uk/> ;
+           foaf:name "University of Oxford" ;
+           rdfs:seeAlso <https://ror.org/052gg0110> ;
+      ] ;
+      sdo:affiliation [
+           foaf:homepage <https://www.diamond.ac.uk/> ;
+           foaf:name "Diamond Light Source" ;
+           rdfs:seeAlso <https://ror.org/05etxs293> ;
+      ] ;
+      foaf:name "Terence Tan" ;
+      rdfs:seeAlso <https://orcid.org/0009-0008-7829-3647> ;
+    ] ;
     dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
 
     rdfs:comment """Photon and Neutron Experimental Techniques: An ontology of  techniques within the photon and neutron (PaN) domain.
