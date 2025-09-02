@@ -1,8 +1,6 @@
 ,ID,Label,Alt Label 1,Alt Label 2,Definition,Definition Source,RDF Type,Parent IRI,Parent IRI,Parent IRI,Parent IRI,Parent IRI,Parent IRI,Parent IRI,Equivalent,Equivalent,Equivalent,Disjoint Classes,Individual,Property Assertions,Super Property,Domain,Range,Characteristic
 ,ID,A rdfs:label,A http://www.w3.org/2004/02/skos/core#altLabel,A http://www.w3.org/2004/02/skos/core#altLabel,A IAO:0000115,A IAO:0000119,TYPE,SC %,SC %,SC %,SC %,SC %,SC %,SC %,EC %,EC %,EC %,DC %,TI %,I 'hasTechnique',SP %,DOMAIN,RANGE,CHARACTERISTIC SPLIT=|
 ,,,,,,,,,,,,,,,,,,,,,,,,
-Base IRI,,http://purl.org/pan-science/PaNET/,,,,,,,,,,,,,,,,,,,,,,
-Root name,,PaNET,,,,,,,,,,,,,,,,,,,,,,
 ID number,,,,,,,,,,,,,,,,,,,,,,,,
 1,http://purl.org/pan-science/PaNET/PaNET00001,photon and neutron technique,,,"A technique in the domain of neutron, muon and accelerator-based light sources",,owl:Class,owl:Thing,,,,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,,,,,,,,,,,
@@ -388,7 +386,6 @@ ID number,,,,,,,,,,,,,,,,,,,,,,,,
 1331,http://purl.org/pan-science/PaNET/PaNET01331,MHz x-ray microscopy,,,X-ray microscopy that operates on time scales less than one microsecond with femtosecond illumination,https://doi.org/10.1364/OPTICA.6.001106,owl:Class,x-ray microscopy,hard x-ray probe,versus time ultrafast,pulsed probe,single shot technique,,,,,,,,,,,,
 1332,http://purl.org/pan-science/PaNET/PaNET01332,x-ray propagation phase contrast tomography,,,,,owl:Class,propagation phase contrast tomography,x-ray probe,,,,,,,,,,,,,,,
 1333,http://purl.org/pan-science/PaNET/PaNET01333,x-ray propagation phase contrast microtomography,PPC-SrμCT,,,,owl:Class,x-ray propagation phase contrast tomography,,,,,,,,,,,,,,,,
-,,Create dataset instances and give them hasTechnique relationship to instances of techniques. Can then use reasoner to search for individuals based on 'hasTechnique some technique' where technique is any of the technique classes above.,,,,,,,,,,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,,,,,,,,,,,
 2000000,http://purl.org/pan-science/PaNET/PaNET2000000,photon and neutron related concepts,,,,,,,,,,,,,,,,,,,,,,
