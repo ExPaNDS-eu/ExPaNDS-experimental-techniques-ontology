@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PANET: Photon and Neutron Experimental Techniques</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/md-styles.css">
+    <link rel="stylesheet" href="css/custom.css">
+</head>
+<body>
+    <header id="fixed-header">
+        <div class="header-content">
+            <img src="images/panet_logo.png" alt="PANET Logo" class="logo">
+            <h1 class="main-title">PANET: Photon and Neutron Experimental Techniques</h1>
+        </div>
+    </header>
+
+    <div id="wrapper">
+        <div id="content">
+            <nav id="navigation">
+                <h2>Documentation</h2>
+                <ul class="nav-list">
+                    <li><a href="#scope" class="nav-link active" data-section="scope">The scope of PANET</a></li>
+                    <li><a href="#environment" class="nav-link" data-section="environment">PANET: build the environment</a></li>
+                    <li><a href="#procedures" class="nav-link" data-section="procedures">PaNET Standard Operating Procedures</a></li>
+                    <li><a href="#release" class="nav-link" data-section="release">PaNET: Make a release</a></li>
+                    <li><a href="#git-workflow" class="nav-link" data-section="git-workflow">Git Workflow</a></li>
+                    <li><a href="#spectroscopy" class="nav-link" data-section="spectroscopy">Photoelectron photoion coincidence spectroscopy</a></li>
+                </ul>
+            </nav>
+
+            <main id="main-content">
+                 The scope of PANET 
+                <section id="scope" class="content-section active">
+                    <h1>The scope of PANET</h1>
+                    <p>PANET (Photon and Neutron Experimental Techniques) is a comprehensive framework designed to standardize and streamline experimental procedures in photon and neutron research facilities.</p>
+                    
+                    <h2>Overview</h2>
+                    <p>This documentation provides detailed information about PANET's capabilities, setup procedures, and best practices for experimental techniques involving photons and neutrons.</p>
+                    
+                    <h3>Key Features</h3>
+                    <ul class="md-itemization">
+                        <li>Standardized experimental procedures</li>
+                        <li>Automated data collection and analysis</li>
+                        <li>Integration with modern research facilities</li>
+                        <li>Comprehensive documentation and support</li>
+                    </ul>
+                </section>
+
+                 PANET: build the environment 
+                <section id="environment" class="content-section">
+                    <h1>PANET: build the environment</h1>
+                    <p>Setting up the PANET environment requires careful configuration of both hardware and software components.</p>
+                    
+                    <h2>Prerequisites</h2>
+                    <p>Before installing PANET, ensure your system meets the following requirements:</p>
+                    <ul class="md-itemization">
+                        <li>Python 3.8 or higher</li>
+                        <li>Required scientific libraries (NumPy, SciPy, Matplotlib)</li>
+                        <li>Hardware interface drivers</li>
+                        <li>Network connectivity for data synchronization</li>
+                    </ul>
+                    
+                    <h2>Installation Steps</h2>
+                    <p>Follow these steps to set up your PANET environment:</p>
+                    <div class="md-tab-content">
+git clone https://github.com/your-org/panet.git
+cd panet
+pip install -r requirements.txt
+python setup.py install
+                    </div>
+                </section>
+
+                 PaNET Standard Operating Procedures 
+                <section id="procedures" class="content-section">
+                    <h1>PaNET Standard Operating Procedures</h1>
+                    <p>This section outlines the standard operating procedures for conducting experiments using the PANET framework.</p>
+                    
+                    <h2>Safety Protocols</h2>
+                    <p>All experiments must follow established safety protocols to ensure researcher safety and equipment protection.</p>
+                    
+                    <h2>Experimental Workflow</h2>
+                    <ol>
+                        <li>Pre-experiment calibration</li>
+                        <li>Sample preparation and mounting</li>
+                        <li>Data collection procedures</li>
+                        <li>Post-experiment analysis</li>
+                        <li>Data archival and documentation</li>
+                    </ol>
+                </section>
+
+                 PaNET: Make a release 
+                <section id="release" class="content-section">
+                    <h1>PaNET: Make a release</h1>
+                    <p>This guide covers the process of creating and publishing PANET releases.</p>
+                    
+                    <h2>Release Checklist</h2>
+                    <ul class="md-itemization">
+                        <li>Update version numbers</li>
+                        <li>Run comprehensive tests</li>
+                        <li>Update documentation</li>
+                        <li>Create release notes</li>
+                        <li>Tag the release in Git</li>
+                    </ul>
+                    
+                    <h2>Versioning Strategy</h2>
+                    <p>PANET follows semantic versioning (SemVer) for all releases. Version numbers follow the format MAJOR.MINOR.PATCH.</p>
+                </section>
+
+                 Git Workflow 
+                <section id="git-workflow" class="content-section">
+                    <h1>Git Workflow</h1>
+                    <p>PANET development follows a structured Git workflow to ensure code quality and collaboration efficiency.</p>
+                    
+                    <h2>Branch Strategy</h2>
+                    <ul class="md-itemization">
+                        <li><strong>main</strong>: Production-ready code</li>
+                        <li><strong>develop</strong>: Integration branch for features</li>
+                        <li><strong>feature/*</strong>: Individual feature development</li>
+                        <li><strong>hotfix/*</strong>: Critical bug fixes</li>
+                    </ul>
+                    
+                    <h2>Contribution Guidelines</h2>
+                    <p>All contributions must follow the established coding standards and include appropriate tests and documentation.</p>
+                </section>
+
+                 Photoelectron photoion coincidence spectroscopy 
+                <section id="spectroscopy" class="content-section">
+                    <h1>Photoelectron photoion coincidence spectroscopy</h1>
+                    <p>This advanced technique combines photoelectron and photoion detection to provide detailed information about molecular dynamics and electronic structure.</p>
+                    
+                    <h2>Experimental Setup</h2>
+                    <p>The coincidence spectroscopy setup requires precise timing and detection systems to correlate photoelectron and photoion events.</p>
+                    
+                    <h2>Data Analysis</h2>
+                    <p>Analysis of coincidence data involves sophisticated algorithms to extract meaningful physical parameters from the correlated measurements.</p>
+                    
+                    <h3>Key Parameters</h3>
+                    <ul class="md-itemization">
+                        <li>Electron kinetic energy</li>
+                        <li>Ion time-of-flight</li>
+                        <li>Angular distributions</li>
+                        <li>Coincidence timing</li>
+                    </ul>
+                </section>
+            </main>
+        </div>
+    </div>
+
+    <script src="js/navigation.js"></script>
+</body>
+</html>
