@@ -69,11 +69,13 @@ body {
 #content {
   display: flex;
   width: 100%;
+  gap: 40px; /* Added gap between sidebars */
+  justify-content: space-between;
 }
 
 /* Navigation Sidebar */
 #navigation {
-  width: 380px;
+  width: 400px;
   background: linear-gradient(135deg, white 0%, var(--panet-light-grey) 100%);
   border-right: 2px solid var(--panet-border-grey);
   padding: 30px;
@@ -83,6 +85,64 @@ body {
   max-height: calc(100vh - 140px);
   overflow-y: auto;
   box-shadow: 2px 0 8px rgba(17, 33, 62, 0.05);
+}
+
+/* Added scope sidebar styles */
+#scope-sidebar {
+  width: 1300px;
+  background: linear-gradient(135deg, white 0%, var(--panet-light-grey) 100%);
+  border-left: 2px solid var(--panet-border-grey);
+  padding: 30px;
+  position: sticky;
+  top: 120px;
+  height: fit-content;
+  max-height: calc(100vh - 140px);
+  overflow-y: auto;
+  box-shadow: -2px 0 8px rgba(17, 33, 62, 0.05);
+}
+
+#scope-sidebar h2 {
+  color: var(--panet-dark-blue);
+  font-family: "Inter", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 2rem;
+  margin-bottom: 25px;
+  border-bottom: 4px solid var(--panet-pink);
+  padding-bottom: 15px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.scope-content p {
+  color: var(--panet-black);
+  font-size: 1.2rem;
+  line-height: 1.7;
+  margin-bottom: 20px;
+  font-weight: 400;
+}
+
+.scope-content .md-itemization {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+.scope-content .md-itemization li {
+  margin-bottom: 15px;
+  color: var(--panet-black);
+  line-height: 1.7;
+  font-size: 1.2rem;
+  font-weight: 400;
+  padding-left: 20px;
+  position: relative;
+}
+
+.scope-content .md-itemization li::before {
+  content: "•";
+  color: var(--panet-pink);
+  font-weight: bold;
+  position: absolute;
+  left: 0;
 }
 
 #navigation h2 {
@@ -138,17 +198,19 @@ body {
 /* Main Content Area */
 #main-content {
   flex: 1;
-  padding: 50px 60px;
+  padding: 40px 50px; /* Reduced padding from 50px 60px to 40px 50px */
   width: auto;
   float: none;
   overflow: visible;
   background-color: white;
+  max-width: 1200px; /* Added max-width to prevent content from being too wide */
 }
 
 /* Content Sections */
 .content-section {
   display: none;
   animation: fadeIn 0.3s ease-in;
+  max-width: 100%; /* Ensure sections don't exceed container width */
 }
 
 .content-section.active {
@@ -166,14 +228,13 @@ body {
   }
 }
 
-/* Enhanced Typography */
 .content-section h1 {
   color: var(--panet-dark-blue);
   font-family: "Inter", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 3.2rem;
-  margin-bottom: 30px;
+  font-size: 2.8rem; /* Reduced from 3.2rem to 2.8rem */
+  margin-bottom: 25px; /* Reduced from 30px to 25px */
   border-bottom: 4px solid var(--panet-pink);
-  padding-bottom: 20px;
+  padding-bottom: 15px; /* Reduced from 20px to 15px */
   font-weight: 700;
   line-height: 1.1;
   text-shadow: 0 1px 2px rgba(17, 33, 62, 0.1);
@@ -182,8 +243,8 @@ body {
 .content-section h2 {
   color: var(--panet-purple);
   font-family: "Inter", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 2.2rem;
-  margin: 40px 0 25px 0;
+  font-size: 2rem; /* Reduced from 2.2rem to 2rem */
+  margin: 35px 0 20px 0; /* Reduced margins from 40px 0 25px 0 */
   font-weight: 600;
   border-left: 5px solid var(--panet-pink);
   padding-left: 20px;
@@ -191,17 +252,17 @@ body {
 
 .content-section h3 {
   color: var(--panet-dark-blue);
-  font-size: 1.6rem;
+  font-size: 1.4rem; /* Reduced from 1.6rem to 1.4rem */
   font-weight: 600;
-  margin: 30px 0 20px 0;
+  margin: 25px 0 15px 0; /* Reduced margins from 30px 0 20px 0 */
   font-family: "Inter", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .content-section p {
   color: var(--panet-black);
-  font-size: 1.15rem;
-  line-height: 1.7;
-  margin-bottom: 20px;
+  font-size: 1.1rem; /* Reduced from 1.15rem to 1.1rem */
+  line-height: 1.6; /* Reduced from 1.7 to 1.6 */
+  margin-bottom: 18px; /* Reduced from 20px to 18px */
   text-align: justify;
   font-weight: 400;
 }
@@ -284,6 +345,14 @@ body {
     position: static;
     max-height: none;
     border-right: none;
+    border-bottom: 1px solid var(--panet-border-grey);
+  }
+
+  #scope-sidebar {
+    width: 100%;
+    position: static;
+    max-height: none;
+    border-left: none;
     border-bottom: 1px solid var(--panet-border-grey);
   }
 

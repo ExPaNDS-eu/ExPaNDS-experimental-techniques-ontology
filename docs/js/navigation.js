@@ -3,6 +3,9 @@
 document.addEventListener("DOMContentLoaded", () => {
   const navLinks = document.querySelectorAll(".nav-link")
   const contentSections = document.querySelectorAll(".content-section")
+  const navigation = document.getElementById("navigation")
+  const scopeSidebar = document.getElementById("scope-sidebar") // Added scope sidebar reference
+  const mainContent = document.getElementById("main-content")
 
   // Handle navigation clicks
   navLinks.forEach((link) => {
@@ -10,6 +13,10 @@ document.addEventListener("DOMContentLoaded", () => {
       e.preventDefault()
 
       const targetSection = this.getAttribute("data-section")
+
+      navigation.style.display = "none"
+      scopeSidebar.style.display = "none"
+      mainContent.style.display = "block"
 
       // Remove active class from all nav links
       navLinks.forEach((navLink) => {
@@ -37,6 +44,56 @@ document.addEventListener("DOMContentLoaded", () => {
       history.pushState(null, null, `#${targetSection}`)
     })
   })
+
+  function addBackButton() {
+    const backButton = document.createElement("button")
+    backButton.textContent = "← Back to Documentation"
+    backButton.className = "back-button"
+    backButton.style.cssText = `
+      position: fixed;
+      top: 80px;
+      left: 20px;
+      background: #067DB4;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 14px;
+      z-index: 1000;
+      display: none;
+    `
+
+    backButton.addEventListener("click", () => {
+      navigation.style.display = "block"
+      scopeSidebar.style.display = "block" // Show scope sidebar when returning to main page
+      mainContent.style.display = "none"
+      backButton.style.display = "none"
+
+      // Clear active states
+      navLinks.forEach((navLink) => {
+        navLink.classList.remove("active")
+      })
+      contentSections.forEach((section) => {
+        section.classList.remove("active")
+      })
+
+      // Update URL
+      history.pushState(null, null, window.location.pathname)
+    })
+
+    document.body.appendChild(backButton)
+
+    // Show back button when content is displayed
+    navLinks.forEach((link) => {
+      link.addEventListener("click", () => {
+        backButton.style.display = "block"
+      })
+    })
+  }
+
+  // Initialize back button
+  addBackButton()
 
   // Handle direct URL access with hash
   function handleHashChange() {
