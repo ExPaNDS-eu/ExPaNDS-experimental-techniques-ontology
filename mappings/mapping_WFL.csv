@@ -1,0 +1,126 @@
+PaNET Concept IRI,PaNET name,skos:relatedMatch,skos:closeMatch,skos:exactMatch,skos:narrowMatch,skos:broadMatch
+,,symmetric; associative mapping,symmetric; partial interchangeability,,hierarchical relationship,hierarchical relationship
+http://purl.org/pan-science/PaNET/PaNET00410,medical application,,,,Imaging/Medical application,
+http://purl.org/pan-science/PaNET/PaNET01006,THz photon probe,,,,Absorption/THz spectroscopy | THz high harmonic generation,
+http://purl.org/pan-science/PaNET/PaNET01012,hard x-ray probe,,,,,
+http://purl.org/pan-science/PaNET/PaNET01014,tender x-ray probe,,,,,
+http://purl.org/pan-science/PaNET/PaNET01015,soft x-ray probe,,,,,
+http://purl.org/pan-science/PaNET/PaNET01020,elastic scattering,,,Scattering/Elastic Scattering,,
+http://purl.org/pan-science/PaNET/PaNET01024,coherent diffraction,,Scattering/Coherent scattering,,,
+http://purl.org/pan-science/PaNET/PaNET01034,inelastic scattering,,,Scattering/Inelastic scattering,,
+http://purl.org/pan-science/PaNET/PaNET01049,resonant scattering ,,,Scattering/Anomalous scattering | Scattering/Resonant scattering,,
+http://purl.org/pan-science/PaNET/PaNET01052,magnetic scattering ,,,Scattering/Magnetic scattering,,
+http://purl.org/pan-science/PaNET/PaNET01070,nuclear resonant scattering,,,Scattering/Nuclear resonant scattering,,
+http://purl.org/pan-science/PaNET/PaNET01082,crystallography,,,Diffraction/Crystallography,,
+http://purl.org/pan-science/PaNET/PaNET01089,angle resolved photoemission spectroscopy ,,,Photoelectron emission/Angular Resolved PES,,
+http://purl.org/pan-science/PaNET/PaNET01093,photoemission spectroscopy ,,,Photoelectron emission,,
+http://purl.org/pan-science/PaNET/PaNET01095,x-ray fluorescence spectroscopy,,Emission or Reflection/X-ray fluorescence (XRF),,,
+http://purl.org/pan-science/PaNET/PaNET01101,x-ray powder diffraction,,,Diffraction/Powder diffraction,,
+http://purl.org/pan-science/PaNET/PaNET01102,x-ray single crystal diffraction,,,,,Diffraction 
+http://purl.org/pan-science/PaNET/PaNET01103,hard x-ray photoelectron spectroscopy,,,,,Photoelectron emission/XPS
+http://purl.org/pan-science/PaNET/PaNET01109,infrared spectroscopy,,,Absorption/IR spectroscopy,,
+http://purl.org/pan-science/PaNET/PaNET01112,fluorescence imaging,,,Imaging/Fluorescence imaging,,
+http://purl.org/pan-science/PaNET/PaNET01113,micro XRF,,,Emission or Reflection/Micro XRF,,
+http://purl.org/pan-science/PaNET/PaNET01121,reflectometry ,,,Emission or Reflection/Reflectometry,,
+http://purl.org/pan-science/PaNET/PaNET01132,UV circular dichroism,,,Absorption/UVCD,,
+http://purl.org/pan-science/PaNET/PaNET01136,diffraction imaging,,,,Diffraction/Topography,
+http://purl.org/pan-science/PaNET/PaNET01137,x-ray magnetic circular dichroism,,,Absorption/XMCD,,
+http://purl.org/pan-science/PaNET/PaNET01140,x-ray excited optical luminescence,,,Emission or Reflection/X-ray excited optical luminescence (XEOL),,
+http://purl.org/pan-science/PaNET/PaNET01146,photoemission electron microscopy,,,Imaging/Photoemission EM,,
+http://purl.org/pan-science/PaNET/PaNET01149,x-ray reflectivity,,,Scattering/Reflectivity,,
+http://purl.org/pan-science/PaNET/PaNET01156,x-ray spectroscopy,,,,Absorption/EXAFS | Absorption/NEXAFS | Photoelectron emission/XPS,
+http://purl.org/pan-science/PaNET/PaNET01160,energy dispersive x-ray diffraction,,,,,Diffraction
+http://purl.org/pan-science/PaNET/PaNET01161,grazing incidence x-ray diffraction,,,,,Diffraction
+http://purl.org/pan-science/PaNET/PaNET01162,grazing incidence small angle x-ray scattering,,,,,Scattering/Small angle scattering
+http://purl.org/pan-science/PaNET/PaNET01164,macromolecular crystallography,,,Diffraction/Crystallography (biological macromolecules),,
+http://purl.org/pan-science/PaNET/PaNET01165,multi wavelength anomalous diffraction,,,,,Scattering/Anomalous Scattering | Scattering/Resonant Scattering
+http://purl.org/pan-science/PaNET/PaNET01167,photoelectron diffraction,,,,,Photoelectron emission | Diffraction
+http://purl.org/pan-science/PaNET/PaNET01168,serial femtosecond crystallography,,,,,Diffraction/Crystallography | Diffraction/Time-resolved studies
+http://purl.org/pan-science/PaNET/PaNET01169,serial synchrotron crystallography,,,,,Diffraction/Crystallography
+http://purl.org/pan-science/PaNET/PaNET01172,surface x-ray diffraction,,,Diffraction/Surface diffraction,,
+http://purl.org/pan-science/PaNET/PaNET01173,x-ray standing wave,,,,,Diffraction 
+http://purl.org/pan-science/PaNET/PaNET01174,coherent diffraction imaging ,,,Imaging/Coherent diffractive imaging,,
+http://purl.org/pan-science/PaNET/PaNET01178,infrared microscopy,,,Imaging/IR microscopy,,
+http://purl.org/pan-science/PaNET/PaNET01180,x-ray microscopy,,,Imaging/X-ray microscopy,,
+http://purl.org/pan-science/PaNET/PaNET01182,inelastic x-ray scattering,,,Scattering/Inelastic scattering,,
+http://purl.org/pan-science/PaNET/PaNET01183,resonant inelastic x-ray scattering,,,,,Scattering/Inelastic scattering | Scattering/Resonant Scattering | Scattering/Anomalous Scattering
+http://purl.org/pan-science/PaNET/PaNET01184,x-ray scattering,,,Scattering ,,
+http://purl.org/pan-science/PaNET/PaNET01186,resonant x-ray scattering,,,Scattering/Resonant Scattering | Scattering/Anomalous Scattering,,
+http://purl.org/pan-science/PaNET/PaNET01187,resonant soft x-ray scattering,,,,,Scattering/Resonant Scattering | Scattering/Anomalous Scattering
+http://purl.org/pan-science/PaNET/PaNET01188,small angle x-ray scattering,,,Scattering/Small angle scattering,,
+http://purl.org/pan-science/PaNET/PaNET01191,wide angle x-ray scattering,,,Scattering/Wide angle scattering,,
+http://purl.org/pan-science/PaNET/PaNET01193,energy dispersive x-ray spectroscopy,,,,,Absorption
+http://purl.org/pan-science/PaNET/PaNET01196,x-ray absorption spectroscopy,,,,Absorption/EXAFS | Absorption/NEXAFS,
+http://purl.org/pan-science/PaNET/PaNET01197,x-ray absorption fine structure,,,,Absorption/EXAFS | Absorption/NEXAFS,
+http://purl.org/pan-science/PaNET/PaNET01198,extended x-ray absorption fine structure,,,Absorption/EXAFS,,
+http://purl.org/pan-science/PaNET/PaNET01199,x-ray absorption near edge structure,,,Absorption/NEXAFS,,
+http://purl.org/pan-science/PaNET/PaNET01200,x-ray emission spectroscopy,,,,,Photoelectron emission/XPS
+http://purl.org/pan-science/PaNET/PaNET01204,x-ray photoelectron spectroscopy,,,Photoelectron emission/XPS,,
+http://purl.org/pan-science/PaNET/PaNET01205,x-ray photon correlation spectroscopy,,,,,Diffraction/Time-resolved studies | Scattering/Coherent Scattering
+http://purl.org/pan-science/PaNET/PaNET01207,x-ray tomography,,,Imaging/X-ray tomography,,
+http://purl.org/pan-science/PaNET/PaNET01208,x-ray microtomography,,,,,Imaging/X-ray tomography
+http://purl.org/pan-science/PaNET/PaNET01212,ptychography,,,Imaging/Ptychography,,
+http://purl.org/pan-science/PaNET/PaNET01216,x-ray diffraction,,,Diffraction ,,
+http://purl.org/pan-science/PaNET/PaNET01218,ambient pressure x-ray photoelectron spectroscopy,,,,,Photoelectron emission/XPS
+http://purl.org/pan-science/PaNET/PaNET01219,scanning transmission x-ray microscopy,,,,,Imaging/X-ray microscopy | Absorption
+http://purl.org/pan-science/PaNET/PaNET01221,XMCD total electron yield,,,,,Absorption/XMCD
+http://purl.org/pan-science/PaNET/PaNET01222,spin and angle resolved photoemission spectroscopy ,,,Photoelectron emission/Spin-resolved ARPES,,
+http://purl.org/pan-science/PaNET/PaNET01223,lithography ,,,Lithography,,
+http://purl.org/pan-science/PaNET/PaNET01224,x-ray lithography,,,Lithography/X-ray lithography,,
+http://purl.org/pan-science/PaNET/PaNET01225,EUV lithography ,,,Lithography/EUV lithography,,
+http://purl.org/pan-science/PaNET/PaNET01227,x-ray absorption,,,Absorption ,,
+http://purl.org/pan-science/PaNET/PaNET01229,nonlinear x-ray spectroscopy,,,,,Absorption
+http://purl.org/pan-science/PaNET/PaNET01238,pulse overlap diffraction,,,,,Diffraction/Time-resolved studies
+http://purl.org/pan-science/PaNET/PaNET01241,ultra small angle x-ray scattering,,,,,Scattering/Small angle scattering
+http://purl.org/pan-science/PaNET/PaNET01251,THz near field microscopy,,,Imaging/THz near-field microscopy,,
+http://purl.org/pan-science/PaNET/PaNET01255,ellipsometry ,,,Emission or Reflection/Ellipsometry,,
+http://purl.org/pan-science/PaNET/PaNET01256,polarimetry,,,Emission or Reflection/Polarimetry,,
+http://purl.org/pan-science/PaNET/PaNET01257,UV photoelectron emission,,,Photoelectron emission/UPS,,
+http://purl.org/pan-science/PaNET/PaNET01258,x-ray photoelectron emission,,,,,Photoelectron emission/XPS
+http://purl.org/pan-science/PaNET/PaNET01259,x-ray magnetic linear dichroism,,,,,Absorption
+http://purl.org/pan-science/PaNET/PaNET01260,resonant elastic x-ray scattering,,,,,Scattering/Elastic scattering | Scattering/Resonant Scattering | Scattering/Anomalous Scattering
+http://purl.org/pan-science/PaNET/PaNET01261,x-ray refraction imaging,,,,,Imaging 
+http://purl.org/pan-science/PaNET/PaNET01262,x-ray refraction tomography,,,,,Imaging/X-ray tomography
+http://purl.org/pan-science/PaNET/PaNET01263,time dependent scattering ,,,Scattering/Time-resolved scattering,,
+http://purl.org/pan-science/PaNET/PaNET01264,time dependent diffraction,,,,Diffraction/Time-resolved studies,
+http://purl.org/pan-science/PaNET/PaNET01265,time dependent absorption ,,,,Absorption/Time-resolved studies,
+http://purl.org/pan-science/PaNET/PaNET01266,x-ray holography,,,Imaging/X-ray holography,,
+http://purl.org/pan-science/PaNET/PaNET01267,ion imaging ,,,Imaging/Ion imaging,,
+http://purl.org/pan-science/PaNET/PaNET01268,mass spectrometry ,,,Ion Spectroscopy/Mass spectrometry,,
+http://purl.org/pan-science/PaNET/PaNET01271,microfocus x-ray scattering,,,,,Scattering/Elastic Scattering
+http://purl.org/pan-science/PaNET/PaNET01272,nanofocus x-ray scattering,,,,,Scattering/Elastic Scattering
+http://purl.org/pan-science/PaNET/PaNET01274,anomalous small angle x-ray scattering,,,,,Scattering/Small angle scattering | Scattering/Resonant scattering | Scattering/Anomalous scattering
+http://purl.org/pan-science/PaNET/PaNET01275,anomalous solution x-ray scattering,,,,,Scattering/Small angle scattering | Scattering/Resonant scattering | Scattering/Anomalous scattering
+http://purl.org/pan-science/PaNET/PaNET01280,diffuse small angle x-ray scattering,,,,,Scattering/Small angle scattering
+http://purl.org/pan-science/PaNET/PaNET01281,inelastic x-ray small angle scattering,,,,,Scattering/Small angle scattering | Scattering/Inelastic scattering
+http://purl.org/pan-science/PaNET/PaNET01282,soft x-ray small angle scattering,,,,,Scattering/Small angle Scattering
+http://purl.org/pan-science/PaNET/PaNET01283,soft x-ray diffraction,,,,,Diffraction 
+http://purl.org/pan-science/PaNET/PaNET01284,x-ray photoelectron diffraction,,,Photoelectron emission/Photoelectron diffraction,,
+http://purl.org/pan-science/PaNET/PaNET01285,x-ray imaging,,,Imaging ,,
+http://purl.org/pan-science/PaNET/PaNET01286,micro small angle x-ray scattering tomography,,,,,Scattering/Small angle scattering | Imaging/X-ray tomography
+http://purl.org/pan-science/PaNET/PaNET01287,micro grazing incidence small angle x-ray scattering tomography,,,,,Scattering/Small angle scattering
+http://purl.org/pan-science/PaNET/PaNET01289,soft x-ray imaging,,,,,Imaging 
+http://purl.org/pan-science/PaNET/PaNET01290,x-ray diffraction imaging,,,,,Imaging | Difffraction
+http://purl.org/pan-science/PaNET/PaNET01291,scanning angle resolved photoemission spectromicroscopy,,,,,Imaging/Scanning photoemission EM
+http://purl.org/pan-science/PaNET/PaNET01294,x-ray photoemission electron microscopy,,,,,Photoelectron emission | Imaging/X-ray microscopy
+http://purl.org/pan-science/PaNET/PaNET01295,x-ray scanning microscopy,,,,,Imaging/X-ray microscopy
+http://purl.org/pan-science/PaNET/PaNET01297,high resolution x-ray photoelectron spectroscopy,,,,,Photoelectron emission/XPS
+http://purl.org/pan-science/PaNET/PaNET01300,x-ray linear dichroism,,,,,Absorption 
+http://purl.org/pan-science/PaNET/PaNET01301,x-ray magnetochiral dichroism,,,,,Absorption
+http://purl.org/pan-science/PaNET/PaNET01302,x-ray natural circular dichroism,,,,,Absorption 
+http://purl.org/pan-science/PaNET/PaNET01303,x-ray natural linear dichroism,,,,,Absorption 
+http://purl.org/pan-science/PaNET/PaNET01305,long wavelength crystallography,,,,,Diffraction/Crystallography | Diffraction/Crystallography (biological macromolecules)
+http://purl.org/pan-science/PaNET/PaNET01306,microfocus macromolecular crystallography,,,,,Diffraction/Crystallography (biological macromolecules)
+http://purl.org/pan-science/PaNET/PaNET01307,nanofocus macromolecular crystallography,,,,,Diffraction/Crystallography (biological macromolecules)
+http://purl.org/pan-science/PaNET/PaNET01309,time resolved serial femtosecond crystallography,,,,,Diffraction/Crystallography | Diffraction/Time-resolved studies
+http://purl.org/pan-science/PaNET/PaNET01310,fixed target serial synchrotron crystallography,,,,,Diffraction/Crystallography
+http://purl.org/pan-science/PaNET/PaNET01311,lipidic cubic phase serial synchrotron crystallography,,,,,Diffraction/Crystallography
+http://purl.org/pan-science/PaNET/PaNET01312,time resolved serial synchrotron crystallography,,,,,Diffraction/Crystallography | Diffraction/Time-resolved studies
+http://purl.org/pan-science/PaNET/PaNET01313,magnetic x-ray tomography,,,,,Imaging/X-ray tomography
+http://purl.org/pan-science/PaNET/PaNET01314,correlative light x-ray microscopy,,,,,Imaging/X-ray microscopy
+http://purl.org/pan-science/PaNET/PaNET01315,cryo x-ray microscopy,,,,,Imaging/X-ray microscopy
+http://purl.org/pan-science/PaNET/PaNET01316,grazing incidence wide angle scattering,,,,,Scattering/Wide angle scattering
+http://purl.org/pan-science/PaNET/PaNET01321,energy dispersive extended x-ray absorption fine structure,,,,,Absorption/EXAFS
+http://purl.org/pan-science/PaNET/PaNET01322,microfocus x-ray absorption spectroscopy,,,,,Absorption/EXAFS | Absorption/NEXAFS
+http://purl.org/pan-science/PaNET/PaNET01325,borrmann effect,,,,,Diffraction 
+http://purl.org/pan-science/PaNET/PaNET01327,x-ray birefringence imaging,,,,,X-ray imaging
