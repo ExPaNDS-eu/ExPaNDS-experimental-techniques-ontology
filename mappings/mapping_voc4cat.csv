@@ -1,0 +1,16 @@
+PaNET Concept IRI,PaNET name,skos:relatedMatch,skos:closeMatch,skos:exactMatch,skos:narrowMatch,skos:broadMatch
+,,symmetric; associative mapping,symmetric; partial interchangeability,,hierarchical relationship,hierarchical relationship
+http://purl.org/pan-science/PaNET/PaNET01007,UV visible photon probe,,,,voc4cat:0000079 (ultraviolet-visible spectroscopy),
+http://purl.org/pan-science/PaNET/PaNET01050,nuclear resonance,,,,voc4cat:0000073 (nuclear magnetic resonance spectroscopy),
+http://purl.org/pan-science/PaNET/PaNET01059,versus energy loss,,,,voc4cat:0000068 (electron energy loss spectroscopy),
+http://purl.org/pan-science/PaNET/PaNET01111,luminescence,,,,voc4cat:0000074 (photoluminescence),
+http://purl.org/pan-science/PaNET/PaNET01130,UV VUV spectroscopy,,,,,voc4cat:0000079 (ultraviolet-visible spectroscopy)
+http://purl.org/pan-science/PaNET/PaNET01145,electron microscopy,,,,voc4cat:0000078 (transmission electron microscopy),
+http://purl.org/pan-science/PaNET/PaNET01177,x-ray fluorescence,,,voc4cat:0000067 (X-ray fluorescence),,
+http://purl.org/pan-science/PaNET/PaNET01195,raman spectroscopy,,,voc4cat:0000069 (Raman spectroscopy),,
+http://purl.org/pan-science/PaNET/PaNET01204,x-ray photoelectron spectroscopy,,,voc4cat:0000076 (X-ray photoelectron spectroscopy),,
+http://purl.org/pan-science/PaNET/PaNET01216,x-ray diffraction,,,voc4cat:0000077 (X-ray diffraction),,
+http://purl.org/pan-science/PaNET/PaNET01268,mass spectrometry,,,voc4cat:0000137 (mass spectrometry),,
+http://purl.org/pan-science/PaNET/PaNET01293,scanning photoelectron microscopy,,,,,voc4cat:0000075 (scanning electron microscopy)
+http://purl.org/pan-science/PaNET/PaNET01318,atomic force microscopy,,,voc4cat:0000070 (atomic force microscopy),,
+http://purl.org/pan-science/PaNET/PaNET01320,fourier transform infrared spectroscopy,,,voc4cat:0000080 (Fourier transform infrared spectroscopy),,
