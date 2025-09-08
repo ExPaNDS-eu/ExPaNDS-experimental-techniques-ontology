@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PANET: Photon and Neutron Experimental Techniques</title>
+    <link rel="stylesheet" href="css/custom.css">
+</head>
+<body>
+    <!-- Fixed Header -->
+    <header id="fixed-header">
+        <div class="header-content">
+            <img src="images/panet_logo.png" alt="PANET Logo" class="logo">
+            <h1 class="main-title">PANET: Photon and Neutron Experimental Techniques</h1>
+        </div>
+    </header>
+
+    <div id="wrapper">
+        <div id="content">
+            <!-- Navigation will be visible initially, hidden when content is shown -->
+            <nav id="navigation">
+                <h2>Documentation</h2>
+                <ul class="nav-list">
+                    <!-- Removed the scope of PANET link from navigation -->
+                    <li><a href="#environment" class="nav-link" data-section="environment">PANET: build the environment</a></li>
+                    <li><a href="#procedures" class="nav-link" data-section="procedures">PaNET Standard Operating Procedures</a></li>
+                    <li><a href="#release" class="nav-link" data-section="release">PaNET: Make a release</a></li>
+                    <li><a href="#git-workflow" class="nav-link" data-section="git-workflow">Git Workflow</a></li>
+                    <!-- CHANGE> Removed PEPICO section from navigation -->
+                </ul>
+            </nav>
+
+            <!-- Added scope sidebar that's visible by default alongside navigation -->
+            <aside id="scope-sidebar">
+                <h2>Scope of PaNET</h2>
+                <div class="scope-content">
+                    <p>PaNET is a collection of experimental techniques that match the following criteria:</p>
+                    
+                    <ul class="md-itemization">
+                        <li><strong>The technique MUST be in use, or has been used in the past, at a large European photon or neutron facility.</strong> Facility-members of LEAPS and LENS are examples of such facilities, as are ESFRI-recognised facilities such as ELI.</li>
+                        
+                        <li><strong>The technique MUST take advantage of one of the facility's beamlines.</strong> A technique is not eligible merely for taking place within a facility's campus.</li>
+                        
+                        <li><strong>In general, the technique SHOULD NOT distinguish itself from other techniques only by the choice of sample or the sample's state.</strong> This criterion may be overruled if there is a very strong view from the user community that the sample is fundamental to the technique definition.</li>
+                        
+                        <li><strong>A technique MAY distinguish itself from another technique by an essential dependency on some well-defined sample interaction.</strong> A laser pump-probe is an example of such an interaction.</li>
+                    </ul>
+                </div>
+            </aside>
+
+            <!-- All content sections hidden initially, will be shown when navigation item is clicked -->
+            <main id="main-content" style="display: none;">
+                <!-- Removed scope section from main content as it's now in the sidebar -->
+                
+                <!-- PANET: build the environment -->
+                <section id="environment" class="content-section">
+                    <h1>PaNET build environment</h1>
+                    
+                    <p>This repo contains tools for working with the Photon and Neutron Experimental Techniques (PaNET) <a href="https://github.com/ExPaNDS-eu/ExPaNDS-experimental-techniques-ontology">github repository</a>. In particular when building the ontology file <code>PaNET.owl</code> from the various the input files.</p>
+                    
+                    <p>There are two main parts:</p>
+                    <ol>
+                        <li>A script, <code>build-panet</code>, that builds the PaNET. To work, it requires that various software packages are installed.</li>
+                        <li>A 'Dockerfile' script that describes how to build a container image that contains the <code>build-panet</code> script and the software packages it needs.</li>
+                    </ol>
+
+                    <h2>Using the script directly</h2>
+                    <p>The script 'build-panet' uses:</p>
+                    <ul class="md-itemization">
+                        <li>the OBO Robot tool to build the PaNET ontology. Currently, this must be (precisely) v1.8.1: newer versions currently do not work. Note that robot requires that Java is installed.</li>
+                        <li>the <code>git</code> command. This is used to deduce a version number for the ontology. It is possible to avoid a dependency on git by specifying the version explicitly; however, this is not recommended.</li>
+                    </ul>
+
+                    <p>The script takes an optional argument: the path of a comma-separated values (csv) input file. The script will create a corresponding OWL file (in RDF/XML) in the same directory. The steps involved are:</p>
+                    <ol>
+                        <li>Generate an initial set of definitions from the CSV file.</li>
+                        <li>Run a reasoner to deduce more information about terms.</li>
+                        <li>Merge some (fairly constant) information about the ontology itself from the 'PaNET_metadata.ttl' file. This is located in the same directory as the CSV file.</li>
+                    </ol>
+
+                    <p>If no argument is given then the path <code>source/PaNET.csv</code> is used. This allows the script to be run from the base directory of the PaNET git repository.</p>
+
+                    <h2>Container image</h2>
+                    <p>A container image allows you to build the PaNET ontology without installing any dependencies. You only need the ability to run run a container. This may also be useful when automating, as CI/CD frameworks often support containers.</p>
+
+                    <p>In order to use the containerised PaNET-build script you must first get the container image onto you computer. There are two main ways of doing this: downloading it and building it yourself. These different approaches are described in the next two sections. If you are not sure, follow the instructions for downloading the image.</p>
+
+                    <p>Once you have the container image, you can use it to build the PaNET ontology. This is also described below.</p>
+
+                    <h3>Downloading the container image</h3>
+                    <p>A pre-build container image is available from this git repo's <a href="https://gitlab.desy.de/paul.millar/panet-build/container_registry">container registry</a>.</p>
+
+                    <p>Container images have the label <code>panet-build</code>, with the latest version being <code>panet-build:latest</code>. Therefore, the full reference for the latest container version is <code>gitlab.desy.de:5555/paul.millar/panet-build:latest</code>.</p>
+
+                    <p>Here is an example command showing how to download the latest image with docker:</p>
+                    <div class="md-tab-content">
+docker pull gitlab.desy.de:5555/paul.millar/panet-build:latest
+                    </div>
+
+                    <p>Here is the equivalent command when using podman:</p>
+                    <div class="md-tab-content">
+podman pull gitlab.desy.de:5555/paul.millar/panet-build:latest
+                    </div>
+
+                    <h3>Building the container image</h3>
+                    <p>This step is not necessary if you simply want to build the PaNET ontology. Rather, this information is useful if you wish to enhance the build process in a way that requires additional tools.</p>
+
+                    <p>This git repo contains the <code>Dockerfile</code> file that contains instructions for building the container image.</p>
+
+                    <p>The image may be built using a standard procedure. The following instructions show how to build the image and tag it <code>panet-build:latest</code> if the repo is the current directory.</p>
+
+                    <p>Here is the command for docker:</p>
+                    <div class="md-tab-content">
+docker build . -t panet-build
+                    </div>
+
+                    <p>and for podman:</p>
+                    <div class="md-tab-content">
+podman build . -t panet-build
+                    </div>
+
+                    <h3>Using the container image</h3>
+                    <p>By default, the container image expects the PaNET git repository to be available as the <code>/work</code> directory within the container image. Typically, this is achieved by "mounting" the PaNET git repository directory (on the host computer) at this location.</p>
+
+                    <p>This may be done by explicitly specifying the git location.</p>
+
+                    <p>A typical command with docker is:</p>
+                    <div class="md-tab-content">
+docker run -v ~/git/PaNET/:/work --rm -it panet-build
+                    </div>
+
+                    <p>... or with podman:</p>
+                    <div class="md-tab-content">
+podman run -v ~/git/PaNET/:/work --rm -it panet-build
+                    </div>
+
+                    <p>Often, the current directory is the PaNET git repository's base directory. In this case, then a somewhat simplified version of the command may be used.</p>
+
+                    <p>Here is a complete example, showing how to check out PaNET and use docker to build the ontology:</p>
+                    <div class="md-tab-content">
+cd ~/git
+git clone https://github.com/ExPaNDS-eu/ExPaNDS-experimental-techniques-ontology PaNET
+cd PaNET
+docker run -v $PWD/:/work --rm -it panet-build
+                    </div>
+
+                    <p>Here is the same example but using podman instead:</p>
+                    <div class="md-tab-content">
+cd ~/git
+git clone https://github.com/ExPaNDS-eu/ExPaNDS-experimental-techniques-ontology PaNET
+cd PaNET
+podman run -v $PWD/:/work --rm -it panet-build
+                    </div>
+
+                    <p>The container accepts argument and passes these to the script. Therefore, it is possible to specify a target CSV file, similar to running the script directly. Note that the build process assumes that the ontology metadata is available as the file <code>PaNET_metadata.ttl</code> in the same directory as the source CSV file.</p>
+
+                    <p>Specifying an alternative source file may be useful, under some specific circumstances. However, the reader is encouraged to edit the <code>PaNET.csv</code> file directly and to use <code>git</code> to manage those changes.</p>
+                </section>
+
+                <!-- PaNET Standard Operating Procedures -->
+                <section id="procedures" class="content-section">
+                    <h1>PaNET Standard Operating Procedures</h1>
+                    
+                    <h2>General procedure for handling issues in PaNET</h2>
+                    <p>Changes to PaNET ontology are triggered by resolving an issue in github. Other than in exceptional circumstances, it should be possible to trace any change in the PaNET ontology back to a corresponding issue that is being addressed.</p>
+                    
+                    <p>The issue is created by someone who has found (or believes they have found) a problem with PaNET. The issue's description (provided by the person submitting the issue) indicates what problem they are trying to resolve. The description may propose a change to the ontology (e.g., add a new term, retire a term). Any such proposal change should be taken as a hint: the important part is to resolve the underlying problem, which may be best achieved by doing something other than what is proposed.</p>
+                    
+                    <p>The issue is assigned to someone who is responsible for that issue: the issue resolver. That person is responsible for closing that ticket. Should the person be unable to do that (e.g., currently insufficient spare time, left the facility) then another person should be assigned.</p>
+                    
+                    <p>The issue resolver should look at the description and try to understand the underlying problem. Often the description is incomplete and doesn't provide sufficient information to fully understand the underlying problem. If so, the issue resolver should pose questions (through the github issue) to better understand the problem.</p>
+                    
+                    <p>Once the problem is understood, there should be a decision whether the underlying problem is something that fits within PaNET's remit. If this is unclear, the issuer resolver may seek a consensus opinion from the PaNET maintenance team (via email or at the next meeting).</p>
+                    
+                    <p>If the underlying problem does not fit within PaNET's remit then the issue resolver will update the issue, writing a description of why the problem falls outside PaNET's remit, and close the issue.</p>
+                    
+                    <p>If the underlying problem fits within PaNET's remit then the issue resolver should understand how best to resolve the problem. Any suggestion (in the issue description) may be considered, but other possibilities should also be considered. If this is unclear then the issue resolver may discuss this with other members of the PaNET maintenance team (either via mailing list or at a meeting).</p>
+                    
+                    <p>Once the desired change is understood, the issue resolver will follow one or more of the procedures (described below) to update the ontology.</p>
+                    
+                    <p>The issue will be closed automatically once the ontology is updated.</p>
+
+                    <h2>Naming convention</h2>
+                    <p>In PaNET we aim for consistent labels for terms. Therefore, when adding a new term or updating an existing term the labels should follow the naming convention described here.</p>
+                    
+                    <p>The following rules were taken from Steve's comment:</p>
+                    <ul class="md-itemization">
+                        <li>Names are copied from existing sources wherever possible.</li>
+                        <li>Adopted style is lower-case except for acronyms</li>
+                        <li>We assume the names are not case-sensitive in order to avoid a proliferation of terms using different cases.</li>
+                        <li>We assume that there is no significant preference for label over alt-label, i.e. all labels have the same importance.</li>
+                        <li>Abbreviations and acronyms are treated as any other label/alt-label</li>
+                    </ul>
+
+                    <h2>Adding a new term/relationship</h2>
+                    <p>New terms or relationships are added to fix an inadequacy with the current ontology. Examples of such problems include the inability to make a distinction between two similar techniques when searching, or the inability to query a well-defined concept that encompasses multiple terms.</p>
+                    
+                    <p>The motivation for adding a new term usually comes from following the "General procedure for handling issues in PaNET" (see above).</p>
+                    
+                    <p>The issue resolver will need to understand the exact nature of the new term or the new relationship. For terms, this involves writing an appropriate description, identifying the relationships with existing PaNET terms, and potentially finding links to related terms in other corpora. This process may involve contacting experts in the field to try to ensure a consensus in how this term is being defined.</p>
+                    
+                    <p>As a general guideline, a new term should be a subclass of the classes that are the conceptually closest broader techniques. If any of these closest broader techniques classes have existing subclasses then those relationships are reviewed to see whether the new term should be added as an intermediate term between one of the closest broader techniques and the existing subclass.</p>
+                    
+                    <p>In case the closest broader technique has a relation to a technique where the new term is when added the closest broader technique, the relation between the existing classes should be removed and the new technique should be put in between. To give a more concrete example, if PaNET contains two techniques A and B with A being a generalisation of B (in this example, written as A ← B) and a new term N is introduced where A ← N and N ← B then the existing relationship (A ← B) is removed when the two new relationships (A ← N and N ← B) are added.</p>
+                    
+                    <p>Once the new term or relationship is understood, the issue resolver will update PaNET ontology following the general procedure for updating git, as described below.</p>
+
+                    <h2>Removing a term</h2>
+                    <p>A problematic term may be removed ONLY if it has not been released. In other words, a term may be removed only if it was added more recently than the most recent release.</p>
+                    
+                    <p>If the term is present in one or more releases then the problematic term must be retired instead. See below, in the "Retiring a term" section, for more details.</p>
+                    
+                    <p>Removing a term follows the procedure described in "general procedure for updating git" with the slight modification that the patch may be generated automatically, using the git revert command, rather than manually editing the corresponding files.</p>
+                    
+                    <p>Care must be exercised when using the git revert command as it undoes everything done by a specific commit. If that commit does more than adding a term we want to get rid of, then an alternative approach may be needed.</p>
+                    
+                    <p>Also, be aware that changes in the ontology after the new term was added may complicate the process of removing a term. This is most obvious if the git revert command indicates a conflict that must be resolved, but this is a more general problem. For example, if a term (term #1) is added that is subsequently discovered to be problematic and a later commit adds a new term (term #2) that is a child of term #1 then the commit removing term #1 will also need to handle the parent-child relationship between term #1 and term #2. Simply reverting the earlier patch that introduced term #1 (i.e., git revert) will not do this.</p>
+                    
+                    <h2>Retiring a term</h2>
+                    <p>This process is based on <a href="https://github.com/geneontology/go-ontology/blob/master/docs/Principles.md#term-obsoletion">Geneontology's Principles for term obsoletion</a>.</p>
+                    
+                    <p>A term is retired because its presence is causing a problem in the PaNET ontology. For example, the term may be badly defined, allowing multiple mutually incompatible interpretations on to what the term refers.</p>
+                    
+                    <p>Released terms are never removed.</p>
+                    
+                    <p>More specifically, the PaNET maintenance team guarantees that any IRI corresponding to a technique that is available in one release will exist in all subsequent releases (see below on releasing).</p>
+                    
+                    <p>Retiring a term is the process of adhering to this promise while, at the same time, acknowledging that a specific term should not be used any more.</p>
+                    
+                    <p>Retiring a term involves removing all its links within the ontology and adding an annotation to indicate the term is obsolete.</p>
+                    
+                    <p>In some cases it is desirable to "simultaneously" retire a term while creating a new term. An example is when an existing term is badly defined: the existing term (with a bad definition) is retired while a new term (with a better definition) is added. Such a change in behaviour should be done as a single git commit, in order to indicate the close connection between these two activities.</p>
+                    
+                    <p>Once the desired changes are understood, the issue resolver updates the git repo, as described in the "general procedure for updating git" section below.</p>
+
+                    <h2>Removing or modifying a relationship</h2>
+                    <p>Unlike terms, relationships are not guaranteed from release to release: they may be modified, as we correct problems and introduce new terms. Therefore, any problematic connections may be simply modified or removed, as appropriate.</p>
+                    
+                    <p>Any changes to the relationship should be motivated by solving some concrete problem. That problem should be described in a GitHub issue. Ideally, the issue should describe some user-facing problem (e.g., when searching for X, I receive results like Y even those they are not appropriate). In practice, when the underlying problem is obvious, the issue may state simply that the relationship is wrong.</p>
+                    
+                    <p>There are situations where multiple changes are necessary; for example, if a relationship is wrong then fixing the problem may involve removing the existing relationship and adding a new relationship. When multiple changes are motivated from solving the same underlying problem then those changes should be provided as a single git commit.</p>
+                    
+                    <p>Once the problem is suitably investigated and the desired modification to the ontology is well understood, general procedure for updating git is followed.</p>
+                </section>
+
+                <!-- PaNET: Make a release -->
+                <section id="release" class="content-section">
+                    <h1>Making a Release</h1>
+                    <p>This section describes the procedure for making a new PaNET release.</p>
+                    
+                    <p>A release represents a stable, reliable version of the evolution of PaNET: a point-in-time snapshot of the ontology. Releases are given a human-friendly name, involving three numbers; e.g., v1.5.2.</p>
+                    
+                    <p>Releases are the outwardly visible evolution of the PaNET ontology. External users of the ontology are encouraged to depend only on released versions of PaNET. The strong guarantees of backwards compatibility apply only to released versions of PaNET and not on any intermediate (internal) non-released ontologies.</p>
+                    
+                    <p><strong>A release can NEVER be changed or modified in any way</strong>, even if problems are subsequently discovered, even if those problems are catastrophic in nature. If problems are discovered then the release notes should be updated to reflect those problems. If catastrophic problems are discovered then the release notes should indicate that we strongly discourage people from using that version. Problems may also be notified on the announcements mailing list.</p>
+                    
+                    <h2>Release Procedure</h2>
+                    <p>The following procedure describes how to make a release:</p>
+                    
+                    <h3>1. Pre-release Checks</h3>
+                    <p>Check the CI/CD ("Continuous Integration and Deployment", the automatic testing that GitHub does, to verify there are no problems; look for a green tick on the main code page) to ensure it is not indicating any problems. You should also look at the Github issues to see if any release-critical problems have been identified.</p>
+                    
+                    <h3>2. Repository Setup</h3>
+                    <p>Ensure you have an up-to-date clone of the PaNET git repository. If you do not already have a git repo then clone it. Note that the following command should be a single line:</p>
+                    <div class="md-tab-content">
+git clone git@github.com:ExPaNDS-eu/ExPaNDS-experimental-techniques-ontology.git
+                    </div>
+                    
+                    <p>If you have already cloned the github repo then ensure it is up-to-date with the following two commands:</p>
+                    <div class="md-tab-content">
+git checkout master
+git pull --ff-only
+git status
+                    </div>
+                    
+                    <h3>3. Create Change Log</h3>
+                    <p>Write a list of what has changed in this release (compared to the previous release): a "change log".</p>
+                    
+                    <p>The authoritative source of information on what has changed is the list of git commits, those since the most recent release (i.e., the current PaNET version). The following command provides a one-line summary of all the changes since the last release:</p>
+                    <div class="md-tab-content">
+git log --pretty=oneline CURRENT_VERSION..
+                    </div>
+                    
+                    <p>For more information, use the "short" output:</p>
+                    <div class="md-tab-content">
+git log --pretty=short CURRENT_VERSION..
+                    </div>
+                    
+                    <p>For example, if you are working on releasing PaNET version 1.2.0 then the most recent release would be 1.1.0 (in other words, the current version is 1.1.0). This release would be identified by the v1.1.0 tag. The following command provides the one-line summary of what has changed:</p>
+                    <div class="md-tab-content">
+git log --pretty=oneline v1.1.0..
+                    </div>
+                    
+                    <p>The latest tag is found with the git tag command</p>
+                    
+                    <p>Update the existing CHANGELOG file with information about the latest release at the top. Use the previous release as a template.</p>
+                    
+                    <h3>4. Build PaNET</h3>
+                    <div class="md-tab-content">
+panet-build
+                    </div>
+                    
+                    <p>or, the following command if using the container image with docker:</p>
+                    <div class="md-tab-content">
+docker run -v $PWD:/work --rm -it panet-build
+                    </div>
+                    
+                    <p>or the following command if using the container image with podman:</p>
+                    <div class="md-tab-content">
+podman run -v $PWD:/work --rm -it panet-build
+                    </div>
+                    
+                    <p>See the panet-build repo for more details on how to build PaNET.</p>
+                    
+                    <p>When building PaNET, keep an eye on the output. Look for any messages that might indicate a problem.</p>
+                    
+                    <h3>5. Verification</h3>
+                    <p>As far as possible, verify that PaNET is correct. For example:</p>
+                    
+                    <p>Manually inspect the generated OWL file:</p>
+                    <div class="md-tab-content">
+less source/PaNET.owl
+                    </div>
+                    
+                    <p>Does it have the correct version information?</p>
+                    
+                    <p>Look at the generated documentation by opening the directory widoco in your favourite web-browser. Does it look "reasonable". Is the version information correct?</p>
+                    
+                    <p><strong>This is your LAST CHANCE to spot any problems with the release!</strong></p>
+                    
+                    <h3>6. Create Release Commit</h3>
+                    <p>Create a commit that updates the version information. Note that the following command should be a single line:</p>
+                    <div class="md-tab-content">
+git commit -m "Preparing for release" CHANGELOG.md
+                    </div>
+                    
+                    <h3>7. Tag the Release</h3>
+                    <p>Create a tag for the release:</p>
+                    <div class="md-tab-content">
+git tag VERSION-IDENTIFIER
+                    </div>
+                    
+                    <p>where VERSION-IDENTIFIER is a lower-case v followed by the version number. For example, if you are releasing version 1.5.2 then the command would be:</p>
+                    <div class="md-tab-content">
+git tag v1.5.2
+                    </div>
+                    
+                    <p><strong>Take a deep breath, you are about to make history!</strong></p>
+                    
+                    <p>(Up to now, any mistakes or problems can be fixed. The next step makes the release indelible.)</p>
+                    
+                    <h3>8. Publish the Release</h3>
+                    <p>Push the changes to github, including the tag:</p>
+                    <div class="md-tab-content">
+git push --tags origin master
+                    </div>
+                    
+                    <p>This command will fail if anyone has modified the master branch since you updated your local repo (see step 2.). If this happens, then:</p>
+                    <ul class="md-itemization">
+                        <li>Remove the tag: <code>git tag -d VERSION-IDENTIFIER</code></li>
+                        <li>Discard your commits: <code>git reset --hard origin/master</code></li>
+                        <li>Go to step 1.</li>
+                    </ul>
+                    
+                    <h3>9. Post-Release Verification</h3>
+                    <p>Verify that the CI/CD has correctly built the release, and that the new version is available through the persistent URL. This may take a few minutes.</p>
+                    
+                    <p>Update github releases: Draft new release, Download artefacts from CI/CD job. Unzip contents to extract the two files: PaNET.owl PaNET_reasoned.owl. Upload these two files into the release. Make the release public.</p>
+                    
+                    <p>Update bioportal with the latest version.? Steve has bioportal account credentials for now</p>
+                    <ul class="md-itemization">
+                        <li><a href="https://bioportal.bioontology.org/ontologies/PANET">https://bioportal.bioontology.org/ontologies/PANET</a></li>
+                        <li><a href="https://www.bioontology.org/wiki/BioPortal_Help#Updating_an_existing_ontology_submission">https://www.bioontology.org/wiki/BioPortal_Help#Updating_an_existing_ontology_submission</a></li>
+                    </ul>
+                    <p>It seems it is possible to have automatic update (to be confirmed)</p>
+                    
+                    <p>Verify that the purl.org URL is pointing to the latest version; e.g.,</p>
+                    <div class="md-tab-content">
+paul@celebrimbor:~$ curl -s -L http://purl.org/pan-science/PaNET/PaNET.owl | grep versionInfo
+       &lt;owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string"&gt;1.2.0&lt;/owl:versionInfo&gt;
+paul@celebrimbor:~$
+                    </div>
+                    
+                    <h3>10. Announcement</h3>
+                    <p>Write an email to the &lt;panet-announce@desy.de&gt; mailing list that informs people of the new version and what has changed.</p>
+                    
+                    <p><strong>Congratulations, you have successfully released PaNET.</strong></p>
+                </section>
+
+                <!-- Git Workflow -->
+                <section id="git-workflow" class="content-section">
+                    <h1>Git Workflow</h1>
+                    <p>PANET development follows a structured Git workflow to ensure code quality and collaboration efficiency.</p>
+                    
+                    <h2>General procedure for updating git</h2>
+                    <p>There are several kinds of changes one may make to the PaNET git repository, motivated by resolving different kinds of problems. They should all follow the following procedure:</p>
+                    
+                    <h3>1. Create a pull request:</h3>
+                    
+                    <h4>a. Ensure you have an up-to-date clone of PaNET git repo.</h4>
+                    <p>If you do not already have a git repo then you should clone it. The following example should be a single command, but it split for readability.</p>
+                    <div class="md-tab-content">
+git clone git@github.com:ExPaNDS-eu/ExPaNDS-experimental-techniques-ontology.git
+                    </div>
+                    
+                    <p>If you have already cloned the github repo then ensure it is up-to-date:</p>
+                    <div class="md-tab-content">
+git checkout master
+git pull --ff-only
+                    </div>
+                    
+                    <h4>b. Create a new branch within your local git repo and "check out" (start using) that new branch.</h4>
+                    <p>The branch's name should be chosen based on the github issue it is addressing:</p>
+                    <div class="md-tab-content">
+git checkout -b &lt;branch&gt; origin/master
+                    </div>
+                    
+                    <p>For example, the branch could be called <code>ISS-51-add-term-tachyon-spectroscopy</code> when resolving Github issue 51:</p>
+                    <div class="md-tab-content">
+git checkout -b ISS-51-add-term-tachyon-spectroscopy origin/master
+                    </div>
+                    
+                    <h4>c. Make appropriate changes to the files according to the desired change:</h4>
+                    <div class="md-tab-content">
+emacs source/PaNET.csv
+                    </div>
+                    <p>Use the appropriate command if your favourite editor isn't Emacs. You may find the file easier to edit when using a spreadsheet; e.g., Libreoffice's calc.</p>
+                    
+                    <h4>d. Build PaNET:</h4>
+                    <div class="md-tab-content">
+panet-build
+                    </div>
+                    
+                    <p>or, the following command if using the container image with docker:</p>
+                    <div class="md-tab-content">
+docker run -v $PWD:/work --rm -it panet-build
+                    </div>
+                    
+                    <p>or the following command if using the container image with podman:</p>
+                    <div class="md-tab-content">
+podman run -v $PWD:/work --rm -it panet-build
+                    </div>
+                    
+                    <p>See the panet-build repo for more details on how to build PaNET.</p>
+                    
+                    <p>When building PaNET, keep an eye on the output. Look for any messages that might indicate a problem.</p>
+                    
+                    <h4>e. As far as possible, verify the changes have the desired effect. Here are some suggestions:</h4>
+                    <p>Manually inspect the generated OWL file:</p>
+                    <div class="md-tab-content">
+less source/PaNET.owl
+                    </div>
+                    
+                    <p>Look at the generated documentation by opening the directory widoco in your favourite web-browser.</p>
+                    
+                    <p>If you find a problem, then try to resolve it by going back to step c.</p>
+                    
+                    <h4>f. Create a commit that includes those changes.</h4>
+                    <p>The commit message should indicate that the commit closes the corresponding issue:</p>
+                    
+                    <p>Add each modified files using the git add command:</p>
+                    <div class="md-tab-content">
+git add source/PaNET.csv
+                    </div>
+                    
+                    <p>Create the commit:</p>
+                    <div class="md-tab-content">
+git commit
+                    </div>
+                    
+                    <p>This command will open an editor for you to write the commit message. The first line of the commit message is a single-line summary of what has changed. As a convenience, the first word of the first line should be the issue identifier (e.g., ISS-51 for issue 51).</p>
+                    
+                    <p>The following is an example of a minimal commit message:</p>
+                    <div class="md-tab-content">
+ISS-51 Add new term tachyon spectroscopy
+
+Closes: #51
+                    </div>
+                    
+                    <p>Here is an example commit message that follows the motivation-modification-result form, which is best practice in some software development projects:</p>
+                    <div class="md-tab-content">
+ISS-51 Add new term tachyon spectroscopy
+
+Motivation:
+Ontology currently doesn't allow it to distinguish spectroscopy based on tachyon emission.
+
+Modification:
+Add a new term, a child of emission spectroscopy, that represents this specialised form of spectroscopy.
+
+Result:
+It is now possible to identify tachyon emission spectroscopy.
+
+Closes: #51
+                    </div>
+                    
+                    <p>The phrase "closes: #nn" tells GitHub that committing this change fixes the underlying problem described in the corresponding issue. GitHub will update the issue with information related to the commit and automatically close the issue when the commit is received by GitHub.</p>
+                    
+                    <h4>g. Push the branch to PaNET git repo:</h4>
+                    <div class="md-tab-content">
+git push origin HEAD
+                    </div>
+                    
+                    <h4>h. Create a pull request that targets the master branch.</h4>
+                    <p>This involves using the web-browser:</p>
+                    <ul class="md-itemization">
+                        <li>When pushing a branch to github, the server will respond with a message that provides the URL for creating the pull request.</li>
+                        <li>Open this URL in your favourite web browser.</li>
+                        <li>Verify the information on the page is correct; in particular, that the remote branch will be deleted once the pull request is accepted.</li>
+                        <li>Click the green Create pull request button.</li>
+                    </ul>
+                    
+                    <h3>2. Receive agreement on proposed changes.</h3>
+                    <ul class="md-itemization">
+                        <li>Any pull request requires at least one team member to "sign off" on the change.</li>
+                        <li>Try to identify someone who will review your changes.</li>
+                        <li>Work with them to get their agreement that the patch should go ahead.</li>
+                    </ul>
+                    
+                    <h3>3. Use pull request to update the ontology:</h3>
+                    <p>Note that, by creating the pull request, you have triggered the automated CI/CD process that builds artefacts (documentation and OWL file). GitHub will show the current status of this process: whether it is still being processed, was successful, or has failed.</p>
+                    
+                    <p>The generated artefacts should be verified to ensure they are OK. The minimum is to determine whether the CI/CD process completed successfully.</p>
+                    
+                    <p>You may also manual inspection the generated artefacts, to verify the pull request has the desired effect. Even if you have already checked the commit locally (see step 1.e) checking the build artefacts provides a double-check.</p>
+                    
+                    <p>The changes need to be review</p>
+                    
+                    <p>The pull request is accepted in github's web interface. This will update the master branch to include the desired commit. This, in turn, will automatically close any corresponding issues.</p>
+                    
+                    <p>If the pull request has a single commit then use the "Rebase and merge" option (the default). If there are multiple commits and you don't need to record the changes individually then use the "Squash and merge" option.</p>
+                    
+                    <h3>4. Clean up after ontology is updated</h3>
+                    <p>Ensure the local version of the master branch is up-to-date with the central github version:</p>
+                    <div class="md-tab-content">
+git checkout master
+git pull --ff-only
+                    </div>
+                    
+                    <p>Delete the branch that was just merged:</p>
+                    <div class="md-tab-content">
+git branch -d ISS-51-add-term-tachyon-spectroscopy
+                    </div>
+                </section>
+
+                <!-- CHANGE> Completely removed PEPICO section -->
+            </main>
+        </div>
+    </div>
+
+    <script src="js/navigation.js"></script>
+</body>
+</html>
