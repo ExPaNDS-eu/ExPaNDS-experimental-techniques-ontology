@@ -388,11 +388,11 @@ ID number,,,,,,,,,,,,,,,,,,,,,,,,
 1333,http://purl.org/pan-science/PaNET/PaNET01333,x-ray propagation phase contrast microtomography,PPC-SrμCT,,,,owl:Class,x-ray propagation phase contrast tomography,,,,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,,,,,,,,,,,
-2000000,http://purl.org/pan-science/PaNET/PaNET2000000,photon and neutron related concepts,,,,,,,,,,,,,,,,,,,,,,
-2001000,http://purl.org/pan-science/PaNET/PaNET2001000,probe,,,Types of experimental probes,,owl:Class,photon and neutron related concepts,,,,,,,,,,,,,,,,
-2002000,http://purl.org/pan-science/PaNET/PaNET2002000,purpose,,,Types of purposes,,owl:Class,photon and neutron related concepts,,,,,,,,,,,,,,,,
-2003000,http://purl.org/pan-science/PaNET/PaNET2003000,process,,,Types of experimental physical processes,,owl:Class,photon and neutron related concepts,,,,,,,,,,,,,,,,
-2004000,http://purl.org/pan-science/PaNET/PaNET2004000,functional dependence,,,Types of functional dependences,,owl:Class,photon and neutron related concepts,,,,,,,,,,,,,,,,
+2000000,http://purl.org/pan-science/PaNET/PaNET2000000,photon and neutron specifiers,,,,,,,,,,,,,,,,,,,,,,
+2001000,http://purl.org/pan-science/PaNET/PaNET2001000,probe,,,Types of experimental probes,,owl:Class,photon and neutron specifiers,,,,,,,,,,,,,,,,
+2002000,http://purl.org/pan-science/PaNET/PaNET2002000,purpose,,,Types of purposes,,owl:Class,photon and neutron specifiers,,,,,,,,,,,,,,,,
+2003000,http://purl.org/pan-science/PaNET/PaNET2003000,process,,,Types of experimental physical processes,,owl:Class,photon and neutron specifiers,,,,,,,,,,,,,,,,
+2004000,http://purl.org/pan-science/PaNET/PaNET2004000,functional dependence,,,Types of functional dependences,,owl:Class,photon and neutron specifiers,,,,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,,,,,,,,,,,
 2011000,http://purl.org/pan-science/PaNET/PaNET2011000,photon,,,Photon probes,,owl:Class,probe,,,,,,,,,,,,,,,,
 2011001,http://purl.org/pan-science/PaNET/PaNET2011001,neutron,,,Neutron probes,,owl:Class,probe,,,,,,,,,,,,,,,,
@@ -522,7 +522,7 @@ ID number,,,,,,,,,,,,,,,,,,,,,,,,
 2020083,http://purl.org/pan-science/PaNET/PaNET2020083,surface crystallography,,,,,owl:Class,PaNET:PaNET2014000,,,,,,,,,,,,,,,,
 2020084,http://purl.org/pan-science/PaNET/PaNET2020084,divergent beam diffraction,,,,,owl:Class,PaNET:PaNET2020018,,,,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,,,,,,,,,,,
-1000000,http://purl.org/pan-science/PaNET/PaNET1000000,photon and neutron technique relationships,,,,,owl:ObjectProperty,,,,,,,,,,,,,,,photon and neutron technique,photon and neutron related concepts,asymmetric|irreflexive
+1000000,http://purl.org/pan-science/PaNET/PaNET1000000,photon and neutron technique relationships,,,,,owl:ObjectProperty,,,,,,,,,,,,,,,photon and neutron technique,photon and neutron specifiers,asymmetric|irreflexive
 1001000,http://purl.org/pan-science/PaNET/PaNET1001000,definedbyprobe,,,,,owl:ObjectProperty,,,,,,,,,,,,,,photon and neutron technique relationships,photon and neutron technique,probe,asymmetric|irreflexive
 1002000,http://purl.org/pan-science/PaNET/PaNET1002000,definedbyprocess,,,,,owl:ObjectProperty,,,,,,,,,,,,,,photon and neutron technique relationships,photon and neutron technique,process,asymmetric|irreflexive
 1003000,http://purl.org/pan-science/PaNET/PaNET1003000,definedbydependence,,,,,owl:ObjectProperty,,,,,,,,,,,,,,photon and neutron technique relationships,photon and neutron technique,functional dependence,asymmetric|irreflexive
