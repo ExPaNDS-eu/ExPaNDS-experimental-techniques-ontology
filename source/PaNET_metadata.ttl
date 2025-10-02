@@ -104,14 +104,18 @@ for photon and neutron techniques, to support PaN FAIR data catalogue functional
 
 Design philosophy
 
-In this simple ontology everything is a class and all classes are techniques. Object property relations
+In the original version of the ontology, everything is a class and all classes are techniques. Object property relations
 are implied but not formalized in this version. Subclass/superclass relationships and intersections are 
 used to define specific technique classes in terms of broader superclasses. This is seen as a key
 requirement in order to carry out catalogue searcher for broader concepts, for example.
 
+The ontology has since been restrucred to include both technique classes and specifier classes. The relationships between the two are also made explicit and formalized in the form of Object Properties. The specifier classes were created by identifying technique classes that act as umbrella terms. These techniques are defined using object properties and specifiers. The rest are defined in terms of other techniques using a mix of subclass and equivalence axioms.
+
 This project was undertaken under ExPaNDS WP3.2 (https://expands.eu/)
 
 The ontology is can be found here: https://github.com/ExPaNDS-eu/ExPaNDS-experimental-techniques-ontology
+
+The restructuring of the ontology is detailed in a paper: https://doi.org/10.1107/S1600577525005272
 
 Photon and neutron PaN ontologies developed under ExPaNDS are documented here: https://doi.org/10.5281/zenodo.4806026"""^^xsd:string ;
 .
