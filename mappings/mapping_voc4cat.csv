@@ -1,0 +1,16 @@
+ID,Label,Related Match,Close Match,Exact Match,Narrow Match,Broad Match
+ID,LABEL,AI skos:relatedMatch SPLIT=|,AI skos:closeMatch SPLIT=|,AI skos:exactMatch SPLIT=|,AI skos:narrowMatch SPLIT=|,AI skos:broadMatch SPLIT=|
+panet:PaNET01318,atomic force microscopy,,,voc4cat:0000070,,
+panet:PaNET01059,versus energy loss,,,,,voc4cat:0000068
+panet:PaNET01320,fourier transform infrared spectroscopy,,,voc4cat:0000080,,
+panet:PaNET01268,mass spectrometry,,,voc4cat:0000137,,
+panet:PaNET01050,nuclear resonance,,,,,voc4cat:0000073
+panet:PaNET01111,luminescence,,,,voc4cat:0000074,
+panet:PaNET01195,raman spectroscopy,,,voc4cat:0000069,,
+panet:PaNET01293,scanning photoelectron microscopy,,,,,voc4cat:0000075
+panet:PaNET01145,electron microscopy,,,,voc4cat:0000078,
+panet:PaNET01130,UV VUV spectroscopy,,,,voc4cat:0000079,
+panet:PaNET01007,UV visible photon probe,,voc4cat:0000079,,,
+panet:PaNET01216,x-ray diffraction,,,voc4cat:0000077,,
+panet:PaNET01177,x-ray fluorescence,,,voc4cat:0000067,,
+panet:PaNET01204,x-ray photoelectron spectroscopy,,,voc4cat:0000076,,
