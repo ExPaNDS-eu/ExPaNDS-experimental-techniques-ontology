@@ -1,0 +1,169 @@
+# curie_map:,,,,,,,,,
+#   panet: http://purl.org/pan-science/PaNET/,,,,,,,,,
+#   rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#,,,,,,,,,
+#   rdfs: http://www.w3.org/2000/01/rdf-schema#,,,,,,,,,
+#   skos: http://www.w3.org/2004/02/skos/core#,,,,,,,,,
+#   sssom: https://w3id.org/sssom/,,,,,,,,,
+#   wfl: https://www.wayforlight.eu/technique/,,,,,,,,,
+#   orcid: https://orcid.org/,,,,,,,,,
+#   semapv: https://w3id.org/semapv/vocab/,,,,,,,,,
+# license: https://creativecommons.org/licenses/by/4.0/,,,,,,,,,
+# mapping_set_description: Manually curated alignment of the PaNET ontology with wayforlight.,,,,,,,,,
+#   Intended to be used for ontological analysis.,,,,,,,,,
+# mapping_set_id: mapping_WFL_PaNET_v1.0,,,,,,,,,
+# mapping_set_version: '2025-11-12',,,,,,,,,
+# object_source: https://www.wayforlight.eu/technique/,,,,,,,,,
+# subject_source: https://expands-eu.github.io/ExPaNDS-experimental-techniques-ontology/index-en.html,,,,,,,,,
+# ,,,,,,,,,
+subject_id,subject_label,predicate_id,object_id,object_label,mapping_justification,author_id,object_source_version,mapping_date,confidence
+panet:PaNET00410,medical application,skos:exactMatch,wfl:1419,Medical application,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,10.17,2025-11-12,1
+panet:PaNET01006,THz photon probe,skos:narrowMatch,wfl:6002,THz spectroscopy,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,10.17,2025-11-12,1
+panet:PaNET01006,THz photon probe,skos:narrowMatch,wfl:6005,THz high harmonic generation,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,10.17,2025-11-12,1
+panet:PaNET01020,elastic scattering,skos:exactMatch,wfl:1420,Elastic scattering,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,10.17,2025-11-12,1
+panet:PaNET01024,coherent diffraction,skos:closeMatch,wfl:1421,Coherent scattering,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,10.17,2025-11-12,1
+panet:PaNET01034,inelastic scattering,skos:exactMatch,wfl:1422,Inelastic scattering,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,10.17,2025-11-12,1
+panet:PaNET01049,resonant scattering,skos:exactMatch,wfl:6000,Anomalous scattering,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,10.17,2025-11-12,0.99
+panet:PaNET01049,resonant scattering,skos:closeMatch,wfl:5999,Resonant scattering,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,10.17,2025-11-12,1
+panet:PaNET01052,magnetic scattering,skos:exactMatch,wfl:1423,Magnetic scattering,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,10.17,2025-11-12,1
+panet:PaNET01070,nuclear resonant scattering,skos:exactMatch,wfl:1424,Nuclear resonant scattering,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,10.17,2025-11-12,1
+panet:PaNET01082,crystallography,skos:exactMatch,wfl:1441,Crystallography,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,10.17,2025-11-12,1
+panet:PaNET01089,angle resolved photoemission spectroscopy ,skos:exactMatch,wfl:1409,Angular Resolved PES,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,10.17,2025-11-12,1
+panet:PaNET01093,photoemission spectroscopy ,skos:exactMatch,wfl:1392,Photoelectron emission,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,10.17,2025-11-12,0.99
+panet:PaNET01095,x-ray fluorescence spectroscopy,skos:closeMatch,wfl:1428,X-ray fluorescence (XRF),semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,10.17,2025-11-12,1
+panet:PaNET01101,x-ray powder diffraction,skos:exactMatch,wfl:1443,Powder diffraction,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,10.17,2025-11-12,1
+panet:PaNET01102,x-ray single crystal diffraction,skos:broadMatch,wfl:1397,Diffraction,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,10.17,2025-11-12,1
+panet:PaNET01103,hard x-ray photoelectron spectroscopy,skos:broadMatch,wfl:1407,XPS,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,10.17,2025-11-12,1
+panet:PaNET01109,infrared spectroscopy,skos:exactMatch,wfl:1439,IR spectroscopy,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,10.17,2025-11-12,1
+panet:PaNET01112,fluorescence imaging,skos:exactMatch,wfl:1418,Fluorescence imaging,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,10.17,2025-11-12,1
+panet:PaNET01113,micro XRF,skos:exactMatch,wfl:1431,Micro XRF,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,10.17,2025-11-12,1
+panet:PaNET01121,reflectometry ,skos:exactMatch,wfl:1430,Reflectrometry,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,10.17,2025-11-12,1
+panet:PaNET01132,UV circular dichroism,skos:exactMatch,wfl:1437,UVCD,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,10.17,2025-11-12,1
+panet:PaNET01136,diffraction imaging,skos:narrowMatch,wfl:1445,Topography,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,10.17,2025-11-12,0.9
+panet:PaNET01137,x-ray magnetic circular dichroism,skos:exactMatch,wfl:1438,XMCD,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,10.17,2025-11-12,1
+panet:PaNET01140,x-ray excited optical luminescence,skos:exactMatch,wfl:1429,X-ray excited optical luminescence (XEOL),semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,10.17,2025-11-12,1
+panet:PaNET01146,photoemission electron microscopy,skos:exactMatch,wfl:1417,Photoemission EM,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,10.17,2025-11-12,1
+panet:PaNET01149,x-ray reflectivity,skos:exactMatch,wfl:6001,Reflectivity,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,10.17,2025-11-12,1
+panet:PaNET01156,x-ray spectroscopy,skos:narrowMatch,wfl:1435,NEXAFS,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,10.17,2025-11-12,1
+panet:PaNET01156,x-ray spectroscopy,skos:narrowMatch,wfl:1436,EXAFS,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,10.17,2025-11-12,1
+panet:PaNET01156,x-ray spectroscopy,skos:narrowMatch,wfl:1407,XPS,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,10.17,2025-11-12,1
+panet:PaNET01160,energy dispersive x-ray diffraction,skos:broadMatch,wfl:1397,Diffraction,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,10.17,2025-11-12,1
+panet:PaNET01161,grazing incidence x-ray diffraction,skos:broadMatch,wfl:1397,Diffraction,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,10.17,2025-11-12,1
+panet:PaNET01162,grazing incidence small angle x-ray scattering,skos:broadMatch,wfl:1425,Small angle scattering,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,10.17,2025-11-12,1
+panet:PaNET01164,macromolecular crystallography,skos:exactMatch,wfl:1442,Crystallography (biological macromolecules),semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,10.17,2025-11-12,1
+panet:PaNET01165,multi wavelength anomalous diffraction,skos:broadMatch,wfl:6000,Anomalous scattering,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,10.17,2025-11-12,1
+panet:PaNET01165,multi wavelength anomalous diffraction,skos:broadMatch,wfl:5999,Resonant scattering,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,10.17,2025-11-12,0.99
+panet:PaNET01167,photoelectron diffraction,skos:broadMatch,wfl:1392,Photoelectron emission,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,10.17,2025-11-12,1
+panet:PaNET01167,photoelectron diffraction,skos:broadMatch,wfl:1397,Diffraction,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,10.17,2025-11-12,1
+panet:PaNET01168,serial femtosecond crystallography,skos:broadMatch,wfl:1441,Crystallography,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,10.17,2025-11-12,1
+panet:PaNET01168,serial femtosecond crystallography,skos:broadMatch,wfl:1446,Time-resolved studies,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,10.17,2025-11-12,1
+panet:PaNET01169,serial synchrotron crystallography,skos:broadMatch,wfl:1441,Crystallography,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,10.17,2025-11-12,1
+panet:PaNET01172,surface x-ray diffraction,skos:exactMatch,wfl:1444,Surface diffraction,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,10.17,2025-11-12,1
+panet:PaNET01173,x-ray standing wave,skos:broadMatch,wfl:1397,Diffraction,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,10.17,2025-11-12,0.9
+panet:PaNET01174,coherent diffraction imaging,skos:exactMatch,wfl:5998,Coherent diffractive imaging,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,10.17,2025-11-12,1
+panet:PaNET01178,infrared microscopy,skos:exactMatch,wfl:1413,IR Microscopy,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,10.17,2025-11-12,1
+panet:PaNET01180,x-ray microscopy,skos:exactMatch,wfl:1414,X-ray microscopy,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,10.17,2025-11-12,1
+panet:PaNET01182,inelastic x-ray scattering,skos:exactMatch,wfl:1422,Inelastic scattering,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,10.17,2025-11-12,1
+panet:PaNET01183,resonant inelastic x-ray scattering,skos:broadMatch,wfl:1422,Inelastic scattering,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,10.17,2025-11-12,1
+panet:PaNET01183,resonant inelastic x-ray scattering,skos:broadMatch,wfl:5999,Resonant scattering,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,10.17,2025-11-12,1
+panet:PaNET01183,resonant inelastic x-ray scattering,skos:broadMatch,wfl:6000,Anomalous scattering,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,10.17,2025-11-12,0.99
+panet:PaNET01184,x-ray scattering,skos:exactMatch,wfl:1393,Scattering,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,10.17,2025-11-12,1
+panet:PaNET01186,resonant x-ray scattering,skos:exactMatch,wfl:5999,Resonant scattering,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,10.17,2025-11-12,1
+panet:PaNET01186,resonant x-ray scattering,skos:exactMatch,wfl:6000,Anomalous scattering,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,10.17,2025-11-12,0.99
+panet:PaNET01187,resonant soft x-ray scattering,skos:broadMatch,wfl:6000,Anomalous scattering,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,10.17,2025-11-12,0.99
+panet:PaNET01187,resonant soft x-ray scattering,skos:broadMatch,wfl:5999,Resonant scattering,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,10.17,2025-11-12,1
+panet:PaNET01188,small angle x-ray scattering,skos:exactMatch,wfl:1425,Small angle scattering,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,10.17,2025-11-12,1
+panet:PaNET01191,wide angle x-ray scattering,skos:exactMatch,wfl:1426,Wide angle scattering,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,10.17,2025-11-12,1
+panet:PaNET01193,energy dispersive x-ray spectroscopy,skos:broadMatch,wfl:1395,Absorption,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,10.17,2025-11-12,0.9
+panet:PaNET01196,x-ray absorption spectroscopy,skos:narrowMatch,wfl:1435,NEXAFS,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,10.17,2025-11-12,1
+panet:PaNET01196,x-ray absorption spectroscopy,skos:narrowMatch,wfl:1436,EXAFS,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,10.17,2025-11-12,1
+panet:PaNET01197,x-ray absorption fine structure,skos:narrowMatch,wfl:1435,NEXAFS,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,10.17,2025-11-12,1
+panet:PaNET01197,x-ray absorption fine structure,skos:narrowMatch,wfl:1436,EXAFS,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,10.17,2025-11-12,1
+panet:PaNET01198,extended x-ray absorption fine structure,skos:exactMatch,wfl:1436,EXAFS,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,10.17,2025-11-12,1
+panet:PaNET01199,x-ray absorption near edge structure,skos:exactMatch,wfl:1435,NEXAFS,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,10.17,2025-11-12,1
+panet:PaNET01200,x-ray emission spectroscopy,skos:broadMatch,wfl:1407,XPS,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,10.17,2025-11-12,0.9
+panet:PaNET01204,x-ray photoelectron spectroscopy,skos:exactMatch,wfl:1407,XPS,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,10.17,2025-11-12,1
+panet:PaNET01205,x-ray photon correlation spectroscopy,skos:broadMatch,wfl:1446,Time-resolved studies,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,10.17,2025-11-12,0.9
+panet:PaNET01205,x-ray photon correlation spectroscopy,skos:broadMatch,wfl:1421,Coherent scattering,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,10.17,2025-11-12,0.9
+panet:PaNET01207,x-ray tomography,skos:exactMatch,wfl:1415,X-ray tomography,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,10.17,2025-11-12,1
+panet:PaNET01208,x-ray microtomography,skos:broadMatch,wfl:1415,X-ray tomography,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,10.17,2025-11-12,1
+panet:PaNET01212,ptychography,skos:exactMatch,wfl:5997,Ptychography,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,10.17,2025-11-12,1
+panet:PaNET01216,x-ray diffraction,skos:exactMatch,wfl:1397,Diffraction,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,10.17,2025-11-12,1
+panet:PaNET01218,ambient pressure x-ray photoelectron spectroscopy,skos:broadMatch,wfl:1407,XPS,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,10.17,2025-11-12,1
+panet:PaNET01219,scanning transmission x-ray microscopy,skos:broadMatch,wfl:1414,X-ray microscopy,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,10.17,2025-11-12,1
+panet:PaNET01219,scanning transmission x-ray microscopy,skos:broadMatch,wfl:1395,Absorption,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,10.17,2025-11-12,0.9
+panet:PaNET01221,XMCD total electron yield,skos:broadMatch,wfl:1438,XMCD,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,10.17,2025-11-12,1
+panet:PaNET01222,spin and angle resolved photoemission spectroscopy,skos:exactMatch,wfl:5996,Spin-resolved ARPES,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,10.17,2025-11-12,1
+panet:PaNET01223,lithography ,skos:exactMatch,wfl:1396,Lithography,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,10.17,2025-11-12,1
+panet:PaNET01224,x-ray lithography,skos:exactMatch,wfl:1447,X-ray lithography,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,10.17,2025-11-12,1
+panet:PaNET01225,EUV lithography ,skos:exactMatch,wfl:1448,EUV litography,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,10.17,2025-11-12,1
+panet:PaNET01227,x-ray absorption,skos:exactMatch,wfl:1395,Absorption,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,10.17,2025-11-12,1
+panet:PaNET01229,nonlinear x-ray spectroscopy,skos:broadMatch,wfl:1395,Absorption,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,10.17,2025-11-12,0.9
+panet:PaNET01238,pulse overlap diffraction,skos:broadMatch,wfl:1446,Time-resolved studies,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,10.17,2025-11-12,0.9
+panet:PaNET01241,ultra small angle x-ray scattering,skos:broadMatch,wfl:1425,Small angle scattering,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,10.17,2025-11-12,1
+panet:PaNET01251,THz near field microscopy,skos:exactMatch,wfl:1412,THz near-field microscopy,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,10.17,2025-11-12,1
+panet:PaNET01255,ellipsometry ,skos:exactMatch,wfl:1432,Ellipsometry,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,10.17,2025-11-12,1
+panet:PaNET01256,polarimetry,skos:exactMatch,wfl:1433,Polarimetry,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,10.17,2025-11-12,1
+panet:PaNET01257,UV photoelectron emission,skos:exactMatch,wfl:1408,UPS,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,10.17,2025-11-12,1
+panet:PaNET01258,x-ray photoelectron emission,skos:broadMatch,wfl:1407,XPS,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,10.17,2025-11-12,1
+panet:PaNET01259,x-ray magnetic linear dichroism,skos:broadMatch,wfl:1395,Absorption,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,10.17,2025-11-12,0.9
+panet:PaNET01260,resonant elastic x-ray scattering,skos:broadMatch,wfl:1420,Elastic scattering,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,10.17,2025-11-12,1
+panet:PaNET01260,resonant elastic x-ray scattering,skos:broadMatch,wfl:5999,Resonant scattering,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,10.17,2025-11-12,1
+panet:PaNET01260,resonant elastic x-ray scattering,skos:broadMatch,wfl:6000,Anomalous scattering,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,10.17,2025-11-12,0.99
+panet:PaNET01261,x-ray refraction imaging,skos:broadMatch,wfl:1388,Imaging,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,10.17,2025-11-12,1
+panet:PaNET01262,x-ray refraction tomography,skos:broadMatch,wfl:1415,X-ray tomography,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,10.17,2025-11-12,1
+panet:PaNET01263,time dependent scattering ,skos:exactMatch,wfl:1427,Time-resolved scattering,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,10.17,2025-11-12,1
+panet:PaNET01264,time dependent diffraction,skos:narrowMatch,wfl:1446,Time-resolved studies,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,10.17,2025-11-12,1
+panet:PaNET01265,time dependent absorption ,skos:narrowMatch,wfl:1440,Time-resolved studies,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,10.17,2025-11-12,1
+panet:PaNET01266,x-ray holography,skos:exactMatch,wfl:1416,X-ray holography,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,10.17,2025-11-12,1
+panet:PaNET01267,ion imaging ,skos:exactMatch,wfl:5575,Ion imaging,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,10.17,2025-11-12,1
+panet:PaNET01268,mass spectrometry ,skos:exactMatch,wfl:5576,Mass spectrometry,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,10.17,2025-11-12,1
+panet:PaNET01271,microfocus x-ray scattering,skos:broadMatch,wfl:1393,Scattering,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,10.17,2025-11-12,1
+panet:PaNET01272,nanofocus x-ray scattering,skos:broadMatch,wfl:1393,Scattering,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,10.17,2025-11-12,1
+panet:PaNET01274,anomalous small angle x-ray scattering,skos:broadMatch,wfl:1425,Small angle scattering,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,10.17,2025-11-12,1
+panet:PaNET01274,anomalous small angle x-ray scattering,skos:broadMatch,wfl:5999,Resonant scattering,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,10.17,2025-11-12,0.99
+panet:PaNET01274,anomalous small angle x-ray scattering,skos:broadMatch,wfl:6000,Anomalous scattering,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,10.17,2025-11-12,1
+panet:PaNET01275,anomalous solution x-ray scattering,skos:broadMatch,wfl:1425,Small angle scattering,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,10.17,2025-11-12,1
+panet:PaNET01275,anomalous solution x-ray scattering,skos:broadMatch,wfl:5999,Resonant scattering,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,10.17,2025-11-12,0.99
+panet:PaNET01275,anomalous solution x-ray scattering,skos:broadMatch,wfl:6000,Anomalous scattering,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,10.17,2025-11-12,1
+panet:PaNET01280,diffuse small angle x-ray scattering,skos:broadMatch,wfl:1425,Small angle scattering,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,10.17,2025-11-12,1
+panet:PaNET01281,inelastic x-ray small angle scattering,skos:broadMatch,wfl:1425,Small angle scattering,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,10.17,2025-11-12,1
+panet:PaNET01281,inelastic x-ray small angle scattering,skos:broadMatch,wfl:1422,Inelastic scattering,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,10.17,2025-11-12,1
+panet:PaNET01282,soft x-ray small angle scattering,skos:broadMatch,wfl:1425,Small angle scattering,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,10.17,2025-11-12,1
+panet:PaNET01283,soft x-ray diffraction,skos:broadMatch,wfl:1397,Diffraction,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,10.17,2025-11-12,1
+panet:PaNET01284,x-ray photoelectron diffraction,skos:exactMatch,wfl:1410,Photoelectron diffraction,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,10.17,2025-11-12,1
+panet:PaNET01285,x-ray imaging,skos:exactMatch,wfl:1388,Imaging,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,10.17,2025-11-12,1
+panet:PaNET01286,micro small angle x-ray scattering tomography,skos:broadMatch,wfl:1425,Small angle scattering,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,10.17,2025-11-12,1
+panet:PaNET01286,micro small angle x-ray scattering tomography,skos:broadMatch,wfl:1415,X-ray tomography,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,10.17,2025-11-12,1
+panet:PaNET01287,micro grazing incidence small angle x-ray scattering tomography,skos:broadMatch,wfl:1425,Small angle scattering,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,10.17,2025-11-12,1
+panet:PaNET01289,soft x-ray imaging,skos:broadMatch,wfl:1388,Imaging,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,10.17,2025-11-12,1
+panet:PaNET01290,x-ray diffraction imaging,skos:broadMatch,wfl:1388,Imaging,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,10.17,2025-11-12,1
+panet:PaNET01290,x-ray diffraction imaging,skos:broadMatch,wfl:1397,Diffraction,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,10.17,2025-11-12,1
+panet:PaNET01291,scanning angle resolved photoemission spectromicroscopy,skos:broadMatch,wfl:1409,Angular Resolved PES,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,10.17,2025-11-12,1
+panet:PaNET01291,scanning angle resolved photoemission spectromicroscopy,skos:broadMatch,wfl:1414,X-ray microscopy,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,10.17,2025-11-12,1
+panet:PaNET01294,x-ray photoemission electron microscopy,skos:broadMatch,wfl:1392,Photoelectron emission,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,10.17,2025-11-12,1
+panet:PaNET01294,x-ray photoemission electron microscopy,skos:broadMatch,wfl:1414,X-ray microscopy,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,10.17,2025-11-12,1
+panet:PaNET01295,x-ray scanning microscopy,skos:broadMatch,wfl:1414,X-ray microscopy,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,10.17,2025-11-12,1
+panet:PaNET01297,high resolution x-ray photoelectron spectroscopy,skos:broadMatch,wfl:1407,XPS,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,10.17,2025-11-12,1
+panet:PaNET01300,x-ray linear dichroism,skos:broadMatch,wfl:1395,Absorption,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,10.17,2025-11-12,1
+panet:PaNET01301,x-ray magnetochiral dichroism,skos:broadMatch,wfl:1395,Absorption,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,10.17,2025-11-12,1
+panet:PaNET01302,x-ray natural circular dichroism,skos:broadMatch,wfl:1395,Absorption,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,10.17,2025-11-12,1
+panet:PaNET01303,x-ray natural linear dichroism,skos:broadMatch,wfl:1395,Absorption,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,10.17,2025-11-12,1
+panet:PaNET01305,long wavelength crystallography,skos:broadMatch,wfl:1441,Crystallography,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,10.17,2025-11-12,1
+panet:PaNET01305,long wavelength crystallography,skos:broadMatch,wfl:1442,Crystallography (biological macromolecules),semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,10.17,2025-11-12,1
+panet:PaNET01306,microfocus macromolecular crystallography,skos:broadMatch,wfl:1442,Crystallography (biological macromolecules),semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,10.17,2025-11-12,1
+panet:PaNET01307,nanofocus macromolecular crystallography,skos:broadMatch,wfl:1442,Crystallography (biological macromolecules),semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,10.17,2025-11-12,1
+panet:PaNET01309,time resolved serial femtosecond crystallography,skos:broadMatch,wfl:1441,Crystallography,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,10.17,2025-11-12,1
+panet:PaNET01309,time resolved serial femtosecond crystallography,skos:broadMatch,wfl:1446,Time-resolved studies,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,10.17,2025-11-12,1
+panet:PaNET01310,fixed target serial synchrotron crystallography,skos:broadMatch,wfl:1441,Crystallography,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,10.17,2025-11-12,1
+panet:PaNET01311,lipidic cubic phase serial synchrotron crystallography,skos:broadMatch,wfl:1441,Crystallography,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,10.17,2025-11-12,1
+panet:PaNET01312,time resolved serial synchrotron crystallography,skos:broadMatch,wfl:1441,Crystallography,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,10.17,2025-11-12,1
+panet:PaNET01312,time resolved serial synchrotron crystallography,skos:broadMatch,wfl:1446,Time-resolved studies,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,10.17,2025-11-12,1
+panet:PaNET01313,magnetic x-ray tomography,skos:broadMatch,wfl:1415,X-ray tomography,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,10.17,2025-11-12,1
+panet:PaNET01314,correlative light x-ray microscopy,skos:broadMatch,wfl:1414,X-ray microscopy,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,10.17,2025-11-12,1
+panet:PaNET01315,cryo x-ray microscopy,skos:broadMatch,wfl:1414,X-ray microscopy,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,10.17,2025-11-12,1
+panet:PaNET01316,grazing incidence wide angle scattering,skos:broadMatch,wfl:1426,Wide angle scattering,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,10.17,2025-11-12,1
+panet:PaNET01321,energy dispersive extended x-ray absorption fine structure,skos:broadMatch,wfl:1436,EXAFS,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,10.17,2025-11-12,1
+panet:PaNET01322,microfocus x-ray absorption spectroscopy,skos:broadMatch,wfl:1435,NEXAFS,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,10.17,2025-11-12,1
+panet:PaNET01322,microfocus x-ray absorption spectroscopy,skos:broadMatch,wfl:1436,EXAFS,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,10.17,2025-11-12,1
+panet:PaNET01325,borrmann effect,skos:broadMatch,wfl:1397,Diffraction,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,10.17,2025-11-12,0.99
+panet:PaNET01327,x-ray birefringence imaging,skos:broadMatch,wfl:1388,Imaging,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,10.17,2025-11-12,1
