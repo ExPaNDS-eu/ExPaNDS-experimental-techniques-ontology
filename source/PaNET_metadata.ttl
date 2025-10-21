@@ -11,7 +11,7 @@
 
 <http://purl.org/pan-science/PaNET/PaNET.owl>
   a owl:Ontology ;
-  dcterms:created "2021-05-19"^^xsd:string ; 
+  dcterms:created "2025-10-21"^^xsd:string ; 
   vann:preferredNamespaceUri <http://purl.org/pan-science/PaNET/> ; 
   dcterms:title "The Photon and Neutron Experimental Techniques Ontology";
   sdo:name "The Photon and Neutron Experimental Techniques Ontology";
