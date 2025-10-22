@@ -1,0 +1,126 @@
+ID,Label,Related Match,Close Match,Exact Match,Narrow Match,Broad Match
+ID,LABEL,AI skos:relatedMatch SPLIT=|,AI skos:closeMatch SPLIT=|,AI skos:exactMatch SPLIT=|,AI skos:narrowMatch SPLIT=|,AI skos:broadMatch SPLIT=|
+panet:PaNET00410,medical application,,,,wfl:1419,
+panet:PaNET01006,THz photon probe,,,,wfl:6002|wfl:6005,
+panet:PaNET01012,hard x-ray probe,,,,,
+panet:PaNET01014,tender x-ray probe,,,,,
+panet:PaNET01015,soft x-ray probe,,,,,
+panet:PaNET01020,elastic scattering,,,wfl:1420,,
+panet:PaNET01024,coherent diffraction,,wfl:1421,,,
+panet:PaNET01034,inelastic scattering,,,wfl:1422,,
+panet:PaNET01049,resonant scattering ,,,wfl:6000|wfl:5999 ,,
+panet:PaNET01052,magnetic scattering ,,,wfl:1423,,
+panet:PaNET01070,nuclear resonant scattering,,,wfl:1424,,
+panet:PaNET01082,crystallography,,,wfl:1441,,
+panet:PaNET01089,angle resolved photoemission spectroscopy ,,,wfl:1409,,
+panet:PaNET01093,photoemission spectroscopy ,,,wfl:1392,,
+panet:PaNET01095,x-ray fluorescence spectroscopy,,wfl:1428,,,
+panet:PaNET01101,x-ray powder diffraction,,,wfl:1443,,
+panet:PaNET01102,x-ray single crystal diffraction,,,,,wfl:1397
+panet:PaNET01103,hard x-ray photoelectron spectroscopy,,,,,wfl:1407
+panet:PaNET01109,infrared spectroscopy,,,wfl:1439,,
+panet:PaNET01112,fluorescence imaging,,,wfl:1418,,
+panet:PaNET01113,micro XRF,,,wfl:1431,,
+panet:PaNET01121,reflectometry ,,,wfl:1430,,
+panet:PaNET01132,UV circular dichroism,,,wfl:1437,,
+panet:PaNET01136,diffraction imaging,,,,wfl:1445,
+panet:PaNET01137,x-ray magnetic circular dichroism,,,wfl:1438,,
+panet:PaNET01140,x-ray excited optical luminescence,,,wfl:1429,,
+panet:PaNET01146,photoemission electron microscopy,,,wfl:1417,,
+panet:PaNET01149,x-ray reflectivity,,,wfl:6001,,
+panet:PaNET01156,x-ray spectroscopy,,,,wfl:1435|wfl:1436|wfl:1407,
+panet:PaNET01160,energy dispersive x-ray diffraction,,,,,wfl:1397
+panet:PaNET01161,grazing incidence x-ray diffraction,,,,,wfl:1397
+panet:PaNET01162,grazing incidence small angle x-ray scattering,,,,,wfl:1425
+panet:PaNET01164,macromolecular crystallography,,,wfl:1442,,
+panet:PaNET01165,multi wavelength anomalous diffraction,,,,,wfl:5999|wfl:6000
+panet:PaNET01167,photoelectron diffraction,,,,,wfl:1392|wfl:1397
+panet:PaNET01168,serial femtosecond crystallography,,,,,wfl:1441|wfl:1446
+panet:PaNET01169,serial synchrotron crystallography,,,,,wfl:1441
+panet:PaNET01172,surface x-ray diffraction,,,wfl:1444,,
+panet:PaNET01173,x-ray standing wave,,,,,wfl:1397
+panet:PaNET01174,coherent diffraction imaging,,,wfl:5998,,
+panet:PaNET01178,infrared microscopy,,,wfl:1413,,
+panet:PaNET01180,x-ray microscopy,,,wfl:1414,,
+panet:PaNET01182,inelastic x-ray scattering,,,wfl:1422,,
+panet:PaNET01183,resonant inelastic x-ray scattering,,,,,wfl:1422|wfl:5999|wfl:6000
+panet:PaNET01184,x-ray scattering,,,wfl:1393,,
+panet:PaNET01186,resonant x-ray scattering,,,wfl:5999|wfl:6000,,
+panet:PaNET01187,resonant soft x-ray scattering,,,,,wfl:5999|wfl:6000
+panet:PaNET01188,small angle x-ray scattering,,,wfl:1425,,
+panet:PaNET01191,wide angle x-ray scattering,,,wfl:1426,,
+panet:PaNET01193,energy dispersive x-ray spectroscopy,,,,,wfl:1395
+panet:PaNET01196,x-ray absorption spectroscopy,,,,wfl:1435|wfl:1436,
+panet:PaNET01197,x-ray absorption fine structure,,,,wfl:1435|wfl:1436,
+panet:PaNET01198,extended x-ray absorption fine structure,,,wfl:1436,,
+panet:PaNET01199,x-ray absorption near edge structure,,,wfl:1435,,
+panet:PaNET01200,x-ray emission spectroscopy,,,,,wfl:1407
+panet:PaNET01204,x-ray photoelectron spectroscopy,,,wfl:1407,,
+panet:PaNET01205,x-ray photon correlation spectroscopy,,,,,wfl:1446|wfl:1421
+panet:PaNET01207,x-ray tomography,,,wfl:1415,,
+panet:PaNET01208,x-ray microtomography,,,,,wfl:1415
+panet:PaNET01212,ptychography,,,wfl:5997,,
+panet:PaNET01216,x-ray diffraction,,,wfl:1397,,
+panet:PaNET01218,ambient pressure x-ray photoelectron spectroscopy,,,,,wfl:1407
+panet:PaNET01219,scanning transmission x-ray microscopy,,,,,wfl:1414|wfl:1395
+panet:PaNET01221,XMCD total electron yield,,,,,wfl:1438
+panet:PaNET01222,spin and angle resolved photoemission spectroscopy ,,,wfl:5996,,
+panet:PaNET01223,lithography ,,,wfl:1396,,
+panet:PaNET01224,x-ray lithography,,,wfl:1447,,
+panet:PaNET01225,EUV lithography ,,,wfl:1448,,
+panet:PaNET01227,x-ray absorption,,,wfl:1395,,
+panet:PaNET01229,nonlinear x-ray spectroscopy,,,,,wfl:1395
+panet:PaNET01238,pulse overlap diffraction,,,,,wfl:1446
+panet:PaNET01241,ultra small angle x-ray scattering,,,,,wfl:1425
+panet:PaNET01251,THz near field microscopy,,,wfl:1412,,
+panet:PaNET01255,ellipsometry ,,,wfl:1432,,
+panet:PaNET01256,polarimetry,,,wfl:1433,,
+panet:PaNET01257,UV photoelectron emission,,,wfl:1408,,
+panet:PaNET01258,x-ray photoelectron emission,,,,,wfl:1407
+panet:PaNET01259,x-ray magnetic linear dichroism,,,,,wfl:1395
+panet:PaNET01260,resonant elastic x-ray scattering,,,,,wfl:1420|wfl:5999|wfl:6000
+panet:PaNET01261,x-ray refraction imaging,,,,,wfl:1388
+panet:PaNET01262,x-ray refraction tomography,,,,,wfl:1415
+panet:PaNET01263,time dependent scattering ,,,wfl:1427,,
+panet:PaNET01264,time dependent diffraction,,,,wfl:1446,
+panet:PaNET01265,time dependent absorption ,,,,wfl:1440,
+panet:PaNET01266,x-ray holography,,,wfl:1416,,
+panet:PaNET01267,ion imaging ,,,wfl:5575,,
+panet:PaNET01268,mass spectrometry ,,,wfl:5576,,
+panet:PaNET01271,microfocus x-ray scattering,,,,,wfl:1420
+panet:PaNET01272,nanofocus x-ray scattering,,,,,wfl:1420
+panet:PaNET01274,anomalous small angle x-ray scattering,,,,,wfl:1425|wfl:5999|wfl:6000
+panet:PaNET01275,anomalous solution x-ray scattering,,,,,wfl:1425|wfl:5999|wfl:6000
+panet:PaNET01280,diffuse small angle x-ray scattering,,,,,wfl:1425
+panet:PaNET01281,inelastic x-ray small angle scattering,,,,,wfl:1425|wfl:1422
+panet:PaNET01282,soft x-ray small angle scattering,,,,,wfl:1425
+panet:PaNET01283,soft x-ray diffraction,,,,,wfl:1397
+panet:PaNET01284,x-ray photoelectron diffraction,,,wfl:1410,,
+panet:PaNET01285,x-ray imaging,,,wfl:1388,,
+panet:PaNET01286,micro small angle x-ray scattering tomography,,,,,wfl:1425|wfl:1415
+panet:PaNET01287,micro grazing incidence small angle x-ray scattering tomography,,,,,wfl:1425
+panet:PaNET01289,soft x-ray imaging,,,,,wfl:1388
+panet:PaNET01290,x-ray diffraction imaging,,,,,wfl:1388|wfl:1397
+panet:PaNET01291,scanning angle resolved photoemission spectromicroscopy,,,,,wfl:1417
+panet:PaNET01294,x-ray photoemission electron microscopy,,,,,wfl:1392|wfl:1414
+panet:PaNET01295,x-ray scanning microscopy,,,,,wfl:1414
+panet:PaNET01297,high resolution x-ray photoelectron spectroscopy,,,,,wfl:1407
+panet:PaNET01300,x-ray linear dichroism,,,,,wfl:1395
+panet:PaNET01301,x-ray magnetochiral dichroism,,,,,wfl:1395
+panet:PaNET01302,x-ray natural circular dichroism,,,,,wfl:1395
+panet:PaNET01303,x-ray natural linear dichroism,,,,,wfl:1395
+panet:PaNET01305,long wavelength crystallography,,,,,wfl:1441|wfl:1442
+panet:PaNET01306,microfocus macromolecular crystallography,,,,,wfl:1442
+panet:PaNET01307,nanofocus macromolecular crystallography,,,,,wfl:1442
+panet:PaNET01309,time resolved serial femtosecond crystallography,,,,,wfl:1441|wfl:1446
+panet:PaNET01310,fixed target serial synchrotron crystallography,,,,,wfl:1441
+panet:PaNET01311,lipidic cubic phase serial synchrotron crystallography,,,,,wfl:1441
+panet:PaNET01312,time resolved serial synchrotron crystallography,,,,,wfl:1441|wfl:1446
+panet:PaNET01313,magnetic x-ray tomography,,,,,wfl:1415
+panet:PaNET01314,correlative light x-ray microscopy,,,,,wfl:1414
+panet:PaNET01315,cryo x-ray microscopy,,,,,wfl:1414
+panet:PaNET01316,grazing incidence wide angle scattering,,,,,wfl:1426
+panet:PaNET01321,energy dispersive extended x-ray absorption fine structure,,,,,wfl:1436
+panet:PaNET01322,microfocus x-ray absorption spectroscopy,,,,,wfl:1435|wfl:1436
+panet:PaNET01325,borrmann effect,,,,,wfl:1397
+panet:PaNET01327,x-ray birefringence imaging,,,,,wfl:1388
