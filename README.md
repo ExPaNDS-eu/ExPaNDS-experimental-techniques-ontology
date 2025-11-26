@@ -31,7 +31,7 @@ The PaNET.owl is generated from an Excel/CSV file using [ROBOT](https://search.m
 Here are some instructions to generate the OWL file:
 - if robot-1.8.1/bin/robot.jar does not exist: go to teh directory robot-1.8.1 and do mvn install.
 - check robot-1.8.1/bin/robot.jar exists Then execute:
-robot template --template PaNET.csv --ontology-iri 'http://purl.org/ExPaNDS/' --output PaNET.owl
+robot template --template PaNET.csv --prefix "PaNET:http://purl.org/pan-science/PaNET/" --ontology-iri "http://purl.org/pan-science/PaNET" --output PaNET.owl
 
 After the PaNET.owl file has been generated, please follow the following steps: 
 
