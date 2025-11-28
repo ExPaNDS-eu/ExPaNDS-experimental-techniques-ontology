@@ -102,6 +102,14 @@
       rdfs:seeAlso <https://orcid.org/0000-0003-4049-4060> ;
       foaf:workInfoHomepage <https://majumdararn.github.io/> ;
     ] ;
+    dcterms:creator [
+      a foaf:Person ;
+      sdo:affiliation [
+           foaf:name "German Engineering Materials Science Centre (GEMS) at Heinz Maier-Leibnitz Zentrum (MLZ), Helmholtz-Zentrum Hereon" ;
+      ] ;
+      foaf:name "Sebastian Busch" ;
+      rdfs:seeAlso <https://orcid.org/0000-0002-9815-909X> ;
+    ] ;
     dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
 
     rdfs:comment """Photon and Neutron Experimental Techniques: An ontology of  techniques within the photon and neutron (PaN) domain.
