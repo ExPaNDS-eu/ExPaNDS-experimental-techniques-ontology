@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PANET: Photon and Neutron Experimental Techniques</title>
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="icon" href="../logo/favicon.svg" type="image/svg">
+</head>
+<body>
+    <!-- Fixed Header -->
+    <header id="fixed-header">
+        <div class="header-content">
+            <img id="panet_logo" alt="PaNET Logo" src="../logo/panet_logo.png" alt="PANET Logo" class="logo">
+            <h1 class="main-title">PANET: Photon and Neutron Experimental Techniques</h1>
+        </div>
+    </header>
+
+    <div id="wrapper">
+        <div id="content">
+            <nav id="navigation">
+                <h1>Documentation</h1>
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link" data-section="scope">Scope of PaNET</a></li>
+                    <li><a href="https://expands-eu.github.io/ExPaNDS-experimental-techniques-ontology/index-en.html" class="nav-link" data-section="scope">Browse PaNET</a></li>
+                    <li><a href="workflow.html" class="nav-link-selected" data-section="git-workflow">Git Workflow</a></li>
+                    <li><a href="std_op_proc.html" class="nav-link" data-section="procedures">Standard Operating Procedures</a></li>
+                    <li><a href="build.html" class="nav-link" data-section="environment">Build the Environment</a></li>
+                    <li><a href="release.html" class="nav-link" data-section="release">Make a Release</a></li>
+                </ul>
+            </nav>
+
+            <!-- Added scope sidebar that's visible by default alongside navigation -->
+            <aside id="scope-sidebar">
+                <h1>Git Workflow</h1>
+                <div>
+                    <p>PANET development follows a structured Git workflow to ensure code quality and collaboration efficiency.</p>
+                    
+                    <h2>General procedure for updating git</h2>
+                    <p>There are several kinds of changes one may make to the PaNET git repository, motivated by resolving different kinds of problems. They should all follow the following procedure:</p>
+                    
+                    <h3>1. Create a pull request:</h3>
+                    
+                    <h4>a. Ensure you have an up-to-date clone of PaNET git repo.</h4>
+                    <p>If you do not already have a git repo then you should clone it. The following example should be a single command, but it split for readability.</p>
+                    <div class="md-tab-content">
+git clone git@github.com:ExPaNDS-eu/ExPaNDS-experimental-techniques-ontology.git
+                    </div>
+                    
+                    <p>If you have already cloned the github repo then ensure it is up-to-date:</p>
+                    <div class="md-tab-content">
+git checkout master
+git pull --ff-only
+                    </div>
+                    
+                    <h4>b. Create a new branch within your local git repo and "check out" (start using) that new branch.</h4>
+                    <p>The branch's name should be chosen based on the github issue it is addressing:</p>
+                    <div class="md-tab-content">
+git checkout -b &lt;branch&gt; origin/master
+                    </div>
+                    
+                    <p>For example, the branch could be called <code>ISS-51-add-term-tachyon-spectroscopy</code> when resolving Github issue 51:</p>
+                    <div class="md-tab-content">
+git checkout -b ISS-51-add-term-tachyon-spectroscopy origin/master
+                    </div>
+                    
+                    <h4>c. Make appropriate changes to the files according to the desired change:</h4>
+                    <div class="md-tab-content">
+emacs source/PaNET.csv
+                    </div>
+                    <p>Use the appropriate command if your favourite editor isn't Emacs. You may find the file easier to edit when using a spreadsheet; e.g., Libreoffice's calc.</p>
+                    
+                    <h4>d. Build PaNET:</h4>
+                    <div class="md-tab-content">
+panet-build
+                    </div>
+                    
+                    <p>or, the following command if using the container image with docker:</p>
+                    <div class="md-tab-content">
+docker run -v $PWD:/work --rm -it panet-build
+                    </div>
+                    
+                    <p>or the following command if using the container image with podman:</p>
+                    <div class="md-tab-content">
+podman run -v $PWD:/work --rm -it panet-build
+                    </div>
+                    
+                    <p>See the panet-build repo for more details on how to build PaNET.</p>
+                    
+                    <p>When building PaNET, keep an eye on the output. Look for any messages that might indicate a problem.</p>
+                    
+                    <h4>e. As far as possible, verify the changes have the desired effect. Here are some suggestions:</h4>
+                    <p>Manually inspect the generated OWL file:</p>
+                    <div class="md-tab-content">
+less source/PaNET.owl
+                    </div>
+                    
+                    <p>Look at the generated documentation by opening the directory widoco in your favourite web-browser.</p>
+                    
+                    <p>If you find a problem, then try to resolve it by going back to step c.</p>
+                    
+                    <h4>f. Create a commit that includes those changes.</h4>
+                    <p>The commit message should indicate that the commit closes the corresponding issue:</p>
+                    
+                    <p>Add each modified files using the git add command:</p>
+                    <div class="md-tab-content">
+git add source/PaNET.csv
+                    </div>
+                    
+                    <p>Create the commit:</p>
+                    <div class="md-tab-content">
+git commit
+                    </div>
+                    
+                    <p>This command will open an editor for you to write the commit message. The first line of the commit message is a single-line summary of what has changed. As a convenience, the first word of the first line should be the issue identifier (e.g., ISS-51 for issue 51).</p>
+                    
+                    <p>The following is an example of a minimal commit message:</p>
+                    <div class="md-tab-content">
+ISS-51 Add new term tachyon spectroscopy
+
+Closes: #51
+                    </div>
+                    
+                    <p>Here is an example commit message that follows the motivation-modification-result form, which is best practice in some software development projects:</p>
+                    <div class="md-tab-content">
+ISS-51 Add new term tachyon spectroscopy
+
+Motivation:
+Ontology currently doesn't allow it to distinguish spectroscopy based on tachyon emission.
+
+Modification:
+Add a new term, a child of emission spectroscopy, that represents this specialised form of spectroscopy.
+
+Result:
+It is now possible to identify tachyon emission spectroscopy.
+
+Closes: #51
+                    </div>
+                    
+                    <p>The phrase "closes: #nn" tells GitHub that committing this change fixes the underlying problem described in the corresponding issue. GitHub will update the issue with information related to the commit and automatically close the issue when the commit is received by GitHub.</p>
+                    
+                    <h4>g. Push the branch to PaNET git repo:</h4>
+                    <div class="md-tab-content">
+git push origin HEAD
+                    </div>
+                    
+                    <h4>h. Create a pull request that targets the master branch.</h4>
+                    <p>This involves using the web-browser:</p>
+                    <ul class="md-itemization">
+                        <li>When pushing a branch to github, the server will respond with a message that provides the URL for creating the pull request.</li>
+                        <li>Open this URL in your favourite web browser.</li>
+                        <li>Verify the information on the page is correct; in particular, that the remote branch will be deleted once the pull request is accepted.</li>
+                        <li>Click the green Create pull request button.</li>
+                    </ul>
+                    
+                    <h3>2. Receive agreement on proposed changes.</h3>
+                    <ul class="md-itemization">
+                        <li>Any pull request requires at least one team member to "sign off" on the change.</li>
+                        <li>Try to identify someone who will review your changes.</li>
+                        <li>Work with them to get their agreement that the patch should go ahead.</li>
+                    </ul>
+                    
+                    <h3>3. Use pull request to update the ontology:</h3>
+                    <p>Note that, by creating the pull request, you have triggered the automated CI/CD process that builds artefacts (documentation and OWL file). GitHub will show the current status of this process: whether it is still being processed, was successful, or has failed.</p>
+                    
+                    <p>The generated artefacts should be verified to ensure they are OK. The minimum is to determine whether the CI/CD process completed successfully.</p>
+                    
+                    <p>You may also manual inspection the generated artefacts, to verify the pull request has the desired effect. Even if you have already checked the commit locally (see step 1.e) checking the build artefacts provides a double-check.</p>
+                    
+                    <p>The changes need to be review</p>
+                    
+                    <p>The pull request is accepted in github's web interface. This will update the master branch to include the desired commit. This, in turn, will automatically close any corresponding issues.</p>
+                    
+                    <p>If the pull request has a single commit then use the "Rebase and merge" option (the default). If there are multiple commits and you don't need to record the changes individually then use the "Squash and merge" option.</p>
+                    
+                    <h3>4. Clean up after ontology is updated</h3>
+                    <p>Ensure the local version of the master branch is up-to-date with the central github version:</p>
+                    <div class="md-tab-content">
+git checkout master
+git pull --ff-only
+                    </div>
+                    
+                    <p>Delete the branch that was just merged:</p>
+                    <div class="md-tab-content">
+git branch -d ISS-51-add-term-tachyon-spectroscopy
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </div>
+</body>
+</html>

@@ -101,7 +101,7 @@ body {
   box-shadow: -2px 0 8px rgba(17, 33, 62, 0.05);
 }
 
-#scope-sidebar h2 {
+#scope-sidebar h1 {
   color: var(--panet-dark-blue);
   font-family: "Inter", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-size: 2rem;
@@ -145,7 +145,7 @@ body {
   left: 0;
 }
 
-#navigation h2 {
+#navigation h1 {
   color: var(--panet-dark-blue);
   font-family: "Inter", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-size: 2rem;
@@ -195,6 +195,19 @@ body {
   box-shadow: 0 2px 8px rgba(101, 109, 177, 0.3);
 }
 
+.nav-link-selected {
+  display: block;
+  padding: 15px 20px;
+  color: var(--panet-purple);
+  text-decoration: none;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  font-size: 1.2rem;
+  border-left: 4px solid transparent;
+  font-weight: 500;
+  font-family: "Inter", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
 /* Main Content Area */
 #main-content {
   flex: 1;
@@ -228,7 +241,7 @@ body {
   }
 }
 
-.content-section h1 {
+.content-section h2 {
   color: var(--panet-dark-blue);
   font-family: "Inter", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-size: 2.8rem; /* Reduced from 3.2rem to 2.8rem */
@@ -240,7 +253,7 @@ body {
   text-shadow: 0 1px 2px rgba(17, 33, 62, 0.1);
 }
 
-.content-section h2 {
+.content-section h1 {
   color: var(--panet-purple);
   font-family: "Inter", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-size: 2rem; /* Reduced from 2.2rem to 2rem */
