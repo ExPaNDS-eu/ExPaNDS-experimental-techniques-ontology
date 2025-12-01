@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PANET: Photon and Neutron Experimental Techniques</title>
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="icon" href="../logo/favicon.svg" type="image/svg">
+</head>
+<body>
+    <!-- Fixed Header -->
+    <header id="fixed-header">
+        <div class="header-content">
+            <img id="panet_logo" alt="PaNET Logo" src="../logo/panet_logo.png" alt="PANET Logo" class="logo">
+            <h1 class="main-title">PANET: Photon and Neutron Experimental Techniques</h1>
+        </div>
+    </header>
+
+    <div id="wrapper">
+        <div id="content">
+            <!-- Navigation will be visible initially, hidden when content is shown -->
+            <nav id="navigation">
+                <h1>Documentation</h1>
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link" data-section="scope">Scope of PaNET</a></li>
+                    <li><a href="https://expands-eu.github.io/ExPaNDS-experimental-techniques-ontology/index-en.html" class="nav-link" data-section="scope">Browse PaNET</a></li>
+                    <li><a href="workflow.html" class="nav-link" data-section="git-workflow">Git Workflow</a></li>
+                    <li><a href="std_op_proc.html" class="nav-link" data-section="procedures">PaNET Standard Operating Procedures</a></li>
+                    <li><a href="build.html" class="nav-link-selected" data-section="environment">Build the Environment</a></li>
+                    <li><a href="release.html" class="nav-link" data-section="release">Make a Release</a></li>
+                    <!-- CHANGE> Removed PEPICO section from navigation -->
+                </ul>
+            </nav>
+
+            <!-- Added scope sidebar that's visible by default alongside navigation -->
+            <aside id="scope-sidebar">
+                <h1>PaNET build environment</h1>
+                <div>
+                    <p>This repo contains tools for working with the Photon and Neutron Experimental Techniques (PaNET) <a href="https://github.com/ExPaNDS-eu/ExPaNDS-experimental-techniques-ontology">github repository</a>. In particular when building the ontology file <code>PaNET.owl</code> from the various the input files.</p>
+                    
+                    <p>There are two main parts:</p>
+                    <ol>
+                        <li>A script, <code>build-panet</code>, that builds the PaNET. To work, it requires that various software packages are installed.</li>
+                        <li>A 'Dockerfile' script that describes how to build a container image that contains the <code>build-panet</code> script and the software packages it needs.</li>
+                    </ol>
+
+                    <h2>Using the script directly</h2>
+                    <p>The script 'build-panet' uses:</p>
+                    <ul class="md-itemization">
+                        <li>the OBO Robot tool to build the PaNET ontology. Currently, this must be (precisely) v1.8.1: newer versions currently do not work. Note that robot requires that Java is installed.</li>
+                        <li>the <code>git</code> command. This is used to deduce a version number for the ontology. It is possible to avoid a dependency on git by specifying the version explicitly; however, this is not recommended.</li>
+                    </ul>
+
+                    <p>The script takes an optional argument: the path of a comma-separated values (csv) input file. The script will create a corresponding OWL file (in RDF/XML) in the same directory. The steps involved are:</p>
+                    <ol>
+                        <li>Generate an initial set of definitions from the CSV file.</li>
+                        <li>Run a reasoner to deduce more information about terms.</li>
+                        <li>Merge some (fairly constant) information about the ontology itself from the 'PaNET_metadata.ttl' file. This is located in the same directory as the CSV file.</li>
+                    </ol>
+
+                    <p>If no argument is given then the path <code>source/PaNET.csv</code> is used. This allows the script to be run from the base directory of the PaNET git repository.</p>
+
+                    <h2>Container image</h2>
+                    <p>A container image allows you to build the PaNET ontology without installing any dependencies. You only need the ability to run run a container. This may also be useful when automating, as CI/CD frameworks often support containers.</p>
+
+                    <p>In order to use the containerised PaNET-build script you must first get the container image onto you computer. There are two main ways of doing this: downloading it and building it yourself. These different approaches are described in the next two sections. If you are not sure, follow the instructions for downloading the image.</p>
+
+                    <p>Once you have the container image, you can use it to build the PaNET ontology. This is also described below.</p>
+
+                    <h3>Downloading the container image</h3>
+                    <p>A pre-build container image is available from this git repo's <a href="https://gitlab.desy.de/paul.millar/panet-build/container_registry">container registry</a>.</p>
+
+                    <p>Container images have the label <code>panet-build</code>, with the latest version being <code>panet-build:latest</code>. Therefore, the full reference for the latest container version is <code>gitlab.desy.de:5555/paul.millar/panet-build:latest</code>.</p>
+
+                    <p>Here is an example command showing how to download the latest image with docker:</p>
+                    <div class="md-tab-content">
+docker pull gitlab.desy.de:5555/paul.millar/panet-build:latest
+                    </div>
+
+                    <p>Here is the equivalent command when using podman:</p>
+                    <div class="md-tab-content">
+podman pull gitlab.desy.de:5555/paul.millar/panet-build:latest
+                    </div>
+
+                    <h3>Building the container image</h3>
+                    <p>This step is not necessary if you simply want to build the PaNET ontology. Rather, this information is useful if you wish to enhance the build process in a way that requires additional tools.</p>
+
+                    <p>This git repo contains the <code>Dockerfile</code> file that contains instructions for building the container image.</p>
+
+                    <p>The image may be built using a standard procedure. The following instructions show how to build the image and tag it <code>panet-build:latest</code> if the repo is the current directory.</p>
+
+                    <p>Here is the command for docker:</p>
+                    <div class="md-tab-content">
+docker build . -t panet-build
+                    </div>
+
+                    <p>and for podman:</p>
+                    <div class="md-tab-content">
+podman build . -t panet-build
+                    </div>
+
+                    <h3>Using the container image</h3>
+                    <p>By default, the container image expects the PaNET git repository to be available as the <code>/work</code> directory within the container image. Typically, this is achieved by "mounting" the PaNET git repository directory (on the host computer) at this location.</p>
+
+                    <p>This may be done by explicitly specifying the git location.</p>
+
+                    <p>A typical command with docker is:</p>
+                    <div class="md-tab-content">
+docker run -v ~/git/PaNET/:/work --rm -it panet-build
+                    </div>
+
+                    <p>... or with podman:</p>
+                    <div class="md-tab-content">
+podman run -v ~/git/PaNET/:/work --rm -it panet-build
+                    </div>
+
+                    <p>Often, the current directory is the PaNET git repository's base directory. In this case, then a somewhat simplified version of the command may be used.</p>
+
+                    <p>Here is a complete example, showing how to check out PaNET and use docker to build the ontology:</p>
+                    <div class="md-tab-content">
+cd ~/git
+git clone https://github.com/ExPaNDS-eu/ExPaNDS-experimental-techniques-ontology PaNET
+cd PaNET
+docker run -v $PWD/:/work --rm -it panet-build
+                    </div>
+
+                    <p>Here is the same example but using podman instead:</p>
+                    <div class="md-tab-content">
+cd ~/git
+git clone https://github.com/ExPaNDS-eu/ExPaNDS-experimental-techniques-ontology PaNET
+cd PaNET
+podman run -v $PWD/:/work --rm -it panet-build
+                    </div>
+
+                    <p>The container accepts argument and passes these to the script. Therefore, it is possible to specify a target CSV file, similar to running the script directly. Note that the build process assumes that the ontology metadata is available as the file <code>PaNET_metadata.ttl</code> in the same directory as the source CSV file.</p>
+
+                    <p>Specifying an alternative source file may be useful, under some specific circumstances. However, the reader is encouraged to edit the <code>PaNET.csv</code> file directly and to use <code>git</code> to manage those changes.</p>
+                </div>
+            </aside>
+        </div>
+    </div>
+</body>
+</html>

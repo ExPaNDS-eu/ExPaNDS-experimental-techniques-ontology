@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PANET: Photon and Neutron Experimental Techniques</title>
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="icon" href="../logo/favicon.svg" type="image/svg">
+</head>
+<body>
+    <!-- Fixed Header -->
+    <header id="fixed-header">
+        <div class="header-content">
+            <img id="panet_logo" alt="PaNET Logo" src="../logo/panet_logo.png" alt="PANET Logo" class="logo">
+            <h1 class="main-title">PANET: Photon and Neutron Experimental Techniques</h1>
+        </div>
+    </header>
+
+    <div id="wrapper">
+        <div id="content">
+            <!-- Navigation will be visible initially, hidden when content is shown -->
+            <nav id="navigation">
+                <h1>Documentation</h1>
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link" data-section="scope">Scope of PaNET</a></li>
+                    <li><a href="https://expands-eu.github.io/ExPaNDS-experimental-techniques-ontology/index-en.html" class="nav-link" data-section="scope">Browse PaNET</a></li>
+                    <li><a href="workflow.html" class="nav-link" data-section="git-workflow">Git Workflow</a></li>
+                    <li><a href="std_op_proc.html" class="nav-link" data-section="procedures">Standard Operating Procedures</a></li>
+                    <li><a href="build.html" class="nav-link" data-section="environment">Build the Environment</a></li>
+                    <li><a href="release.html" class="nav-link-selected" data-section="release">Make a Release</a></li>
+                    <!-- CHANGE> Removed PEPICO section from navigation -->
+                </ul>
+            </nav>
+
+            <!-- Added scope sidebar that's visible by default alongside navigation -->
+            <aside id="scope-sidebar">
+                <h1>Making a Release</h1>
+                <div>
+                    <p>This section describes the procedure for making a new PaNET release.</p>
+                    
+                    <p>A release represents a stable, reliable version of the evolution of PaNET: a point-in-time snapshot of the ontology. Releases are given a human-friendly name, involving three numbers; e.g., v1.5.2.</p>
+                    
+                    <p>Releases are the outwardly visible evolution of the PaNET ontology. External users of the ontology are encouraged to depend only on released versions of PaNET. The strong guarantees of backwards compatibility apply only to released versions of PaNET and not on any intermediate (internal) non-released ontologies.</p>
+                    
+                    <p><strong>A release can NEVER be changed or modified in any way</strong>, even if problems are subsequently discovered, even if those problems are catastrophic in nature. If problems are discovered then the release notes should be updated to reflect those problems. If catastrophic problems are discovered then the release notes should indicate that we strongly discourage people from using that version. Problems may also be notified on the announcements mailing list.</p>
+                    
+                    <h2>Release Procedure</h2>
+                    <p>The following procedure describes how to make a release:</p>
+                    
+                    <h3>1. Pre-release Checks</h3>
+                    <p>Check the CI/CD ("Continuous Integration and Deployment", the automatic testing that GitHub does, to verify there are no problems; look for a green tick on the main code page) to ensure it is not indicating any problems. You should also look at the Github issues to see if any release-critical problems have been identified.</p>
+                    
+                    <h3>2. Repository Setup</h3>
+                    <p>Ensure you have an up-to-date clone of the PaNET git repository. If you do not already have a git repo then clone it. Note that the following command should be a single line:</p>
+                    <div class="md-tab-content">
+git clone git@github.com:ExPaNDS-eu/ExPaNDS-experimental-techniques-ontology.git
+                    </div>
+                    
+                    <p>If you have already cloned the github repo then ensure it is up-to-date with the following two commands:</p>
+                    <div class="md-tab-content">
+git checkout master
+git pull --ff-only
+git status
+                    </div>
+                    
+                    <h3>3. Create Change Log</h3>
+                    <p>Write a list of what has changed in this release (compared to the previous release): a "change log".</p>
+                    
+                    <p>The authoritative source of information on what has changed is the list of git commits, those since the most recent release (i.e., the current PaNET version). The following command provides a one-line summary of all the changes since the last release:</p>
+                    <div class="md-tab-content">
+git log --pretty=oneline CURRENT_VERSION..
+                    </div>
+                    
+                    <p>For more information, use the "short" output:</p>
+                    <div class="md-tab-content">
+git log --pretty=short CURRENT_VERSION..
+                    </div>
+                    
+                    <p>For example, if you are working on releasing PaNET version 1.2.0 then the most recent release would be 1.1.0 (in other words, the current version is 1.1.0). This release would be identified by the v1.1.0 tag. The following command provides the one-line summary of what has changed:</p>
+                    <div class="md-tab-content">
+git log --pretty=oneline v1.1.0..
+                    </div>
+                    
+                    <p>The latest tag is found with the git tag command</p>
+                    
+                    <p>Update the existing CHANGELOG file with information about the latest release at the top. Use the previous release as a template.</p>
+                    
+                    <h3>4. Build PaNET</h3>
+                    <div class="md-tab-content">
+panet-build
+                    </div>
+                    
+                    <p>or, the following command if using the container image with docker:</p>
+                    <div class="md-tab-content">
+docker run -v $PWD:/work --rm -it panet-build
+                    </div>
+                    
+                    <p>or the following command if using the container image with podman:</p>
+                    <div class="md-tab-content">
+podman run -v $PWD:/work --rm -it panet-build
+                    </div>
+                    
+                    <p>See the panet-build repo for more details on how to build PaNET.</p>
+                    
+                    <p>When building PaNET, keep an eye on the output. Look for any messages that might indicate a problem.</p>
+                    
+                    <h3>5. Verification</h3>
+                    <p>As far as possible, verify that PaNET is correct. For example:</p>
+                    
+                    <p>Manually inspect the generated OWL file:</p>
+                    <div class="md-tab-content">
+less source/PaNET.owl
+                    </div>
+                    
+                    <p>Does it have the correct version information?</p>
+                    
+                    <p>Look at the generated documentation by opening the directory widoco in your favourite web-browser. Does it look "reasonable". Is the version information correct?</p>
+                    
+                    <p><strong>This is your LAST CHANCE to spot any problems with the release!</strong></p>
+                    
+                    <h3>6. Create Release Commit</h3>
+                    <p>Create a commit that updates the version information. Note that the following command should be a single line:</p>
+                    <div class="md-tab-content">
+git commit -m "Preparing for release" CHANGELOG.md
+                    </div>
+                    
+                    <h3>7. Tag the Release</h3>
+                    <p>Create a tag for the release:</p>
+                    <div class="md-tab-content">
+git tag VERSION-IDENTIFIER
+                    </div>
+                    
+                    <p>where VERSION-IDENTIFIER is a lower-case v followed by the version number. For example, if you are releasing version 1.5.2 then the command would be:</p>
+                    <div class="md-tab-content">
+git tag v1.5.2
+                    </div>
+                    
+                    <p><strong>Take a deep breath, you are about to make history!</strong></p>
+                    
+                    <p>(Up to now, any mistakes or problems can be fixed. The next step makes the release indelible.)</p>
+                    
+                    <h3>8. Publish the Release</h3>
+                    <p>Push the changes to github, including the tag:</p>
+                    <div class="md-tab-content">
+git push --tags origin master
+                    </div>
+                    
+                    <p>This command will fail if anyone has modified the master branch since you updated your local repo (see step 2.). If this happens, then:</p>
+                    <ul class="md-itemization">
+                        <li>Remove the tag: <code>git tag -d VERSION-IDENTIFIER</code></li>
+                        <li>Discard your commits: <code>git reset --hard origin/master</code></li>
+                        <li>Go to step 1.</li>
+                    </ul>
+                    
+                    <h3>9. Post-Release Verification</h3>
+                    <p>Verify that the CI/CD has correctly built the release, and that the new version is available through the persistent URL. This may take a few minutes.</p>
+                    
+                    <p>Update github releases: Draft new release, Download artefacts from CI/CD job. Unzip contents to extract the two files: PaNET.owl PaNET_reasoned.owl. Upload these two files into the release. Make the release public.</p>
+                    
+                    <p>Update bioportal with the latest version.? Steve has bioportal account credentials for now</p>
+                    <ul class="md-itemization">
+                        <li><a href="https://bioportal.bioontology.org/ontologies/PANET">https://bioportal.bioontology.org/ontologies/PANET</a></li>
+                        <li><a href="https://www.bioontology.org/wiki/BioPortal_Help#Updating_an_existing_ontology_submission">https://www.bioontology.org/wiki/BioPortal_Help#Updating_an_existing_ontology_submission</a></li>
+                    </ul>
+                    <p>It seems it is possible to have automatic update (to be confirmed)</p>
+                    
+                    <p>Verify that the purl.org URL is pointing to the latest version; e.g.,</p>
+                    <div class="md-tab-content">
+paul@celebrimbor:~$ curl -s -L http://purl.org/pan-science/PaNET/PaNET.owl | grep versionInfo
+       &lt;owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string"&gt;1.2.0&lt;/owl:versionInfo&gt;
+paul@celebrimbor:~$
+                    </div>
+                    
+                    <h3>10. Announcement</h3>
+                    <p>Write an email to the &lt;panet-announce@desy.de&gt; mailing list that informs people of the new version and what has changed.</p>
+                    
+                    <p><strong>Congratulations, you have successfully released PaNET.</strong></p>
+                </div>
+            </aside>
+        </div>
+    </div>
+</body>
+</html>
