@@ -23,32 +23,10 @@ This repository is structured as follows:
 - the **releases** folder contains the different releases of the PaNET ontology,
 - the **gh-pages** branch contains the ontology documentation (produced automatically by a GitHub action).
 
-### Notes on Workflow
 
-This workflow will be automated using CI in a next release.
+## How to Contribute
 
-The PaNET.owl is generated from an Excel/CSV file using [ROBOT](https://search.maven.org/artifact/org.obolibrary.robot/robot) software. 
-Here are some instructions to generate the OWL file:
-- if robot-1.8.1/bin/robot.jar does not exist: go to teh directory robot-1.8.1 and do mvn install.
-- check robot-1.8.1/bin/robot.jar exists Then execute:
-robot template --template PaNET.csv --prefix "PaNET:http://purl.org/pan-science/PaNET/" --ontology-iri "http://purl.org/pan-science/PaNET" --output PaNET.owl
-
-After the PaNET.owl file has been generated, please follow the following steps: 
-
-- Open PaNET_metadata.owl in Protégé
-- Update metadata (version, created etc) and save
-- Open PaNET techniques ontology created by ROBOT in current window
-- Refactor/merge ontologies; select both ontologies; create new ontology; save file (ontology IRI http://www.purl.org/pan-science/PaNET/PaNET.owl )
-- Start reasoner (e.g. HermiT)
-- Export inferred axioms as ontology; tick all boxes and save to the final owl file; Ontology IRI:http://www.purl.org/pan-science/PaNET/PaNET.owl 
-- Select file name; save as RDF/XML.
-- Update the Widoco documentation - this step is done automatically relying on a GitHub Action. 
-
-
-### Review process and release
-
-
-At the moment, only one reviewer can approve and merge the changes to the master branch. Before any merge to the master branch, it is recommended to upload the new version of the OWL file to BioPortal to ensure that the file is correctly configured and displayed in BioPortal before any release. In each upload, BioPortal will check the validity of the file, convert it to other formats such as RDF and XML. After the merge to master, the PaNET ontology will automatically be updated on BioPortal over the night.
+Please read the [Contributing page](CONTRIBUTING.md).
 
 
 ## Restructuring of the ontology
