@@ -44,7 +44,7 @@ jobs:
           retention-days: 7
 
       - name: Upload documentation as artifact
-        id: upload-docs-artifact
+        id: widoco-docs
         uses: actions/upload-pages-artifact@v3
         with:
           path: widoco/
@@ -67,5 +67,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Deploy to GitHub Pages
-        id: deployment
+        id: widoco-docs
         uses: actions/deploy-pages@v4
