@@ -53,7 +53,7 @@ jobs:
   deploy:
     # From naming convention on above tag selection, tags
     # only trigger the workflow if they are releases.
-    if: ${{ github.ref_type == 'tag' }}
+    #if: ${{ github.ref_type == 'tag' }}
     needs: build
 
     permissions:
