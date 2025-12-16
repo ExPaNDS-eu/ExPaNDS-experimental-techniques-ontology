@@ -26,29 +26,29 @@
       foaf:name "Alejandra Gonzalez-Beltran" ;
       foaf:workInfoHomepage <https://agbeltran.github.io/> ;
     ] ;
-   dcterms:creator [
+  dcterms:creator [
       a foaf:Person ;
       foaf:name "D. Iyayi" ;      
     ] ;
-   dcterms:creator [
+  dcterms:creator [
       a foaf:Person ;     
       rdfs:seeAlso <https://orcid.org/0000-0001-9121-8643> ;
       foaf:name "H. Gorzig" ;      
     ] ; 
-   dcterms:creator [
+  dcterms:creator [
       a foaf:Person ;           
       foaf:name "S. Da Graca Ramos" ;      
     ] ; 
-    dcterms:creator [
+  dcterms:creator [
       a foaf:Person ;           
       foaf:name "S. P. Collins" ;
       rdfs:seeAlso <https://orcid.org/0000-0001-5120-0764> ;     
     ] ; 
-    dcterms:creator [
+  dcterms:creator [
       a foaf:Person ;
       foaf:name "G.Koumoutsos" ;
     ] ;
-    dcterms:creator [
+  dcterms:creator [
       a foaf:Person ;
       sdo:affiliation [
            foaf:homepage <https://desy.de/> ;
@@ -58,7 +58,7 @@
       foaf:name "Paul Millar" ;
       rdfs:seeAlso <https://orcid.org/0000-0002-3957-1279> ;
     ] ;
-    dcterms:creator [
+  dcterms:creator [
       a foaf:Person ;
       sdo:affiliation [
            foaf:homepage <https://www.helmholtz-berlin.de/> ;
@@ -68,7 +68,7 @@
       foaf:name "Rolf Krahl" ;
       rdfs:seeAlso <https://orcid.org/0000-0002-1266-3819> ;
     ] ;
-    dcterms:creator [
+  dcterms:creator [
       a foaf:Person ;
       sdo:affiliation [
            foaf:homepage <https://desy.de/> ;
@@ -78,7 +78,7 @@
       foaf:name "Melanie Nentwich" ;
       rdfs:seeAlso <https://orcid.org/0000-0002-5850-4469> ;
     ] ;
-    dcterms:creator [
+  dcterms:creator [
       a foaf:Person ;
       sdo:affiliation [
            foaf:homepage <https://www.ox.ac.uk/> ;
@@ -92,6 +92,23 @@
       ] ;
       foaf:name "Terence Tan" ;
       rdfs:seeAlso <https://orcid.org/0009-0008-7829-3647> ;
+    ] ;
+  dcterms:creator [
+      a foaf:Person ;
+      sdo:affiliation [
+           foaf:name "German Engineering Materials Science Centre (GEMS) at Heinz Maier-Leibnitz Zentrum (MLZ), Helmholtz-Zentrum Hereon" ;
+      ] ;
+      foaf:name "Arnab Majumdar" ;
+      rdfs:seeAlso <https://orcid.org/0000-0003-4049-4060> ;
+      foaf:workInfoHomepage <https://majumdararn.github.io/> ;
+    ] ;
+  dcterms:creator [
+      a foaf:Person ;
+      sdo:affiliation [
+           foaf:name "German Engineering Materials Science Centre (GEMS) at Heinz Maier-Leibnitz Zentrum (MLZ), Helmholtz-Zentrum Hereon" ;
+      ] ;
+      foaf:name "Sebastian Busch" ;
+      rdfs:seeAlso <https://orcid.org/0000-0002-9815-909X> ;
     ] ;
     dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
 

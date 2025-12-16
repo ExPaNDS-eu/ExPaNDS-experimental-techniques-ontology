@@ -20,7 +20,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     container:
-      image: gitlab.desy.de:5555/paul.millar/panet-build:v0.10
+      image: gitlab.desy.de:5555/paul.millar/panet-build:v0.11
 
     steps:
       - name: Checkout repo
@@ -44,16 +44,15 @@ jobs:
           retention-days: 7
 
       - name: Upload documentation as artifact
-        id: upload-docs-artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: widoco/
+          path: site/
           retention-days: 7
 
   deploy:
     # From naming convention on above tag selection, tags
     # only trigger the workflow if they are releases.
-    if: ${{ github.ref_type == 'tag' }}
+    #if: ${{ github.ref_type == 'tag' }}
     needs: build
 
     permissions:
@@ -67,5 +66,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Deploy to GitHub Pages
-        id: deployment
         uses: actions/deploy-pages@v4

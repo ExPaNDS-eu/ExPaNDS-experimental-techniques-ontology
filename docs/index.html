@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PANET: Photon and Neutron Experimental Techniques</title>
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="icon" href="../logo/favicon.svg" type="image/svg">
+</head>
+<body>
+    <!-- Fixed Header -->
+    <header id="fixed-header">
+        <div class="header-content">
+            <img id="panet_logo" alt="PaNET Logo" src="../logo/panet_logo.png" alt="PANET Logo" class="logo">
+            <h1 class="main-title">PANET: Photon and Neutron Experimental Techniques</h1>
+        </div>
+    </header>
+
+    <div id="wrapper">
+        <div id="content">
+            <nav id="navigation">
+                <h1>Documentation</h1>
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link-selected" data-section="scope">Scope of PaNET</a></li>
+                    <li><a href="https://expands-eu.github.io/ExPaNDS-experimental-techniques-ontology/index-en.html" class="nav-link" data-section="scope">Browse PaNET</a></li>
+                    <li><a href="workflow.html" class="nav-link" data-section="git-workflow">Git Workflow</a></li>
+                    <li><a href="std_op_proc.html" class="nav-link" data-section="procedures">Standard Operating Procedures</a></li>
+                    <li><a href="build.html" class="nav-link" data-section="environment">Build the Environment</a></li>
+                    <li><a href="release.html" class="nav-link" data-section="release">Make a Release</a></li>
+                </ul>
+            </nav>
+
+            <!-- Added scope sidebar that's visible by default alongside navigation -->
+            <aside id="scope-sidebar">
+                <h1>Scope of PaNET</h1>
+                <div class="scope-content">
+                    <p>PaNET is a comprehensive, semi-hierarchical vocabulary dedicated to Photon and Neutron Experimental Techniques. A technique is defined by four major aspects</p>
+
+                    <ul class="md-itemization">
+                        <li><strong>experimental physical probe</strong></li>
+
+                        <li><strong>experimental probe</strong></li>
+
+                        <li><strong>functional dependence</strong></li>
+
+                        <li><strong>purpose</strong></li>
+                    </ul>
+
+                    <img id="panet_scheme" src="images/PaNET_scheme.svg" alt="PaNET scheme. Users of a PaN facility have a specific scientific question about a sample (the purpose of the experiment). To address this query, they select an appropriate technique, characterized by the physical probe (e.g. x-rays) and the interaction (process) it induces within the sample. The experiment can tehn be executed under varied external conditions (dependence of e.g. temperature).">
+                    
+
+                    <p>Something is a technique in the scope of PaNET, if</p>
+                    <ul class="md-itemization">
+                        <li><strong>the technique is in use, or has been used in the past, at a large European photon or neutron facility.</strong> Facility-members of LEAPS and LENS are examples of such facilities, as are ESFRI-recognised facilities such as ELI.</li>
+                        
+                        <li><strong>the technique takes advantage of one of the facility's beamlines.</strong> A technique is not eligible merely for taking place within a facility's campus.</li>
+                        
+                        <li><strong>the technique distinguishes itself from other techniques NOT only by the choice of the sample or the sample's state.</strong> This criterion may be overruled if there is a very strong view from the user community that the sample is fundamental to the technique definition.</li>
+                        
+                        <li><strong>the technique distinguishes itself from another technique by an essential dependency on some well-defined sample interaction.</strong> A laser pump-probe is an example of such an interaction.</li>
+                    </ul>
+                </div>
+            </aside>
+        </div>
+    </div>
+</body>
+</html>
