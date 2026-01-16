@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PANET: Photon and Neutron Experimental Techniques</title>
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="icon" href="../logo/favicon.svg" type="image/svg">
+</head>
+<body>
+    <!-- Fixed Header -->
+    <header id="fixed-header">
+        <div class="header-content">
+            <img id="panet_logo" alt="PaNET Logo" src="../logo/panet_logo.png" alt="PANET Logo" class="logo">
+            <h1 class="main-title">PANET: Photon and Neutron Experimental Techniques</h1>
+        </div>
+    </header>
+
+    <div id="wrapper">
+        <div id="content">
+            <nav id="navigation">
+                <h1>Documentation</h1>
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link" data-section="scope">
+                        Scope of PaNET</a></li>
+                    <li><a href="https://expands-eu.github.io/ExPaNDS-experimental-techniques-ontology/index-en.html" 
+                        class="nav-link" data-section="scope">
+                        Browse PaNET</a></li>
+                    <li><a href="applications.html" class="nav-link-selected" data-section="applications">
+                        Applications</a></li>
+                    <li><a href="workflow.html" class="nav-link" data-section="git-workflow">
+                        Git Workflow</a></li>
+                    <li><a href="std_op_proc.html" class="nav-link" data-section="procedures">
+                        Standard Operating Procedures</a></li>
+                    <li><a href="build.html" class="nav-link" data-section="environment">
+                        Build the Environment</a></li>
+                    <li><a href="release.html" class="nav-link" data-section="release">
+                        Make a Release</a></li>
+                </ul>
+            </nav>
+
+            <!-- Added scope sidebar that's visible by default alongside navigation -->
+            <aside id="scope-sidebar">
+                <h1>Applications</h1>
+                <div class="scope-content">
+                    <p>PaNET provides persistent identifiers (PIDs) for experimental techniques in Photon and 
+                        Neutron research. Thus it is an essential part of metadata in this field.</p>
+
+                    <h2>Applications</h2>
+                    <ul class="md-itemization">
+                        <li><strong>experimental data at large facilities:</strong> ongoing discussions with 
+                            the <a href="https://www.nexusformat.org/">NeXus</a> community to define a 
+                            standardized approch.</li>
+                        <li><strong>experimental data at lab devices:</strong> ongoing discussions with an 
+                            industry partner to include PaNET in the lab raw data.</li>
+                        <li><strong>scientific publications:</strong> a 
+                            <a href="https://www.desy.de/~nentm/ET2BL.html">BibTeX Citation Creator</a> is 
+                            available to create citations for individual terms.</li>
+                        <li><strong>beamline finder:</strong> 
+                            <a href="https://www.desy.de/~nentm/ET2BL.html">proof of concept</a> at DESY; 
+                            a data base links the beamlines to the provided techniques and sample environment; 
+                            a webpage allows access to the database and filter results</li>
+                        <li><strong><a href="https://icatproject.org/">ICAT</a> Metadata Catalog</strong> has a 
+                            dedicated Technique table to hold PaNET terms. 
+                            It has a many-to-many relation with Dataset, so you can tag datasets in ICAT with the 
+                            experimental technique that has been used to create the dataset. There is also a 
+                            contributed helper script to populate that Technique table from a PaNET OWL file.</li>
+                        <li><strong><a href="https://github.com/SciCatProject/panosc-search-api">
+                            PaNOSC search API</a></strong> can be hooked between the central search portal and 
+                            the local metadata catalogues and will modify queries on the fly in such a way that 
+                            conditions referring to a technique will be expanded to include all child techniques 
+                            in PaNET. </li>
+                    </ul>
+
+                    <h2>Terminology Registries</h2>
+                    <p>To explore PaNET and its associated hierarchies, PaNET is listed in different terminology 
+                        registries.</p>
+                    <ul class="md-itemization">
+                        <li><a href="https://bioportal.bioontology.org/ontologies/PANET">
+                            Bioportal</a></li>
+                        <li><a href="https://terminology.tib.eu/ts/ontologies?and=false&sortedBy=title&page=1&size=10">
+                            TIB Terminology Service</a></li>
+                    </ul>
+
+                    <h2>Mappings</h2>
+                    <p>Several mappings from PaNET to other semantic artefacts (e.g., vocabularies) exist or 
+                        are planned. A mapping connects terms from one dictionary to another and thus helps to 
+                        reuse and extend existing use-cases and applications.</p>
+                    <ul class="md-itemization">
+                        <li><a href="https://github.com/nfdi4cat/voc4cat">voc4cat</a> (established)</li>
+                        <li><a href="https://www.wayforlight.eu/">Way for Light</a> (ongoing)</li>
+                        <li><a href="https://dictionary.iucr.org/">IUCr dictionary</a> (ongoing)</li>
+                        <li><a href="https://goldbook.iupac.org/">IUPAC gold book</a> (ongoing)</li>
+                        <li><a href="https://connect.helmholtz-imaging.de/application/">Helmholtz Imaging</a> (ongoing)</li>
+                        <li><a href="https://physh.org/">PhySH</a> (ongoing)</li>
+                        <li><a href="https://www.wikidata.org/wiki/Wikidata:Main_Page">wikidata</a> (foreseen)</li>
+                    </ul>
+
+                    <h2>Connected Projects</h2>
+                    <ul class="md-itemization">
+                        <li><a href="https://github.com/pan-ontologies/esrf-ontologies">ESRF-ET</a></li>
+                        <li><a href="https://nomad-lab.eu/nomad-lab/ai-toolkit.html">NOMAD</a></li>
+                    </ul>
+                </div>
+            </aside>
+        </div>
+    </div>
+</body>
+</html>
