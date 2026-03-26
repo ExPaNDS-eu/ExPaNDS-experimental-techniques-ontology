@@ -11,7 +11,9 @@ The guidelines presented here are based on the
 [tutorial on mappings using sssom](https://mapping-commons.github.io/sssom/tutorial/). 
 
 For PaNET, each mapping to a semantic artifact will be handled in a separate csv file. Please use the template 
-to create a new mapping. The csv file will be automatically transformed in a more interoperable owl file. 
+to create a new mapping. The csv file will be automatically transformed in a more interoperable owl file using the 
+software sssom. This software does not accept commas in the header, which will be stripped off automatically by the 
+makefile and do not need to be handled manually. 
 
 The csv file allows to map terms and concept using the [skos](https://www.w3.org/TR/skos-reference/) terms
 - Related Match (symmetric, associative mapping)
