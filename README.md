@@ -11,7 +11,7 @@ To cite the deliverable, please use:
 
 ``Collins, Steve P., da Graça Ramos, Silvia, Iyayi, Daniel, Görzig, Heike, González Beltrán, Alejandra, Ashton, Alun, Egli, Stefan, and Minotti, Carlo. “Expands Ontologies V1.0”. Zenodo, June 4, 2021. doi:10.5281/zenodo.4806026.``
 
-You can see the PaNET ontology documentation at: https://expands-eu.github.io/ExPaNDS-experimental-techniques-ontology/index-en.html
+You can see the PaNET ontology documentation at: https://pan-ontologies.github.io/PaNET/index-en.html.
 
 You can also browse the PaNET ontology in BioPortal: https://bioportal.bioontology.org/ontologies/PANET
 
