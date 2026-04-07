@@ -3,3 +3,9 @@
 /widoco
 /site
 .DS_Store
+
+# ignore site built locally by jekyll
+docs/_site
+# ignore jekyll cache
+docs/.jekyll-cache
+

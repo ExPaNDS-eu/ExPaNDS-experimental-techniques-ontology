@@ -1,0 +1,7 @@
+# set defaults for layouts (except the ones in _layouts)
+defaults:
+
+  - scope:
+      path: ""
+    values:
+      layout: "default"
