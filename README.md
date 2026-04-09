@@ -17,7 +17,7 @@ This ontology was initiated as part of the [Work Package 3 on EOSC Data Catalogu
 There are two mailing lists for different purposes available. The **Announcement List** will provide detailed information on releases and will only be sent once or twice a year. It is dedicated to service providers that use PaNET. The **Maintenance List** is used to invite to the weekly meetings and announce the agendas. It can also be used to initiate discussions and highlight open issues.
 
 
-1. Go to the public page of the mailing list ([Announcement]((https://lists.desy.de/sympa/subscribe/panet-announce?previous_action=info)), [Maintenance](https://lists.desy.de/sympa/subscribe/panet-maintenance?previous_action=info)).
+1. Go to the public page of the mailing list ([Announcement](https://lists.desy.de/sympa/subscribe/panet-announce?previous_action=info)), [Maintenance](https://lists.desy.de/sympa/subscribe/panet-maintenance?previous_action=info)).
 2. Enter your email address and name.
 3. Press the blue button "I subscribe to list panet-announce".
 4. The page updates and you need to confirm (blue button).
