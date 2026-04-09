@@ -4,6 +4,28 @@ The Photon and Neutron Experimental Technique (PaNET) ontology provides a taxono
 
 This ontology was initiated as part of the [Work Package 3 on EOSC Data Catalogue Services for PaN national Research Infrastructures](https://expands-eu.github.io/WP1-reporting/reports-wp/reports-wp3.html) of the [ExPaNDS project](https://expands.eu/). Currently, the ontology is further developed by in-kind contributions of several PaN facilities across Europe.
 
+
+## Get in Contact
+
+### Regular Meetings
+
+- every Thursday 10:00 CEST
+- [details](https://indico.desy.de/category/1163/)
+
+### Subscribe to our Mailing Lists
+
+There are two mailing lists for different purposes available. The **Announcement List** will provide detailed information on releases and will only be sent once or twice a year. It is dedicated to service providers that use PaNET. The **Maintenance List** is used to invite to the weekly meetings and announce the agendas. It can also be used to initiate discussions and highlight open issues.
+
+
+1. Go to the public page of the mailing list ([Announcement]((https://lists.desy.de/sympa/subscribe/panet-announce?previous_action=info)), [Maintenance](https://lists.desy.de/sympa/subscribe/panet-maintenance?previous_action=info)).
+2. Enter your email address and name.
+3. Press the blue button "I subscribe to list panet-announce".
+4. The page updates and you need to confirm (blue button).
+5. You receive a mail by SYMPA with the title "DESY Mailing lists services" and including a link. Click it.
+6. A German text asks you to confirm your subscription by clicking the button "Bestätigen" while the "Abonnieren" is marked with a checkmark.
+7. You receive a welcome mail by panet-announce-request@desy.de
+
+
 ## References
 
 - Deliverable on the ExPaNDS ontologies at [10.5281/zenodo.4806026](https://doi.org/10.5281/zenodo.4806026): 
