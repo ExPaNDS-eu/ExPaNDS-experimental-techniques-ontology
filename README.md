@@ -1,21 +1,26 @@
-# ExPaNDS Photon and Neutron Experimental Techniques (PaNET) ontology
+# Photon and Neutron Experimental Techniques (PaNET) ontology
 
-The Photon and Neutron Experimental Technique (PaNET) ontology provides a taxonomy of experimental techniques relevant for the Photon and Neutron (PaN) community. This ontology is being developed as part of the [Work Package 3 on EOSC Data Catalogue Services for PaN national Research Infrastructures](https://expands-eu.github.io/WP1-reporting/reports-wp/reports-wp3.html) of the [ExPaNDS project](https://expands.eu/).
+The Photon and Neutron Experimental Technique (PaNET) ontology provides a taxonomy of experimental techniques relevant for the Photon and Neutron (PaN) community. The ontology allows to add semantic tags to datasets, and other related research objects, to indicate the experimental technique(s) that was (or were) used to create them.
 
+This ontology was initiated as part of the [Work Package 3 on EOSC Data Catalogue Services for PaN national Research Infrastructures](https://expands-eu.github.io/WP1-reporting/reports-wp/reports-wp3.html) of the [ExPaNDS project](https://expands.eu/). Currently, the ontology is further developed by in-kind contributions of several PaN facilities across Europe.
 
-The ontology allows to add semantic tags to datasets, and other related research objects, to indicate the experimental technique(s) that was (or were) used to create them.
+## References
 
-See the associated deliverable on the ExPaNDS ontologies at [10.5281/zenodo.4806026](https://doi.org/10.5281/zenodo.4806026).
+- Deliverable on the ExPaNDS ontologies at [10.5281/zenodo.4806026](https://doi.org/10.5281/zenodo.4806026): 
+  ``Collins, Steve P., da Graça Ramos, Silvia, Iyayi, Daniel, Görzig, Heike, González Beltrán, Alejandra, Ashton, Alun, Egli, Stefan, and Minotti, Carlo. “Expands Ontologies V1.0”. Zenodo, June 4, 2021. doi:10.5281/zenodo.4806026.``
 
-To cite the deliverable, please use:
+- Journal Article on PaNET 2.0 [10.1107/S1600577525005272](https://doi.org/10.1107/S1600577525005272): ``Tan, T., Bago, B., Busch, S., Duyme, R., Gaisne, G., Gonzalez Beltran, A. N., Gorzig, H., Koumoutsos, G., Krahl, R., Millar, P., Minotti, C., Nentwich, M., Schrettner, L., Syder, K., Rocca-Serra, P., Sansone, S.-A. & Collins, S. P. (2025). J. Synchrotron Rad. 32, 1361-1369.``
 
-``Collins, Steve P., da Graça Ramos, Silvia, Iyayi, Daniel, Görzig, Heike, González Beltrán, Alejandra, Ashton, Alun, Egli, Stefan, and Minotti, Carlo. “Expands Ontologies V1.0”. Zenodo, June 4, 2021. doi:10.5281/zenodo.4806026.``
+## Browse PaNET
 
-You can see the PaNET ontology documentation [here](https://pan-ontologies.github.io/PaNET/index-en.html).
+- [PaNET ontology specification](https://pan-ontologies.github.io/PaNET/index-en.html)
+- [BioPortal](https://bioportal.bioontology.org/ontologies/PANET)
 
-You can also browse the PaNET ontology in BioPortal: https://bioportal.bioontology.org/ontologies/PANET
+## Licence
 
 The ontology is provided using the [CC-BY 4.0license](https://creativecommons.org/licenses/by/4.0/).
+
+## Structure of the repository
 
 This repository is structured as follows:
 - the **meetings** folder contains documents related to the WP3 discussions on the ontology,
@@ -23,7 +28,7 @@ This repository is structured as follows:
 - the **releases** folder contains the different releases of the PaNET ontology,
 - the **gh-pages** branch contains the ontology documentation (produced automatically by a GitHub action).
 
-### Notes on Workflow
+## Notes on Workflow
 
 This workflow will be automated using CI in a next release.
 
@@ -45,7 +50,7 @@ After the PaNET.owl file has been generated, please follow the following steps:
 - Update the Widoco documentation - this step is done automatically relying on a GitHub Action. 
 
 
-### Review process and release
+## Review process and release
 
 
 At the moment, only one reviewer can approve and merge the changes to the master branch. Before any merge to the master branch, it is recommended to upload the new version of the OWL file to BioPortal to ensure that the file is correctly configured and displayed in BioPortal before any release. In each upload, BioPortal will check the validity of the file, convert it to other formats such as RDF and XML. After the merge to master, the PaNET ontology will automatically be updated on BioPortal over the night.
