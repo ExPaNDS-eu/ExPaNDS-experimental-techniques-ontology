@@ -13,18 +13,11 @@ ID number,,,,,,,,,,,,,,,,,,,,,,,,
 100,http://purl.org/pan-science/PaNET/PaNET00100,photon probe technique,,,"A technique using photons, which are elementary particles that are quanta of the electromagnetic field. Photons cover (list sorted by increasing wavelength): gamma radiation, x radiation, UV light, visible light, infrared light, microwaves, radiowaves and long radio waves. The different types are characterized by wavelength (nm), frequency (GHz), or energy (eV).",https://en.wikipedia.org/wiki/Photon,owl:Class,,,,,,,,('definedbyprobe' some 'photon'),,,,,,,,,
 101,http://purl.org/pan-science/PaNET/PaNET00101,neutron probe technique,,,,,owl:Class,,,,,,,,('definedbyprobe' some 'neutron'),,,,,,,,,
 102,http://purl.org/pan-science/PaNET/PaNET00102,muon probe technique,,,,,owl:Class,,,,,,,,('definedbyprobe' some 'muon'),,,,,,,,,
-<<<<<<< HEAD
 ,,,,,,,,,,,,,,,,,,,,,,,,
 103,http://purl.org/pan-science/PaNET/PaNET00103,solid probe,,,,,owl:Class,,,,,,,,('definedbycharacteristic' some PaNET:PaNET2011003),,,,,,,,,
 104,http://purl.org/pan-science/PaNET/PaNET00104,scanning probe,,,,,owl:Class,,,,,,,,('definedbycharacteristic' some PaNET:PaNET2011004),,,,,,,,,
 105,http://purl.org/pan-science/PaNET/PaNET00105,pulsed probe,,,A technique for which a pulsed probe is essential,,owl:Class,,,,,,,,('definedbycharacteristic' some PaNET:PaNET2011005),,,,,,,,,
 106,http://purl.org/pan-science/PaNET/PaNET00106,microfocused probe,,,using a beam with dimensions in the micrometre range;may or may not result in a map (2D); see obtain high resolution map,,owl:Class,,,,,,,,('definedbycharacteristic' some PaNET:PaNET2011006),,,,,,,,,
-=======
-103,http://purl.org/pan-science/PaNET/PaNET00103,solid probe,,,,,owl:Class,,,,,,,,('definedbyprobe' some PaNET:PaNET2011003),,,,,,,,,
-104,http://purl.org/pan-science/PaNET/PaNET00104,scanning probe,,,,,owl:Class,,,,,,,,('definedbyprobe' some PaNET:PaNET2011004),,,,,,,,,
-105,http://purl.org/pan-science/PaNET/PaNET00105,pulsed probe,,,A technique for which a pulsed probe is essential,,owl:Class,,,,,,,,('definedbyprobe' some PaNET:PaNET2011005),,,,,,,,,
-106,http://purl.org/pan-science/PaNET/PaNET00106,microfocused probe,,,,,owl:Class,,,,,,,,('definedbyprobe' some PaNET:PaNET2011006),,,,,,,,,
->>>>>>> c15b766 (Clarifying distinction between photon probes and photon techniques)
 ,,,,,,,,,,,,,,,,,,,,,,,,
 200,http://purl.org/pan-science/PaNET/PaNET00200,scattering technique,,,Any phenomenon where a particle of the same type as the probe is emitted,,owl:Class,,,,,,,,('definedbyprocess' some 'scattering'),,,,,,,,,
 201,http://purl.org/pan-science/PaNET/PaNET00201,emission technique,,,Independent of probe; classed also as scattering if the probe and emitted particles are of the same type; disjoint with elastic scattering,,owl:Class,,,,,,,,('definedbyprocess' some 'emission'),,,,,,,,,
