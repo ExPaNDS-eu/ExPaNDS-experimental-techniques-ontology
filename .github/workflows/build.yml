@@ -17,6 +17,14 @@ jobs:
         with:
           input: source/PaNET_metadata.ttl
 
+        # Robot `template` doesn't fail on git conflict markers, see:
+        #   https://github.com/ontodev/robot/issues/1279
+        #
+        # In order to catch these problems, we test for such markers
+        # explicitly.
+      - name: Merge Conflict finder
+        uses: olivernybroe/action-conflict-finder@v4.0
+
   build:
     runs-on: ubuntu-latest
     container:
