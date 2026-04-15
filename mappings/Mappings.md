@@ -56,7 +56,7 @@ The template includes some extra information in angle brackets `<>` as well as a
 # mapping_set_id: mapping_WFL_PaNET_v1.0,,,,,,,,,
 # mapping_set_version: '2025-11-12',,,,,,,,,
 # object_source: https://www.wayforlight.eu/technique/,,,,,,,,,
-# subject_source: https://expands-eu.github.io/ExPaNDS-experimental-techniques-ontology/index-en.html,,,,,,,,,
+# subject_source: https://pan-ontologies.github.io/PaNET/latest/index-en.html,,,,,,,,,
 # ,,,,,,,,,
 subject_id,subject_label,predicate_id,object_id,object_label,mapping_justification,author_id,object_source_version,mapping_date,confidence
 panet:PaNET00410,medical application,skos:exactMatch,wfl:1419,Medical application,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,10.17,2025-11-12,1
