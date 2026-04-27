@@ -1,0 +1,279 @@
+# curie_map:,,,,,,,,,
+#   panet: http://purl.org/pan-science/PaNET/,,,,,,,,,
+#   rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#,,,,,,,,,
+#   rdfs: http://www.w3.org/2000/01/rdf-schema#,,,,,,,,,
+#   skos: http://www.w3.org/2004/02/skos/core#,,,,,,,,,
+#   sssom: https://w3id.org/sssom/,,,,,,,,,
+#   goldbook: https://doi.org/10.1351/goldbook.,,,,,,,,,
+#   orcid: https://orcid.org/,,,,,,,,,
+#   semapv: https://w3id.org/semapv/vocab/,,,,,,,,,
+# license: https://creativecommons.org/licenses/by/4.0/,,,,,,,,,
+# mapping_set_description: Manually curated alignment of the PaNET ontology with the IUPAC goldbook.,,,,,,,,,
+#   Intended to be used for ontological analysis.,,,,,,,,,
+# mapping_set_id: mapping_goldbook_PaNET_v1.0,,,,,,,,,
+# mapping_set_version: '2025-11-13',,,,,,,,,
+# object_source: https://goldbook.iupac.org/,,,,,,,,,
+# subject_source: https://expands-eu.github.io/ExPaNDS-experimental-techniques-ontology/index-en.html,,,,,,,,,
+# ,,,,,,,,,
+subject_id,subject_label,predicate_id,object_id,object_label,mapping_justification,author_id,object_source_version,mapping_date,confidence
+panet:PaNET2012002,absorption,skos:exactMatch,goldbook:A00036,absorption,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,Online version 5.0.0,2025-10-28,1
+panet:PaNET01135,absorption spectroscopy,skos:relatedMatch,goldbook:A00043 ,absorption spectrum ,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,Online version 5.0.0,2025-10-28,1
+Panet:PaNET01268,mass spectrometry,skos:narrowMatch,goldbook:12334,angle resolved mass spectrometry ,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,Online version 5.0.0,2025-10-28,1
+Panet:PaNET01195,raman spectroscopy,skos:relatedMatch,goldbook:08567,anisotropic Raman scattering ,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,Online version 5.0.0,2025-10-28,1
+Panet:PaNET01064,versus sample temperature,skos:relatedMatch,goldbook:09447,annealing,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,Online version 5.0.0,2025-10-28,1
+Panet:PaNET01170,single wavelength anomalous diffraction,skos:broadMatch,goldbook:08568,anomalous dispersion,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,Online version 5.0.0,2025-10-28,1
+Panet:PaNET01165,multi wavelength anomalous diffraction,skos:broadMatch,goldbook:08568,anomalous dispersion,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,Online version 5.0.0,2025-10-28,1
+Panet:PaNET01135,absorption spectroscopy,skos:narrowMatch,goldbook:08451,atomic absorption spectroscopy,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,Online version 5.0.0,2025-10-28,0.99
+Panet:PaNET01092,emission spectroscopy,skos:narrowMatch,goldbook:08452,atomic emission spectroscopy,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,Online version 5.0.0,2025-10-28,0.99
+Panet:PaNET2020074,x-ray fluorescence,skos:relatedMatch,goldbook:A00494,atomic fluorescence ,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,Online version 5.0.0,2025-10-28,0.9
+Panet:PaNET01095,x-ray fluorescence spectroscopy,skos:relatedMatch,goldbook:08454,atomic fluorescence spectroscopy,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,Online version 5.0.0,2025-10-28,0.9
+Panet:PaNET01318,atomic force microscopy,skos:exactMatch,goldbook:09452 ,atomic force microscopy,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,Online version 5.0.0,2025-10-28,1
+Panet:PaNET01125,spectroscopy,skos:narrowMatch,goldbook:08216 ,atomic spectroscopy,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,Online version 5.0.0,2025-10-28,0.99
+Panet:PaNET01109,infrared spectroscopy,skos:narrowMatch,goldbook:09195,attenuated total reflection infrared spectroscopy,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,Online version 5.0.0,2025-10-28,1
+Panet:PaNET01125,spectroscopy,skos:narrowMatch,goldbook:08573,attenuated total reflection spectroscopy,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,Online version 5.0.0,2025-10-28,1
+Panet:PaNET01201,electron spectroscopy,skos:narrowMatch,goldbook:A00522,Auger electron spectroscopy,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,Online version 5.0.0,2025-10-28,1
+Panet:PaNET01201,electron spectroscopy,skos:narrowMatch,goldbook:09173,Auger photoelectron coincidence spectroscopy,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,Online version 5.0.0,2025-10-28,1
+Panet:PaNET2020009,x-ray,skos:exactMatch,goldbook:B00735,Bremsstrahlung,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,Online version 5.0.0,2025-10-28,1
+Panet:PaNET2020075,instrumentation testing,skos:narrowMatch,goldbook:C00775,calibration,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,Online version 5.0.0,2025-10-28,0.9
+Panet:PaNET01064,versus sample temperature,skos:relatedMatch,goldbook:C00928,Celsius temperature ,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,Online version 5.0.0,2025-10-28,0.9
+Panet:PaNET2020032,x-ray emission,skos:narrowMatch,goldbook:C00985,characteristic X-ray emission,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,Online version 5.0.0,2025-10-28,1
+Panet:PaNET00411,chiral determination,skos:relatedMatch,goldbook:C01058,chirality,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,Online version 5.0.0,2025-10-28,1
+Panet:PaNET01326,birefringence,skos:narrowMatch,goldbook:08231,circular birefringence,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,Online version 5.0.0,2025-10-28,1
+Panet:PaNET01192,circular dichroism,skos:exactMatch,goldbook:CT06777,circular dichroism,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,Online version 5.0.0,2025-10-28,1
+Panet:PaNET2020020,coherent diffraction,skos:closeMatch,goldbook:C01131,coherent scattering,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,Online version 5.0.0,2025-10-28,1
+Panet:PaNET2020014,cold neutron beam,skos:exactMatch,goldbook:C01147,cold neutrons,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,Online version 5.0.0,2025-10-28,1
+Panet:PaNET01117,photon correlation spectroscopy,skos:broadMatch,goldbook:08323,correlation spectroscopy ,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,Online version 5.0.0,2025-10-28,1
+Panet:PaNET01117,photon correlation spectroscopy,skos:relatedMatch,goldbook:08324,correlation spectroscopy through long-range coupling,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,Online version 5.0.0,2025-10-28,1
+Panet:PaNET2011001,neutron,skos:narrowMatch,goldbook:D01581,delayed neutrons,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,Online version 5.0.0,2025-10-28,1
+Panet:PaNET01090,dichroism,skos:exactMatch,goldbook:DT07357,dichroism,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,Online version 5.0.0,2025-10-28,1
+Panet:PaNET01125,spectroscopy,skos:narrowMatch,goldbook:D01701,difference absorption spectroscopy,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,Online version 5.0.0,2025-10-28,1
+Panet:PaNET01125,spectroscopy,skos:narrowMatch,goldbook:08234,difference spectroscopy,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,Online version 5.0.0,2025-10-28,1
+Panet:PaNET2020018,diffraction,skos:exactMatch,goldbook:D01711,diffraction,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,Online version 5.0.0,2025-10-28,1
+Panet:PaNET01022,diffraction,skos:relatedMatch,goldbook:D01712,diffraction analysis ,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,Online version 5.0.0,2025-10-28,1
+Panet:PaNET2020017,diffuse scattering,skos:relatedMatch,goldbook:08236,diffuse reflection,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,Online version 5.0.0,2025-10-28,1
+Panet:PaNET2020017,diffuse scattering,skos:relatedMatch,goldbook:09196,diffuse reflection-absorption infrared spectroscopy,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,Online version 5.0.0,2025-10-28,1
+Panet:PaNET01109,infrared spectroscopy,skos:relatedMatch,goldbook:09196,diffuse reflection-absorption infrared spectroscopy,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,Online version 5.0.0,2025-10-28,1
+panet:PaNET01193,energy dispersive x-ray spectroscopy,skos:relatedMatch,goldbook:08240,dispersive spectrometer,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,Online version 5.0.0,2025-10-28,1
+Panet:PaNET01125,spectroscopy,skos:narrowMatch,goldbook:D01854,double-wavelength spectroscopy,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,Online version 5.0.0,2025-10-28,1
+Panet:PaNET01125,spectroscopy,skos:narrowMatch,goldbook:08590,dynamic spectrum,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,Online version 5.0.0,2025-10-28,1
+Panet:PaNET01020,elastic scattering,skos:exactMatch,goldbook:E01917,elastic scattering ,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,Online version 5.0.0,2025-10-28,1
+Panet:PaNET01201,electron spectroscopy,skos:exactMatch,goldbook:08244,electron emission spectrometry ,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,Online version 5.0.0,2025-10-28,0.99
+panet:PaNET01059,versus energy loss,skos:narrowMatch,goldbook:08593 ,electron energy loss spectroscopy,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,Online version 5.0.0,2025-10-28,1
+Panet:PaNET01145,electron microscopy,skos:exactMatch,goldbook:T06481,electron microscopy,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,Online version 5.0.0,2025-10-28,1
+Panet:PaNET01201,electron spectroscopy,skos:narrowMatch,goldbook:E02009,electron spectroscopy for chemical analysis,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,Online version 5.0.0,2025-10-28,1
+Panet:PaNET01223,lithography,skos:narrowMatch,goldbook:09506,electron-beam direct-write lithography ,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,Online version 5.0.0,2025-10-28,1
+panet:PaNET00408,mass spectrometry,skos:narrowMatch,goldbook:09184,electrospray laser desorption ionization mass spectrometry,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,Online version 5.0.0,2025-10-28,1
+Panet:PaNET01135,absorption spectroscopy,skos:narrowMatch,goldbook:08471,electrothermal atomic absorption spectroscopy,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,Online version 5.0.0,2025-10-28,1
+panet:PaNET2012001,emission,skos:exactMatch,goldbook:E02056,emission,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,Online version 5.0.0,2025-10-28,1
+Panet:PaNET01092,emission spectroscopy,skos:relatedMatch,goldbook:E02060,emission spectrum,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,Online version 5.0.0,2025-10-28,1
+Panet:PaNET00208,dispersive technique,skos:narrowMatch,goldbook:E02105,energy dispersive X-ray fluorescence analysis,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,Online version 5.0.0,2025-10-28,1
+Panet:PaNET01177,x-ray fluorescence,skos:narrowMatch,goldbook:E02105,energy dispersive X-ray fluorescence analysis,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,Online version 5.0.0,2025-10-28,1
+panet:PaNET00407,characterize excitations,skos:relatedMatch,goldbook:E02248,excitation ,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,Online version 5.0.0,2025-10-28,1
+panet:PaNET00407,characterize excitations,skos:relatedMatch,goldbook:E02257,excited state,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,Online version 5.0.0,2025-10-28,1
+Panet:PaNET01198,extended x-ray absorption fine structure,skos:exactMatch,goldbook:E02280,extended X-ray absorption fine structure ,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,Online version 5.0.0,2025-10-28,1
+Panet:PaNET01198,extended x-ray absorption fine structure,skos:relatedMatch,goldbook:09198,extended X-ray absorption fine structure spectroscopy,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,Online version 5.0.0,2025-10-28,1
+Panet:PaNET01268,mass spectrometry,skos:narrowMatch,goldbook:09185,extractive electrospray ionization mass spectrometry,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,Online version 5.0.0,2025-10-28,1
+Panet:PaNET01268,mass spectrometry,skos:narrowMatch,goldbook:F02328,fast-atom bombardment mass spectrometry,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,Online version 5.0.0,2025-10-28,1
+Panet:PaNET01268,mass spectrometry,skos:narrowMatch,goldbook:09400,fast-atom bombardment secondary ion mass spectrometry ,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,Online version 5.0.0,2025-10-28,1
+Panet:PaNET01268,mass spectrometry,skos:narrowMatch,goldbook:12415,flow injection mass spectrometry,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,Online version 5.0.0,2025-10-28,1
+Panet:PaNET01177,x-ray fluorescence,skos:broadMatch,goldbook:F02453,fluorescence,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,Online version 5.0.0,2025-10-28,1
+Panet:PaNET01177,x-ray fluorescence,skos:relatedMatch,goldbook:C00985,fluorescence excitation,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,Online version 5.0.0,2025-10-28,1
+Panet:PaNET01177,x-ray fluorescence,skos:relatedMatch,goldbook:14135 ,fluorescence polarisation,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,Online version 5.0.0,2025-10-28,1
+Panet:PaNET2012000,scattering,skos:narrowMatch,goldbook:B00581,forward scattering,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,Online version 5.0.0,2025-10-28,1
+Panet:PaNET01268,mass spectrometry,skos:narrowMatch,goldbook:F02492,Fourier transform ion cyclotron resonance mass spectrometer,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,Online version 5.0.0,2025-10-28,1
+Panet:PaNET01320,fourier transform infrared spectroscopy,skos:relatedMatch,goldbook:F02493,Fourier transform spectrometer,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,Online version 5.0.0,2025-10-28,1
+Panet:PaNET01320,fourier transform infrared spectroscopy,skos:exactMatch,goldbook:08605,Fourier-transform infrared spectroscopy,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,Online version 5.0.0,2025-10-28,1
+Panet:PaNET01268,mass spectrometry,skos:narrowMatch,goldbook:12419,Fourier-transform mass spectrometry ,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,Online version 5.0.0,2025-10-28,1
+Panet:PaNET01195,raman spectroscopy,skos:narrowMatch,goldbook:08606,Fourier-transform Raman spectroscopy,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,Online version 5.0.0,2025-10-28,1
+Panet:PaNET01320,fourier transform infrared spectroscopy,skos:broadMatch,goldbook:FT07382,Fourier-transform spectroscopy ,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,Online version 5.0.0,2025-10-28,1
+panet:PaNET01097,gamma spectroscopy,skos:exactMatch,goldbook:08728,gamma-ray spectrometry,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,Online version 5.0.0,2025-10-28,0.99
+panet:PaNET01233,polymer micro and nanograftin,skos:broadMatch,goldbook:GT07138,grafting,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,Online version 5.0.0,2025-10-28,1
+panet:PaNET01098,grazing incidence diffraction,skos:relatedMatch,goldbook:08608 ,grazing incidence ,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,Online version 5.0.0,2025-10-28,1
+panet:PaNET01162,grazing incidence small angle x-ray scattering,skos:exactMatch,goldbook:09199,grazing-incidence small-angle X-ray scattering analysis,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,Online version 5.0.0,2025-10-28,1
+panet:PaNET01059,versus energy loss,skos:narrowMatch,goldbook:R05236 ,high resolution energy loss spectroscopy,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,Online version 5.0.0,2025-10-28,1
+panet:PaNET01169,serial synchrotron crystallography,skos:broadMatch,goldbook:14143,high throughput,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,Online version 5.0.0,2025-10-28,0.9
+panet:PaNET01169,serial synchrotron crystallography,skos:broadMatch,goldbook:08177,high-throughput screening,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,Online version 5.0.0,2025-10-28,0.9
+panet:PaNET01157,in-situ diffraction,skos:narrowMatch,goldbook:I03060,in situ micro-X-ray diffraction,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,Online version 5.0.0,2025-10-28,1
+panet:PaNET01032,microfocus diffraction,skos:narrowMatch,goldbook:I03060,in situ micro-X-ray diffraction,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,Online version 5.0.0,2025-10-28,1
+Panet:PaNET2020070,imaging,skos:exactMatch,goldbook:I0294,imaging,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,Online version 5.0.0,2025-10-28,1
+Panet:PaNET01268,mass spectrometry,skos:narrowMatch,goldbook:12431,imaging mass spectrometry ,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,Online version 5.0.0,2025-10-28,1
+Panet:PaNET01223,lithography,skos:narrowMatch,goldbook:09508,immersion lithography ,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,Online version 5.0.0,2025-10-28,1
+Panet:PaNET01223,lithography,skos:narrowMatch,goldbook:09509,imprint lithography,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,Online version 5.0.0,2025-10-28,1
+Panet:PaNET01033,incoherent scattering,skos:exactMatch,goldbook:C01131,incoherent scattering ,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,Online version 5.0.0,2025-10-28,1
+Panet:PaNET01268,mass spectrometry,skos:narrowMatch,goldbook:08490 ,inductively-coupled plasma mass spectrometry,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,Online version 5.0.0,2025-10-28,1
+panet:PaNET01034,inelastic scattering,skos:exactMatch,goldbook:I03025,inelastic scattering ,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,Online version 5.0.0,2025-10-28,1
+panet:PaNET2020002,IR photon,skos:relatedMatch,goldbook:IT07399,infrared,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,Online version 5.0.0,2025-10-28,1
+panet:PaNET2020002,IR photon,skos:exactMatch,goldbook:08617,infrared radiation,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,Online version 5.0.0,2025-10-28,1
+Panet:PaNET01109,infrared spectroscopy,skos:exactMatch,goldbook:08618,infrared spectroscopy ,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,Online version 5.0.0,2025-10-28,1
+Panet:PaNET01223,lithography,skos:narrowMatch,goldbook:09511,interference lithography ,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,Online version 5.0.0,2025-10-28,1
+Panet:PaNET2011001,neutron,skos:narrowMatch,goldbook:I03097,intermediate neutrons,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,Online version 5.0.0,2025-10-28,1
+Panet:PaNET2020009,X-ray,skos:relatedMatch,goldbook:08497,inverse Bremsstrahlung ,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,Online version 5.0.0,2025-10-28,0.9
+Panet:PaNET01195,raman spectroscopy,skos:relatedMatch,goldbook:08625,inverse Raman scattering ,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,Online version 5.0.0,2025-10-28,0.9
+Panet:PaNET01268,mass spectrometry,skos:narrowMatch,goldbook:I03249,ion trap mass spectrometer,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,Online version 5.0.0,2025-10-28,1
+Panet:PaNET01268,mass spectrometry,skos:narrowMatch,goldbook:09187,laser ablation electrospray ionization mass spectrometry,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,Online version 5.0.0,2025-10-29,1
+Panet:PaNET01092,emission spectroscopy,skos:narrowMatch,goldbook:L03473 ,laser micro emission spectroscopy ,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,Online version 5.0.0,2025-10-29,1
+Panet:PaNET01268,mass spectrometry,skos:narrowMatch,goldbook:L03474,laser micro mass spectrometry ,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,Online version 5.0.0,2025-10-29,1
+Panet:PaNET2011006,microfocus probe,skos:narrowMatch,goldbook:12464,laser microprobe mass spectrometry ,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,Online version 5.0.0,2025-10-29,1
+Panet:PaNET01268,mass spectrometry,skos:narrowMatch,goldbook:12464,laser microprobe mass spectrometry ,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,Online version 5.0.0,2025-10-29,1
+Panet:PaNET01195,raman spectroscopy,skos:relatedMatch,goldbook:L03477,laser Raman microanalysis ,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,Online version 5.0.0,2025-10-29,0.9
+panet:PaNET2020005,visible photon,skos:exactMatch,goldbook:08264,light ,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,Online version 5.0.0,2025-10-29,1
+panet:PaNET00302,versus polarization,skos:relatedMatch,goldbook:L03524,light polarization ,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,Online version 5.0.0,2025-10-29,0.9
+Panet:PaNET01185,light scattering,skos:exactMatch,goldbook:L03525,light scattering ,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,Online version 5.0.0,2025-10-29,1
+panet:PaNET01138,linear dichroism,skos:exactMatch,goldbook:LT07415,linear dichroism ,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,Online version 5.0.0,2025-10-29,1
+Panet:PaNET01223,lithography,skos:exactMatch,goldbook:09503 ,lithography ,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,Online version 5.0.0,2025-10-29,1
+panet:PaNET01167,photoelectron diffraction,skos:relatedMatch,goldbook:L03631,low energy electron diffraction,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,Online version 5.0.0,2025-10-29,0.9
+panet:PaNET01007,UV visible photon probe,skos:narrowMatch,goldbook:L03638,low temperature UV–VIS absorption spectroscopy,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,Online version 5.0.0,2025-10-29,1
+Panet:PaNET01135,absorption spectroscopy,skos:narrowMatch,goldbook:L03638,low temperature UV–VIS absorption spectroscopy,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,Online version 5.0.0,2025-10-29,1
+panet:PaNET01111,luminescence,skos:exactMatch,goldbook:L03641,luminescence,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,Online version 5.0.0,2025-10-29,1
+panet:PaNET01164,macromolecular crystallography,skos:relatedMatch,goldbook:11471,macromolecular crystallographic information file,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,Online version 5.0.0,2025-10-29,1
+panet:PaNET01164,macromolecular crystallography,skos:relatedMatch,goldbook:M03667,macromolecule,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,Online version 5.0.0,2025-10-29,1
+panet:PaNET01141,magnetic circular dichroism,skos:exactMatch,goldbook:MT06778,magnetic circular dichroism,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,Online version 5.0.0,2025-10-29,1
+panet:PaNET01106,imaging,skos:narrowMatch,goldbook:MT06795,magnetic resonance imaging,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,Online version 5.0.0,2025-10-29,0.99
+Panet:PaNET01223,lithography,skos:narrowMatch,goldbook:09512,magnetolithography ,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,Online version 5.0.0,2025-10-29,1
+Panet:PaNET01223,lithography,skos:narrowMatch,goldbook:09513,maskless lithography,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,Online version 5.0.0,2025-10-29,1
+Panet:PaNET01268,mass spectrometry,skos:exactMatch,goldbook:M03746,mass spectrometry ,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,Online version 5.0.0,2025-10-29,1
+Panet:PaNET01268,mass spectrometry,skos:exactMatch,goldbook:12485,mass spectrometry/mass spectrometry ,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,Online version 5.0.0,2025-10-29,1
+Panet:PaNET00005,defined by purpose,skos:narrowMatch,goldbook:08085,material characterization study ,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,Online version 5.0.0,2025-10-29,0.9
+panet:PaNET00410,medical application,skos:relatedMatch,goldbook:16241,medicine,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,Online version 5.0.0,2025-10-29,1
+Panet:PaNET01268,mass spectrometry,skos:narrowMatch,goldbook:12487,membrane introduction mass spectrometry ,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,Online version 5.0.0,2025-10-29,1
+Panet:PaNET01223,lithography,skos:narrowMatch,goldbook:09514,microlithography ,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,Online version 5.0.0,2025-10-29,1
+Panet:PaNET01268,mass spectrometry,skos:narrowMatch,goldbook:12491,molecular beam mass spectrometry ,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,Online version 5.0.0,2025-10-29,1
+panet:PaNET00301,versus momentum transfer,skos:relatedMatch,goldbook:M04007,momentum ,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,Online version 5.0.0,2025-10-29,1
+panet:PaNET00301,versus momentum transfer,skos:relatedMatch,goldbook:M04008,momentum spectrum ,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,Online version 5.0.0,2025-10-29,1
+panet:PaNET01018,monochromatic neutron probe,skos:relatedMatch,goldbook:M04009,monochromator ,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,Online version 5.0.0,2025-10-29,1
+Panet:PaNET01268,mass spectrometry,skos:narrowMatch,goldbook:M04014,monoisotopic mass spectrum,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,Online version 5.0.0,2025-10-29,1
+panet:PaNET2011002,muon probe,skos:narrowMatch,goldbook:08737,muon induced X-ray emission analysis,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,Online version 5.0.0,2025-10-29,0.99
+panet:PaNET01045,x-ray emission technique,skos:narrowMatch,goldbook:08737,muon induced X-ray emission analysis,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,Online version 5.0.0,2025-10-29,0.99
+Panet:PaNET01231,nanoimprint lithography,skos:exactMatch,goldbook:09510,nanoimprint lithography ,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,Online version 5.0.0,2025-10-29,1
+Panet:PaNET01223,lithography,skos:narrowMatch,goldbook:09515 ,nanolithography ,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,Online version 5.0.0,2025-10-29,1
+Panet:PaNET01223,lithography,skos:narrowMatch,goldbook:09516,nanosphere lithography ,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,Online version 5.0.0,2025-10-29,1
+panet:PaNET01199,x-ray absorption near edge structure,skos:exactMatch,goldbook:08738,near edge X-ray absorption fine structure,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,Online version 5.0.0,2025-10-29,1
+panet:PaNET2020002,IR photon,skos:relatedMatch,goldbook:08642 ,near-infrared radiation ,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,Online version 5.0.0,2025-10-29,0.9
+Panet:PaNET2011001,neutron,skos:exactMatch,goldbook:N04116 ,neutron,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,Online version 5.0.0,2025-10-29,1
+panet:PaNET01217,neutron diffraction,skos:relatedMatch,goldbook:08741,neutron diffraction analysis ,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,Online version 5.0.0,2025-10-29,1
+Panet:PaNET2011001,neutron,skos:relatedMatch,goldbook:08742,neutron energy ,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,Online version 5.0.0,2025-10-29,0.99
+panet:PaNET01242,neutron scattering,skos:exactMatch,goldbook:08743,neutron scattering analysis ,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,Online version 5.0.0,2025-10-29,1
+Panet:PaNET2011001,neutron,skos:relatedMatch,goldbook:N04132,neutron temperature ,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,Online version 5.0.0,2025-10-29,0.99
+Panet:PaNET01092,emission spectroscopy,skos:narrowMatch,goldbook:08513 ,optical emission spectroscopy ,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,Online version 5.0.0,2025-10-29,1
+Panet:PaNET01092,emission spectroscopy,skos:narrowMatch,goldbook:08513 ,optical emission spectroscopy ,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,Online version 5.0.0,2025-10-29,1
+panet:PaNET01115,optical spectroscopy,skos:exactMatch,goldbook:O04314,optical spectroscopy ,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,Online version 5.0.0,2025-10-29,1
+Panet:PaNET01177,x-ray emission technique,skos:narrowMatch,goldbook:P04426,particle induced X-ray emission analysis,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,Online version 5.0.0,2025-10-29,1
+Panet:PaNET01046,gamma-ray emission technique,skos:narrowMatch,goldbook:08748,particle-induced gamma-ray emission analysis,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,Online version 5.0.0,2025-10-29,1
+panet:PaNET01269,photoelectron emission,skos:relatedMatch,goldbook:P04601,photoelectric effect,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,Online version 5.0.0,2025-10-29,1
+panet:PaNET01284,x-ray photoelectron diffraction,skos:narrowMatch,goldbook:09346,photoelectron X-ray satellite peaks,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,Online version 5.0.0,2025-10-29,1
+panet:PaNET01269,photoelectron emission,skos:exactMatch,goldbook:09348,photoemission,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,Online version 5.0.0,2025-10-29,1
+panet:PaNET01055,photo excitation,skos:exactMatch,goldbook:P04613,photoexcitation,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,Online version 5.0.0,2025-10-29,1
+panet:PaNET01106,imaging,skos:exactMatch,goldbook:I02944,photoimaging,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,Online version 5.0.0,2025-10-29,1
+Panet:PaNET01223,lithography,skos:narrowMatch,goldbook:09517,photolithography,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,Online version 5.0.0,2025-10-29,1
+panet:PaNET01111,luminescence,skos:narrowMatch,goldbook:P04623 ,photoluminescence,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,Online version 5.0.0,2025-10-29,1
+panet:PaNET2020030,photon emission,skos:exactMatch,goldbook:P04631,photon emittance,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,Online version 5.0.0,2025-10-29,0.99
+panet:PaNET2020030,photon emission,skos:exactMatch,goldbook:P04631,photon exitance,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,Online version 5.0.0,2025-10-29,1
+panet:PaNET01111,luminescence,skos:narrowMatch,goldbook:P04672,piezoluminescence,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,Online version 5.0.0,2025-10-29,1
+Panet:PaNET01268,mass spectrometry,skos:narrowMatch,goldbook:09190,plasma assisted desorption ionization mass spectrometry,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,Online version 5.0.0,2025-10-29,1
+panet:PaNET00302,versus polarization,skos:relatedMatch,goldbook:16219,polarisation spectroscopy,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,Online version 5.0.0,2025-10-29,1
+panet:PaNET00302,versus polarization,skos:relatedMatch,goldbook:P04712,polarization,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,Online version 5.0.0,2025-10-29,1
+panet:PaNET01030,powder diffraction,skos:relatedMatch,goldbook:08393 ,powder pattern,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,Online version 5.0.0,2025-10-29,1
+panet:PaNET2020048,sample pressure,skos:relatedMatch,goldbook:P04819,pressure,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,Online version 5.0.0,2025-10-29,1
+Panet:PaNET01268,mass spectrometry,skos:narrowMatch,goldbook:P04874,prolate trochoidal mass spectrometer,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,Online version 5.0.0,2025-10-29,1
+Panet:PaNET01268,mass spectrometry,skos:narrowMatch,goldbook:12538 ,pyrolysis mass spectrometry,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,Online version 5.0.0,2025-10-29,1
+panet:PaNET01000,time of flight technique,skos:narrowMatch,goldbook:12541,quadrupole time-of-flight,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,Online version 5.0.0,2025-10-30,1
+Panet:PaNET01125,spectroscopy,skos:relatedMatch,goldbook:R05059,radiation spectrum ,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,Online version 5.0.0,2025-10-30,0.99
+panet:PaNET01115,optical spectroscopy,skos:narrowMatch,goldbook:08537,radiofrequency glow discharge optical emission spectroscopy,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,Online version 5.0.0,2025-10-30,1
+panet:PaNET01111,luminescence,skos:narrowMatch,goldbook:R05111,radioluminescence,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,Online version 5.0.0,2025-10-30,0.99
+Panet:PaNET01195,raman spectroscopy,skos:relatedMatch,goldbook:08667,Raman scattering,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,Online version 5.0.0,2025-10-30,1
+Panet:PaNET01195,raman spectroscopy,skos:exactMatch,goldbook:08669,Raman spectroscopy ,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,Online version 5.0.0,2025-10-30,1
+Panet:PaNET2012000,scattering,skos:narrowMatch,goldbook:R05160 ,Rayleigh scattering ,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,Online version 5.0.0,2025-10-30,1
+Panet:PaNET01268,mass spectrometry,skos:narrowMatch,goldbook:09191,reactive desorption electrospray ionization mass spectrometry,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,Online version 5.0.0,2025-10-30,1
+panet:PaNET01177,x-ray fluorescence,skos:relatedMatch,goldbook:D01579 ,recombination fluorescence,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,Online version 5.0.0,2025-10-30,1
+Panet:PaNET01268,mass spectrometry,skos:narrowMatch,goldbook:R05236 ,reflection electron energy loss spectroscopy ,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,Online version 5.0.0,2025-10-30,1
+panet:PaNET01059,versus energy loss,skos:narrowMatch,goldbook:R05236 ,reflection electron energy loss spectroscopy ,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,Online version 5.0.0,2025-10-30,1
+Panet:PaNET2020018,diffraction,skos:narrowMatch,goldbook:R05238,reflection high energy electron diffraction ,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,Online version 5.0.0,2025-10-30,1
+panet:PaNET01098,grazing incidence diffraction,skos:narrowMatch,goldbook:08673 ,reflection-absorption at grazing incidence ,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,Online version 5.0.0,2025-10-30,1
+panet:PaNET2012002,absorption,skos:narrowMatch,goldbook:08673 ,reflection-absorption at grazing incidence ,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,Online version 5.0.0,2025-10-30,1
+panet:PaNET2012002,absorption,skos:narrowMatch,goldbook:09201 ,reflection-absorption infrared spectroscopy ,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,Online version 5.0.0,2025-10-30,1
+panet:PaNET01109,infrared spectroscopy,skos:narrowMatch,goldbook:09201 ,reflection-absorption infrared spectroscopy ,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,Online version 5.0.0,2025-10-30,1
+panet:PaNET01177,x-ray fluorescence,skos:relatedMatch,goldbook:R05335,resonance fluorescence,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,Online version 5.0.0,2025-10-30,1
+panet:PaNET2011001,neutron,skos:narrowMatch,goldbook:R05342,resonance neutrons,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,Online version 5.0.0,2025-10-30,1
+panet:PaNETPaNET00206,resonance phenomenon,skos:narrowMatch,goldbook:R05342,resonance neutrons,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,Online version 5.0.0,2025-10-30,1
+Panet:PaNET01195,raman spectroscopy,skos:narrowMatch,goldbook:08674 ,resonance Raman scattering,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,Online version 5.0.0,2025-10-30,1
+panet:PaNETPaNET00206,resonance phenomenon,skos:narrowMatch,goldbook:08674 ,resonance Raman scattering,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,Online version 5.0.0,2025-10-30,1
+panet:PaNET01183,resonant inelastic x-ray scattering,skos:exactMatch,goldbook:08541,resonant inelastic X-ray scattering ,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,Online version 5.0.0,2025-10-30,1
+Panet:PaNET2012000,scattering,skos:narrowMatch,goldbook:R05429,Rutherford backscattering,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,Online version 5.0.0,2025-10-30,1
+Panet:PaNET2012000,scattering,skos:narrowMatch,goldbook:09178 ,Rutherford backscattering spectrometry,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,Online version 5.0.0,2025-10-30,1
+panet:PaNET2011000,photon ,skos:narrowMatch,goldbook:R02568,γ-radiation ,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,Online version 5.0.0,2025-10-30,1
+panet:PaNET01097,gamma spectroscopy,skos:exactMatch,goldbook:R02570,γ-ray spectrometer ,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,Online version 5.0.0,2025-10-30,1
+panet:PaNET01148,scanning probe microscopy,skos:narrowMatch,goldbook:S05484,scanning electron microscopy,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,Online version 5.0.0,2025-10-31,1
+Panet:PaNET01145,electron microscopy,skos:narrowMatch,goldbook:S05484,scanning electron microscopy,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,Online version 5.0.0,2025-10-31,1
+panet:PaNET00104,scanning probe,skos:exactMatch,goldbook:S05485,scanning method ,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,Online version 5.0.0,2025-10-31,1
+panet:PaNET01148,scanning probe microscopy,skos:narrowMatch,goldbook:09202,scanning near-field optical microscopy ,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,Online version 5.0.0,2025-10-31,1
+panet:PaNET01123,scanning transmission microscopy,skos:narrowMatch,goldbook:S05486,scanning transmission electron microscopy,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,Online version 5.0.0,2025-10-31,1
+Panet:PaNET01145,electron microscopy,skos:narrowMatch,goldbook:S05486,scanning transmission electron microscopy,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,Online version 5.0.0,2025-10-31,1
+Panet:PaNET01223,lithography,skos:narrowMatch,goldbook:09518 ,scanning-probe lithography ,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,Online version 5.0.0,2025-10-31,1
+Panet:PaNET2011004,scanning probe,skos:narrowMatch,goldbook:09518 ,scanning-probe lithography ,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,Online version 5.0.0,2025-10-31,1
+Panet:PaNET2012000,scattering,skos:exactMatch,goldbook:S05487,scattering ,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,Online version 5.0.0,2025-10-31,1
+panet:PaNET01304,fragment screening,skos:broadMatch,goldbook:09384,screening ,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,Online version 5.0.0,2025-10-31,1
+panet:PaNET01177,x-ray fluorescence,skos:relatedMatch,goldbook:S05521 ,secondary fluorescence ,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,Online version 5.0.0,2025-10-31,1
+Panet:PaNET01268,mass spectrometry,skos:narrowMatch,goldbook:12565,secondary neutral mass spectrometry,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,Online version 5.0.0,2025-10-31,1
+Panet:PaNET01268,mass spectrometry,skos:narrowMatch,goldbook:09192 ,secondary-ion mass spectrometry,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,Online version 5.0.0,2025-10-31,1
+panet:PaNET01167,photoelectron diffraction,skos:narrowMatch,goldbook:T06483,selected area electron diffraction,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,Online version 5.0.0,2025-10-31,0.9
+panet:PaNET01111,luminescence,skos:narrowMatch,goldbook:S05609 ,sensitized luminescence,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,Online version 5.0.0,2025-10-31,1
+Panet:PaNET01268,mass spectrometry,skos:narrowMatch,goldbook:S05687,single-focusing mass spectrometer ,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,Online version 5.0.0,2025-10-31,1
+panet:PaNET01188,small angle x-ray scattering,skos:exactMatch,goldbook:09203,small-angle X-ray scattering ,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,Online version 5.0.0,2025-10-31,1
+Panet:PaNET01223,lithography,skos:narrowMatch,goldbook:09519,soft lithography ,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,Online version 5.0.0,2025-10-31,1
+panet:PaNET01111,luminescence,skos:narrowMatch,goldbook:S05767,sonoluminescence ,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,Online version 5.0.0,2025-10-31,1
+Panet:PaNET01195,raman spectroscopy,skos:narrowMatch,goldbook:08679,spatially offset Raman spectroscopy,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,Online version 5.0.0,2025-10-31,1
+panet:PaNET2020030,photon emission,skos:narrowMatch,goldbook:P04631,specific photon emission,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,Online version 5.0.0,2025-10-31,1
+panet:PaNET2020030,photon emission,skos:narrowMatch,goldbook:S05819,spectral photon exitance ,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,Online version 5.0.0,2025-10-31,1
+panet:PaNET01125,spectroscopy,skos:exactMatch,goldbook:S05848,spectroscopy ,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,Online version 5.0.0,2025-10-31,1
+panet:PaNET01149,x-ray reflectivity,skos:narrowMatch,goldbook:09204 ,specular X-ray reflectrometry ,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,Online version 5.0.0,2025-10-31,1
+panet:PaNET2020038,spin echo,skos:exactMatch,goldbook:08420 ,spin echo ,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,Online version 5.0.0,2025-10-31,1
+Panet:PaNET01268,mass spectrometry,skos:narrowMatch,goldbook:S05944 ,static fields mass spectrometer ,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,Online version 5.0.0,2025-10-31,1
+Panet:PaNET01185,light scattering,skos:narrowMatch,goldbook:12274,static light scattering ,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,Online version 5.0.0,2025-10-31,1
+Panet:PaNET01268,mass spectrometry,skos:narrowMatch,goldbook:09193,static secondary-ion mass spectrometry,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,Online version 5.0.0,2025-10-31,1
+Panet:PaNET00201,emission technique,skos:narrowMatch,goldbook:S06015,stimulated emission ,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,Online version 5.0.0,2025-10-31,1
+Panet:PaNET01195,raman spectroscopy,skos:narrowMatch,goldbook:08682,stimulated Raman scattering,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,Online version 5.0.0,2025-10-31,1
+Panet:PaNET01195,raman spectroscopy,skos:narrowMatch,goldbook:08683,Stokes–Raman scattering ,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,Online version 5.0.0,2025-10-31,1
+Panet:PaNET01326,birefringence,skos:narrowMatch,goldbook:S06048,streaming birefringence ,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,Online version 5.0.0,2025-10-31,1
+Panet:PaNET01198,extended x-ray absorption fine structure,skos:narrowMatch,goldbook:09206,surface extended X-ray absorption fine structure spectroscopy ,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,Online version 5.0.0,2025-10-31,1
+Panet:PaNET01121,reflectometry,skos:relatedMatch,goldbook:09577,surface roughness ,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,Online version 5.0.0,2025-10-31,1
+Panet:PaNET2002000,purpose,skos:relatedMatch,goldbook:09577,surface roughness ,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,Online version 5.0.0,2025-10-31,1
+Panet:PaNET01268,mass spectrometry,skos:narrowMatch,goldbook:09194,surface-assisted laser desorption/ionization mass spectrometry ,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,Online version 5.0.0,2025-10-31,1
+Panet:PaNET01195,raman spectroscopy,skos:narrowMatch,goldbook:08687,surface-enhanced hyper-Raman spectroscopy,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,Online version 5.0.0,2025-10-31,1
+panet:PaNET2012002,absorption,skos:narrowMatch,goldbook:08688,surface-enhanced infrared absorption,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,Online version 5.0.0,2025-10-31,1
+panet:PaNET2020002,IR photon,skos:narrowMatch,goldbook:08688,surface-enhanced infrared absorption,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,Online version 5.0.0,2025-10-31,1
+panet:PaNET01109,infrared spectroscopy,skos:narrowMatch,goldbook:09207,surface-enhanced infrared spectroscopy ,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,Online version 5.0.0,2025-10-31,1
+Panet:PaNET01195,raman spectroscopy,skos:narrowMatch,goldbook:08689,surface-enhanced Raman spectroscopy ,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,Online version 5.0.0,2025-10-31,1
+Panet:PaNET01195,raman spectroscopy,skos:narrowMatch,goldbook:08690,surface-enhanced resonance Raman spectroscopy,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,Online version 5.0.0,2025-10-31,1
+Panet:PaNET01049,resonant scattering,skos:narrowMatch,goldbook:08690,surface-enhanced resonance Raman spectroscopy,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,Online version 5.0.0,2025-10-31,1
+Panet:PaNET01195,raman spectroscopy,skos:narrowMatch,goldbook:09209,surface-enhanced resonant Raman spectroscopy ,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,Online version 5.0.0,2025-10-31,1
+Panet:PaNET01049,resonant scattering,skos:narrowMatch,goldbook:09209,surface-enhanced resonant Raman spectroscopy ,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,Online version 5.0.0,2025-10-31,1
+Panet:PaNET01195,raman spectroscopy,skos:narrowMatch,goldbook:08691,"surface-enhanced, spatially offset Raman spectroscopy ",semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,Online version 5.0.0,2025-10-31,1
+panet:PaNET01177,x-ray fluorescence,skos:narrowMatch,goldbook:08764,synchrotron radiation induced X-ray fluorescence analysis ,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,Online version 5.0.0,2025-10-31,1
+panet:PaNET01156,x-ray spectroscopy,skos:narrowMatch,goldbook:08554,synchrotron X-ray spectroscopy,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,Online version 5.0.0,2025-10-31,1
+panet:PaNET01169,serial synchrotron crystallography,skos:relatedMatch,goldbook:14200,ultra-high throughput,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,Online version 5.0.0,2025-10-30,1
+panet:PaNET2020006,UV photon,skos:exactMatch,goldbook:UT07492,ultraviolet,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,Online version 5.0.0,2025-10-30,1
+panet:PaNET01202,photoelectron spectroscopy,skos:narrowMatch,goldbook:P04609,UV photoelectron spectroscopy,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,Online version 5.0.0,2025-10-30,1
+panet:PaNET2020006,UV photon,skos:narrowMatch,goldbook:P04609,UV photoelectron spectroscopy,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,Online version 5.0.0,2025-10-30,1
+panet:PaNET2020007,VUV photon,skos:exactMatch,goldbook:VT07497,VUV,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,Online version 5.0.0,2025-10-31,1
+panet:PaNET01177,x-ray fluorescence,skos:narrowMatch,goldbook:W06662,wavelength-dispersive X-ray fluorescence analysis,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,Online version 5.0.0,2025-10-30,1
+panet:PaNET00208,dispersive technique,skos:narrowMatch,goldbook:W06662,wavelength-dispersive X-ray fluorescence analysis,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,Online version 5.0.0,2025-10-30,1
+Panet:PaNET2020009,x-ray,skos:exactMatch,goldbook:X06703 ,X-radiation,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,Online version 5.0.0,2025-10-30,1
+panet:PaNET01227,x-ray absorption,skos:exactMatch,goldbook:08766 ,X-ray absorption analysis,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,Online version 5.0.0,2025-10-30,1
+panet:PaNET01197,x-ray absorption fine structure,skos:exactMatch,goldbook:09212 ,X-ray absorption fine structure spectroscopy ,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,Online version 5.0.0,2025-10-30,1
+panet:PaNET01196,x-ray absorption spectroscopy,skos:exactMatch,goldbook:09212 ,X-ray absorption fine structure spectroscopy ,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,Online version 5.0.0,2025-10-30,1
+panet:PaNET01199,x-ray absorption near edge structure,skos:exactMatch,goldbook:08768,X-ray absorption near edge structure,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,Online version 5.0.0,2025-10-30,1
+panet:PaNET01199,x-ray absorption near edge structure,skos:exactMatch,goldbook:09213 ,X-ray absorption near-edge spectroscopy,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,Online version 5.0.0,2025-10-30,1
+panet:PaNET01012,x-ray probe,skos:exactMatch,goldbook:08769 ,X-ray analysis ,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,Online version 5.0.0,2025-10-30,1
+panet:PaNET01208,x-ray microtomography,skos:exactMatch,goldbook:08770,X-ray computed micro-tomography ,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,Online version 5.0.0,2025-10-30,1
+panet:PaNET01216,x-ray diffraction,skos:exactMatch,goldbook:08771,X-ray diffraction analysis,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,Online version 5.0.0,2025-10-30,1
+panet:PaNET01200,x-ray emission spectroscopy,skos:relatedMatch,goldbook:08564,X-ray emission spectrum,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,Online version 5.0.0,2025-10-30,1
+panet:PaNET01177,x-ray fluorescence,skos:exactMatch,goldbook:X06710,X-ray fluorescence ,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,Online version 5.0.0,2025-10-30,1
+panet:PaNET01177,x-ray fluorescence,skos:exactMatch,goldbook:X06711,X-ray fluorescence analysis,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,Online version 5.0.0,2025-10-30,1
+panet:PaNET01177,x-ray fluorescence,skos:narrowMatch,goldbook:08772,X-ray fluorescence microscopy,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,Online version 5.0.0,2025-10-30,1
+panet:PaNET01180,x-ray microscopy,skos:narrowMatch,goldbook:08772,X-ray fluorescence microscopy,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,Online version 5.0.0,2025-10-30,1
+Panet:PaNET01224,x-ray lithography,skos:exactMatch,goldbook:09520 ,X-ray lithography,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,Online version 5.0.0,2025-10-30,1
+panet:PaNET01204,x-ray photoelectron spectroscopy,skos:exactMatch,goldbook:X06716 ,X-ray photoelectron spectroscopy,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,Online version 5.0.0,2025-10-30,1
+panet:PaNET01149,x-ray reflectivity,skos:exactMatch,goldbook:09214,X-ray reflectometry,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,Online version 5.0.0,2025-10-30,1
+panet:PaNET01102,x-ray spectroscopy,skos:exactMatch,goldbook:X06718 ,X-ray spectroscopy ,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,Online version 5.0.0,2025-10-30,1
+panet:PaNET01173,x-ray standing wave,skos:exactMatch,goldbook:09215,X-ray standing waves,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,Online version 5.0.0,2025-10-30,1
+panet:PaNET01204,x-ray photoelectron spectroscopy,skos:exactMatch,goldbook:P04609,XPS,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,Online version 5.0.0,2025-10-30,1
