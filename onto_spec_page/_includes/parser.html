@@ -1,0 +1,16 @@
+{% comment %}
+  function to parse the ?? encoded text to hmtl (e.g. \n -> <br>)
+{% endcomment %}
+
+{% assign output = include.text | replace: "\n", "<br><br>" %}
+{% comment %}
+    The assign command is in principal correct; I tested it with other strings. 
+    However, this replace does not work. why?
+{% endcomment %}
+
+
+<p>old</p><br>
+{{ include.text }}
+
+<p>new</p><br>
+{{ output }}

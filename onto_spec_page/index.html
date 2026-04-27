@@ -1,0 +1,212 @@
+---
+title: Ontology Specification
+---
+
+{% assign R = site.data.PaNET_reasoned %}
+{% assign onto = R | where_exp: "item", "item['@type'] contains 'http://www.w3.org/2002/07/owl#Ontology'" | first %}
+
+<h1 class="title">Ontology Specifications</h1>
+
+<!-- RELEASE -->
+<h2>Release: {{ onto["http://purl.org/dc/terms/created"][0]["@value"] }}</h2>
+
+<!-- release: revision -->
+<h3>Revision:</h3>
+<p>{{ onto["http://www.w3.org/2002/07/owl#versionInfo"][0]["@value"] }}</p>
+
+<!-- release: authors -->
+<h3>Authors:</h3>
+<p>
+  <ul>
+    {% for entry in R %}
+      {% if entry["@type"] contains "http://xmlns.com/foaf/0.1/Person" %}
+        <li>
+          {% assign name = entry["http://xmlns.com/foaf/0.1/name"][0]["@value"] %}
+          {% assign orcid = entry["http://www.w3.org/2000/01/rdf-schema#seeAlso"][0]["@id"] %}
+          {% if entry["http://schema.org/affiliation"][0]["@id"] %}
+            {% assign affiliation_id = entry["http://schema.org/affiliation"][0]["@id"] %}
+
+            <!-- Find the affiliation object in the JSON -->
+            {% assign affiliation = nil %}
+            {% for item in R %}
+              {% if item["@id"] == affiliation_id %}
+                {% assign affiliation = item %}
+              {% endif %}
+            {% endfor %}
+
+            <!-- Extract affiliation info if found -->
+            {% assign affiliation_name = nil %}
+            {% assign affiliation_homepage = nil %}
+            {% if affiliation %}
+              {% if affiliation["http://xmlns.com/foaf/0.1/name"] %}
+                {% assign affiliation_name = affiliation["http://xmlns.com/foaf/0.1/name"][0]["@value"] %}
+              {% endif %}
+              {% if affiliation["http://xmlns.com/foaf/0.1/homepage"] %}
+                {% assign affiliation_homepage = affiliation["http://xmlns.com/foaf/0.1/homepage"][0]["@id"] %}
+              {% endif %}
+            {% endif %}
+          {% endif %}
+
+          <!-- Display -->
+          {% if name %}
+            {% if orcid %}
+              <a href="{{ orcid }}">{{ name }}</a>
+            {% else %}
+              {{ name }}
+            {% endif %}
+
+            {% if affiliation_name and affiliation_homepage%}
+              (<a href="{{ affiliation_homepage }}">{{ affiliation_name }}</a>)
+            {% elsif affiliation_name %}
+              ({{ affiliation_name }})
+            {% endif %}
+          {% endif %}
+        </li>
+      {% endif %}
+    {% endfor %}
+  </ul>
+</p>
+
+<h3>Download serialization:</h3>
+<ul>
+  <li><a href="https://github.com/pan-ontologies/PaNET/releases/download/v1.3.0/PaNET.owl">owl</a></li>
+  <li><a href="https://github.com/pan-ontologies/PaNET/releases/download/v1.3.0/PaNET_reasoned.owl">reasoned owl</a></li>
+</ul>
+
+<h3>License:</h3>
+{% assign license = onto["http://purl.org/dc/terms/license"][0]["@id"] %}
+<a href="{{ license }}">{{ license }}</a>
+
+<h3>Visualization:</h3>
+<p class="comment">todo</p>
+
+<h3>Cite as:</h3>
+{% assign names = "" %}
+{% for entry in R %}
+  {% if entry["@type"] contains "http://xmlns.com/foaf/0.1/Person" and entry["http://xmlns.com/foaf/0.1/name"] %}
+    {% assign name = entry["http://xmlns.com/foaf/0.1/name"][0]["@value"] %}
+    {% if names == "" %}
+      {% assign names = name %}
+    {% else %}
+      {% assign names = names | append: ", " | append: name %}
+    {% endif %}
+  {% endif %}
+{% endfor %}
+<p>{{ names }}. <i>{{ onto["http://schema.org/name"][0]["@value"] }}</i>. Revision: {{ onto["http://www.w3.org/2002/07/owl#versionInfo"][0]["@value"] }}.</p>
+
+<p><a href="https://github.com/pan-ontologies/PaNET">Provenance of this page</a></p>
+
+<hr>
+
+<!-- ABSTRACT -->
+<h2>Abstract</h2>
+<p class="comment">difference between Abstract and Description?</p>
+<p class="comment">current content needs update!</p>
+<p class="comment">links are not working. why?</p>
+{% assign abstract_text = onto["http://www.w3.org/2000/01/rdf-schema#comment"][0]["@value"] %}
+<p>{% include parser.html text=abstract_text %}</p>
+
+<!-- TOC -->
+<h2 id="toc">Table of Contents</h2>
+{% assign header_overview = onto["http://schema.org/name"][0]["@value"] | append: ": Overview" %}
+{% assign header_overview_classes = "Classes" %}
+{% assign header_overview_obj_prop = "Object Properties" %}
+{% assign header_overview_ann_prop = "Annotation Properties" %}
+{% assign header_overview_visualization = "Visualization" %}
+{% assign header_description = onto["http://schema.org/name"][0]["@value"] | append: ": Description" %}
+{% assign header_cross_ref = "Cross-references for " | append: onto["http://schema.org/name"][0]["@value"] | append: " classes, object properties and data properties" %}
+{% assign header_cross_ref_classes = "Classes" %}
+{% assign header_cross_ref_obj_prop = "Object Properties" %}
+{% assign header_cross_ref_ann_prop = "Annotation Properties" %}
+{% assign header_references = "References" %}
+{% assign header_acknowledgement = "Acknowledgement" %}
+
+<ol>
+  <li><a href="#overview">{{ header_overview }}</a></li>
+  <ol>
+    <li><a href="#overview-classes">{{ header_overview_classes}}</a></li>
+    <li><a href="#overview-object-properties">{{ header_overview_obj_prop }}</a></li>
+    <li><a href="#overview-annotation-properties">{{ header_overview_ann_prop }}</a></li>
+    <li><a href="#overview-visualization">{{ header_overview_visualization }}</a></li>
+  </ol>
+  <li><a href="#description">{{ header_description }}</a></li>
+  <li><a href="#cross-ref">{{ header_cross_ref }}</a></li>
+  <ol>
+    <li><a href="#cross-ref-classes">{{ header_cross_ref_classes}}</a></li>
+    <li><a href="#cross-ref-object-properties">{{ header_cross_ref_obj_prop }}</a></li>
+    <li><a href="#cross-ref-annotation-properties">{{ header_cross_ref_ann_prop }}</a></li>
+  </ol>
+  <li><a href="#references">{{ header_references }}</a></li>
+  <li><a href="#acknowledgement">{{ header_acknowledgement }}</a></li>
+</ol>
+
+<!-- OVERVIEW -->
+<h2 id="overview">{{ header_overview }}</h2>
+
+<!-- overview: classes -->
+<h3 id="overview-classes">{{ header_overview_classes }}</h3>
+{% include
+  create_overview_box.html
+  data=site.data.PaNET_reasoned
+  field="http://www.w3.org/2002/07/owl#Class"
+%}
+
+<!-- overview: object properties -->
+<h3 id="overview-object-properties">{{ header_overview_obj_prop }}</h3>
+{% include
+  create_overview_box.html
+  data=site.data.PaNET_reasoned
+  field="http://www.w3.org/2002/07/owl#ObjectProperty"
+%}
+
+<!-- overview: annotation properties -->
+<h3 id="overview-annotation-properties">{{ header_overview_ann_prop }}</h3>
+<p class="comment">todo. needed?</p>
+
+<h3 id="overview-visualization">{{ header_overview_visualization }}</h3>
+<p class="comment">how to embed WebVOWL properly?</p>
+<!--<iframe
+    src="https://github.com/pan-ontologies/PaNET/releases/download/v1.3.0/PaNET.owl"
+    width="100%"
+    height="600px"
+    frameborder="0">
+</iframe>-->
+
+<!-- DESCRIPTION -->
+<h2 id="description">{{ header_description }}</h2>
+<p class="comment">difference between Abstract and Description</p>
+<p class="comment">current content needs update! links not working; less focus on ExPaNDS</p>
+<p>{{ onto["http://www.w3.org/2000/01/rdf-schema#comment"][0]["@value"] }}</p>
+
+<!-- CROSS REFERENCE -->
+<h2 id="cross-ref">{{ header_cross_ref }}</h2>
+<p>This section provides details for each class and property defined by {{ onto["http://schema.org/name"][0]["@value"] }}. </p>
+
+<!-- references: classes -->
+<h3 id="cross-ref-classes">{{ header_cross_ref_classes }}</h3>
+<p class="comment">here should be another overview box for classes. why?</p><br>
+
+{% include
+  create_detail_box.html
+  data=site.data.PaNET_reasoned
+  field="http://www.w3.org/2002/07/owl#Class"
+%}
+
+
+<!-- references: object properties -->
+<h3 id="cross-ref-object-properties">{{ header_cross_ref_obj_prop }}</h3>
+<p class="comment">here should be another overview box for object properties. why?</p>
+<p class="comment">Boxes highly similar to detail-box of classes, but different fields in footer</p>
+
+<!-- references: annotation properties -->
+<h3 id="cross-ref-annotation-properties">{{ header_cross_ref_ann_prop }}</h3>
+<p class="comment">What is the difference to Overview -> Object Properties?</p>
+<p class="comment">Boxes highly similar to detail-box of classes, but different fields in footer</p>
+
+<!-- REFERENCES -->
+<h2 id="references">{{ header_references }}</h2>
+<p class="comment">currently only a placeholder</p>
+
+<!-- ACKNOWLEDGEMENT -->
+<h2 id="acknowledgement">{{ header_acknowledgement }}</h2>
+<p class="comment">standard thanks to widoco and WebVOWL</p>

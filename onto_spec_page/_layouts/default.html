@@ -1,0 +1,21 @@
+---
+---
+<!DOCTYPE html>
+<html lang="en">
+    {% include head.html %}
+<body>
+    {% include header.html %}
+
+    <div id="wrapper">
+        <div id="content">
+            {% include navigation.html %}
+
+            <!-- Added scope sidebar that's visible by default alongside navigation -->
+            <aside id="scope-sidebar">
+                {{ content }}
+            </aside>
+        </div>
+    </div>
+</body>
+{% include footer.html %}
+</html>

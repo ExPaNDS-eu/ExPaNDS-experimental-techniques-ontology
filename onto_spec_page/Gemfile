@@ -1,0 +1,13 @@
+source "https://rubygems.org"
+
+# add jekyll as a dependency
+gem "jekyll"
+
+# add dependencies for HTTP requests
+gem "httparty"
+gem 'persistent_httparty'
+
+# add dependencies to work with yaml and xml files
+gem "yaml"
+gem "nokogiri"
+
