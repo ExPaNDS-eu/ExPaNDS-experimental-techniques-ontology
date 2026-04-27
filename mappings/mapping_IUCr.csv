@@ -1,0 +1,27 @@
+# curie_map:,,,,,,,,,
+#   panet: http://purl.org/pan-science/PaNET/,,,,,,,,,
+#   rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#,,,,,,,,,
+#   rdfs: http://www.w3.org/2000/01/rdf-schema#,,,,,,,,,
+#   skos: http://www.w3.org/2004/02/skos/core#,,,,,,,,,
+#   sssom: https://w3id.org/sssom/,,,,,,,,,
+#   iucr: https://chem.libretexts.org/Bookshelves/Inorganic_Chemistry/Online_Dictionary_of_Crystallography_(IUCr_Commission)/,,,,,,,,,
+#   orcid: https://orcid.org/,,,,,,,,,
+#   semapv: https://w3id.org/semapv/vocab/,,,,,,,,,
+# license: https://creativecommons.org/licenses/by/4.0/,,,,,,,,,
+# mapping_set_description: Manually curated alignment of the PaNET ontology with the IUCr dictionary.,,,,,,,,,
+#   Intended to be used for ontological analysis.,,,,,,,,,
+# mapping_set_id: mapping_IUCr_PaNET_v1.0,,,,,,,,,
+# mapping_set_version: '2025-11-18',,,,,,,,,
+# object_source: https://dictionary.iucr.org/Main_Page,,,,,,,,,
+# subject_source: https://expands-eu.github.io/ExPaNDS-experimental-techniques-ontology/index-en.html,,,,,,,,,
+# ,,,,,,,,,
+subject_id,subject_label,predicate_id,object_id,object_label,mapping_justification,author_id,object_source_version,mapping_date,confidence
+Panet:PaNET01049,resonant scattering,skos:narrowMatch,anomalous absorption,iucr:03:_X-rays/3.02:_Anomalous_absorption,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,,2025-10-28,1
+Panet:PaNET2012002,absorption,skos:narrowMatch,anomalous absorption,iucr:03:_X-rays/3.02:_Anomalous_absorption,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,,2025-10-28,1
+Panet:PaNET01049,resonant scattering,skos:exactMatch,anomalous scattering,iucr:03:_X-rays/3.04:_Anomalous_scattering,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,,2025-10-28,1
+panet:PaNET01325,borrmann effect,skos:exactMatch,Borrmann effect,iucr:03:_X-rays/3.05:_Borrmann_Effect,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,,2025-10-28,1
+Panet:PaNET01049,resonant scattering,skos:exactMatch,resonant scattering,iucr:03:_X-rays/3.24:_Resonant_scattering,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,,2025-10-28,1
+panet:PaNET01030,powder diffraction,skos:exactMatch,powder diffraction,iucr:08:_Powder_Diffraction,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,,2025-10-28,1
+panet:PaNET2020009,X-ray,skos:exactMatch,X-rays,iucr:03:_X-rays,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,,2025-10-28,1
+panet:PaNET01164,macromolecular crystallography,skos:closeMatch,Biological Crystallography,iucr:10:_Biological_Crystallography,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,,2025-10-28,1
+panet:PaNET01165,multi wavelength anomalous diffraction,skos:exactMatch,Multiwavelength anomalous diffraction (MAD),iucr:/10:_Biological_Crystallography/10.05:_Multiwavelength_anomalous_diffraction_(MAD),semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,,2025-10-28,1
