@@ -51,17 +51,58 @@ jobs:
             source/PaNET_reasoned.owl
           retention-days: 7
 
-      - name: Upload documentation as artifact
-        uses: actions/upload-pages-artifact@v3
+      - name: Upload documentation as (plain) artifact
+        uses: actions/upload-artifact@v4
         with:
+          name: widoco-pages
           path: site/
           retention-days: 7
+
+  build-webpage:
+    runs-on: ubuntu-latest
+    needs: build-panet
+    steps:
+      - name: Checkout PaNET
+        uses: actions/checkout@v4
+
+      - name: Download Widoco documentation
+        uses: actions/download-artifact@v8
+        with:
+          name: widoco-pages
+          path: widoco_site
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+
+      - name: Build with Jekyll
+        uses: actions/jekyll-build-pages@v1
+        with:
+          source: docs
+          destination: jekyll_site
+
+      # NB. jekyll-build-pages generates files owned by root, so we can't
+      # simply copy the Widoco pages into the destination as user `runner`
+      # doesn't have permissions.  Therefore, we build a `site` directory
+      # and copy content into that directory.
+      - run: mkdir site
+      - run: cp -r widoco_site/* site
+      # NB. We need to copy jekyll-generated content *after* copying the
+      # content of the `widoco-pages` artefact, as work-around.  The
+      # `widoco-pages` artefact contains various (non-Widoco-generated) files
+      # with the same filename as the Jekyll-generated files.  See:
+      # https://gitlab.desy.de/paul.millar/panet-build/-/work_items/5
+      - run: cp -r jekyll_site/* site
+
+      - name: Upload complete website
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
 
   deploy:
     # From naming convention on above tag selection, tags
     # only trigger the workflow if they are releases.
     #if: ${{ github.ref_type == 'tag' }}
-    needs: build-panet
+    needs: build-webpage
 
     permissions:
       pages: write
@@ -75,23 +116,3 @@ jobs:
     steps:
       - name: Deploy to GitHub Pages
         uses: actions/deploy-pages@v4
-
-  build-webpage:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-
-      - name: Setup Pages
-        uses: actions/configure-pages@v5
-
-      - name: Build with Jekyll
-        uses: actions/jekyll-build-pages@v1
-        with:
-          source: ./docs/
-          destination: ./docs/_site
-
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: ./docs/_site
