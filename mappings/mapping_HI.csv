@@ -1,0 +1,49 @@
+# curie_map:,,,,,,,,,
+#   panet: http://purl.org/pan-science/PaNET/,,,,,,,,,
+#   rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#,,,,,,,,,
+#   rdfs: http://www.w3.org/2000/01/rdf-schema#,,,,,,,,,
+#   skos: http://www.w3.org/2004/02/skos/core#,,,,,,,,,
+#   sssom: https://w3id.org/sssom/,,,,,,,,,
+#   hi: https://connect.helmholtz-imaging.de/application/,,,,,,,,,
+#   orcid: https://orcid.org/,,,,,,,,,
+#   semapv: https://w3id.org/semapv/vocab/,,,,,,,,,
+# license: https://creativecommons.org/licenses/by/4.0/,,,,,,,,,
+# mapping_set_description: Manually curated alignment of the PaNET ontology with the Helmholtz Imaging Vocabulary.,,,,,,,,,
+#   Intended to be used for ontological analysis.,,,,,,,,,
+# mapping_set_id: mapping_IUCr_PaNET_v1.0,,,,,,,,,
+# mapping_set_version: '2025-11-18',,,,,,,,,
+# object_source: https://helmholtz-imaging.de/,,,,,,,,,
+# subject_source: https://expands-eu.github.io/ExPaNDS-experimental-techniques-ontology/index-en.html,,,,,,,,,
+# ,,,,,,,,,
+subject_id,subject_label,predicate_id,object_id,object_label,mapping_justification,author_id,object_source_version,mapping_date,confidence
+panet:PaNET01129,tomography,skos:narrowMatch,3D slicing tomography,hi:99,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,,2025-11-06,1
+panet:PaNET01323,radiotherapy,skos:narrowMatch,Adaptive radiotherapy,Hi:172,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,,2025-11-06,1
+panet:PaNET01129,tomography,skos:narrowMatch,Bio-medical tomography,Hi:65,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,,2025-11-06,1
+panet:PaNET00410,medical application,skos:narrowMatch,Bio-medical tomography,Hi:65,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,,2025-11-06,1
+panet:PaNET01106,imaging,skos:narrowMatch,Cancer imaging,Hi:29,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,,2025-11-06,1
+panet:PaNET00410,medical application,skos:narrowMatch,Cancer imaging,Hi:29,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,,2025-11-06,1
+panet:PaNET01106,imaging,skos:narrowMatch,Cardiac imaging,Hi:32,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,,2025-11-06,1
+panet:PaNET00410,medical application,skos:narrowMatch,Cardiac imaging,Hi:32,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,,2025-11-06,1
+panet:PaNET01174,coherent diffraction imaging,skos:closeMatch,Coherent X-ray Scattering and Imaging,Hi:103,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,,2025-11-06,1
+panet:PaNET01106,imaging,skos:narrowMatch,Drug imaging,Hi:173,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,,2025-11-06,1
+panet:PaNET00410,medical application,skos:narrowMatch,Drug imaging,Hi:173,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,,2025-11-06,1
+panet:PaNET01069,microscopy,skos:narrowMatch,EUV microscopy,Hi:201,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,,2025-11-06,1
+panet:PaNET2020008,EUV photon,skos:narrowMatch,EUV microscopy,Hi:201,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,,2025-11-06,1
+panet:PaNET01106,imaging,skos:narrowMatch,Functional Imaging,Hi:49,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,,2025-11-06,1
+panet:PaNET01206,microtomography,skos:narrowMatch,High-throughput microtomography,Hi:192,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,,2025-11-06,1
+panet:PaNETPaNET01211,ultrafast microtomography,skos:closeMatch,High-throughput microtomography,Hi:192,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,,2025-11-06,0.9
+panet:PaNET01129,tomography,skos:narrowMatch,In situ tomography,Hi:24,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,,2025-11-06,1
+panet:PaNET01129,tomography,skos:narrowMatch,In vivo tomography,Hi:25,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,,2025-11-06,1
+panet:PaNET01106,imaging,skos:narrowMatch,Morphological imaging,Hi:71,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,,2025-11-06,1
+panet:PaNET01106,imaging,skos:narrowMatch,Multi-parameter physiological imaging,hi:70,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,,2025-11-06,1
+panet:PaNET01106,imaging,skos:narrowMatch,Neuroimaging,hi:30,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,,2025-11-06,1
+panet:PaNET00410,medical application,skos:narrowMatch,Neuroimaging,hi:30,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,,2025-11-06,1
+panet:PaNET01106,imaging,skos:narrowMatch,Pelagic imaging,hi:138,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,,2025-11-06,1
+panet:PaNET01106,imaging,skos:narrowMatch,Perinatal imaging,hi:31,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,,2025-11-06,1
+panet:PaNET01106,imaging,skos:narrowMatch,Photogrammetry,hi:153,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,,2025-11-06,1
+panet:PaNET01106,imaging,skos:narrowMatch,Quantitative MRI,hi:196,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,,2025-11-06,1
+panet:PaNET01106,imaging,skos:narrowMatch,Shadowgraphy,hi:120,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,,2025-11-06,1
+panet:PaNET01164,macromolecular crystallography,skos:relatedMatch,Structural Biology,hi:33,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,,2025-11-06,1
+panet:PaNET01312,time resolved serial synchrotron crystallography,skos:relatedMatch,Time Resolved Microcrystallography,hi:104,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,,2025-11-06,1
+panet:PaNETPaNET01032,micro scale diffraction,skos:relatedMatch,Time Resolved Microcrystallography,hi:104,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,,2025-11-06,1
+panet:PaNET01106,imaging,skos:narrowMatch,Tissue imaging,hi:177,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,,2025-11-06,1
