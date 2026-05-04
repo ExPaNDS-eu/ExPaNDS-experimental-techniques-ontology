@@ -17,10 +17,20 @@ makefile and do not need to be handled manually.
 
 The csv file allows to map terms and concept using the [skos](https://www.w3.org/TR/skos-reference/) terms
 - Related Match (symmetric, associative mapping)
-- Close Match (symmetric, partially interchangeable)
-- Exact Match
+  - A loose connection, similar to "see also".
+  - Example: X-ray diffraction - relatedMatch - Crystallography
 - Narrow Match (hierarchical relationship)
+  - The first concept is a superset containing also the second.
+  - Example: mountain - narrowMatch - volcanic mountain
 - Broad Match (hierarchical relationship)
+  - "The opposite" of a narrow match: The second concept is the broader one.
+- Close Match (symmetric, partially interchangeable)
+  - The two words are often interchangeable, but not always. Different communities describe nearly the same thing.
+  - Example: dataset - closeMatch - data collection
+- Exact Match (symmetric, interchangeable)
+  - The two words mean the same thing for all practical purposes.
+  - Example: H2O - exactMatch - water
+
 to facilitate detailed relationships.
 
 If a PaNET term is related to a concept in another vocabulary, then the type of the relationship must be identified. 
