@@ -1,12 +1,30 @@
 <nav id="navigation">
-    <h1>Documentation</h1>
     <ul class="nav-list">
-        <li><a href="{{ 'index.html' | relative-url }}" class="nav-link" data-section="scope">Scope of PaNET</a></li>
-        <li><a href="https://pan-ontologies.github.io/PaNET/index-en.html" class="nav-link" data-section="scope">Browse PaNET</a></li>
-        <li><a href="{{ 'applications.html' | relative-url }}" class="nav-link" data-section="applications">Applications</a></li>
-        <li><a href="{{ 'workflow.html' | relative-url }}" class="nav-link" data-section="git-workflow">Git Workflow</a></li>
-        <li><a href="{{ 'std_op_proc.html' | relative-url }}" class="nav-link" data-section="procedures">Standard Operating Procedures</a></li>
-        <li><a href="{{ 'build.html' | relative-url }}" class="nav-link" data-section="environment">Build the Environment</a></li>
-        <li><a href="{{ 'release.html' | relative-url }}" class="nav-link" data-section="release">Make a Release</a></li>
-    </ul>
+    {% for item in site.data.navigation %}
+      {% if item.subnav %}
+        <li class="nav-1st">
+          <a href="{{ item.link | relative_url }}" {% if page.url == item.link %} class="focus" {% endif %} class="nav-link">
+            {{ item.name }}
+          </a>
+          <div class="nav-2nd">
+            <ul>
+              {% for subitem in item.subnav %}
+                <li>
+                  <a href="{{ subitem.link | relative_url }}" {% if page.url == subitem.link %} class="focus" {% endif %} class="nav-link">
+                    {{ subitem.name }}
+                  </a>
+                </li>
+              {% endfor %}
+            </ul>
+          </div>
+        </li>
+      {% else %}
+        <li>
+          <a href="{{ item.link | relative_url }}" {% if page.url == item.link %} class="focus" {% endif %} class="nav-link">
+            {{ item.name }}
+          </a>
+        </li>
+      {% endif %}
+    {% endfor %}
+  </ul>
 </nav>
