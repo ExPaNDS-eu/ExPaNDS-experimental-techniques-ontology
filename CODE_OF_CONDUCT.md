@@ -1,3 +1,6 @@
+---
+---
+
 # Code of Conduct
 
 This code of conduct applies to the maintainers and contributors alike.
