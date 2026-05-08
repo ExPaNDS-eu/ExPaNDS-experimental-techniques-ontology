@@ -31,7 +31,7 @@
       {% assign source = entry["http://purl.obolibrary.org/obo/IAO_0000119"][0]["@value"] %}
       {% assign def = entry["http://purl.obolibrary.org/obo/IAO_0000115"][0]["@value"] %}
       
-      {% assign sub = entry["http://www.w3.org/2000/01/rdf-schema#subClassOf"] %}
+      {% assign super = entry["http://www.w3.org/2000/01/rdf-schema#subClassOf"] %}
       {% assign equi_id = entry["http://www.w3.org/2002/07/owl#equivalentClass"][0]["@id"] %}
       
       {% assign url_parts = id | split: "/" %}
@@ -74,6 +74,7 @@
           {% if equi_id %}
             <p>
               <b>is equivalent to:</b><br>
+              <p class="comment">There are actually several types of equivalence relations. So far only covered: intersectionOf. Other types: http://www.w3.org/2002/07/owl#Restriction should result in A some B, where A is http://www.w3.org/2002/07/owl#onProperty and B is http://www.w3.org/2002/07/owl#someValuesFrom</p>
               {% comment %} Find the equivalent_class object in the JSON {% endcomment %}
               {% assign equi_class = nil %}
               {% for item in R %}
@@ -99,24 +100,28 @@
             </p>
           {% endif %}
 
-          <p><b>has super-classes:</b><br> <p class="comment">todo; classes must be fetched over sublcass relationships.</p></p>
-
-          {% if sub %}
+          {% if super %}
             <p>
-              <b>has sub-classes:</b><br>
+              <b>has super-classes:</b><br>
               <p class="comment">sort alphabetically?</p>
-              {% for s in sub %}
-                {% assign sub_id = s["@id"] %}
+              {% for s in super %}
+                {% assign super_id = s["@id"] %}
                 {% for technique in include.data %}
-                  {% if technique["@id"] == sub_id %}
+                  {% if technique["@id"] == super_id %}
                     {% assign technique_name = technique["http://www.w3.org/2000/01/rdf-schema#label"][0]["@value"] %}
                     {% break %}
                   {% endif %}
                 {% endfor %}
-                <a href="{{ sub_id }}">{{ technique_name }}</a>
+                <a href="{{ super_id }}">{{ technique_name }}</a>
               {% endfor %}
             </p>
           {% endif %}
+
+          <p>
+            <b>has sub-classes:</b> {{ my_id }} <br>
+            <p class="comment">todo; classes must be fetched over sublcass relationships.</p>
+          </p>
+
         </div>
     </div>
     {% endif %}
