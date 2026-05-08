@@ -69,20 +69,22 @@
         </div>
 
         <div class="footer-box">
-          <p><b>is equivalent to:</b> <p class="comment">todo; classes must be fetched with an internal id; see author affiliation</p></p>
+          <p><b>is equivalent to:</b><br> <p class="comment">todo; classes must be fetched with an internal id; see author affiliation</p></p>
 
-          <p><b>has super-classes:</b> <p class="comment">todo; classes must be fetched over sublcass relationships.</p></p>
+          <p><b>has super-classes:</b><br> <p class="comment">todo; classes must be fetched over sublcass relationships.</p></p>
 
           {% if sub %}
             <p>
-              <b>has sub-classes:</b>
-                <p class="comment">text should be name of technique, not id</p>
-                <ul>
-                {% for s in sub %}
-                  {% assign sub_id = s["@id"] %}
-                    <li><a href="{{ sub_id }}">{{ sub_id }}</a></li>
+              <b>has sub-classes:</b><br>
+              {% for s in sub %}
+                {% assign sub_id = s["@id"] %}
+                {% for technique in include.data %}
+                  {% if technique["@id"] == sub_id %}
+                    {% assign technique_name = technique["http://www.w3.org/2000/01/rdf-schema#label"][0]["@value"] %}
+                  {% endif %}
                 {% endfor %}
-              </ul>
+                <a href="{{ sub_id }}">{{ technique_name }}</a>
+              {% endfor %}
             </p>
           {% endif %}
         </div>

@@ -25,6 +25,11 @@ p {
     display: inline-block; /* no stretched white spaces */
 }
 
+.detail-box a {
+    white-space: nowrap; /* no line breaks */
+    display: inline-block; /* no stretched white spaces */
+}
+
 .detail-box {
     border: 2px solid var(--panet-pink);
     background-color: var(--panet-light-grey);

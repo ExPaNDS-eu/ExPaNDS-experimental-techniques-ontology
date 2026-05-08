@@ -26,7 +26,7 @@ title: Ontology Specification
           {% if entry["http://schema.org/affiliation"][0]["@id"] %}
             {% assign affiliation_id = entry["http://schema.org/affiliation"][0]["@id"] %}
 
-            <!-- Find the affiliation object in the JSON -->
+            {% comment %} Find the affiliation object in the JSON {% endcomment %}
             {% assign affiliation = nil %}
             {% for item in R %}
               {% if item["@id"] == affiliation_id %}
@@ -34,7 +34,7 @@ title: Ontology Specification
               {% endif %}
             {% endfor %}
 
-            <!-- Extract affiliation info if found -->
+            {% comment %}  Extract affiliation info if found {% endcomment %}
             {% assign affiliation_name = nil %}
             {% assign affiliation_homepage = nil %}
             {% if affiliation %}
@@ -47,7 +47,7 @@ title: Ontology Specification
             {% endif %}
           {% endif %}
 
-          <!-- Display -->
+          {% comment %}  Display {% endcomment %}
           {% if name %}
             {% if orcid %}
               <a href="{{ orcid }}">{{ name }}</a>
