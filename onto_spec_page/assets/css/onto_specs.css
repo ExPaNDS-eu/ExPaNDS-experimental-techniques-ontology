@@ -13,7 +13,6 @@ p {
 
 .overview-box {
     border: 2px solid var(--panet-pink);
-    background-color: var(--panet-light-grey);
     padding: 10px;
     border-radius: 5px;
     font-size: 14px;
@@ -32,7 +31,6 @@ p {
 
 .detail-box {
     border: 2px solid var(--panet-pink);
-    background-color: var(--panet-light-grey);
     padding: 5px;
     border-radius: 5px;
     font-size: 14px;
@@ -66,6 +64,10 @@ p {
     padding: 5px;
 }
 
+.detail-body ul {
+    padding: 0px;
+}
+
 .detail-back {
     padding-right: 10px;
     max-width: 30%;
@@ -73,7 +75,7 @@ p {
 }
 
 .footer-box {
-    background-color: var(--panet-border-grey);
+    background-color: var(--panet-light-grey);
     border-top: dotted 1px;
     margin-top: 10px;
     padding: 5px;
