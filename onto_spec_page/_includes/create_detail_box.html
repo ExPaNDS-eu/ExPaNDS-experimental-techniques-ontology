@@ -74,7 +74,6 @@
           {% if equi_id %}
             <p>
               <b>is equivalent to:</b><br>
-              <p class="comment">There are actually several types of equivalence relations. So far only covered: intersectionOf. Other types: http://www.w3.org/2002/07/owl#Restriction should result in A some B, where A is http://www.w3.org/2002/07/owl#onProperty and B is http://www.w3.org/2002/07/owl#someValuesFrom</p>
               {% comment %} Find the equivalent_class object in the JSON {% endcomment %}
               {% assign equi_class = nil %}
               {% for item in R %}
@@ -83,6 +82,21 @@
                 {% endif %}
               {% endfor %}
 
+              {% comment %} RESTRICTION TYPE {% endcomment %}
+              {% if equi_class["@type"][0] == "http://www.w3.org/2002/07/owl#Restriction" %}
+                {% assign property_id = equi_class["http://www.w3.org/2002/07/owl#onProperty"][0]["@id"] %}
+                {% assign from_id = equi_class["http://www.w3.org/2002/07/owl#someValuesFrom"][0]["@id"] %}
+                {% for term in include.data %}
+                  {% if term["@id"] == property_id %}
+                    {% assign property_label = term["http://www.w3.org/2000/01/rdf-schema#label"][0]["@value"]%}
+                  {% elsif term["@id"] == from_id %}
+                    {% assign from_label = term["http://www.w3.org/2000/01/rdf-schema#label"][0]["@value"]%}
+                  {% endif %}
+                {% endfor %}
+                <a href="{{ property_id }}">{{ property_label }}</a> SOME <a href="{{ from_id }}">{{ from_label }}</a>
+              {% endif %}
+
+              {% comment %} INTERSECTION TYPE {% endcomment %}
               {% assign equi_list = equi_class["http://www.w3.org/2002/07/owl#intersectionOf"][0]["@list"] | map: "@id" %}
               {% assign links = "" | split: "" %}
               {% for url in equi_list %}
@@ -104,7 +118,6 @@
           {% if super %}
             <p>
               <b>has super-classes:</b><br>
-              <p class="comment">sort alphabetically?</p>
               {% for s in super %}
                 {% assign super_id = s["@id"] %}
                 {% for technique in include.data %}

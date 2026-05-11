@@ -7,34 +7,6 @@ title: Ontology Specification
 
 <h1 class="title">Ontology Specifications</h1>
 
-
-
-
-<!--
-{% for term in R %}
-  {% if term["http://www.w3.org/2000/01/rdf-schema#label"] %}
-    {% assign my_id = term["@id"] %}
-    {% assign superclass_list = "" | split: "" %}
-    {% for technique in R %}
-      {% if technique["http://www.w3.org/2000/01/rdf-schema#subClassOf"] %}
-        {% for subclass in technique["http://www.w3.org/2000/01/rdf-schema#subClassOf"] %}
-          {% if subclass["@id"] == my_id %}
-            {% assign label = technique["http://www.w3.org/2000/01/rdf-schema#label"][0]["@value"] %}
-            {% assign url = technique["@id"] %}
-            {% assign link = '<a href="' | append: url | append: '">' | append: label | append: '</a>' %}
-            {% assign superclass_list = superclass_list | push: link %}
-          {% endif %}
-        {% endfor %}
-      {% endif %}
-    {% endfor %}
-  {% endif %}
-  {{ my_id }}: {{ superclass_list | join: " " }}<br><br>
-{% endfor %}
--->
-
-
-
-
 <!-- RELEASE -->
 <h2>Release: {{ onto["http://purl.org/dc/terms/created"][0]["@value"] }}</h2>
 

@@ -89,3 +89,8 @@ ul {
     color: var(--panet-pink);
     font-style: italic;
 }
+
+.magic_word {
+    font-weight: bold;
+    color: var(--panet-pink);
+}
