@@ -100,6 +100,7 @@
             </p>
           {% endif %}
 
+
           {% if super %}
             <p>
               <b>has super-classes:</b><br>
@@ -117,10 +118,28 @@
             </p>
           {% endif %}
 
-          <p>
-            <b>has sub-classes:</b> {{ my_id }} <br>
-            <p class="comment">todo; classes must be fetched over sublcass relationships.</p>
-          </p>
+          
+          {% assign my_id = entry["@id"] %}
+          {% assign superclass_list = "" | split: "" %}
+          {% for technique in include.data %}
+            {% if technique["http://www.w3.org/2000/01/rdf-schema#subClassOf"] %}
+              {% for superclass in technique["http://www.w3.org/2000/01/rdf-schema#subClassOf"] %}
+                {% if superclass["@id"] == my_id %}
+                  {% assign superclass_label = technique["http://www.w3.org/2000/01/rdf-schema#label"][0]["@value"] %}
+                  {% assign url = technique["@id"] %}
+                  {% assign link = '<a href="' | append: url | append: '">' | append: superclass_label | append: '</a>' %}
+                  {% assign superclass_list = superclass_list | push: link %}
+                {% endif %}
+              {% endfor %}
+            {% endif %}
+          {% endfor %}
+          
+          {% if superclass_list and superclass_list != "" and superclass_list.size > 0 %}
+            <p>
+              <b>has sub-classes:</b><br>
+              {{ superclass_list | join: " " }}
+            </p>
+          {% endif %}
 
         </div>
     </div>
