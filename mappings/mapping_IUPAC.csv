@@ -87,7 +87,7 @@ Panet:PaNET01268,mass spectrometry,skos:narrowMatch,goldbook:12419,Fourier-trans
 Panet:PaNET01195,raman spectroscopy,skos:narrowMatch,goldbook:08606,Fourier-transform Raman spectroscopy,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,Online version 5.0.0,2025-10-28,1
 Panet:PaNET01320,fourier transform infrared spectroscopy,skos:broadMatch,goldbook:FT07382,Fourier-transform spectroscopy ,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,Online version 5.0.0,2025-10-28,1
 panet:PaNET01097,gamma spectroscopy,skos:exactMatch,goldbook:08728,gamma-ray spectrometry,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,Online version 5.0.0,2025-10-28,0.99
-panet:PaNET01233,polymer micro and nanograftin,skos:broadMatch,goldbook:GT07138,grafting,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,Online version 5.0.0,2025-10-28,1
+panet:PaNET01233,polymer micro and nanografting,skos:broadMatch,goldbook:GT07138,grafting,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,Online version 5.0.0,2025-10-28,1
 panet:PaNET01098,grazing incidence diffraction,skos:relatedMatch,goldbook:08608 ,grazing incidence ,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,Online version 5.0.0,2025-10-28,1
 panet:PaNET01162,grazing incidence small angle x-ray scattering,skos:exactMatch,goldbook:09199,grazing-incidence small-angle X-ray scattering analysis,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,Online version 5.0.0,2025-10-28,1
 panet:PaNET01059,versus energy loss,skos:narrowMatch,goldbook:R05236 ,high resolution energy loss spectroscopy,semapv:ManualMappingCuration,orcid:0000-0002-5850-4469,Online version 5.0.0,2025-10-28,1
