@@ -34,6 +34,7 @@
       {% assign range_id = entry["http://www.w3.org/2000/01/rdf-schema#range"][0]["@id"] %}
       {% assign domain_id = entry["http://www.w3.org/2000/01/rdf-schema#domain"][0]["@id"] %}
       {% assign subPropertyOf = entry["http://www.w3.org/2000/01/rdf-schema#subPropertyOf"] %}
+      {% assign char = entry["@type"] %}
       
       {% assign url_parts = id | split: "/" %}
 
@@ -74,8 +75,16 @@
 
             <details>
               <summary>has characteristics:</summary>
-              <p class="comment">
-                todo
+              <p>
+                {% for char_id in char %}
+                  {% if char_id == "http://www.w3.org/2002/07/owl#ObjectProperty" %}
+                    {{ }}
+                  {% else %}
+                    {% assign parts = char_id | split: "#" %}
+                    {% assign char_label = parts[1] %}
+                    <a href="{{ char_id }}">{{ char_label }}</a>
+                  {% endif %}
+                {% endfor %}
               </p>
             </details>
 
