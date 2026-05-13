@@ -28,13 +28,32 @@
 {% assign sorted_list = list | sort_natural %}
 
 
+{% comment %} ADD ALPHABETIC MARKERS (only if item with this letter exists) {% endcomment %}
+{% comment %} get capitalized first letters -> unique {% endcomment %}
+{% assign first_letters = "" | split: "" %}
+{% for item in sorted_list %}
+  {% assign first_letter = item | upcase | split: "" | first %}
+  {% assign first_letters = first_letters | push: first_letter %}
+{% endfor%}
+{% assign letters = first_letters | uniq  %}
+{% assign merged_list = sorted_list | concat: letters | sort_natural %}
+
 {% comment %} REASSEMBLE TERM INFO FOR DISPLAY {% endcomment %}
 <div class="overview-box">
-  {% for term in sorted_list %}
+  {% for term in merged_list %}
     {% assign parts = term | split: " | " %}
     {% assign label = parts[0] %}
     {% assign id = parts[1] %}
 
-    <a href="#{{ id }}">{{ label }}</a>
+    {% if id %}
+      <a href="#{{ id }}">{{ label }}</a>
+    {% else %}
+      {% if forloop.first %}
+        {% comment %} no empty line before A {% endcomment %}
+        <span class="drop-cap">{{ label }}<br></span>
+      {% else %}
+        <span class="drop-cap"><br>{{ label }}<br></span>
+      {% endif %}
+    {% endif %}
   {% endfor %}
 </div>

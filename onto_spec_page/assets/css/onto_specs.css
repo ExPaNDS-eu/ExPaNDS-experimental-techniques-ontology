@@ -102,3 +102,9 @@ summary {
 summary::marker {
     color: var(--panet-pink);
 }
+
+.drop-cap {
+    font-weight: bold;
+    color: var(--panet-pink);
+    font-size: 14pt;
+}
