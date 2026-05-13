@@ -72,63 +72,67 @@
         <div class="footer-box">
 
           {% if equi_id %}
-            <p>
-              <b>is equivalent to:</b><br>
-              {% comment %} Find the equivalent_class object in the JSON {% endcomment %}
-              {% assign equi_class = nil %}
-              {% for item in R %}
-                {% if item["@id"] == equi_id %}
-                  {% assign equi_class = item %}
+            <details>
+              <summary>is equivalent to:</summary>
+              <p>
+                {% comment %} Find the equivalent_class object in the JSON {% endcomment %}
+                {% assign equi_class = nil %}
+                {% for item in R %}
+                  {% if item["@id"] == equi_id %}
+                    {% assign equi_class = item %}
+                  {% endif %}
+                {% endfor %}
+
+                {% comment %} RESTRICTION TYPE {% endcomment %}
+                {% if equi_class["@type"][0] == "http://www.w3.org/2002/07/owl#Restriction" %}
+                  {% assign property_id = equi_class["http://www.w3.org/2002/07/owl#onProperty"][0]["@id"] %}
+                  {% assign from_id = equi_class["http://www.w3.org/2002/07/owl#someValuesFrom"][0]["@id"] %}
+                  {% for term in include.data %}
+                    {% if term["@id"] == property_id %}
+                      {% assign property_label = term["http://www.w3.org/2000/01/rdf-schema#label"][0]["@value"]%}
+                    {% elsif term["@id"] == from_id %}
+                      {% assign from_label = term["http://www.w3.org/2000/01/rdf-schema#label"][0]["@value"]%}
+                    {% endif %}
+                  {% endfor %}
+                  <a href="{{ property_id }}">{{ property_label }}</a> SOME <a href="{{ from_id }}">{{ from_label }}</a>
                 {% endif %}
-              {% endfor %}
 
-              {% comment %} RESTRICTION TYPE {% endcomment %}
-              {% if equi_class["@type"][0] == "http://www.w3.org/2002/07/owl#Restriction" %}
-                {% assign property_id = equi_class["http://www.w3.org/2002/07/owl#onProperty"][0]["@id"] %}
-                {% assign from_id = equi_class["http://www.w3.org/2002/07/owl#someValuesFrom"][0]["@id"] %}
-                {% for term in include.data %}
-                  {% if term["@id"] == property_id %}
-                    {% assign property_label = term["http://www.w3.org/2000/01/rdf-schema#label"][0]["@value"]%}
-                  {% elsif term["@id"] == from_id %}
-                    {% assign from_label = term["http://www.w3.org/2000/01/rdf-schema#label"][0]["@value"]%}
-                  {% endif %}
+                {% comment %} INTERSECTION TYPE {% endcomment %}
+                {% assign equi_list = equi_class["http://www.w3.org/2002/07/owl#intersectionOf"][0]["@list"] | map: "@id" %}
+                {% assign links = "" | split: "" %}
+                {% for url in equi_list %}
+                  {% for technique in include.data %}
+                    {% if technique["@id"] == url %}
+                      {% assign technique_name = technique["http://www.w3.org/2000/01/rdf-schema#label"][0]["@value"] %}
+                      {% break %}
+                    {% endif %}
+                  {% endfor %}
+
+                  {% assign link = '<a href="' | append: url | append: '">' | append: technique_name | append: '</a>' %}
+                  {% assign links = links | push: link %}
                 {% endfor %}
-                <a href="{{ property_id }}">{{ property_label }}</a> SOME <a href="{{ from_id }}">{{ from_label }}</a>
-              {% endif %}
-
-              {% comment %} INTERSECTION TYPE {% endcomment %}
-              {% assign equi_list = equi_class["http://www.w3.org/2002/07/owl#intersectionOf"][0]["@list"] | map: "@id" %}
-              {% assign links = "" | split: "" %}
-              {% for url in equi_list %}
-                {% for technique in include.data %}
-                  {% if technique["@id"] == url %}
-                    {% assign technique_name = technique["http://www.w3.org/2000/01/rdf-schema#label"][0]["@value"] %}
-                    {% break %}
-                  {% endif %}
-                {% endfor %}
-
-                {% assign link = '<a href="' | append: url | append: '">' | append: technique_name | append: '</a>' %}
-                {% assign links = links | push: link %}
-              {% endfor %}
-              {{ links | join: " AND " }}
-            </p>
+                {{ links | join: " AND " }}
+              </p>
+            </details>
           {% endif %}
 
 
           {% if super %}
-            <p>
-              <b>has super-classes:</b><br>
-              {% for s in super %}
-                {% assign super_id = s["@id"] %}
-                {% for technique in include.data %}
-                  {% if technique["@id"] == super_id %}
-                    {% assign technique_name = technique["http://www.w3.org/2000/01/rdf-schema#label"][0]["@value"] %}
-                    {% break %}
-                  {% endif %}
+            <details>
+              <summary>has super-classes:</summary>
+              <p>
+                {% for s in super %}
+                  {% assign super_id = s["@id"] %}
+                  {% for technique in include.data %}
+                    {% if technique["@id"] == super_id %}
+                      {% assign technique_name = technique["http://www.w3.org/2000/01/rdf-schema#label"][0]["@value"] %}
+                      {% break %}
+                    {% endif %}
+                  {% endfor %}
+                  <a href="{{ super_id }}">{{ technique_name }}</a>
                 {% endfor %}
-                <a href="{{ super_id }}">{{ technique_name }}</a>
-              {% endfor %}
-            </p>
+              </p>
+            </details>
           {% endif %}
 
           
@@ -148,10 +152,12 @@
           {% endfor %}
           
           {% if superclass_list and superclass_list != "" and superclass_list.size > 0 %}
-            <p>
-              <b>has sub-classes:</b><br>
-              {{ superclass_list | join: " " }}
-            </p>
+            <details>
+              <summary>has sub-classes:</summary>
+              <p>
+                {{ superclass_list | join: " " }}
+              </p>
+            </details>
           {% endif %}
 
         </div>

@@ -94,3 +94,11 @@ ul {
     font-weight: bold;
     color: var(--panet-pink);
 }
+
+summary {
+    font-weight: bold;
+}
+
+summary::marker {
+    color: var(--panet-pink);
+}
