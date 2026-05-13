@@ -33,6 +33,7 @@
       
       {% assign range_id = entry["http://www.w3.org/2000/01/rdf-schema#range"][0]["@id"] %}
       {% assign domain_id = entry["http://www.w3.org/2000/01/rdf-schema#domain"][0]["@id"] %}
+      {% assign subPropertyOf = entry["http://www.w3.org/2000/01/rdf-schema#subPropertyOf"] %}
       
       {% assign url_parts = id | split: "/" %}
 
@@ -78,17 +79,27 @@
               </p>
             </details>
 
-            <details>
-              <summary>has super-properties:</summary>
-              <p class="comment">
-                todo
-              </p>
-            </details>
+            {% if subPropertyOf %}
+              <details>
+                <summary>has super-properties:</summary>
+                <p>
+                  {% for superProp in subPropertyOf %}
+                    {% for term in include.data %}
+                      {% assign super_id = superProp["@id"] %}
+                      {% if term["@id"] == super_id %}
+                        {% assign super_label = term["http://www.w3.org/2000/01/rdf-schema#label"][0]["@value"]%}
+                      {% endif %}
+                    {% endfor %}
+                    <a href="{{ super_id }}">{{ super_label }}</a>
+                  {% endfor %}
+                </p>
+              </details>
+            {% endif %}
 
             <details>
               <summary>has sub-properties:</summary>
               <p class="comment">
-                todo
+                todo; hard to get, only implicite from subPropertyOf
               </p>
             </details>
 
