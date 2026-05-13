@@ -105,12 +105,29 @@
               </details>
             {% endif %}
 
-            <details>
-              <summary>has sub-properties:</summary>
-              <p class="comment">
-                todo; hard to get, only implicite from subPropertyOf
-              </p>
-            </details>
+            {% assign my_id = entry["@id"] %}
+            {% assign superprop_list = "" | split: "" %}
+            {% for technique in include.data %}
+              {% if technique["http://www.w3.org/2000/01/rdf-schema#subPropertyOf"] %}
+                {% for superclass in technique["http://www.w3.org/2000/01/rdf-schema#subPropertyOf"] %}
+                  {% if superclass["@id"] == my_id %}
+                    {% assign superclass_label = technique["http://www.w3.org/2000/01/rdf-schema#label"][0]["@value"] %}
+                    {% assign url = technique["@id"] %}
+                    {% assign link = '<a href="' | append: url | append: '">' | append: superclass_label | append: '</a>' %}
+                    {% assign superprop_list = superprop_list | push: link %}
+                  {% endif %}
+                {% endfor %}
+              {% endif %}
+            {% endfor %}
+            
+            {% if superprop_list and superprop_list != "" and superprop_list.size > 0 %}
+              <details>
+                <summary>has sub-properties:</summary>
+                <p>
+                  {{ superprop_list | join: " " }}
+                </p>
+              </details>
+            {% endif %}
 
             <details>
               <summary>has domain:</summary>
