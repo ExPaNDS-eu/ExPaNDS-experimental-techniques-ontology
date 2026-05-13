@@ -1,5 +1,5 @@
 {% comment %} 
-  function to create detail boxes for classes
+  function to create detail boxes for object propertes
   - create sorted list of term names (e.g. x-ray diffraction)
   - for each of the terms
     - get all information
@@ -31,8 +31,8 @@
       {% assign source = entry["http://purl.obolibrary.org/obo/IAO_0000119"][0]["@value"] %}
       {% assign def = entry["http://purl.obolibrary.org/obo/IAO_0000115"][0]["@value"] %}
       
-      {% assign super = entry["http://www.w3.org/2000/01/rdf-schema#subClassOf"] %}
-      {% assign equi_id = entry["http://www.w3.org/2002/07/owl#equivalentClass"][0]["@id"] %}
+      {% assign range_id = entry["http://www.w3.org/2000/01/rdf-schema#range"][0]["@id"] %}
+      {% assign domain_id = entry["http://www.w3.org/2000/01/rdf-schema#domain"][0]["@id"] %}
       
       {% assign url_parts = id | split: "/" %}
 
@@ -94,15 +94,25 @@
 
             <details>
               <summary>has domain:</summary>
-              <p class="comment">
-                todo
+              {% for term in include.data %}
+                {% if term["@id"] == domain_id %}
+                  {% assign domain_label = term["http://www.w3.org/2000/01/rdf-schema#label"][0]["@value"]%}
+                {% endif %}
+              {% endfor %}
+              <p>
+                <a href="{{ domain_id }}">{{ domain_label }}</a>
               </p>
             </details>
 
             <details>
               <summary>has range:</summary>
-              <p class="comment">
-                todo
+              {% for term in include.data %}
+                {% if term["@id"] == range_id %}
+                  {% assign range_label = term["http://www.w3.org/2000/01/rdf-schema#label"][0]["@value"]%}
+                {% endif %}
+              {% endfor %}
+              <p>
+                <a href="{{ range_id }}">{{ range_label }}</a>
               </p>
             </details>
 
