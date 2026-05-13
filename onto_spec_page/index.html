@@ -8,15 +8,14 @@ title: Ontology Specification
 <h1 class="title">Ontology Specifications</h1>
 
 <!-- RELEASE -->
-<h2>Release: {{ onto["http://purl.org/dc/terms/created"][0]["@value"] }}</h2>
+<h2>Release {{ onto["http://purl.org/dc/terms/created"][0]["@value"] }}</h2>
 
 <!-- release: revision -->
-<h3>Revision:</h3>
+<h3>Revision</h3>
 <p>{{ onto["http://www.w3.org/2002/07/owl#versionInfo"][0]["@value"] }}</p>
 
 <!-- release: authors -->
-<h3>Authors:</h3>
-<p>
+<h3>Authors</h3>
   <ul>
     {% for entry in R %}
       {% if entry["@type"] contains "http://xmlns.com/foaf/0.1/Person" %}
@@ -65,22 +64,21 @@ title: Ontology Specification
       {% endif %}
     {% endfor %}
   </ul>
-</p>
 
-<h3>Download serialization:</h3>
+<h3>Download serialization</h3>
 <ul>
   <li><a href="https://github.com/pan-ontologies/PaNET/releases/download/v1.3.0/PaNET.owl">owl</a></li>
   <li><a href="https://github.com/pan-ontologies/PaNET/releases/download/v1.3.0/PaNET_reasoned.owl">reasoned owl</a></li>
 </ul>
 
-<h3>License:</h3>
+<h3>License</h3>
 {% assign license = onto["http://purl.org/dc/terms/license"][0]["@id"] %}
 <a href="{{ license }}">{{ license }}</a>
 
-<h3>Visualization:</h3>
+<h3>Visualization</h3>
 <p class="comment">todo</p>
 
-<h3>Cite as:</h3>
+<h3>Cite as</h3>
 {% assign names = "" %}
 {% for entry in R %}
   {% if entry["@type"] contains "http://xmlns.com/foaf/0.1/Person" and entry["http://xmlns.com/foaf/0.1/name"] %}
@@ -94,7 +92,7 @@ title: Ontology Specification
 {% endfor %}
 <p>{{ names }}. <i>{{ onto["http://schema.org/name"][0]["@value"] }}</i>. Revision: {{ onto["http://www.w3.org/2002/07/owl#versionInfo"][0]["@value"] }}.</p>
 
-<p><a href="https://github.com/pan-ontologies/PaNET">Provenance of this page</a></p>
+<a href="https://github.com/pan-ontologies/PaNET">Provenance of this page</a>
 
 <hr>
 
