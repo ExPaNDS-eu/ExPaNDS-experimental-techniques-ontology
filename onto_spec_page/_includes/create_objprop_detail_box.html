@@ -1,0 +1,113 @@
+{% comment %} 
+  function to create detail boxes for classes
+  - create sorted list of term names (e.g. x-ray diffraction)
+  - for each of the terms
+    - get all information
+    - display the information
+{% endcomment %}
+
+
+{% comment %} SORT LIST OF IDENTIFIERS {% endcomment %}
+{% assign list = "" | split: "" %}
+{% for entry in include.data %}
+  {% if entry["@type"] contains include.field and entry["http://www.w3.org/2000/01/rdf-schema#label"] %}
+    {% assign label = entry["http://www.w3.org/2000/01/rdf-schema#label"][0]["@value"] %}
+    {% assign list = list | push: label %}
+  {% endif %}
+{% endfor %}
+
+{% assign sorted_list = list | sort_natural %}
+
+
+{% for label in sorted_list %}
+  {% for entry in include.data %}
+    {% if entry["http://www.w3.org/2000/01/rdf-schema#label"][0]["@value"] == label %}
+    
+      {% comment %} GET ALL INFORMATION {% endcomment %}
+
+      {% assign label = entry["http://www.w3.org/2000/01/rdf-schema#label"][0]["@value"] %}
+      {% assign id = entry["@id"] %}
+      {% assign alt_labels = entry["http://www.w3.org/2004/02/skos/core#altLabel"] %}
+      {% assign source = entry["http://purl.obolibrary.org/obo/IAO_0000119"][0]["@value"] %}
+      {% assign def = entry["http://purl.obolibrary.org/obo/IAO_0000115"][0]["@value"] %}
+      
+      {% assign super = entry["http://www.w3.org/2000/01/rdf-schema#subClassOf"] %}
+      {% assign equi_id = entry["http://www.w3.org/2002/07/owl#equivalentClass"][0]["@id"] %}
+      
+      {% assign url_parts = id | split: "/" %}
+
+      
+      {% comment %} DISPLAY ALL INFORMATION {% endcomment %}
+      
+      <div class="detail-box">
+        <div class="detail-header">
+          <h3 class="detail-title" id="{{ url_parts[-1] }}">{{ label }}</h3>
+          <p class="detail-back">Back to <a href="#toc">TOC</a></p>
+        </div>
+        
+        <hr>
+        
+        <div class="detail-body">
+          <p><b>IRI:</b> {{ id }}</p>
+          
+          {% if alt_labels %}
+            <p><b>Alternative label:</b> 
+              <ul>
+                {% for lbl in alt_labels %}
+                  <li>{{ lbl["@value"] }}</li>
+                {% endfor %}
+              </ul>
+            </p>
+          {% endif %}
+
+          {% if def %}
+            <p><b>Definition:</b> {{ def }}</p>
+          {% endif %}
+
+          {% if source %}
+            <p><b>Source: </b><a href="{{ source }}">{{ source }}</a></p>
+          {% endif %}
+        </div>
+
+        <div class="footer-box">
+
+            <details>
+              <summary>has characteristics:</summary>
+              <p class="comment">
+                todo
+              </p>
+            </details>
+
+            <details>
+              <summary>has super-properties:</summary>
+              <p class="comment">
+                todo
+              </p>
+            </details>
+
+            <details>
+              <summary>has sub-properties:</summary>
+              <p class="comment">
+                todo
+              </p>
+            </details>
+
+            <details>
+              <summary>has domain:</summary>
+              <p class="comment">
+                todo
+              </p>
+            </details>
+
+            <details>
+              <summary>has range:</summary>
+              <p class="comment">
+                todo
+              </p>
+            </details>
+
+        </div>
+    </div>
+    {% endif %}
+  {% endfor %}
+{% endfor %}
