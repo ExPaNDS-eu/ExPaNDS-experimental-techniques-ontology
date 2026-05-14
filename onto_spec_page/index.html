@@ -107,15 +107,15 @@ title: Ontology Specification
 <!-- TOC -->
 <h2 id="toc">Table of Contents</h2>
 {% assign header_overview = onto["http://schema.org/name"][0]["@value"] | append: ": Overview" %}
-{% assign header_overview_classes = "Classes" %}
-{% assign header_overview_obj_prop = "Object Properties" %}
-{% assign header_overview_ann_prop = "Annotation Properties" %}
+{% assign header_overview_classes = "Overview: Classes" %}
+{% assign header_overview_obj_prop = "Overview: Object Properties" %}
+{% assign header_overview_ann_prop = "Overview: Annotation Properties" %}
 {% assign header_overview_visualization = "Visualization" %}
 {% assign header_description = onto["http://schema.org/name"][0]["@value"] | append: ": Description" %}
 {% assign header_cross_ref = "Cross-references for " | append: onto["http://schema.org/name"][0]["@value"] | append: " classes, object properties and data properties" %}
-{% assign header_cross_ref_classes = "Classes" %}
-{% assign header_cross_ref_obj_prop = "Object Properties" %}
-{% assign header_cross_ref_ann_prop = "Annotation Properties" %}
+{% assign header_cross_ref_classes = "Cross References: Classes" %}
+{% assign header_cross_ref_obj_prop = "Cross References: Object Properties" %}
+{% assign header_cross_ref_ann_prop = "Cross References: Annotation Properties" %}
 {% assign header_references = "References" %}
 {% assign header_acknowledgement = "Acknowledgement" %}
 
@@ -188,10 +188,8 @@ title: Ontology Specification
   field="http://www.w3.org/2002/07/owl#Class"
 %}
 
-
 <!-- references: object properties -->
 <h3 id="cross-ref-object-properties">{{ header_cross_ref_obj_prop }}</h3>
-<p class="comment">Boxes highly similar to detail-box of classes, but different fields in footer</p>
 {% include
   create_objprop_detail_box.html
   data=site.data.PaNET_reasoned

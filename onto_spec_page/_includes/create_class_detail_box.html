@@ -19,7 +19,7 @@
 {% assign sorted_list = list | sort_natural %}
 
 
-{% for label in sorted_list %}
+{% for label in sorted_list limit:20 %}
   {% for entry in include.data %}
     {% if entry["http://www.w3.org/2000/01/rdf-schema#label"][0]["@value"] == label %}
     
