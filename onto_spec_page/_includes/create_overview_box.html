@@ -48,12 +48,7 @@
     {% if id %}
       <a href="#{{ id }}">{{ label }}</a>
     {% else %}
-      {% if forloop.first %}
-        {% comment %} no empty line before A {% endcomment %}
-        <span class="drop-cap">{{ label }}<br></span>
-      {% else %}
-        <span class="drop-cap"><br>{{ label }}<br></span>
-      {% endif %}
+      <p class="drop-cap">{{ label }}</p>
     {% endif %}
   {% endfor %}
 </div>

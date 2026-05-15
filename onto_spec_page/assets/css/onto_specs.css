@@ -1,5 +1,5 @@
 h2 {
-    margin-bottom: 5px;
+    margin-bottom: 4px;
 }
 
 h3 {
@@ -7,14 +7,14 @@ h3 {
 }
 
 p {
-    margin-bottom: 0px;
-    margin-top: 5px;
+    padding-top: 12px;
+    margin: 0px;
 }
 
 .overview-box {
     border: 2px solid var(--panet-pink);
-    padding: 10px;
-    border-radius: 5px;
+    padding: 8px;
+    border-radius: 4px;
     text-align: justify;
 }
 
@@ -30,10 +30,10 @@ p {
 
 .detail-box {
     border: 2px solid var(--panet-pink);
-    padding: 5px;
-    border-radius: 5px;
+    padding: 4px;
+    border-radius: 4px;
     text-align: justify;
-    margin: 5px 0px;
+    margin: 4px 0px;
 }
 
 .detail-box p {
@@ -50,8 +50,8 @@ p {
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    padding: 5px;
-    margin-right: 10px;
+    padding: 4px;
+    margin-right: 8px;
 }
 
 .detail-title {
@@ -59,7 +59,7 @@ p {
 }
 
 .detail-body {
-    padding: 5px;
+    padding: 4px;
 }
 
 .detail-body ul {
@@ -67,7 +67,7 @@ p {
 }
 
 .detail-back {
-    padding-right: 10px;
+    padding-right: 8px;
     max-width: 30%;
     text-align: right;
 }
@@ -75,8 +75,8 @@ p {
 .footer-box {
     background-color: var(--panet-light-grey);
     border-top: dotted 1px;
-    margin-top: 10px;
-    padding: 5px;
+    margin-top: 8px;
+    padding: 4px;
 }
 
 ul {
