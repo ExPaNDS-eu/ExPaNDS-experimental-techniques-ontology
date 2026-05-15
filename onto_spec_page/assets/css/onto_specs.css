@@ -15,7 +15,6 @@ p {
     border: 2px solid var(--panet-pink);
     padding: 10px;
     border-radius: 5px;
-    font-size: 14px;
     text-align: justify;
 }
 
@@ -33,7 +32,6 @@ p {
     border: 2px solid var(--panet-pink);
     padding: 5px;
     border-radius: 5px;
-    font-size: 14px;
     text-align: justify;
     margin: 5px 0px;
 }
