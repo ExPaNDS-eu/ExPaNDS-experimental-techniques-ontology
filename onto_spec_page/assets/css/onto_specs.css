@@ -97,6 +97,10 @@ summary {
     font-weight: bold;
 }
 
+details p {
+    padding: 0px 0px 8px 0px;
+}
+
 summary::marker {
     color: var(--panet-pink);
 }
