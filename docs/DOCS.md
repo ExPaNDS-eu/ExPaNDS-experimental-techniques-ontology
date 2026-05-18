@@ -5,7 +5,39 @@ Additionally, it provides guidelines and instructions on how to handle different
 
 The following sections include a guideline on how to handle the webpages.
 
-# 1. Creating and Updating the Webpage
+# 1. Reviewing and Updating the Webpage (Building with CI/CD)
+
+## 1.1. Reviewing a Webpage
+
+If somebody changed the webpage and requests a review, you can visibly inspect the changes by downloading
+and evaluating the provided artifact.
+
+### 1.1.1. Find and Download the Artifact
+
+- Go to the Pull Request that changes the webpage.
+- Find the box with the checks of the code: 'Some checks were not successful' or 'All checks successful'.
+- Find panet-build / build-webpage (pull_request).
+- Click the three dots on the right and select 'view details'.
+- Find the point 'Upload complete website' and expand it.
+- Download the artifact by clicking the link in the last line, labeled with 'Artifact download URL'.
+
+### 1.1.2. Evaluate the new Webpage
+
+- Extract the artifact (usually bundled as zip AND tar).
+- Check the changed files (check the 'Files changed' section of the Pull Request).
+
+## 1.2. Update the Webpage
+
+**Only recommended for small changes!**
+
+- Find the respective `.html` document in the `docs` folder.
+- Select 'Edit this file' in the top right.
+- Make changes.
+- Push button 'Commit changes...' in the top right.
+- Provide detailed commit message, optimally including Motivation, Modification, and Result.
+
+
+# 1. Creating and Updating the Webpage (Building locally)
 
 ## 1.1. Installing jekyll
 
