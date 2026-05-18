@@ -23,17 +23,18 @@ p {
     display: inline-block; /* no stretched white spaces */
 }
 
-.detail-box a {
-    white-space: nowrap; /* no line breaks */
-    display: inline-block; /* no stretched white spaces */
-}
-
 .detail-box {
+    background-color: var(--panet-light-grey);
     border: 2px solid var(--panet-pink);
     padding: 4px;
     border-radius: 4px;
     text-align: justify;
     margin: 4px 0px;
+}
+
+.detail-box a {
+    white-space: nowrap; /* no line breaks */
+    display: inline-block; /* no stretched white spaces */
 }
 
 .detail-box p {
@@ -73,7 +74,6 @@ p {
 }
 
 .footer-box {
-    background-color: var(--panet-light-grey);
     border-top: dotted 1px;
     margin-top: 8px;
     padding: 4px;
