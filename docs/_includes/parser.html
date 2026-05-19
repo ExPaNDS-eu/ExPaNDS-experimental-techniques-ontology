@@ -2,10 +2,15 @@
   function to parse the ?? encoded text to hmtl (e.g. \n -> <br>)
 {% endcomment %}
 
-{% assign output = include.text | replace: "\n", "<br><br>" %}
-{% comment %}
-    The assign command is in principal correct; I tested it with other strings. 
-    However, this replace does not work. why?
-{% endcomment %}
+{% assign output = include.text | replace: '
+', '<br>' %}
 
-<p>{{ include.text }}</p>
+{%- assign output = output | replace: 'https://expands.eu/', '<a href="https://expands.eu/">https://expands.eu/</a>' -%}
+{%- assign output = output | replace: 'https://github.com/ExPaNDS-eu/ExPaNDS-experimental-techniques-ontology', '<a href="https://github.com/ExPaNDS-eu/ExPaNDS-experimental-techniques-ontology">https://github.com/ExPaNDS-eu/ExPaNDS-experimental-techniques-ontology</a>' -%}
+{%- assign output = output | replace: 'https://doi.org/10.1107/S1600577525005272', '<a href="https://doi.org/10.1107/S1600577525005272">https://doi.org/10.1107/S1600577525005272</a>' -%}
+{%- assign output = output | replace: 'https://doi.org/10.5281/zenodo.4806026', '<a href="https://doi.org/10.5281/zenodo.4806026">https://doi.org/10.5281/zenodo.4806026</a>' -%}
+
+{%- assign output = output | replace: '<br>Purpose<br>', '<br><strong>Purpose</strong><br>' -%}
+{%- assign output = output | replace: '<br>Design philosophy<br>', '<br><strong>Design philosophy</strong><br>' -%}
+
+<p>{{ output }}</p>
