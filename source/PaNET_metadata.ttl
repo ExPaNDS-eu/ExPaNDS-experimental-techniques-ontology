@@ -21,6 +21,7 @@
       sdo:affiliation [
           foaf:homepage <https://stfc.ukri.org/> ;
           foaf:name "Science and Technology Facilities Council" ;
+           rdfs:seeAlso <https://ror.org/057g20z61> ;
         ] ;
       rdfs:seeAlso <https://orcid.org/0000-0003-3499-8262> ;
       foaf:name "Alejandra Gonzalez-Beltran" ;
@@ -28,32 +29,65 @@
     ] ;
   dcterms:creator [
       a foaf:Person ;
-      foaf:name "D. Iyayi" ;      
-    ] ;
-  dcterms:creator [
-      a foaf:Person ;     
-      rdfs:seeAlso <https://orcid.org/0000-0001-9121-8643> ;
-      foaf:name "H. Gorzig" ;      
-    ] ; 
-  dcterms:creator [
-      a foaf:Person ;           
-      foaf:name "S. Da Graca Ramos" ;      
-    ] ; 
-  dcterms:creator [
-      a foaf:Person ;           
-      foaf:name "S. P. Collins" ;
-      rdfs:seeAlso <https://orcid.org/0000-0001-5120-0764> ;     
-    ] ; 
-  dcterms:creator [
-      a foaf:Person ;
-      foaf:name "G.Koumoutsos" ;
+      sdo:affiliation [
+          foaf:homepage <https://www.ox.ac.uk> ;
+          foaf:name "University of Oxford" ;
+          rdfs:seeAlso <https://ror.org/052gg0110> ;
+        ] ;
+      rdfs:seeAlso <https://orcid.org/0000-0002-3451-2544> ;
+      foaf:name "Daniel Iyayi" ;
     ] ;
   dcterms:creator [
       a foaf:Person ;
       sdo:affiliation [
-           foaf:homepage <https://desy.de/> ;
-           foaf:name "Deutsches Elektronen-Synchrotron DESY" ;
-           rdfs:seeAlso <https://ror.org/01js2sh04> ;
+          foaf:homepage <https://www.helmholtz-berlin.de/> ;
+          foaf:name "Helmholtz-Zentrum Berlin für Materialien und Energie" ;
+          rdfs:seeAlso <https://ror.org/02aj13c28> ;
+        ] ;
+      rdfs:seeAlso <https://orcid.org/0000-0001-9121-8643> ;
+      foaf:name "Heike Görzig" ;
+    ] ; 
+  dcterms:creator [
+      a foaf:Person ;
+      sdo:affiliation [
+          foaf:homepage <http://www.ucl.ac.uk/> ;
+          foaf:name "University College London" ;
+          rdfs:seeAlso <https://ror.org/02jx3x895> ;
+        ] ;
+      sdo:affiliation [
+          foaf:homepage <https://www.rfi.ac.uk/> ;
+          foaf:name "Rosalind Franklin Institute" ;
+          rdfs:seeAlso <https://ror.org/01djcs087> ;
+        ] ;
+      rdfs:seeAlso <https://orcid.org/0000-0003-1823-6567> ;
+      foaf:name "Silvia Da Graca Ramos" ;
+    ] ; 
+  dcterms:creator [
+      a foaf:Person ;
+      sdo:affiliation [
+          foaf:homepage <http://www.diamond.ac.uk/Home.html> ;
+          foaf:name "Diamond Light Source" ;
+          rdfs:seeAlso <https://ror.org/05etxs293> ;
+        ] ;
+      foaf:name "Stephen P. Collins" ;
+      rdfs:seeAlso <https://orcid.org/0000-0001-5120-0764> ;     
+    ] ; 
+  dcterms:creator [
+      a foaf:Person ;
+      sdo:affiliation [
+          foaf:homepage <http://www.esrf.eu/> ;
+          foaf:name "European Synchrotron Radiation Facility" ;
+          rdfs:seeAlso <https://ror.org/02550n020> ;
+        ] ;
+      foaf:name "Giannis Koumoutsos" ;
+      rdfs:seeAlso <https://orcid.org/0009-0000-6215-8493> ;
+    ] ;
+  dcterms:creator [
+      a foaf:Person ;
+      sdo:affiliation [
+          foaf:homepage <https://www.desy.de/> ;
+          foaf:name "Deutsches Elektronen-Synchrotron DESY" ;
+          rdfs:seeAlso <https://ror.org/01js2sh04> ;
       ] ;
       foaf:name "Paul Millar" ;
       rdfs:seeAlso <https://orcid.org/0000-0002-3957-1279> ;
@@ -61,9 +95,9 @@
   dcterms:creator [
       a foaf:Person ;
       sdo:affiliation [
-           foaf:homepage <https://www.helmholtz-berlin.de/> ;
-           foaf:name "Helmholtz-Zentrum Berlin für Materialien und Energie" ;
-           rdfs:seeAlso <https://ror.org/02aj13c28> ;
+          foaf:homepage <https://www.helmholtz-berlin.de/> ;
+          foaf:name "Helmholtz-Zentrum Berlin für Materialien und Energie" ;
+          rdfs:seeAlso <https://ror.org/02aj13c28> ;
       ] ;
       foaf:name "Rolf Krahl" ;
       rdfs:seeAlso <https://orcid.org/0000-0002-1266-3819> ;
@@ -71,9 +105,9 @@
   dcterms:creator [
       a foaf:Person ;
       sdo:affiliation [
-           foaf:homepage <https://desy.de/> ;
-           foaf:name "Deutsches Elektronen-Synchrotron DESY" ;
-           rdfs:seeAlso <https://ror.org/01js2sh04> ;
+          foaf:homepage <https://www.desy.de/> ;
+          foaf:name "Deutsches Elektronen-Synchrotron DESY" ;
+          rdfs:seeAlso <https://ror.org/01js2sh04> ;
       ] ;
       foaf:name "Melanie Nentwich" ;
       rdfs:seeAlso <https://orcid.org/0000-0002-5850-4469> ;
@@ -81,14 +115,14 @@
   dcterms:creator [
       a foaf:Person ;
       sdo:affiliation [
-           foaf:homepage <https://www.ox.ac.uk/> ;
-           foaf:name "University of Oxford" ;
-           rdfs:seeAlso <https://ror.org/052gg0110> ;
+          foaf:homepage <https://www.ox.ac.uk/> ;
+          foaf:name "University of Oxford" ;
+          rdfs:seeAlso <https://ror.org/052gg0110> ;
       ] ;
       sdo:affiliation [
-           foaf:homepage <https://www.diamond.ac.uk/> ;
-           foaf:name "Diamond Light Source" ;
-           rdfs:seeAlso <https://ror.org/05etxs293> ;
+          foaf:homepage <https://www.diamond.ac.uk/> ;
+          foaf:name "Diamond Light Source" ;
+          rdfs:seeAlso <https://ror.org/05etxs293> ;
       ] ;
       foaf:name "Terence Tan" ;
       rdfs:seeAlso <https://orcid.org/0009-0008-7829-3647> ;
@@ -96,7 +130,14 @@
   dcterms:creator [
       a foaf:Person ;
       sdo:affiliation [
-           foaf:name "German Engineering Materials Science Centre (GEMS) at Heinz Maier-Leibnitz Zentrum (MLZ), Helmholtz-Zentrum Hereon" ;
+          foaf:homepage <https://www.mlz-garching.de/englisch> ;
+          foaf:name "German Engineering Materials Science Centre (GEMS) at Heinz Maier-Leibnitz Zentrum (MLZ)" ;
+          rdfs:seeAlso <https://ror.org/00ed5g627> ;
+      ] ;
+      sdo:affiliation [
+          foaf:homepage <https://www.hereon.de/> ;
+          foaf:name "Helmholtz-Zentrum Hereon" ;
+          rdfs:seeAlso <https://ror.org/03qjp1d79> ;
       ] ;
       foaf:name "Arnab Majumdar" ;
       rdfs:seeAlso <https://orcid.org/0000-0003-4049-4060> ;
@@ -105,14 +146,20 @@
   dcterms:creator [
       a foaf:Person ;
       sdo:affiliation [
-           foaf:name "German Engineering Materials Science Centre (GEMS) at Heinz Maier-Leibnitz Zentrum (MLZ), Helmholtz-Zentrum Hereon" ;
+          foaf:homepage <https://www.mlz-garching.de/englisch> ;
+          foaf:name "German Engineering Materials Science Centre (GEMS) at Heinz Maier-Leibnitz Zentrum (MLZ)" ;
+          rdfs:seeAlso <https://ror.org/00ed5g627> ;
+      ] ;
+      sdo:affiliation [
+          foaf:homepage <https://www.hereon.de/> ;
+          foaf:name "Helmholtz-Zentrum Hereon" ;
+          rdfs:seeAlso <https://ror.org/03qjp1d79> ;
       ] ;
       foaf:name "Sebastian Busch" ;
       rdfs:seeAlso <https://orcid.org/0000-0002-9815-909X> ;
     ] ;
-    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-
-    rdfs:comment """Photon and Neutron Experimental Techniques: An ontology of  techniques within the photon and neutron (PaN) domain.
+  dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+  rdfs:comment """Photon and Neutron Experimental Techniques: An ontology of techniques within the photon and neutron (PaN) domain.
 
 Purpose
 
