@@ -1,0 +1,54 @@
+{% comment %}
+  function to create overview boxes for classes and object properties
+  get list of labels and IRIs
+  sort alphabetically by label
+  print out linked labels
+{% endcomment %}
+
+
+{% comment %}
+  CREATE LIST OF TERMS
+  a term is a string, consisting of label and id, joined by " | "
+{% endcomment %}
+
+{% assign list = "" | split: "" %}
+
+{% for entry in include.data %}
+  {% if entry["@type"] contains include.field and entry["http://www.w3.org/2000/01/rdf-schema#label"] %}
+    {% assign label = entry["http://www.w3.org/2000/01/rdf-schema#label"][0]["@value"] %}
+    {% assign id = entry["@id"] | split: "/" %}
+    
+    {% assign term = label | append: " | " | append: id[-1] %}
+    {% assign list = list | push: term %}
+  {% endif %}
+{% endfor %}
+
+
+{% comment %} SORT LIST OF TERMS {% endcomment %}
+{% assign sorted_list = list | sort_natural %}
+
+
+{% comment %} ADD ALPHABETIC MARKERS (only if item with this letter exists) {% endcomment %}
+{% comment %} get capitalized first letters -> unique {% endcomment %}
+{% assign first_letters = "" | split: "" %}
+{% for item in sorted_list %}
+  {% assign first_letter = item | upcase | split: "" | first %}
+  {% assign first_letters = first_letters | push: first_letter %}
+{% endfor%}
+{% assign letters = first_letters | uniq  %}
+{% assign merged_list = sorted_list | concat: letters | sort_natural %}
+
+{% comment %} REASSEMBLE TERM INFO FOR DISPLAY {% endcomment %}
+<div class="overview-box">
+  {% for term in merged_list %}
+    {% assign parts = term | split: " | " %}
+    {% assign label = parts[0] %}
+    {% assign id = parts[1] %}
+
+    {% if id %}
+      <a href="#{{ id }}">{{ label }}</a>
+    {% else %}
+      <p class="drop-cap">{{ label }}</p>
+    {% endif %}
+  {% endfor %}
+</div>

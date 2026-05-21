@@ -1,0 +1,167 @@
+{% comment %} 
+  function to create detail boxes for classes
+  - create sorted list of term names (e.g. x-ray diffraction)
+  - for each of the terms
+    - get all information
+    - display the information
+{% endcomment %}
+
+
+{% comment %} SORT LIST OF IDENTIFIERS {% endcomment %}
+{% assign list = "" | split: "" %}
+{% for entry in include.data %}
+  {% if entry["@type"] contains include.field and entry["http://www.w3.org/2000/01/rdf-schema#label"] %}
+    {% assign label = entry["http://www.w3.org/2000/01/rdf-schema#label"][0]["@value"] %}
+    {% assign list = list | push: label %}
+  {% endif %}
+{% endfor %}
+
+{% assign sorted_list = list | sort_natural %}
+
+
+{% for label in sorted_list %}
+  {% for entry in include.data %}
+    {% if entry["http://www.w3.org/2000/01/rdf-schema#label"][0]["@value"] == label %}
+    
+      {% comment %} GET ALL INFORMATION {% endcomment %}
+
+      {% assign label = entry["http://www.w3.org/2000/01/rdf-schema#label"][0]["@value"] %}
+      {% assign id = entry["@id"] %}
+      {% assign alt_labels = entry["http://www.w3.org/2004/02/skos/core#altLabel"] %}
+      {% assign source = entry["http://purl.obolibrary.org/obo/IAO_0000119"][0]["@value"] %}
+      {% assign def = entry["http://purl.obolibrary.org/obo/IAO_0000115"][0]["@value"] %}
+      
+      {% assign super = entry["http://www.w3.org/2000/01/rdf-schema#subClassOf"] %}
+      {% assign equi_id = entry["http://www.w3.org/2002/07/owl#equivalentClass"][0]["@id"] %}
+      
+      {% assign url_parts = id | split: "/" %}
+
+      
+      {% comment %} DISPLAY ALL INFORMATION {% endcomment %}
+      
+      <div class="detail-box">
+        <div class="detail-header">
+          <h3 class="detail-title" id="{{ url_parts[-1] }}">{{ label }}</h3>
+          <p class="detail-back">Back to <a href="#toc">TOC</a></p>
+        </div>
+        
+        <hr>
+        
+        <div class="detail-body">
+          <p><b>IRI:</b> {{ id }}</p>
+          
+          {% if alt_labels %}
+            <p><b>Alternative label:</b> 
+              <ul>
+                {% for lbl in alt_labels %}
+                  <li>{{ lbl["@value"] }}</li>
+                {% endfor %}
+              </ul>
+            </p>
+          {% endif %}
+
+          {% if def %}
+            <p><b>Definition:</b> {{ def }}</p>
+          {% endif %}
+
+          {% if source %}
+            <p><b>Source: </b><a href="{{ source }}">{{ source }}</a></p>
+          {% endif %}
+        </div>
+
+        <div class="footer-box">
+
+          {% if equi_id %}
+            <details>
+              <summary>is equivalent to:</summary>
+              <p>
+                {% comment %} Find the equivalent_class object in the JSON {% endcomment %}
+                {% assign equi_class = nil %}
+                {% for item in R %}
+                  {% if item["@id"] == equi_id %}
+                    {% assign equi_class = item %}
+                  {% endif %}
+                {% endfor %}
+
+                {% comment %} RESTRICTION TYPE {% endcomment %}
+                {% if equi_class["@type"][0] == "http://www.w3.org/2002/07/owl#Restriction" %}
+                  {% assign property_id = equi_class["http://www.w3.org/2002/07/owl#onProperty"][0]["@id"] %}
+                  {% assign from_id = equi_class["http://www.w3.org/2002/07/owl#someValuesFrom"][0]["@id"] %}
+                  {% for term in include.data %}
+                    {% if term["@id"] == property_id %}
+                      {% assign property_label = term["http://www.w3.org/2000/01/rdf-schema#label"][0]["@value"]%}
+                    {% elsif term["@id"] == from_id %}
+                      {% assign from_label = term["http://www.w3.org/2000/01/rdf-schema#label"][0]["@value"]%}
+                    {% endif %}
+                  {% endfor %}
+                  <a href="{{ property_id }}">{{ property_label }}</a> SOME <a href="{{ from_id }}">{{ from_label }}</a>
+                {% endif %}
+
+                {% comment %} INTERSECTION TYPE {% endcomment %}
+                {% assign equi_list = equi_class["http://www.w3.org/2002/07/owl#intersectionOf"][0]["@list"] | map: "@id" %}
+                {% assign links = "" | split: "" %}
+                {% for url in equi_list %}
+                  {% for technique in include.data %}
+                    {% if technique["@id"] == url %}
+                      {% assign technique_name = technique["http://www.w3.org/2000/01/rdf-schema#label"][0]["@value"] %}
+                      {% break %}
+                    {% endif %}
+                  {% endfor %}
+
+                  {% assign link = '<a href="' | append: url | append: '">' | append: technique_name | append: '</a>' %}
+                  {% assign links = links | push: link %}
+                {% endfor %}
+                {{ links | join: " AND " }}
+              </p>
+            </details>
+          {% endif %}
+
+
+          {% if super %}
+            <details>
+              <summary>has super-classes:</summary>
+              <p>
+                {% for s in super %}
+                  {% assign super_id = s["@id"] %}
+                  {% for technique in include.data %}
+                    {% if technique["@id"] == super_id %}
+                      {% assign technique_name = technique["http://www.w3.org/2000/01/rdf-schema#label"][0]["@value"] %}
+                      {% break %}
+                    {% endif %}
+                  {% endfor %}
+                  <a href="{{ super_id }}">{{ technique_name }}</a>
+                {% endfor %}
+              </p>
+            </details>
+          {% endif %}
+
+          
+          {% assign my_id = entry["@id"] %}
+          {% assign superclass_list = "" | split: "" %}
+          {% for technique in include.data %}
+            {% if technique["http://www.w3.org/2000/01/rdf-schema#subClassOf"] %}
+              {% for superclass in technique["http://www.w3.org/2000/01/rdf-schema#subClassOf"] %}
+                {% if superclass["@id"] == my_id %}
+                  {% assign superclass_label = technique["http://www.w3.org/2000/01/rdf-schema#label"][0]["@value"] %}
+                  {% assign url = technique["@id"] %}
+                  {% assign link = '<a href="' | append: url | append: '">' | append: superclass_label | append: '</a>' %}
+                  {% assign superclass_list = superclass_list | push: link %}
+                {% endif %}
+              {% endfor %}
+            {% endif %}
+          {% endfor %}
+          
+          {% if superclass_list and superclass_list != "" and superclass_list.size > 0 %}
+            <details>
+              <summary>has sub-classes:</summary>
+              <p>
+                {{ superclass_list | join: " " }}
+              </p>
+            </details>
+          {% endif %}
+
+        </div>
+    </div>
+    {% endif %}
+  {% endfor %}
+{% endfor %}

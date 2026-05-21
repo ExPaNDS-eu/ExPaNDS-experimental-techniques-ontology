@@ -1,0 +1,160 @@
+{% comment %} 
+  function to create detail boxes for object propertes
+  - create sorted list of term names (e.g. x-ray diffraction)
+  - for each of the terms
+    - get all information
+    - display the information
+{% endcomment %}
+
+
+{% comment %} SORT LIST OF IDENTIFIERS {% endcomment %}
+{% assign list = "" | split: "" %}
+{% for entry in include.data %}
+  {% if entry["@type"] contains include.field and entry["http://www.w3.org/2000/01/rdf-schema#label"] %}
+    {% assign label = entry["http://www.w3.org/2000/01/rdf-schema#label"][0]["@value"] %}
+    {% assign list = list | push: label %}
+  {% endif %}
+{% endfor %}
+
+{% assign sorted_list = list | sort_natural %}
+
+
+{% for label in sorted_list %}
+  {% for entry in include.data %}
+    {% if entry["http://www.w3.org/2000/01/rdf-schema#label"][0]["@value"] == label %}
+    
+      {% comment %} GET ALL INFORMATION {% endcomment %}
+
+      {% assign label = entry["http://www.w3.org/2000/01/rdf-schema#label"][0]["@value"] %}
+      {% assign id = entry["@id"] %}
+      {% assign alt_labels = entry["http://www.w3.org/2004/02/skos/core#altLabel"] %}
+      {% assign source = entry["http://purl.obolibrary.org/obo/IAO_0000119"][0]["@value"] %}
+      {% assign def = entry["http://purl.obolibrary.org/obo/IAO_0000115"][0]["@value"] %}
+      
+      {% assign range_id = entry["http://www.w3.org/2000/01/rdf-schema#range"][0]["@id"] %}
+      {% assign domain_id = entry["http://www.w3.org/2000/01/rdf-schema#domain"][0]["@id"] %}
+      {% assign subPropertyOf = entry["http://www.w3.org/2000/01/rdf-schema#subPropertyOf"] %}
+      {% assign char = entry["@type"] %}
+      
+      {% assign url_parts = id | split: "/" %}
+
+      
+      {% comment %} DISPLAY ALL INFORMATION {% endcomment %}
+      
+      <div class="detail-box">
+        <div class="detail-header">
+          <h3 class="detail-title" id="{{ url_parts[-1] }}">{{ label }}</h3>
+          <p class="detail-back">Back to <a href="#toc">TOC</a></p>
+        </div>
+        
+        <hr>
+        
+        <div class="detail-body">
+          <p><b>IRI:</b> {{ id }}</p>
+          
+          {% if alt_labels %}
+            <p><b>Alternative label:</b> 
+              <ul>
+                {% for lbl in alt_labels %}
+                  <li>{{ lbl["@value"] }}</li>
+                {% endfor %}
+              </ul>
+            </p>
+          {% endif %}
+
+          {% if def %}
+            <p><b>Definition:</b> {{ def }}</p>
+          {% endif %}
+
+          {% if source %}
+            <p><b>Source: </b><a href="{{ source }}">{{ source }}</a></p>
+          {% endif %}
+        </div>
+
+        <div class="footer-box">
+
+            <details>
+              <summary>has characteristics:</summary>
+              <p>
+                {% for char_id in char %}
+                  {% if char_id == "http://www.w3.org/2002/07/owl#ObjectProperty" %}
+                    {{ }}
+                  {% else %}
+                    {% assign parts = char_id | split: "#" %}
+                    {% assign char_label = parts[1] %}
+                    <a href="{{ char_id }}">{{ char_label }}</a>
+                  {% endif %}
+                {% endfor %}
+              </p>
+            </details>
+
+            {% if subPropertyOf %}
+              <details>
+                <summary>has super-properties:</summary>
+                <p>
+                  {% for superProp in subPropertyOf %}
+                    {% for term in include.data %}
+                      {% assign super_id = superProp["@id"] %}
+                      {% if term["@id"] == super_id %}
+                        {% assign super_label = term["http://www.w3.org/2000/01/rdf-schema#label"][0]["@value"]%}
+                      {% endif %}
+                    {% endfor %}
+                    <a href="{{ super_id }}">{{ super_label }}</a>
+                  {% endfor %}
+                </p>
+              </details>
+            {% endif %}
+
+            {% assign my_id = entry["@id"] %}
+            {% assign superprop_list = "" | split: "" %}
+            {% for technique in include.data %}
+              {% if technique["http://www.w3.org/2000/01/rdf-schema#subPropertyOf"] %}
+                {% for superclass in technique["http://www.w3.org/2000/01/rdf-schema#subPropertyOf"] %}
+                  {% if superclass["@id"] == my_id %}
+                    {% assign superclass_label = technique["http://www.w3.org/2000/01/rdf-schema#label"][0]["@value"] %}
+                    {% assign url = technique["@id"] %}
+                    {% assign link = '<a href="' | append: url | append: '">' | append: superclass_label | append: '</a>' %}
+                    {% assign superprop_list = superprop_list | push: link %}
+                  {% endif %}
+                {% endfor %}
+              {% endif %}
+            {% endfor %}
+            
+            {% if superprop_list and superprop_list != "" and superprop_list.size > 0 %}
+              <details>
+                <summary>has sub-properties:</summary>
+                <p>
+                  {{ superprop_list | join: " " }}
+                </p>
+              </details>
+            {% endif %}
+
+            <details>
+              <summary>has domain:</summary>
+              {% for term in include.data %}
+                {% if term["@id"] == domain_id %}
+                  {% assign domain_label = term["http://www.w3.org/2000/01/rdf-schema#label"][0]["@value"]%}
+                {% endif %}
+              {% endfor %}
+              <p>
+                <a href="{{ domain_id }}">{{ domain_label }}</a>
+              </p>
+            </details>
+
+            <details>
+              <summary>has range:</summary>
+              {% for term in include.data %}
+                {% if term["@id"] == range_id %}
+                  {% assign range_label = term["http://www.w3.org/2000/01/rdf-schema#label"][0]["@value"]%}
+                {% endif %}
+              {% endfor %}
+              <p>
+                <a href="{{ range_id }}">{{ range_label }}</a>
+              </p>
+            </details>
+
+        </div>
+    </div>
+    {% endif %}
+  {% endfor %}
+{% endfor %}
